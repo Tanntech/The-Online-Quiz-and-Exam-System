@@ -18,20 +18,13 @@ namespace Online_Quiz_And_Exam_System.Controllers
         [HttpPost]
         public IActionResult Save([FromBody] TestResult r)
         {
-            try
-            {
-                if (r == null)
-                    return BadRequest("Request body is null");
+            if (string.IsNullOrEmpty(r.TestType))
+                return BadRequest("TestType not received");
 
-                _dal.Save(r);
-                return Ok("Saved successfully");
-            }
-            catch (Exception ex)
-            {
-                // THIS LINE IS CRITICAL
-                return BadRequest(ex.Message);
-            }
+            _dal.Save(r);
+            return Ok();
         }
+
 
 
 

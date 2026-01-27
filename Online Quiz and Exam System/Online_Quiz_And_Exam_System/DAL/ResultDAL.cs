@@ -17,27 +17,27 @@ namespace Online_Quiz_API.DAL
         // =========================
         // SAVE RESULT
         // =========================
-        public void Save(TestResult result)
+        public void Save(TestResult r)
         {
-            using SqlConnection con = _db.GetConnection();
+            using var con = _db.GetConnection();
 
-            SqlCommand cmd = new SqlCommand(@"
-            INSERT INTO TestResults
-            (UserId, ModuleId, Score, Attempted, Unattempted, TestType)
-            VALUES
-            (@uid, @mid, @score, @att, @unatt, @type)", con);
+            var cmd = new SqlCommand(@"
+        INSERT INTO TestResults
+        (UserId, ModuleId, Score, Attempted, Unattempted, TestType)
+        VALUES
+        (@uid, @mid, @score, @att, @unatt, @type)", con);
 
-            cmd.Parameters.AddWithValue("@uid", result.UserId);
-            cmd.Parameters.AddWithValue("@mid", result.ModuleId);
-            cmd.Parameters.AddWithValue("@score", result.Score);
-            cmd.Parameters.AddWithValue("@att", result.Attempted);
-            cmd.Parameters.AddWithValue("@unatt", result.Unattempted);
-            cmd.Parameters.AddWithValue("@type", result.TestType);
-
+            cmd.Parameters.AddWithValue("@uid", r.UserId);
+            cmd.Parameters.AddWithValue("@mid", r.ModuleId);
+            cmd.Parameters.AddWithValue("@score", r.Score);
+            cmd.Parameters.AddWithValue("@att", r.Attempted);
+            cmd.Parameters.AddWithValue("@unatt", r.Unattempted);
+            cmd.Parameters.AddWithValue("@type", r.TestType); // ✅ THIS LINE WAS MISSING
 
             con.Open();
             cmd.ExecuteNonQuery();
         }
+
 
         // =========================
         // GET USER RESULTS (DASHBOARD)

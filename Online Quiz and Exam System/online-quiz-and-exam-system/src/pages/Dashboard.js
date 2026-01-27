@@ -51,8 +51,7 @@ function Dashboard() {
         {/* ================= LATEST RESULT ================= */}
         <div className="col-md-4">
           <div className="card p-3 h-100">
-            <span className="badge bg-success mb-2">PRACTICE TEST</span>
-            <h5>Latest Test Result</h5>
+            <h5>Current Test Result</h5>
 
             <p className="mt-2">
               <b>{stats.moduleName}</b>
@@ -62,7 +61,22 @@ function Dashboard() {
             <p>Attempted: {stats.attempted}</p>
             <p>Unattempted: {stats.unattempted}</p>
 
-           
+            {/* ===== ACTION BUTTONS INSIDE SAME CARD ===== */}
+            <div className="d-grid gap-2 mt-3">
+              <button
+                className="btn btn-success"
+                onClick={() => nav("/")}
+              >
+                Start Practice Test
+              </button>
+
+              <button
+                className="btn btn-primary"
+                onClick={() => nav("/")}
+              >
+                Take Next Mock Test
+              </button>
+            </div>
           </div>
         </div>
 
@@ -75,7 +89,7 @@ function Dashboard() {
             <p>Practice Tests: <b>{stats.practiceTests}</b></p>
             <p>Mock Tests: <b>{stats.mockTests}</b></p>
             <p>Best Score: <b>{stats.bestScore}</b></p>
-            <p>Average Score: <b>{stats.averageScore}</b></p>
+            {/* <p>Average Score: <b>{stats.averageScore}</b></p> */}
           </div>
         </div>
 
@@ -84,53 +98,6 @@ function Dashboard() {
           <div className="card p-3 h-100">
             <h5 className="text-center">Test Attempts Distribution</h5>
             <Pie data={pieData} />
-          </div>
-        </div>
-
-      </div>
-
-      {/* ================= ACTION BUTTONS ================= */}
-      <div className="row g-4 mt-4">
-
-        <div className="col-md-3">
-          <div className="card p-3 text-center">
-            <h6>Start Practice Test</h6>
-            <button
-              className="btn btn-success mt-2"
-              onClick={() => nav("/")}
-            >
-              Start Practice Test
-            </button>
-          </div>
-        </div>
-
-        <div className="col-md-3">
-          <div className="card p-3 text-center">
-            <h6>Take Next Mock Test</h6>
-            <button
-              className="btn btn-primary mt-2"
-              onClick={() => nav("/")}
-            >
-              Take Next Mock Test
-            </button>
-          </div>
-        </div>
-
-        <div className="col-md-3">
-          <div className="card p-3 text-center">
-            <h6>View Full History</h6>
-            <button className="btn btn-secondary mt-2">
-              View Full History
-            </button>
-          </div>
-        </div>
-
-        <div className="col-md-3">
-          <div className="card p-3 text-center">
-            <h6>Manage Account</h6>
-            <button className="btn btn-warning mt-2">
-              Manage Account
-            </button>
           </div>
         </div>
 

@@ -76,13 +76,16 @@ function MockQuiz() {
       }
     });
 
-    await saveResult({
-      userId: user.userId,
-      moduleId,
-      score,
-      testType: "MOCK",
-      mockNumber
-    });
+
+await saveResult({
+  userId: user.userId,
+  moduleId,
+  score,
+  attempted,
+  unattempted,
+  testType: "Mock"   // ✅ THIS IS THE DIFFERENCE
+});
+
 
     sessionStorage.setItem("score", score);
     navigate("/dashboard");

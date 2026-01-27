@@ -59,13 +59,14 @@ function Quiz() {
 
 
     await saveResult({
-      UserId: user.userId,
-      ModuleId: moduleId,
-      Score: score,
-      Attempted: attempted,
-      Unattempted: unattempted,
-      TestType: "Practice"
-    });
+  userId: user.userId,
+  moduleId: moduleId,
+  score: score,
+  attempted: attempted,
+  unattempted: unattempted,
+  testType: "Practice"   // ✅ REQUIRED
+});
+
 
 
     sessionStorage.setItem("score", score);

@@ -35,16 +35,17 @@ export async function saveResult(result) {
       score: result.score,
       attempted: result.attempted,
       unattempted: result.unattempted,
-      testType: result.testType
+      testType: result.testType   // ✅ MUST BE HERE
     })
   });
 
   if (!res.ok) {
-    const errorText = await res.text();
-    console.error("BACKEND ERROR:", errorText);
-    throw new Error(errorText);
+    const error = await res.text();
+    console.error("BACKEND ERROR:", error);
+    throw new Error(error);
   }
 }
+
 
 
 

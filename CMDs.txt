@@ -1,0 +1,210 @@
+========================================================
+ONLINE QUIZ & EXAM SYSTEM – DATABASE SETUP
+(CDAC DAC Project)
+========================================================
+
+This file contains all SQL commands required to create
+and understand the database used in the Online Quiz
+and Exam System project.
+
+--------------------------------------------------------
+1. CREATE DATABASE
+--------------------------------------------------------
+
+CREATE DATABASE OnlineQuizDB;
+USE OnlineQuizDB;
+
+Explanation:
+- Creates a new database named OnlineQuizDB.
+- USE command selects this database for further operations.
+
+--------------------------------------------------------
+2. USERS TABLE (Login & Registration)
+--------------------------------------------------------
+
+CREATE TABLE Users (
+    UserId INT IDENTITY(1,1) PRIMARY KEY,
+    FullName VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Password VARCHAR(100) NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+Explanation:
+- Stores registered users.
+- Email is unique to prevent duplicate accounts.
+- CreatedAt stores registration time automatically.
+
+--------------------------------------------------------
+3. MODULES TABLE (Subjects)
+--------------------------------------------------------
+
+CREATE TABLE Modules (
+    ModuleId INT IDENTITY(1,1) PRIMARY KEY,
+    ModuleName VARCHAR(100) NOT NULL
+);
+
+Explanation:
+- Stores CDAC DAC subjects like C++, Java, .NET, etc.
+- Each module has a unique ModuleId.
+
+--------------------------------------------------------
+4. INSERT MODULE DATA
+--------------------------------------------------------
+
+INSERT INTO Modules (ModuleName) VALUES
+('C++ Programming'),
+('Core Java'),
+('Java DSA'),
+('Web Programming Technologies'),
+('Database Technologies'),
+('Aptitude'),
+('Advanced Java'),
+('.NET'),
+('Operating Systems'),
+('Software Development Methodologies');
+
+Explanation:
+- Inserts all subjects used in the quiz system.
+
+--------------------------------------------------------
+5. QUESTIONS TABLE (MCQs)
+--------------------------------------------------------
+
+CREATE TABLE Questions (
+    QuestionId INT IDENTITY(1,1) PRIMARY KEY,
+    ModuleId INT NOT NULL,
+    QuestionText VARCHAR(500) NOT NULL,
+    OptionA VARCHAR(200) NOT NULL,
+    OptionB VARCHAR(200) NOT NULL,
+    OptionC VARCHAR(200) NOT NULL,
+    OptionD VARCHAR(200) NOT NULL,
+    CorrectOption CHAR(1) NOT NULL,
+    FOREIGN KEY (ModuleId) REFERENCES Modules(ModuleId)
+);
+
+Explanation:
+- Stores MCQ questions.
+- Each question belongs to one module.
+- CorrectOption stores A/B/C/D.
+
+--------------------------------------------------------
+6. TEST RESULTS TABLE (Practice + Mock Tests)
+--------------------------------------------------------
+
+CREATE TABLE TestResults (
+    ResultId INT IDENTITY(1,1) PRIMARY KEY,
+    UserId INT NOT NULL,
+    ModuleId INT NOT NULL,
+    Score INT NOT NULL,
+    Attempted INT NOT NULL DEFAULT 0,
+    Unattempted INT NOT NULL DEFAULT 0,
+    TestType VARCHAR(20) NOT NULL DEFAULT 'Practice',
+    TestDate DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (UserId) REFERENCES Users(UserId),
+    FOREIGN KEY (ModuleId) REFERENCES Modules(ModuleId)
+);
+
+Explanation:
+- Stores results of both Practice and Mock tests.
+- Attempted and Unattempted store question statistics.
+- TestType differentiates Practice vs Mock tests.
+
+--------------------------------------------------------
+7. PRACTICE TEST QUERY (Random Questions)
+--------------------------------------------------------
+
+SELECT TOP 40 *
+FROM Questions
+WHERE ModuleId = @moduleId
+ORDER BY NEWID();
+
+Explanation:
+- Selects 40 random questions.
+- Used for Practice Test (no repetition concern).
+
+--------------------------------------------------------
+8. MOCK TEST QUERY (Sequential Questions)
+--------------------------------------------------------
+
+DECLARE @MockNumber INT = 1;
+DECLARE @Offset INT = (@MockNumber - 1) * 40;
+
+SELECT *
+FROM Questions
+WHERE ModuleId = @moduleId
+ORDER BY QuestionId
+OFFSET @Offset ROWS FETCH NEXT 40 ROWS ONLY;
+
+Explanation:
+- Each mock test gets a fixed set of questions.
+- Mock 1 → first 40
+- Mock 2 → next 40
+- Ensures no repetition across mock tests.
+
+--------------------------------------------------------
+9. DASHBOARD – ATTEMPT SUMMARY (Pie Chart)
+--------------------------------------------------------
+
+SELECT 
+    m.ModuleName,
+    COUNT(*) AS Attempts
+FROM TestResults r
+JOIN Modules m ON r.ModuleId = m.ModuleId
+WHERE r.UserId = @userId
+GROUP BY m.ModuleName;
+
+Explanation:
+- Used for pie chart.
+- Shows how many tests user attempted per module.
+
+--------------------------------------------------------
+10. DASHBOARD – LATEST TEST RESULT
+--------------------------------------------------------
+
+SELECT TOP 1
+    m.ModuleName,
+    r.Score,
+    r.Attempted,
+    r.Unattempted
+FROM TestResults r
+JOIN Modules m ON r.ModuleId = m.ModuleId
+WHERE r.UserId = @userId
+ORDER BY r.ResultId DESC;
+
+Explanation:
+- Fetches the most recent test using ResultId.
+- Used to show latest performance on dashboard.
+
+--------------------------------------------------------
+11. DASHBOARD – PERFORMANCE SUMMARY
+--------------------------------------------------------
+
+SELECT
+    COUNT(*) AS TotalTests,
+    SUM(CASE WHEN TestType='Practice' THEN 1 ELSE 0 END) AS PracticeTests,
+    SUM(CASE WHEN TestType='Mock' THEN 1 ELSE 0 END) AS MockTests,
+    MAX(Score) AS BestScore,
+    AVG(CAST(Score AS FLOAT)) AS AverageScore
+FROM TestResults
+WHERE UserId = @userId;
+
+Explanation:
+- Calculates overall statistics for dashboard.
+- Helps in performance analysis.
+
+--------------------------------------------------------
+12. VIEW DATA (Optional)
+--------------------------------------------------------
+
+SELECT * FROM Users;
+SELECT * FROM Modules;
+SELECT * FROM Questions;
+SELECT * FROM TestResults;
+
+Explanation:
+- Used for debugging and verification.
+
+========================================================
+END OF FILE
+========================================================

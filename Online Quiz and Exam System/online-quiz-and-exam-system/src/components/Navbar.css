@@ -2,7 +2,7 @@
   width: 100%;
   padding: 20px;
   position: relative;
-  z-index: 2000; /* 🔑 keeps navbar above page content */
+  z-index: 2000;
 }
 
 .navbar-inner {
@@ -17,25 +17,19 @@
   color: white;
 }
 
-
+/* LOGO */
 .navbar-title {
   cursor: pointer;
   display: flex;
   align-items: center;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .navbar-logo {
-  height: 40px;          /* adjust based on your navbar height */
+  height: 40px;
   width: auto;
   object-fit: contain;
-}
-
-
-/* TITLE */
-.navbar-title {
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 /* CENTER TABS */
@@ -66,88 +60,91 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
-/* USER */
-.navbar-user {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.avatar {
-  width: 36px;
-  height: 36px;
-  background: white;
-  color: #3b2fa3;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-/* ================= PROFILE DROPDOWN ================= */
+/* ================= USER AVATAR ================= */
 
 .profile-area {
   position: relative;
-  z-index: 3000; /* 🔑 keeps dropdown context above navbar */
+  z-index: 3000;
 }
 
+/* 🔑 NO CAPSULE, NO HOVER */
 .profile-chip {
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
+
+  background: none;        /* ❌ capsule removed */
+  padding: 0;              /* ❌ padding removed */
+  border-radius: 0;        /* ❌ rounded bg removed */
 }
 
-/* 🔧 FIXED DROPDOWN */
+/* Avatar stays clean */
+.avatar {
+  width: 34px;
+  height: 34px;
+  background: white;
+  color: #1E3A8A;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* ================= DROPDOWN ================= */
+
 .profile-dropdown {
   position: absolute;
   right: 0;
-  top: calc(100% + 12px); /* 🔑 always below navbar */
+  top: calc(100% + 8px);
+
   background: white;
-  border-radius: 14px;
-  padding: 16px;
-  width: 220px;
+  border-radius: 16px;
+  padding: 14px;
+  width: 210px;
 
   box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+  z-index: 9999;
 
-  z-index: 9999; /* 🔑 higher than charts/cards */
-  animation: fadeIn 0.25s ease;
+  /* ✅ SAME ANIMATION (UNCHANGED) */
+  animation: dropdownScaleFade 0.25s ease forwards;
 }
 
 .profile-name {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   font-weight: 600;
-  color: #333;
+  color: #1f2937;
   text-align: center;
+  font-size: 15px;
 }
 
 .logout-btn {
   width: 100%;
-  padding: 10px;
-  background: #3B82F6 ;
+  padding: 12px;
+  background: #3B82F6;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-weight: 500;
+  border-radius: 10px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease;
 }
 
 .logout-btn:hover {
-  /* background: #6f6af8; */
   filter: brightness(1.05);
-  /* transform: translateY(-1px); */
 }
 
-/* animation */
-@keyframes fadeIn {
+/* ✅ ANIMATION KEPT */
+@keyframes dropdownScaleFade {
   from {
     opacity: 0;
-    transform: translateY(-6px);
+    transform: translateY(-8px) scale(0.96);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }

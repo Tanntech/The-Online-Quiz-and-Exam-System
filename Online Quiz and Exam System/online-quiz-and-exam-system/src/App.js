@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import Register from "./pages/Register";
 import MockQuiz from "./pages/MockQuiz";
 import "./App.css";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/register" element={<Register />} />
           <Route path="/mock/:moduleId/:mockNumber" element={<MockQuiz />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </BrowserRouter>

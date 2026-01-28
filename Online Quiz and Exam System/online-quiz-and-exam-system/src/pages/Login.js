@@ -4,6 +4,12 @@ import { loginUser } from "../services/api";
 import { googleLogin } from "../services/api";
 
 
+
+const isValidEmail = (email) => {
+  return email.endsWith("@gmail.com");
+};
+
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -12,19 +18,37 @@ function Login() {
   // ================= NORMAL LOGIN =================
   const submit = async () => {
     if (!email || !password) {
-      alert("Please enter email and password");
+      alert("Email and password are required");
       return;
     }
 
-    const user = await loginUser({ email, password });
+    if (!isValidEmail(email)) {
+      alert("Invalid Email");
+      return;
+    }
 
-    if (user && user.userId) {
+    try {
+      const res = await fetch("http://localhost:52705/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password })
+      });
+
+      if (!res.ok) {
+        const error = await res.text();
+        alert(error);   // shows backend message
+        return;
+      }
+
+      const user = await res.json();
       sessionStorage.setItem("user", JSON.stringify(user));
       nav("/");
-    } else {
-      alert("Invalid email or password");
+
+    } catch (err) {
+      alert("Server error. Please try again later.");
     }
   };
+
 
   // ================= GOOGLE LOGIN =================
   useEffect(() => {
@@ -66,7 +90,7 @@ function Login() {
   // return (
   //   <div className="container mt-5">
   return (
-  <div className="page-container">
+    <div className="page-container">
 
       <div className="card col-md-5 mx-auto p-4 shadow">
         <h3 className="text-center mb-4">Login</h3>

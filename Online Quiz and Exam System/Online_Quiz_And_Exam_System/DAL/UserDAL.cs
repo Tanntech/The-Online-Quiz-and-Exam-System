@@ -34,7 +34,8 @@ namespace Online_Quiz_API.DAL
                 {
                     UserId = (int)dr["UserId"],
                     FullName = dr["FullName"].ToString(),
-                    Email = dr["Email"].ToString()
+                    Email = dr["Email"].ToString(),
+                    MobileNumber = dr["MobileNumber"].ToString()
                 };
             }
             return null;
@@ -48,15 +49,18 @@ namespace Online_Quiz_API.DAL
             using SqlConnection con = _db.GetConnection();
 
             SqlCommand cmd = new SqlCommand(
-                "INSERT INTO Users (FullName, Email, Password) VALUES (@n,@e,@p)", con);
+                @"INSERT INTO Users (FullName, Email, Password, MobileNumber)
+          VALUES (@n, @e, @p, @m)", con);
 
             cmd.Parameters.AddWithValue("@n", user.FullName);
             cmd.Parameters.AddWithValue("@e", user.Email);
             cmd.Parameters.AddWithValue("@p", user.Password);
+            cmd.Parameters.AddWithValue("@m", user.MobileNumber);
 
             con.Open();
             cmd.ExecuteNonQuery();
         }
+
 
 
 

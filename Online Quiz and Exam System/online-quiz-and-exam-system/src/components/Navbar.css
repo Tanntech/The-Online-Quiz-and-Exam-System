@@ -1,0 +1,153 @@
+.navbar-wrapper {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  z-index: 2000; /* 🔑 keeps navbar above page content */
+}
+
+.navbar-inner {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 16px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+
+.navbar-title {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;          /* adjust based on your navbar height */
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* TITLE */
+.navbar-title {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* CENTER TABS */
+.navbar-tabs {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.tab {
+  padding: 8px 22px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tab.active {
+  background: white;
+  color: #69658c;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* USER */
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: white;
+  color: #3b2fa3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* ================= PROFILE DROPDOWN ================= */
+
+.profile-area {
+  position: relative;
+  z-index: 3000; /* 🔑 keeps dropdown context above navbar */
+}
+
+.profile-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* 🔧 FIXED DROPDOWN */
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 12px); /* 🔑 always below navbar */
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  width: 220px;
+
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+
+  z-index: 9999; /* 🔑 higher than charts/cards */
+  animation: fadeIn 0.25s ease;
+}
+
+.profile-name {
+  margin: 0 0 12px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 10px;
+  background: #3B82F6 ;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.logout-btn:hover {
+  /* background: #6f6af8; */
+  filter: brightness(1.05);
+  /* transform: translateY(-1px); */
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -18,4 +18,5 @@ namespace Online_Quiz_API.DAL
                 _configuration.GetConnectionString("QuizDB"));
         }
     }
+
 }

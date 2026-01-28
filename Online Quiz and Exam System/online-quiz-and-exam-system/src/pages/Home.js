@@ -19,63 +19,63 @@ function Home() {
     return true;
   };
 
+  // return (
+  //   <div className="container mt-4">
   return (
-    <div className="container mt-4">
+  <div className="page-container">
 
-      <h2 className="text-center mb-4">
-        CDAC DAC – Online Quiz & Mock Tests
-      </h2>
+    <div className="page-title">
+      CDAC DAC – Online Quiz & Mock Tests
+    </div>
 
-      <div className="row">
-        {modules.map(m => (
-          <div className="col-md-4 mb-4" key={m.moduleId}>
-            <div className="card h-100 shadow-sm">
+    <div className="row g-4">
+      {modules.map(m => (
+        <div className="col-md-4" key={m.moduleId}>
+          <div className="module-card">
 
-              <div className="card-body text-center">
+            <div className="module-title">
+              {m.moduleName}
+            </div>
 
-                <h5 className="card-title mb-3">
-                  {m.moduleName}
-                </h5>
+            <button
+              className="btn-practice w-100"
+              onClick={() => {
+                if (ensureLogin()) {
+                  nav(`/quiz/${m.moduleId}`);
+                }
+              }}
+            >
+              Practice Test (Learning Mode)
+            </button>
 
-                {/* ================= PRACTICE TEST ================= */}
+            <hr />
+
+            <div className="mock-title">Mock Tests</div>
+
+            <div className="mock-buttons">
+              {[1, 2, 3, 4, 5].map(mockId => (
                 <button
-                  className="btn btn-success w-100 mb-2"
+                  key={mockId}
+                  className="btn-mock"
                   onClick={() => {
                     if (ensureLogin()) {
-                      nav(`/quiz/${m.moduleId}`);
+                      nav(`/mock/${m.moduleId}/${mockId}`);
                     }
                   }}
                 >
-                  Practice Test (Learning Mode)
+                  Mock {mockId}
                 </button>
-
-                <hr />
-
-                {/* ================= MOCK TESTS ================= */}
-                <h6 className="mb-2">Mock Tests</h6>
-
-                {[1, 2, 3, 4, 5].map(mockId => (
-                  <button
-                    key={mockId}
-                    className="btn btn-outline-primary btn-sm m-1"
-                    onClick={() => {
-                      if (ensureLogin()) {
-                        nav(`/mock/${m.moduleId}/${mockId}`);
-                      }
-                    }}
-                  >
-                    Mock {mockId}
-                  </button>
-                ))}
-
-              </div>
+              ))}
             </div>
-          </div>
-        ))}
-      </div>
 
+          </div>
+        </div>
+      ))}
     </div>
-  );
+
+  </div>
+);
+
 }
 
 export default Home;

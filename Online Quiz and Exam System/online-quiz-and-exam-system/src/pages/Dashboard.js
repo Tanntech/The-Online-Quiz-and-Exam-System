@@ -6,6 +6,19 @@ import { getAttemptSummary, getLatestResultStats } from "../services/api";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
+// 🎨 PURPLE THEME COLORS (SUPPORTS MANY MODULES)
+const THEME_COLORS = [
+  "#ba90e7",
+  "#8a86fb",
+  "#a78bfa",
+  "#c4b5fd",
+  "#ddd6fe",
+  "#b794f4",
+  "#9f7aea",
+  "#805ad5",
+  "#6b46c1"
+];
+
 function Dashboard() {
   const nav = useNavigate();
   const user = JSON.parse(sessionStorage.getItem("user"));
@@ -26,31 +39,33 @@ function Dashboard() {
     datasets: [
       {
         data: attempts.map(a => a.attempts),
-        backgroundColor: ["#198754", "#0d6efd", "#ffc107", "#dc3545"]
+
+        // 🔑 AUTOMATIC COLOR ASSIGNMENT
+        backgroundColor: attempts.map(
+          (_, index) => THEME_COLORS[index % THEME_COLORS.length]
+        ),
+
+        borderColor: "#ffffff",
+        borderWidth: 1
       }
     ]
   };
 
   return (
-    <div className="container-fluid px-4 mt-4">
+    <div className="page-container">
 
       {/* ================= HEADER ================= */}
       <h3>
         Welcome, {user.fullName}{" "}
-        <span className="text-muted fs-6">
-          (UserID: {user.userId})
-        </span>
+        <span className="fs-5">(UserID: {user.userId})</span>
       </h3>
-      {/* <p className="text-muted">
-        Course: CDAC DAC, Last Login: {stats.lastLogin}
-      </p> */}
 
       {/* ================= TOP CARDS ================= */}
       <div className="row g-4">
 
         {/* ================= LATEST RESULT ================= */}
         <div className="col-md-4">
-          <div className="card p-3 h-100">
+          <div className="card p-3 h-100 dashboard-card">
             <h5>Current Test Result</h5>
 
             <p className="mt-2">
@@ -61,41 +76,39 @@ function Dashboard() {
             <p>Attempted: {stats.attempted}</p>
             <p>Unattempted: {stats.unattempted}</p>
 
-            {/* ===== ACTION BUTTONS INSIDE SAME CARD ===== */}
             <div className="d-grid gap-2 mt-3">
               <button
-                className="btn btn-success"
+                className="dashboard-practice-btn dashboard-btn"
                 onClick={() => nav("/")}
               >
-                Start Practice Test
+                Start Test
               </button>
 
-              <button
-                className="btn btn-primary"
+              {/* <button
+                className="dashboard-mock-btn dashboard-btn"
                 onClick={() => nav("/")}
               >
                 Take Next Mock Test
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
 
         {/* ================= PERFORMANCE SUMMARY ================= */}
         <div className="col-md-4">
-          <div className="card p-3 h-100">
+          <div className="card p-3 h-100 dashboard-card performance-center">
             <h5>Performance Summary</h5>
 
             <p>Total Tests: <b>{stats.totalTests}</b></p>
             <p>Practice Tests: <b>{stats.practiceTests}</b></p>
             <p>Mock Tests: <b>{stats.mockTests}</b></p>
             <p>Best Score: <b>{stats.bestScore}</b></p>
-            {/* <p>Average Score: <b>{stats.averageScore}</b></p> */}
           </div>
         </div>
 
         {/* ================= PIE CHART ================= */}
         <div className="col-md-4">
-          <div className="card p-3 h-100">
+          <div className="card p-3 h-100 dashboard-card">
             <h5 className="text-center">Test Attempts Distribution</h5>
             <Pie data={pieData} />
           </div>

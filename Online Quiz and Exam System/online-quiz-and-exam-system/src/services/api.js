@@ -89,10 +89,37 @@ export async function getLatestResultStats(userId) {
     `http://localhost:52705/api/result/latest/${userId}`
   );
 
+  // 🚨 If backend returns error page / HTML
   if (!res.ok) {
-    throw new Error("Failed to fetch latest result stats");
+    return {
+      moduleName: "N/A",
+      score: 0,
+      attempted: 0,
+      unattempted: 0,
+      totalTests: 0,
+      practiceTests: 0,
+      mockTests: 0,
+      bestScore: 0
+    };
   }
 
+  const contentType = res.headers.get("content-type");
+
+  // 🚨 If response is NOT JSON (HTML page)
+  if (!contentType || !contentType.includes("application/json")) {
+    return {
+      moduleName: "N/A",
+      score: 0,
+      attempted: 0,
+      unattempted: 0,
+      totalTests: 0,
+      practiceTests: 0,
+      mockTests: 0,
+      bestScore: 0
+    };
+  }
+
+  // ✅ Safe to parse JSON now
   return await res.json();
 }
 

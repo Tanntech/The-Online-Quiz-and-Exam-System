@@ -25,25 +25,33 @@ namespace Online_Quiz_And_Exam_System.Controllers
             return Ok();
         }
 
-
-
-
-
         [HttpGet("attempts/{userId}")]
         public IActionResult GetAttempts(int userId)
         {
             return Ok(_dal.GetAttemptSummary(userId));
         }
 
-
-
         [HttpGet("latest/{userId}")]
         public IActionResult Latest(int userId)
         {
-            return Ok(_dal.GetLatestStats(userId));
+            var result = _dal.GetLatestResult(userId);
+
+            if (result == null)
+            {
+                return Ok(new
+                {
+                    moduleName = "N/A",
+                    score = 0,
+                    attempted = 0,
+                    unattempted = 0,
+                    totalTests = 0,
+                    practiceTests = 0,
+                    mockTests = 0,
+                    bestScore = 0
+                });
+            }
+
+            return Ok(result);
         }
-
-
-
     }
 }

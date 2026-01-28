@@ -63,8 +63,11 @@ function Login() {
   };
 
 
+  // return (
+  //   <div className="container mt-5">
   return (
-    <div className="container mt-5">
+  <div className="page-container">
+
       <div className="card col-md-5 mx-auto p-4 shadow">
         <h3 className="text-center mb-4">Login</h3>
 

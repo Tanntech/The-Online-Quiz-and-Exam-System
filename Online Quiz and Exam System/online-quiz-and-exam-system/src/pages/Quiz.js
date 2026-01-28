@@ -82,13 +82,16 @@ function Quiz() {
   const attemptedCount = Object.keys(answers).length;
   const unattemptedCount = questions.length - attemptedCount;
 
+  // return (
+  //   <div className="container-fluid mt-3">
   return (
-    <div className="container-fluid mt-3">
+  <div className="page-container">
+
 
       {/* ================= HEADER ================= */}
       <div className="mb-3 px-3">
         <h5>Welcome, {user.fullName}</h5>
-        <p className="text-muted">Practice Test</p>
+        <p >Practice Test</p>
       </div>
 
       <div className="row">
@@ -124,7 +127,7 @@ function Quiz() {
           <div className="d-flex justify-content-between mt-3">
 
             <button
-              className="btn btn-secondary"
+              className="quiz-btn-prev"
               disabled={current === 0}
               onClick={() => setCurrent(current - 1)}
             >
@@ -132,7 +135,7 @@ function Quiz() {
             </button>
 
             <button
-              className="btn btn-warning"
+              className="quiz-btn-clear"
               disabled={!answers[current]}
               onClick={clearAnswer}
             >
@@ -140,7 +143,7 @@ function Quiz() {
             </button>
 
             <button
-              className="btn btn-primary"
+              className="quiz-btn-next"
               disabled={current === questions.length - 1}
               onClick={() => setCurrent(current + 1)}
             >
@@ -148,7 +151,7 @@ function Quiz() {
             </button>
 
             <button
-              className="btn btn-danger"
+              className="quiz-btn-submit"
               onClick={() => submitTestInternal(false)}
             >
               Submit Test

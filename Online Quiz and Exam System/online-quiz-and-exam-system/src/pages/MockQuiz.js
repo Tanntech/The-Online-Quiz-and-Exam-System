@@ -105,13 +105,16 @@ await saveResult({
   const attemptedCount = Object.keys(answers).length;
   const unattemptedCount = questions.length - attemptedCount;
 
+  // return (
+  //   <div className="container-fluid mt-3">
   return (
-    <div className="container-fluid mt-3">
+  <div className="page-container">
+
 
       {/* ================= HEADER ================= */}
       <div className="d-flex justify-content-between align-items-center mb-3 px-3">
         <h5>Welcome, {user.fullName}</h5>
-        <h5 className="text-danger">
+        <h5 >
           Time Left: {Math.floor(time / 60)}:
           {String(time % 60).padStart(2, "0")}
         </h5>
@@ -150,7 +153,7 @@ await saveResult({
           <div className="d-flex justify-content-between mt-3">
 
             <button
-              className="btn btn-secondary"
+              className="quiz-btn-prev"
               disabled={current === 0}
               onClick={() => setCurrent(current - 1)}
             >
@@ -158,7 +161,7 @@ await saveResult({
             </button>
 
             <button
-              className="btn btn-warning"
+              className="quiz-btn-clear"
               disabled={!answers[current]}
               onClick={clearAnswer}
             >
@@ -166,7 +169,7 @@ await saveResult({
             </button>
 
             <button
-              className="btn btn-primary"
+              className="quiz-btn-next"
               disabled={current === questions.length - 1}
               onClick={() => setCurrent(current + 1)}
             >
@@ -174,7 +177,7 @@ await saveResult({
             </button>
 
             <button
-              className="btn btn-danger"
+              className="quiz-btn-submit"
               onClick={() => submitTest(false)}
             >
               Submit Test

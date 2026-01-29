@@ -1,5 +1,17 @@
 const BASE_URL = "http://localhost:52705/api";
 
+/* ================= TOKEN HELPER ================= */
+const getToken = () => {
+  return sessionStorage.getItem("token");
+};
+
+const authHeader = () => {
+  const token = getToken();
+  return token
+    ? { Authorization: `Bearer ${token}` }
+    : {};
+};
+
 // -------- AUTH --------
 export const loginUser = async (data) => {
   const res = await fetch(`${BASE_URL}/auth/login`, {
@@ -7,27 +19,67 @@ export const loginUser = async (data) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
   });
-  return res.json();
+
+  const result = await res.json();
+
+  // 🔑 STORE JWT TOKEN
+  if (res.ok && result.token) {
+    sessionStorage.setItem("token", result.token);
+    sessionStorage.setItem("user", JSON.stringify(result.user));
+  }
+
+  return result;
+};
+
+
+export const googleLogin = async (user) => {
+  const res = await fetch(`${BASE_URL}/auth/google`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(user)
+  });
+
+  const text = await res.text();
+  const result = text ? JSON.parse(text) : null;
+
+  // 🔑 STORE JWT TOKEN
+  if (res.ok && result?.token) {
+    sessionStorage.setItem("token", result.token);
+    sessionStorage.setItem("user", JSON.stringify(result.user));
+  } else {
+    throw new Error("Google login failed");
+  }
+
+  return result;
 };
 
 // -------- MODULES --------
 export const getModules = async () => {
-  const res = await fetch(`${BASE_URL}/modules`);
+  const res = await fetch(`${BASE_URL}/modules`, {
+    headers: {
+      ...authHeader()
+    }
+  });
   return res.json();
 };
 
 // -------- QUIZ --------
 export const getQuestions = async (moduleId) => {
-  const res = await fetch(`${BASE_URL}/quiz/${moduleId}`);
+  const res = await fetch(`${BASE_URL}/quiz/${moduleId}`, {
+    headers: {
+      ...authHeader()
+    }
+  });
   return res.json();
 };
 
 // -------- RESULT --------
 export async function saveResult(result) {
-  const res = await fetch("http://localhost:52705/api/result", {
+  const res = await fetch(`${BASE_URL}/result`, {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      ...authHeader()
     },
     body: JSON.stringify({
       userId: result.userId,
@@ -50,51 +102,29 @@ export async function saveResult(result) {
   }
 }
 
-
-
-
-
-export const googleLogin = async (user) => {
-  const res = await fetch("http://localhost:52705/api/auth/google", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(user)
-  });
-  return res.json();
-};
-
-
+// -------- RESULT STATS --------
 export const getAttemptSummary = async (userId) => {
   const res = await fetch(
-    `http://localhost:52705/api/result/attempts/${userId}`
+    `${BASE_URL}/result/attempts/${userId}`,
+    {
+      headers: {
+        ...authHeader()
+      }
+    }
   );
   return res.json();
 };
-
-// export const getMockQuestions = async (moduleId, mockId) => {
-//   const res = await fetch(
-//     `http://localhost:52705/api/mock/${moduleId}/${mockId}`
-//   );
-//   return res.json();
-// };
-
-export const getMockQuestions = async (moduleId, mockNumber) => {
-  const res = await fetch(
-    `http://localhost:52705/api/mock/${moduleId}/${mockNumber}`
-  );
-
-  if (!res.ok) throw new Error("Failed to load mock test");
-  return res.json();
-};
-
-
 
 export async function getLatestResultStats(userId) {
   const res = await fetch(
-    `http://localhost:52705/api/result/latest/${userId}`
+    `${BASE_URL}/result/latest/${userId}`,
+    {
+      headers: {
+        ...authHeader()
+      }
+    }
   );
 
-  // 🚨 If backend returns error page / HTML
   if (!res.ok) {
     return {
       moduleName: "N/A",
@@ -110,7 +140,6 @@ export async function getLatestResultStats(userId) {
 
   const contentType = res.headers.get("content-type");
 
-  // 🚨 If response is NOT JSON (HTML page)
   if (!contentType || !contentType.includes("application/json")) {
     return {
       moduleName: "N/A",
@@ -124,14 +153,32 @@ export async function getLatestResultStats(userId) {
     };
   }
 
-  // ✅ Safe to parse JSON now
   return await res.json();
-}
+};
 
+// -------- MOCK --------
+export const getMockQuestions = async (moduleId, mockNumber) => {
+  const res = await fetch(
+    `${BASE_URL}/mock/${moduleId}/${mockNumber}`,
+    {
+      headers: {
+        ...authHeader()
+      }
+    }
+  );
+
+  if (!res.ok) throw new Error("Failed to load mock test");
+  return res.json();
+};
 
 export const checkMockAttempt = (userId, moduleId, mockNo) => {
   return fetch(
-    `http://localhost:52705/api/result/check-mock?userId=${userId}&moduleId=${moduleId}&mockNo=${mockNo}`
+    `${BASE_URL}/result/check-mock?userId=${userId}&moduleId=${moduleId}&mockNo=${mockNo}`,
+    {
+      headers: {
+        ...authHeader()
+      }
+    }
   ).then(res => res.json());
 };
 

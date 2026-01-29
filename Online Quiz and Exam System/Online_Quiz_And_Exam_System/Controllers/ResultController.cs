@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Online_Quiz_And_Exam_System.Models;
 using Online_Quiz_API.DAL;
 
 namespace Online_Quiz_And_Exam_System.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/result")]
     public class ResultController : ControllerBase

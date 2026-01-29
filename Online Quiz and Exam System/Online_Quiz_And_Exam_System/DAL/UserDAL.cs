@@ -50,7 +50,7 @@ namespace Online_Quiz_API.DAL
 
             SqlCommand cmd = new SqlCommand(
                 @"INSERT INTO Users (FullName, Email, Password, MobileNumber)
-          VALUES (@n, @e, @p, @m)", con);
+                  VALUES (@n, @e, @p, @m)", con);
 
             cmd.Parameters.AddWithValue("@n", user.FullName);
             cmd.Parameters.AddWithValue("@e", user.Email);
@@ -60,9 +60,6 @@ namespace Online_Quiz_API.DAL
             con.Open();
             cmd.ExecuteNonQuery();
         }
-
-
-
 
         public User GetUserByEmail(string email)
         {
@@ -98,10 +95,5 @@ namespace Online_Quiz_API.DAL
             con.Open();
             cmd.ExecuteNonQuery();
         }
-
-
-
-
-
     }
 }

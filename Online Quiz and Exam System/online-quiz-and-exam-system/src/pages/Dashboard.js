@@ -79,7 +79,8 @@ function Dashboard() {
             <div className="d-grid gap-2 mt-3">
               <button
                 className="dashboard-practice-btn dashboard-btn"
-                onClick={() => nav("/")}
+                onClick={() => nav("/#modules-section")}
+
               >
                 Start Test
               </button>

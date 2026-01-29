@@ -1,29 +1,50 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { getModules, checkMockAttempt } from "../services/api";
 import "./Home.css";
 import landing from "../logos/landingillustration1.png";
 
-// features icon 
+// features icon
 import easyIcon from "../logos/features/easy.png";
-import test from "../logos/features/test.png";
 import time from "../logos/features/time.png";
 import secure from "../logos/features/secure.png";
 import improve from "../logos/features/improve.png";
 import performance from "../logos/features/performance.png";
 import prepare from "../logos/features/prepare.png";
 
-
 function Home() {
   const [modules, setModules] = useState([]);
   const nav = useNavigate();
+  const location = useLocation();   // ✅ ADD THIS
+  const modulesRef = useRef(null);
+
 
   const user = sessionStorage.getItem("user");
 
+  // ================= LOAD MODULES =================
   useEffect(() => {
     getModules().then(setModules);
   }, []);
 
+  // ================= SCROLL TO MODULES IF HASH EXISTS =================
+  useEffect(() => {
+  if (
+    location.hash === "#modules-section" &&
+    modules.length > 0 &&
+    modulesRef.current
+  ) {
+    // ⏱ wait for layout to fully settle
+    setTimeout(() => {
+      modulesRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 200);
+  }
+}, [location, modules]);
+
+
+  // ================= NAVIGATION HANDLERS =================
   const startPractice = (moduleId) => {
     if (!user) nav("/login");
     else nav(`/quiz/${moduleId}`);
@@ -55,9 +76,11 @@ Do you want to reattempt?`
 
   return (
     <div className="page-container">
-<h2 className="page-title text-center mt-5">
+
+      <h2 className="page-title text-center mt-5">
         CDAC DAC – Online Quiz & Mock Tests
       </h2>
+
       {/* ================= HERO SECTION ================= */}
       <div className="hero-container">
         <div className="hero-left">
@@ -114,7 +137,6 @@ Do you want to reattempt?`
         </div>
       </div>
 
-
       {/* ================= WHY CHOOSE US ================= */}
       <h3 className="section-title">Why Choose Us?</h3>
 
@@ -142,11 +164,8 @@ Do you want to reattempt?`
       </div>
 
       {/* ================= MODULE SECTION ================= */}
-      {/* <h2 className="page-title text-center mt-5">
-        CDAC DAC – Online Quiz & Mock Tests
-      </h2> */}
+      <div id="modules-section" ref={modulesRef} className="row g-4">
 
-      <div id="modules-section" className="row g-4">
         {modules.map((m) => (
           <div className="col-md-4" key={m.moduleId}>
             <div className="module-card">
@@ -163,7 +182,7 @@ Do you want to reattempt?`
               )}
 
               <button
-                className={`btn btn-primary w-100 `}
+                className="btn btn-primary w-100"
                 onClick={() => startPractice(m.moduleId)}
               >
                 Practice Test

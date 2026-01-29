@@ -1,21 +1,30 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Online_Quiz_And_Exam_System.Models;
 using Online_Quiz_API.DAL;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace Online_Quiz_And_Exam_System.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/auth")]
     public class AuthController : ControllerBase
     {
         private readonly UserDAL _dal;
+        private readonly IConfiguration _config;
 
-        public AuthController(UserDAL dal)          
+        public AuthController(UserDAL dal, IConfiguration config)
         {
             _dal = dal;
+            _config = config;
         }
 
-
+        // ================= LOGIN =================
+        [AllowAnonymous]
         [HttpPost("login")]
         public IActionResult Login([FromBody] User u)
         {
@@ -30,10 +39,17 @@ namespace Online_Quiz_And_Exam_System.Controllers
             if (user == null)
                 return Unauthorized("Invalid email or password");
 
-            return Ok(user);
+            var token = GenerateJwtToken(user);
+
+            return Ok(new
+            {
+                user,
+                token
+            });
         }
 
-
+        // ================= REGISTER =================
+        [AllowAnonymous]
         [HttpPost("register")]
         public IActionResult Register([FromBody] User u)
         {
@@ -47,6 +63,62 @@ namespace Online_Quiz_And_Exam_System.Controllers
             return Ok("User registered successfully");
         }
 
+        // ================= GOOGLE LOGIN =================
+        [AllowAnonymous]
+        [HttpPost("google")]
+        public IActionResult GoogleLogin([FromBody] User user)
+        {
+            if (user == null || string.IsNullOrEmpty(user.Email))
+                return BadRequest("Invalid Google user data");
+
+            var existingUser = _dal.GetUserByEmail(user.Email);
+
+            if (existingUser == null)
+            {
+                _dal.RegisterGoogleUser(user);
+                existingUser = _dal.GetUserByEmail(user.Email);
+            }
+
+            if (existingUser == null)
+                return StatusCode(500, "Google user creation failed");
+
+            var token = GenerateJwtToken(existingUser);
+
+            return Ok(new
+            {
+                user = existingUser,
+                token
+            });
+        }
+
+
+        // ================= JWT GENERATOR =================
+        private string GenerateJwtToken(User user)
+        {
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.Name, user.FullName ?? "")
+            };
+
+            var key = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(_config["Jwt:Key"])
+            );
+
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                issuer: _config["Jwt:Issuer"],
+                audience: _config["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.Now.AddHours(2),
+                signingCredentials: creds
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
         private bool IsStrongPassword(string password)
         {
             var regex = new System.Text.RegularExpressions.Regex(
@@ -55,25 +127,5 @@ namespace Online_Quiz_And_Exam_System.Controllers
 
             return regex.IsMatch(password);
         }
-
-
-        [HttpPost("google")]
-        public IActionResult GoogleLogin(User user)
-        {
-            var existingUser = _dal.GetUserByEmail(user.Email);
-
-            if (existingUser != null)
-                return Ok(existingUser);
-
-            // New Google user → register
-            _dal.RegisterGoogleUser(user);
-
-            var newUser = _dal.GetUserByEmail(user.Email);
-            return Ok(newUser);
-        }
-
-
-
-
     }
 }

@@ -1,0 +1,359 @@
+1. The difference between simple interest and compound interest on Rs. 5000 for 2 years at 10% p.a. is:
+Rs. 25
+Rs. 50
+Rs. 75
+Rs. 100
+
+Correct Answer: Rs. 50
+Explanation: CI − SI for 2 yrs = P×(r/100)²
+
+2. The present age of A is 3 times that of B. After 10 years, A’s age will be twice that of B. Present age of B is:
+5 years
+10 years
+15 years
+20 years
+
+Correct Answer: 10 years
+Explanation: Age equation method
+
+3. The average of first 10 odd numbers is:
+9
+10
+11
+12
+
+Correct Answer: 10
+Explanation: Average = (first + last)/2
+
+4. A train crosses a bridge 140 m long in 20 seconds at 54 km/hr. Length of train is:
+140 m
+150 m
+160 m
+170 m
+
+Correct Answer: 160 m
+Explanation: Speed = 15 m/s
+
+5. The LCM of two numbers is 240 and their ratio is 3 : 5. The HCF is:
+12
+15
+16
+24
+
+Correct Answer: 16
+Explanation: Let numbers = 3x,5x
+
+6. If 8 men can complete a work in 15 days, how many days will 12 men take to complete the same work?
+8
+9
+10
+12
+
+Correct Answer: 10
+Explanation: Men × Days = constant
+
+7. Find the missing term: 4, 9, 16, 25, ?
+30
+36
+42
+49
+
+Correct Answer: 36
+Explanation: Squares
+
+8. A trader gives 20% discount on marked price and still gains 20%. Marked price is how much percent above cost price?
+25%
+40%
+50%
+60%
+
+Correct Answer: 50%
+Explanation: MP = CP × 1.5
+
+9. The compound interest on Rs. 10,000 for 1 year at 10% compounded half-yearly is:
+Rs. 1000
+Rs. 1025
+Rs. 1050
+Rs. 1100
+
+Correct Answer: Rs. 1025
+Explanation: Two half-year periods
+
+10. The sum of interior angles of a polygon exceeds that of a hexagon by 360°. Number of sides is:
+8
+9
+10
+12
+
+Correct Answer: 8
+Explanation: (n−2)×180 − 720 = 360
+
+11. Two dice are thrown. Probability that the product of numbers is even:
+1/4
+1/2
+3/4
+5/6
+
+Correct Answer: 3/4
+Explanation: Only odd×odd gives odd
+
+12. Find the HCF of 540, 630 and 810:
+30
+45
+90
+135
+
+Correct Answer: 90
+Explanation: Prime factorization
+
+13. A number leaves remainder 2 when divided by 5. What remainder will its cube leave when divided by 5?
+1
+2
+3
+4
+
+Correct Answer: 3
+Explanation: (5k+2)³ mod 5
+
+14. The average of 20 numbers is 15. If one number is excluded, the average becomes 14.5. The excluded number is:
+20
+22
+25
+30
+
+Correct Answer: 25
+Explanation: Total difference method
+
+15. A man sells an article at a loss of 10%. If he had sold it for Rs. 60 more, he would have gained 10%. Cost price is:
+Rs. 300
+Rs. 320
+Rs. 350
+Rs. 400
+
+Correct Answer: Rs. 300
+Explanation: Loss–gain difference method
+
+16. Find the next term: 2, 3, 6, 11, 18, ?
+25
+27
+29
+31
+
+Correct Answer: 27
+Explanation: +1, +3, +5, +7, +9
+
+17. If 1st January 2024 was Monday, what day was 1st January 2025?
+Monday
+Tuesday
+Wednesday
+Thursday
+
+Correct Answer: Wednesday
+Explanation: 2024 is leap year
+
+18. In a class, average marks of boys is 60 and girls is 50. If number of boys is double the girls, class average is:
+53.3
+55
+56.7
+58
+
+Correct Answer: 56.7
+Explanation: Weighted average
+
+19. A and B together can do a work in 6 days. A alone can do it in 10 days. B alone can do it in:
+12 days
+15 days
+20 days
+30 days
+
+Correct Answer: 15 days
+Explanation: Work subtraction
+
+20. The value of (0.2)³ × (0.5)² is:
+0.002
+0.004
+0.008
+0.01
+
+Correct Answer: 0.002
+Explanation: Decimal multiplication
+
+21. Find the odd one out:
+121
+169
+196
+225
+
+Correct Answer: 196
+Explanation: Only even square
+
+22. If the diameter of a circle is increased by 100%, its area increases by:
+100%
+200%
+300%
+400%
+
+Correct Answer: 300%
+Explanation: Area ∝ r²
+
+23. A card is drawn at random. Probability that it is neither a face card nor a red card:
+5/13
+6/13
+7/13
+8/13
+
+Correct Answer: 5/13
+Explanation: Black non-face cards
+
+24. A man walks at 5 km/hr and runs at 10 km/hr. He walks half the distance and runs half the distance. Average speed is:
+6.67 km/hr
+7.5 km/hr
+8 km/hr
+8.33 km/hr
+
+Correct Answer: 6.67 km/hr
+Explanation: Harmonic mean
+
+25. The ratio of the areas of two squares is 9 : 16. Ratio of their perimeters is:
+3 : 4
+4 : 3
+9 : 16
+16 : 9
+
+Correct Answer: 3 : 4
+Explanation: Side ∝ √area
+
+26. How many prime numbers less than 50 are of the form (6n − 1)?
+4
+5
+6
+7
+
+Correct Answer: 5
+Explanation: 5,11,17,23,29
+
+27. If x/y = 4/7 and y/z = 14/5, then x/z =:
+4/5
+8/35
+16/49
+56/35
+
+Correct Answer: 8/35
+Explanation: Ratio multiplication
+
+28. √(0.0004) ÷ √(0.04) =
+0.01
+0.05
+0.1
+0.2
+
+Correct Answer: 0.1
+Explanation: Root simplification
+
+29. The difference between CI and SI on Rs. 2500 for 2 years at 8% p.a. is:
+Rs. 12.8
+Rs. 16
+Rs. 20
+Rs. 25
+
+Correct Answer: Rs. 16
+Explanation: P×(r/100)²
+
+30. The product of two numbers is 2025. If their HCF is 15, their LCM is:
+120
+135
+150
+180
+
+Correct Answer: 135
+Explanation: Product = HCF × LCM
+
+31. A trader marks his goods 40% above CP and allows two successive discounts of 10% and 20%. His gain/loss is:
+8% gain
+8% loss
+12% gain
+12% loss
+
+Correct Answer: 8% gain
+Explanation: Successive discount formula
+
+32. The average age of 5 persons is 30 years. If one person aged 50 is replaced by a new person, average becomes 28. Age of new person is:
+30
+35
+40
+45
+
+Correct Answer: 40
+Explanation: Total age method
+
+33. How many letters are there in the word “MISSISSIPPI”?
+9
+10
+11
+12
+
+Correct Answer: 11
+Explanation: Letter count
+
+34. If the selling price of 8 pens equals the cost price of 10 pens, gain percent is:
+20%
+25%
+30%
+40%
+
+Correct Answer: 25%
+Explanation: CP/SP comparison
+
+35. Find the missing term: 1, 2, 6, 24, ?
+60
+100
+120
+144
+
+Correct Answer: 120
+Explanation: Factorial pattern
+
+36. The smallest number divisible by 9, 12 and 15 is:
+180
+360
+540
+720
+
+Correct Answer: 180
+Explanation: LCM
+
+37. In a triangle, one angle is twice the smallest angle and the third angle is 30° more than the smallest angle. The smallest angle is:
+30°
+35°
+40°
+45°
+
+Correct Answer: 30°
+Explanation: Angle sum = 180°
+
+38. What fraction of a day is 9 hours 36 minutes?
+2/5
+3/5
+4/5
+5/6
+
+Correct Answer: 2/5
+Explanation: 9.6/24
+
+39. A boat goes 24 km downstream in 2 hours and returns in 3 hours. Speed of the current is:
+2 km/hr
+3 km/hr
+4 km/hr
+6 km/hr
+
+Correct Answer: 2 km/hr
+Explanation: Downstream–upstream method
+
+40. The value of (99³ − 98³)/(99 − 98) is:
+29401
+29107
+29106
+29701
+
+Correct Answer: 29106
+Explanation: a³−b³ identity

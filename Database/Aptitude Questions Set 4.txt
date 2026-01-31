@@ -1,0 +1,359 @@
+1. A number when divided by 12 leaves remainder 5. What remainder will its square leave when divided by 12?
+1
+5
+7
+9
+
+Correct Answer: 1
+Explanation: (12k+5)² mod 12 = 25 mod 12
+
+2. The ratio of ages of A and B is 4 : 7. After 6 years, it becomes 10 : 13. Present age of A is:
+16
+20
+24
+28
+
+Correct Answer: 20
+Explanation: Ratio equation method
+
+3. Find the next term: 7, 14, 28, 56, ?
+98
+104
+112
+120
+
+Correct Answer: 112
+Explanation: ×2 pattern
+
+4. The selling price of an article is Rs. 880 after allowing 12% discount. Marked price is:
+Rs. 950
+Rs. 1000
+Rs. 1100
+Rs. 1200
+
+Correct Answer: Rs. 1000
+Explanation: SP = 88% of MP
+
+5. A train travels at 72 km/hr. How much distance will it cover in 25 seconds?
+400 m
+450 m
+500 m
+550 m
+
+Correct Answer: 500 m
+Explanation: 72 km/hr = 20 m/s
+
+6. The average of 6 numbers is 12. If one number 18 is replaced by 24, new average is:
+12
+13
+14
+15
+
+Correct Answer: 13
+Explanation: Increase of 6 in sum
+
+7. The ratio of the areas of two circles is 16 : 25. Ratio of their radii is:
+4 : 5
+5 : 4
+8 : 25
+16 : 25
+
+Correct Answer: 4 : 5
+Explanation: Area ∝ r²
+
+8. Find the odd one out:
+8
+27
+64
+125
+
+Correct Answer: 27
+Explanation: Only cube of odd number
+
+9. A shopkeeper gains 25% by selling an article at Rs. 500. Cost price is:
+Rs. 375
+Rs. 400
+Rs. 425
+Rs. 450
+
+Correct Answer: Rs. 400
+Explanation: CP = SP ÷ 1.25
+
+10. If 15 men can complete a work in 16 days, how many men are required to complete it in 12 days?
+18
+20
+22
+25
+
+Correct Answer: 20
+Explanation: Men × Days constant
+
+11. What is the value of √(144 × 196)?
+156
+164
+168
+176
+
+Correct Answer: 168
+Explanation: √144 × √196
+
+12. The smallest prime number which leaves remainder 1 when divided by 4 is:
+3
+5
+7
+11
+
+Correct Answer: 5
+Explanation: 5 ÷ 4 = remainder 1
+
+13. A bag contains 5 red, 7 blue and 8 green balls. One ball is drawn at random. Probability that it is not blue:
+13/20
+3/5
+7/20
+8/20
+
+Correct Answer: 13/20
+Explanation: Total − blue
+
+14. Find the missing term: 3, 9, 27, ?, 243
+54
+72
+81
+90
+
+Correct Answer: 81
+Explanation: ×3 series
+
+15. The difference between the compound interest and simple interest on Rs. 1000 for 2 years at 5% p.a. is:
+Rs. 2.5
+Rs. 5
+Rs. 7.5
+Rs. 10
+
+Correct Answer: Rs. 2.5
+Explanation: P(r/100)²
+
+16. A man walks 10 m north, then 5 m east and again 10 m south. Distance from starting point is:
+5 m
+10 m
+15 m
+20 m
+
+Correct Answer: 5 m
+Explanation: Net east movement only
+
+17. If 3x = 5y and 2y = 7z, then x : z =
+35 : 6
+21 : 10
+10 : 21
+6 : 35
+
+Correct Answer: 35 : 6
+Explanation: Ratio conversion
+
+18. Find the LCM of 18 and 24:
+36
+48
+72
+96
+
+Correct Answer: 72
+Explanation: Prime factorization
+
+19. The average speed of a car for a journey of equal distances at speeds 40 km/hr and 60 km/hr is:
+48 km/hr
+50 km/hr
+52 km/hr
+54 km/hr
+
+Correct Answer: 48 km/hr
+Explanation: Harmonic mean
+
+20. A number is increased by 20% and then decreased by 20%. Net change is:
+No change
+4% increase
+4% decrease
+8% decrease
+
+Correct Answer: 4% decrease
+Explanation: Successive change formula
+
+21. The sum of first 15 natural numbers is:
+105
+110
+115
+120
+
+Correct Answer: 120
+Explanation: n(n+1)/2
+
+22. The angle between hour and minute hands at 3:30 is:
+45°
+52.5°
+60°
+75°
+
+Correct Answer: 75°
+Explanation: Clock angle formula
+
+23. Find the next number: 1, 4, 9, 16, 25, ?
+30
+35
+36
+49
+
+Correct Answer: 36
+Explanation: Squares
+
+24. If the perimeter of a square is 48 cm, its area is:
+144 cm²
+156 cm²
+169 cm²
+196 cm²
+
+Correct Answer: 144 cm²
+Explanation: Side = 12
+
+25. The HCF of two numbers is 12 and their product is 1800. The LCM is:
+120
+150
+180
+200
+
+Correct Answer: 150
+Explanation: Product = HCF × LCM
+
+26. A person sells an article for Rs. 720 at a gain of 20%. Cost price is:
+Rs. 580
+Rs. 600
+Rs. 620
+Rs. 650
+
+Correct Answer: Rs. 600
+Explanation: SP ÷ 1.2
+
+27. Find the missing number: 2, 5, 10, 17, ?
+24
+26
+28
+30
+
+Correct Answer: 26
+Explanation: +3, +5, +7, +9
+
+28. The probability of getting a tail when a coin is tossed is:
+0
+1/4
+1/2
+1
+
+Correct Answer: 1/2
+Explanation: Two outcomes
+
+29. How many sides does a polygon have if sum of its interior angles is 1260°?
+7
+8
+9
+10
+
+Correct Answer: 9
+Explanation: (n−2)×180
+
+30. A can do a work in 12 days, B in 18 days. Together they can do it in:
+6 days
+7.2 days
+8 days
+9 days
+
+Correct Answer: 7.2 days
+Explanation: Work rate addition
+
+31. The ratio of boys to girls in a class is 5 : 3. If there are 24 girls, number of boys is:
+30
+35
+40
+45
+
+Correct Answer: 40
+Explanation: Ratio proportion
+
+32. Find the value of (3² + 4² + 5²):
+45
+50
+55
+60
+
+Correct Answer: 50
+Explanation: Squares sum
+
+33. The smallest number divisible by 6, 8 and 12 is:
+12
+24
+48
+96
+
+Correct Answer: 24
+Explanation: LCM
+
+34. A sum becomes double in 10 years at simple interest. Rate of interest is:
+5%
+8%
+10%
+12%
+
+Correct Answer: 10%
+Explanation: SI = 100% in 10 yrs
+
+35. Find the odd one out:
+2
+3
+5
+9
+
+Correct Answer: 9
+Explanation: Not prime
+
+36. If the diameter of a sphere is doubled, its volume becomes:
+2 times
+4 times
+6 times
+8 times
+
+Correct Answer: 8 times
+Explanation: Volume ∝ r³
+
+37. A boat travels 18 km upstream in 3 hours and 24 km downstream in 3 hours. Speed of the current is:
+1 km/hr
+2 km/hr
+3 km/hr
+4 km/hr
+
+Correct Answer: 1 km/hr
+Explanation: Upstream–downstream method
+
+38. The value of (81)^(3/4) is:
+9
+18
+27
+36
+
+Correct Answer: 27
+Explanation: Power simplification
+
+39. In how many ways can the letters of the word “LEVEL” be arranged?
+20
+30
+60
+120
+
+Correct Answer: 60
+Explanation: Repetition of L and E
+
+40. The average of first 20 even numbers is:
+19
+20
+21
+22
+
+Correct Answer: 21
+Explanation: First = 2, last = 40

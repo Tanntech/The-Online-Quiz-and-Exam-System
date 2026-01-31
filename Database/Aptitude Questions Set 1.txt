@@ -1,0 +1,359 @@
+1. If a person walks at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. The actual distance travelled by him is:
+50 km
+56 km
+70 km
+80 km
+
+Correct Answer: 70 km
+Explanation: (14−10)t = 20 ⇒ t = 5 ⇒ Distance = 14×5
+
+2. How much time will it take for an amount of Rs. 450 to yield Rs. 81 as interest at 4.5% per annum of simple interest?
+3.5 years
+4 years
+4.5 years
+5 years
+
+Correct Answer: 4 years
+Explanation: 81 = (450×4.5×T)/100
+
+3. A man buys a cycle for Rs. 1400 and sells it at a loss of 15%. What is the selling price of the cycle?
+Rs. 1090
+Rs. 1160
+Rs. 1190
+Rs. 1202
+
+Correct Answer: Rs. 1190
+Explanation: SP = 85% of 1400
+
+4. A father said to his son, "I was as old as you are at present at the time of your birth." If the father's age is 38 years now, the son's age five years back was:
+14 years
+19 years
+33 years
+38 years
+
+Correct Answer: 14 years
+Explanation: Son’s present age = 19
+
+5. The age of father 10 years ago was thrice the age of his son. Ten years hence, father's age will be twice that of his son. The ratio of their present ages is:
+5 : 2
+7 : 3
+9 : 2
+13 : 4
+
+Correct Answer: 7 : 3
+Explanation: Solving equations
+
+6. What will be the day of the week on 15th August, 2010?
+Sunday
+Monday
+Tuesday
+Friday
+
+Correct Answer: Sunday
+Explanation: Calendar calculation
+
+7. A man walked diagonally across a square lot. Approximately, what was the percent saved by not walking along the edges?
+20
+24
+30
+33
+
+Correct Answer: 30
+Explanation: Saving ≈ 29%
+
+8. The average weight of 8 persons increases by 2.5 kg when a new person comes in place of one of them weighing 65 kg. What might be the weight of the new person?
+76 kg
+76.5 kg
+85 kg
+Data inadequate
+
+Correct Answer: 85 kg
+Explanation: Increase = 8×2.5 = 20
+
+9. If the average marks of three batches of 55, 60 and 45 students respectively is 50, 55, 60, then the average marks of all the students is:
+53.33
+54.68
+55
+None of these
+
+Correct Answer: 54.68
+Explanation: Weighted average
+
+10. In how many ways can the letters of the word ‘LEADER’ be arranged?
+72
+144
+360
+720
+
+Correct Answer: 360
+Explanation: 6!/2!
+
+11. In how many different ways can the letters of the word ‘OPTICAL’ be arranged so that the vowels always come together?
+120
+720
+4320
+2160
+
+Correct Answer: 4320
+Explanation: Vowels as one block
+
+12. The square root of 64009 is:
+253
+347
+363
+803
+
+Correct Answer: 253
+Explanation: 253×253
+
+13. Three times the first of three consecutive odd integers is 3 more than twice the third. The third integer is:
+9
+11
+13
+15
+
+Correct Answer: 11
+Explanation: Algebraic solution
+
+14. Six bells commence tolling together and toll at intervals of 2, 4, 6, 8, 10 and 12 seconds respectively. In 30 minutes, how many times do they toll together?
+4
+10
+15
+16
+
+Correct Answer: 15
+Explanation: LCM = 120 sec
+
+15. The greatest number of four digits which is divisible by 15, 25, 40 and 75 is:
+9000
+9400
+9600
+9800
+
+Correct Answer: 9600
+Explanation: LCM = 600
+
+16. Two pipes A and B can fill a tank in 20 and 30 minutes respectively. If both pipes are used together, then how long will it take to fill the tank?
+12 min
+15 min
+25 min
+50 min
+
+Correct Answer: 12 min
+Explanation: 1/20 + 1/30
+
+17. Three unbiased coins are tossed. What is the probability of getting at most two heads?
+3/4
+1/4
+3/8
+7/8
+
+Correct Answer: 7/8
+Explanation: Only 3 heads excluded
+
+18. How many kilograms of sugar costing Rs. 9 per kg must be mixed with 27 kg of sugar costing Rs. 7 per kg so that there may be a gain of 10% by selling the mixture at Rs. 9.24 per kg?
+36 kg
+42 kg
+54 kg
+63 kg
+
+Correct Answer: 36 kg
+Explanation: Alligation method
+
+19. A fruit seller had some apples. He sells 40% apples and still has 420 apples. Originally, he had:
+588 apples
+600 apples
+672 apples
+700 apples
+
+Correct Answer: 700 apples
+Explanation: 60% = 420
+
+20. The population of a town increased from 1,75,000 to 2,62,500 in a decade. The average percent increase of population per year is:
+4.37%
+5%
+6%
+8.75%
+
+Correct Answer: 5%
+Explanation: Simple growth
+
+21. There is 60% increase in an amount in 6 years at simple interest. What will be the compound interest of Rs. 12,000 after 3 years at the same rate?
+Rs. 2160
+Rs. 3120
+Rs. 3972
+Rs. 6240
+
+Correct Answer: Rs. 3972
+Explanation: Rate = 10%
+
+22. A clock is started at noon. By 10 minutes past 5, the hour hand has turned through:
+145°
+150°
+155°
+160°
+
+Correct Answer: 155°
+Explanation: 5.5×30°
+
+23. A, B and C can do a piece of work in 20, 30 and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?
+12 days
+15 days
+16 days
+18 days
+
+Correct Answer: 18 days
+Explanation: Work cycle method
+
+24. The length of the bridge, which a train 130 metres long and travelling at 45 km/hr can cross in 30 seconds, is:
+200 m
+225 m
+245 m
+250 m
+
+Correct Answer: 245 m
+Explanation: Distance − train length
+
+25. If A is the brother of B; B is the sister of C; and C is the father of D, how D is related to A?
+Brother
+Sister
+Nephew
+Cannot be determined
+
+Correct Answer: Nephew
+Explanation: A is uncle
+
+26. Introducing a boy, a girl said, "He is the son of the daughter of the father of my uncle." How is the boy related to the girl?
+Brother
+Nephew
+Uncle
+Son-in-law
+
+Correct Answer: Brother
+Explanation: Daughter = girl’s mother
+
+27. A man walks 5 km toward south and then turns to the right. After walking 3 km he turns to the left and walks 5 km. Now in which direction is he from the starting place?
+West
+South
+North-East
+South-West
+
+Correct Answer: South-West
+Explanation: Direction analysis
+
+28. In the series 2, 6, 18, 54, …… what will be the 8th term?
+4370
+4374
+7443
+7434
+
+Correct Answer: 4374
+Explanation: GP with ratio 3
+
+29. 125, 80, 45, 20, ?
+5
+8
+10
+12
+
+Correct Answer: 5
+Explanation: −45, −35, −25, −15
+
+30. Excluding stoppages, the speed of a bus is 54 kmph and including stoppages, it is 45 kmph. For how many minutes does the bus stop per hour?
+9
+10
+12
+20
+
+Correct Answer: 10
+Explanation: Speed difference method
+
+31. 39 persons can repair a road in 12 days, working 5 hours a day. In how many days will 30 persons, working 6 hours a day, complete the work?
+10
+13
+14
+15
+
+Correct Answer: 13
+Explanation: Men×Days×Hours
+
+32. Pointing towards a girl, Abhisek says, "This girl is the daughter of the only child of my father." What is the relation of Abhisek's wife to that girl?
+Daughter
+Mother
+Aunt
+Sister
+
+Correct Answer: Mother
+Explanation: Girl is Abhisek’s daughter
+
+33. Flow : River :: Stagnant : ?
+Rain
+Stream
+Pool
+Canal
+
+Correct Answer: Pool
+Explanation: Stagnant water
+
+34. A, P, R, X, S and Z are sitting in a row. S and Z are in the centre. A and P are at the ends. R is sitting to the left of A. Who is to the right of P?
+A
+X
+S
+Z
+
+Correct Answer: X
+Explanation: Seating arrangement
+
+35. What least number must be added to 1056, so that the sum is completely divisible by 23?
+2
+3
+18
+21
+
+Correct Answer: 3
+Explanation: Remainder = 20
+
+36. Three candidates contested an election and received 1136, 7636 and 11628 votes respectively. What percentage of the total votes did the winning candidate get?
+57%
+60%
+65%
+90%
+
+Correct Answer: 57%
+Explanation: (11628/total)×100
+
+37. A starts business with Rs. 3500 and after 5 months, B joins him. After a year profit ratio is 2:3. B’s capital is:
+Rs. 7500
+Rs. 8000
+Rs. 8500
+Rs. 9000
+
+Correct Answer: Rs. 9000
+Explanation: Capital×Time
+
+38. The average of 20 numbers is zero. Of them, at the most, how many may be greater than zero?
+0
+1
+10
+19
+
+Correct Answer: 19
+Explanation: One negative balances
+
+39. A man's speed with the current is 15 km/hr and the speed of the current is 2.5 km/hr. The man's speed against the current is:
+8.5 km/hr
+9 km/hr
+10 km/hr
+12.5 km/hr
+
+Correct Answer: 10 km/hr
+Explanation: Man’s speed = 12.5
+
+40. A man buys a cycle for Rs. 1400 and sells it at a loss of 15%. What is the selling price of the cycle?
+Rs. 1090
+Rs. 1160
+Rs. 1190
+Rs. 1202
+
+Correct Answer: Rs. 1190
+Explanation: 85% of 1400

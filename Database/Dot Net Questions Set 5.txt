@@ -1,0 +1,400 @@
+1. Which part of an assembly uniquely identifies its version and culture?
+
+A. IL code
+B. Metadata tables
+C. Assembly manifest
+D. Resources
+
+Correct Answer: C
+Explanation: The assembly manifest stores version, culture, and strong name information.
+
+2. Which tool is used to inspect IL code of a .NET assembly?
+
+A. CLR Profiler
+B. ILDASM
+C. NuGet
+D. MSBuild
+
+Correct Answer: B
+Explanation: ILDASM (Intermediate Language Disassembler) displays IL and metadata.
+
+3. Which type of code runs under CLR control?
+
+A. Native code
+B. Unmanaged code
+C. Managed code
+D. Unsafe code
+
+Correct Answer: C
+Explanation: Managed code executes under CLR with services like GC and security.
+
+4. Which constructor is executed first in an inheritance chain?
+
+A. Derived class constructor
+B. Base class constructor
+C. Static constructor
+D. Object initializer
+
+Correct Answer: B
+Explanation: Base class constructors execute before derived class constructors.
+
+5. What is the purpose of a static constructor?
+
+A. Initialize instance members
+B. Release resources
+C. Initialize static members
+D. Overload methods
+
+Correct Answer: C
+Explanation: Static constructors initialize static data and run once per type.
+
+6. Which access modifier allows access only within the same assembly?
+
+A. public
+B. private
+C. protected
+D. internal
+
+Correct Answer: D
+Explanation: internal limits access to the same assembly.
+
+7. Which interface enables sorting of objects?
+
+A. ICloneable
+B. IEnumerable
+C. IComparable
+D. IDisposable
+
+Correct Answer: C
+Explanation: IComparable defines a comparison method for sorting.
+
+8. Which keyword ensures a struct cannot be inherited?
+
+A. sealed
+B. readonly
+C. static
+D. abstract
+
+Correct Answer: A
+Explanation: Structs are implicitly sealed and cannot be inherited.
+
+9. Which parameter modifier allows a method to return multiple values?
+
+A. in
+B. ref
+C. out
+D. params
+
+Correct Answer: C
+Explanation: out parameters allow returning multiple values from a method.
+
+10. What happens if nullable reference types are enabled?
+
+A. Null values are prohibited
+B. Compiler warns about null usage
+C. Runtime exception occurs
+D. GC disables null checks
+
+Correct Answer: B
+Explanation: Nullable reference types provide compile-time null safety warnings.
+
+11. Which array type supports rows of different lengths?
+
+A. Single-dimensional
+B. Multi-dimensional
+C. Rectangular
+D. Jagged
+
+Correct Answer: D
+Explanation: Jagged arrays contain arrays of varying lengths.
+
+12. Which feature allows accessing array elements from the end?
+
+A. Ranges
+B. Indexers
+C. Tuples
+D. Delegates
+
+Correct Answer: A
+Explanation: Ranges and indices (^) allow backward indexing.
+
+13. Which collection enforces FIFO order?
+
+A. Stack
+B. List
+C. Queue
+D. Dictionary
+
+Correct Answer: C
+Explanation: Queue follows First-In-First-Out order.
+
+14. Which generic collection prevents duplicate elements?
+
+A. List
+B. HashSet
+C. Queue
+D. LinkedList
+
+Correct Answer: B
+Explanation: HashSet stores only unique elements.
+
+15. What is the primary use of Tuples?
+
+A. Performance optimization
+B. Exception handling
+C. Returning multiple values
+D. Data persistence
+
+Correct Answer: C
+Explanation: Tuples allow grouping multiple return values.
+
+16. Which delegate type returns a boolean value?
+
+A. Action
+B. Func
+C. Predicate
+D. EventHandler
+
+Correct Answer: C
+Explanation: Predicate delegates always return bool.
+
+17. What is a multicast delegate?
+
+A. Delegate with return type
+B. Delegate calling multiple methods
+C. Generic delegate
+D. Anonymous delegate
+
+Correct Answer: B
+Explanation: Multicast delegates invoke multiple methods sequentially.
+
+18. Which block always executes regardless of exception?
+
+A. try
+B. catch
+C. throw
+D. finally
+
+Correct Answer: D
+Explanation: finally executes whether an exception occurs or not.
+
+19. Why should exceptions not be used for flow control?
+
+A. Compilation error
+B. Security issues
+C. Performance overhead
+D. Memory leaks
+
+Correct Answer: C
+Explanation: Exceptions are expensive and should not control logic flow.
+
+20. What is an anonymous type mainly used for?
+
+A. Serialization
+B. LINQ projections
+C. Thread safety
+D. Reflection
+
+Correct Answer: B
+Explanation: Anonymous types are commonly used in LINQ projections.
+
+21. Which feature allows adding methods without modifying the class?
+
+A. Partial classes
+B. Extension methods
+C. Interfaces
+D. Abstract classes
+
+Correct Answer: B
+Explanation: Extension methods add functionality externally.
+
+22. What happens if a LINQ query is modified after declaration but before execution?
+
+A. Compilation error
+B. Runtime exception
+C. Query reflects changes
+D. Query is frozen
+
+Correct Answer: C
+Explanation: Due to deferred execution, changes are reflected.
+
+23. Which class loads assemblies dynamically?
+
+A. Type
+B. Assembly
+C. Activator
+D. AppDomain
+
+Correct Answer: B
+Explanation: Assembly.Load() loads assemblies at runtime.
+
+24. Which class writes text data to files?
+
+A. FileStream
+B. BinaryWriter
+C. StreamWriter
+D. MemoryStream
+
+Correct Answer: C
+Explanation: StreamWriter writes text data to streams.
+
+25. Which threading mechanism reuses threads?
+
+A. Thread
+B. Task
+C. ThreadPool
+D. Monitor
+
+Correct Answer: C
+Explanation: ThreadPool manages reusable threads efficiently.
+
+26. Which class provides atomic operations?
+
+A. Thread
+B. Monitor
+C. Interlocked
+D. Mutex
+
+Correct Answer: C
+Explanation: Interlocked ensures atomic read/write operations.
+
+27. Which task method waits for completion?
+
+A. Run()
+B. Start()
+C. Wait()
+D. Delay()
+
+Correct Answer: C
+Explanation: Wait() blocks until the task completes.
+
+28. What does HttpPost attribute indicate?
+
+A. Read-only request
+B. Resource deletion
+C. Data submission
+D. Authorization
+
+Correct Answer: C
+Explanation: HttpPost handles form submissions and data posts.
+
+29. Which ADO.NET object executes SQL commands?
+
+A. DataSet
+B. DataAdapter
+C. DataReader
+D. Command
+
+Correct Answer: D
+Explanation: Command object executes SQL queries or procedures.
+
+30. Which object provides forward-only data reading?
+
+A. DataTable
+B. DataSet
+C. DataReader
+D. Adapter
+
+Correct Answer: C
+Explanation: DataReader reads data efficiently in forward-only mode.
+
+31. Which validation attribute enforces required input?
+
+A. Range
+B. StringLength
+C. Required
+D. Compare
+
+Correct Answer: C
+Explanation: Required attribute ensures mandatory input.
+
+32. Which MVC feature reuses UI fragments?
+
+A. Layout
+B. Partial View
+C. ViewModel
+D. TempData
+
+Correct Answer: B
+Explanation: Partial Views allow reusable UI components.
+
+33. Which state mechanism survives redirects?
+
+A. ViewBag
+B. ViewData
+C. TempData
+D. Model
+
+Correct Answer: C
+Explanation: TempData survives redirects using session.
+
+34. What does a 404 error indicate?
+
+A. Server error
+B. Unauthorized access
+C. Resource not found
+D. Bad request
+
+Correct Answer: C
+Explanation: 404 indicates the requested resource was not found.
+
+35. Which filter executes before an action method?
+
+A. Result filter
+B. Exception filter
+C. Authorization filter
+D. Output filter
+
+Correct Answer: C
+Explanation: Authorization filters execute before action methods.
+
+36. Which EF class represents database context?
+
+A. DbSet
+B. DbContext
+C. Migration
+D. Entity
+
+Correct Answer: B
+Explanation: DbContext manages database connections and entities.
+
+37. Which annotation defines primary key?
+
+A. [Key]
+B. [Index]
+C. [Column]
+D. [Required]
+
+Correct Answer: A
+Explanation: [Key] marks a property as a primary key.
+
+38. Which HTTP verb retrieves data only?
+
+A. POST
+B. PUT
+C. GET
+D. PATCH
+
+Correct Answer: C
+Explanation: GET retrieves data without modifying server state.
+
+39. Which React feature passes data to components?
+
+A. State
+B. Props
+C. Hooks
+D. Context
+
+Correct Answer: B
+Explanation: Props pass data from parent to child components.
+
+40. Which architecture separates UI, logic, and data?
+
+A. Monolithic
+B. Layered
+C. MVC
+D. SOA
+
+Correct Answer: C
+Explanation: MVC separates Model, View, and Controller responsibilities.
+

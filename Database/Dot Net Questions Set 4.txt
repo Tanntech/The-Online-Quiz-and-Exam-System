@@ -1,0 +1,399 @@
+1. Which component of .NET converts IL code into native machine code at runtime?
+
+A. CLR
+B. JIT Compiler
+C. CTS
+D. CLS
+
+Correct Answer: B
+Explanation: The Just-In-Time (JIT) compiler converts Intermediate Language (IL) into native machine code during execution.
+
+2. What is the main purpose of the Common Type System (CTS)?
+
+A. Language interoperability
+B. Memory allocation
+C. Type safety across .NET languages
+D. Garbage collection
+
+Correct Answer: C
+Explanation: CTS defines how data types are declared, used, and managed to ensure type safety across .NET languages.
+
+3. Which file contains metadata about assemblies?
+
+A. appsettings.json
+B. web.config
+C. Manifest
+D. IL code
+
+Correct Answer: C
+Explanation: The manifest stores assembly metadata such as version, culture, and referenced assemblies.
+
+4. Which keyword is used to prevent method overriding in derived classes?
+
+A. static
+B. sealed
+C. abstract
+D. private
+
+Correct Answer: B
+Explanation: The sealed keyword prevents further overriding of a method.
+
+5. What happens if a derived class hides a base class method using new?
+
+A. Runtime error
+B. Compile-time error
+C. Base method is overridden
+D. Base method is hidden
+
+Correct Answer: D
+Explanation: Using new hides the base class method instead of overriding it.
+
+6. Which interface ensures deterministic resource cleanup?
+
+A. IComparable
+B. IDisposable
+C. IEnumerable
+D. ICloneable
+
+Correct Answer: B
+Explanation: IDisposable provides the Dispose() method for releasing unmanaged resources.
+
+7. Which value type can store named constants?
+
+A. struct
+B. class
+C. enum
+D. record
+
+Correct Answer: C
+Explanation: enum represents a set of named integral constants.
+
+8. What is the default value of a nullable value type?
+
+A. 0
+B. Empty
+C. null
+D. undefined
+
+Correct Answer: C
+Explanation: Nullable value types can hold null in addition to their value.
+
+9. What does the ??= operator do?
+
+A. Assigns if value is not null
+B. Throws exception if null
+C. Assigns only if value is null
+D. Compares two values
+
+Correct Answer: C
+Explanation: ??= assigns a value only if the left-hand operand is null.
+
+10. Which collection guarantees key-value pairing?
+
+A. List
+B. Stack
+C. Queue
+D. Dictionary
+
+Correct Answer: D
+Explanation: Dictionary<TKey, TValue> stores data as key-value pairs.
+
+11. Which generic constraint ensures a type has a parameterless constructor?
+
+A. where T : class
+B. where T : struct
+C. where T : new()
+D. where T : base
+
+Correct Answer: C
+Explanation: new() constraint ensures the type has a public parameterless constructor.
+
+12. Which delegate can return a value?
+
+A. Action
+B. Predicate
+C. Func
+D. EventHandler
+
+Correct Answer: C
+Explanation: Func delegates can return values, unlike Action.
+
+13. What is the main advantage of lambda expressions?
+
+A. Faster execution
+B. Reduced memory usage
+C. Concise syntax for anonymous methods
+D. Automatic garbage collection
+
+Correct Answer: C
+Explanation: Lambdas provide a concise way to write anonymous methods.
+
+14. What keyword is used to raise an exception manually?
+
+A. catch
+B. finally
+C. throw
+D. try
+
+Correct Answer: C
+Explanation: throw is used to explicitly raise an exception.
+
+15. What is deferred execution in LINQ?
+
+A. Query executes immediately
+B. Query executes when iterated
+C. Query executes asynchronously
+D. Query executes at compile time
+
+Correct Answer: B
+Explanation: LINQ queries execute only when the data is iterated.
+
+16. Which LINQ method projects data into a new form?
+
+A. Where
+B. Select
+C. OrderBy
+D. GroupBy
+
+Correct Answer: B
+Explanation: Select transforms data into a new shape.
+
+17. What is PLINQ primarily used for?
+
+A. Database queries
+B. Asynchronous I/O
+C. Parallel data processing
+D. UI threading
+
+Correct Answer: C
+Explanation: PLINQ executes LINQ queries in parallel to improve performance.
+
+18. Which class is used to inspect metadata at runtime?
+
+A. Assembly
+B. Reflection
+C. Attribute
+D. MetadataReader
+
+Correct Answer: A
+Explanation: Assembly class is used with reflection to inspect metadata.
+
+19. Which stream is used to read binary data?
+
+A. StreamReader
+B. BinaryReader
+C. FileStream
+D. TextReader
+
+Correct Answer: B
+Explanation: BinaryReader reads primitive data types in binary form.
+
+20. Which synchronization primitive ensures mutual exclusion?
+
+A. Semaphore
+B. Interlocked
+C. lock
+D. ThreadPool
+
+Correct Answer: C
+Explanation: lock ensures that only one thread accesses a critical section.
+
+21. What does async keyword indicate?
+
+A. Parallel execution
+B. Blocking execution
+C. Asynchronous method
+D. Multithreading
+
+Correct Answer: C
+Explanation: async marks a method that supports asynchronous execution.
+
+22. Which MVC component handles incoming HTTP requests?
+
+A. View
+B. Model
+C. Controller
+D. Razor
+
+Correct Answer: C
+Explanation: Controllers process HTTP requests and return responses.
+
+23. Which attribute restricts access to authenticated users?
+
+A. AllowAnonymous
+B. Authorize
+C. ValidateAntiForgeryToken
+D. HttpPost
+
+Correct Answer: B
+Explanation: Authorize ensures only authenticated users can access actions.
+
+24. Which object passes data from controller to view dynamically?
+
+A. Model
+B. ViewData
+C. ViewBag
+D. TempData
+
+Correct Answer: C
+Explanation: ViewBag is a dynamic object for passing data to views.
+
+25. Which validation works on both client and server?
+
+A. JavaScript validation
+B. Data Annotations
+C. jQuery validation
+D. HTML5 validation
+
+Correct Answer: B
+Explanation: Data Annotations support both client-side and server-side validation.
+
+26. What is TempData best suited for?
+
+A. Long-term storage
+B. Session management
+C. Passing data between requests
+D. Storing cookies
+
+Correct Answer: C
+Explanation: TempData persists data for a single subsequent request.
+
+27. What does attribute routing use?
+
+A. RouteConfig file
+B. web.config
+C. Attributes on actions
+D. JSON mapping
+
+Correct Answer: C
+Explanation: Attribute routing uses attributes directly on controller actions.
+
+28. What is bundling mainly used for?
+
+A. Database optimization
+B. Reducing HTTP requests
+C. Data validation
+D. Security
+
+Correct Answer: B
+Explanation: Bundling combines multiple files to reduce HTTP requests.
+
+29. Which attack is prevented using AntiForgeryToken?
+
+A. XSS
+B. SQL Injection
+C. CSRF
+D. Man-in-the-middle
+
+Correct Answer: C
+Explanation: AntiForgeryToken prevents Cross-Site Request Forgery attacks.
+
+30. Which EF approach generates database from classes?
+
+A. Database First
+B. Model First
+C. Code First
+D. Schema First
+
+Correct Answer: C
+Explanation: Code First creates the database based on C# classes.
+
+31. What is Fluent API mainly used for?
+
+A. LINQ queries
+B. UI design
+C. Configuring EF mappings
+D. Authentication
+
+Correct Answer: C
+Explanation: Fluent API configures entity mappings using code.
+
+32. Which EF feature manages schema changes?
+
+A. LINQ
+B. DbContext
+C. Migrations
+D. Scaffolding
+
+Correct Answer: C
+Explanation: Migrations handle database schema evolution.
+
+33. Which HTTP verb is used to update resources?
+
+A. GET
+B. POST
+C. PUT
+D. DELETE
+
+Correct Answer: C
+Explanation: PUT is used to update existing resources.
+
+34. What does CORS enable?
+
+A. Cross database access
+B. Cross domain requests
+C. Cross compilation
+D. Cross scripting
+
+Correct Answer: B
+Explanation: CORS allows cross-domain HTTP requests.
+
+35. Which serializer is commonly used in Web API?
+
+A. XmlSerializer
+B. BinaryFormatter
+C. Newtonsoft.Json
+D. DataContractSerializer
+
+Correct Answer: C
+Explanation: Newtonsoft.Json is widely used for JSON serialization.
+
+36. What does REST emphasize?
+
+A. Stateful communication
+B. SOAP services
+C. Resource-based architecture
+D. UI rendering
+
+Correct Answer: C
+Explanation: REST focuses on resources identified by URLs.
+
+37. What is Razor Pages mainly designed for?
+
+A. APIs
+B. Microservices
+C. Page-focused scenarios
+D. Desktop apps
+
+Correct Answer: C
+Explanation: Razor Pages simplify page-focused web development.
+
+38. What manages application-wide state?
+
+A. ViewBag
+B. Session
+C. Application
+D. TempData
+
+Correct Answer: C
+Explanation: Application state is shared across all users.
+
+39. Which React concept handles component state?
+
+A. Props
+B. Hooks
+C. Routing
+D. Middleware
+
+Correct Answer: B
+Explanation: Hooks like useState manage component state.
+
+40. What is the main role of MVC filters?
+
+A. Routing
+B. Authorization and logging
+C. UI rendering
+D. Data binding
+
+Correct Answer: B
+Explanation: Filters handle cross-cutting concerns like authorization and logging.

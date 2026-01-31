@@ -1,0 +1,293 @@
+1. Which keyword prevents a class from being inherited?
+A) final
+B) static
+C) const
+D) sealed
+Correct Answer: A
+Explanation: final prevents further inheritance.
+
+2. What is the size of an empty class in C++?
+A) 0
+B) 1
+C) Depends on compiler
+D) 4
+Correct Answer: B
+Explanation: Minimum size is 1 byte to ensure unique addresses.
+
+3. Which cast is safest in C++?
+A) C-style cast
+B) reinterpret_cast
+C) static_cast
+D) dynamic_cast
+Correct Answer: D
+Explanation: dynamic_cast performs runtime type checking.
+
+4. What does mutable allow?
+A) Modify const object
+B) Modify static data
+C) Modify constant variable
+D) Modify enum
+Correct Answer: A
+Explanation: Mutable members can change in const objects.
+
+5. Which container does NOT allow duplicate values?
+A) vector
+B) list
+C) set
+D) deque
+Correct Answer: C
+Explanation: set stores unique elements.
+
+6. Which operator cannot be overloaded?
+A) +
+B) ::
+C) []
+D) <<
+Correct Answer: B
+Explanation: Scope resolution operator cannot be overloaded.
+
+7. What happens if delete is used instead of delete[]?
+A) No effect
+B) Runtime error
+C) Memory leak
+D) Undefined behavior
+Correct Answer: D
+Explanation: Must match allocation type.
+
+8. Which keyword is used to handle exceptions?
+A) throw
+B) catch
+C) try
+D) All of the above
+Correct Answer: D
+Explanation: All are part of exception handling.
+
+9. Which STL container provides fastest search?
+A) vector
+B) map
+C) unordered_map
+D) list
+Correct Answer: C
+Explanation: Hash-based lookup is O(1) average.
+
+10. Which header is required for std::sort()?
+A) <vector>
+B) <algorithm>
+C) <array>
+D) <iterator>
+Correct Answer: B
+Explanation: Sorting algorithms are in <algorithm>.
+
+11. What does RAII stand for?
+A) Resource Allocation Is Initialization
+B) Random Access In Instruction
+C) Runtime Allocation Inheritance
+D) Resource Access In Interface
+Correct Answer: A
+Explanation: Resource tied to object lifetime.
+
+12. Which function is called when an exception is not caught?
+A) exit()
+B) abort()
+C) terminate()
+D) stop()
+Correct Answer: C
+Explanation: std::terminate() is invoked.
+
+13. Which C++ feature supports generic programming?
+A) Inheritance
+B) Templates
+C) Polymorphism
+D) Namespaces
+Correct Answer: B
+
+14. What is the default access specifier in a class?
+A) public
+B) private
+C) protected
+D) static
+Correct Answer: B
+
+15. Which smart pointer allows shared ownership?
+A) unique_ptr
+B) weak_ptr
+C) shared_ptr
+D) auto_ptr
+Correct Answer: C
+
+16. What does explicit keyword prevent?
+A) Inheritance
+B) Implicit conversion
+C) Object creation
+D) Copy constructor
+Correct Answer: B
+
+17. Which STL container uses contiguous memory?
+A) list
+B) deque
+C) vector
+D) map
+Correct Answer: C
+
+18. Which loop is guaranteed to run at least once?
+A) for
+B) while
+C) do-while
+D) range-for
+Correct Answer: C
+
+19. Which feature enables runtime polymorphism?
+A) Templates
+B) Function overloading
+C) Virtual functions
+D) Inline functions
+Correct Answer: C
+
+20. What is nullptr?
+A) Macro
+B) Integer
+C) Keyword
+D) Pointer constant
+Correct Answer: C
+
+21. Which operator is used for memory allocation?
+A) malloc
+B) calloc
+C) new
+D) alloc
+Correct Answer: C
+
+22. Which function copies objects?
+A) Destructor
+B) Move constructor
+C) Copy constructor
+D) Assignment operator
+Correct Answer: C
+
+23. Which keyword avoids name conflicts?
+A) class
+B) using
+C) namespace
+D) typedef
+Correct Answer: C
+
+24. What is the output of sizeof(char)?
+A) 0
+B) 1
+C) 2
+D) Compiler dependent
+Correct Answer: B
+
+25. Which container supports bidirectional iterators?
+A) vector
+B) list
+C) forward_list
+D) array
+Correct Answer: B
+
+26. Which is NOT a C++ access specifier?
+A) public
+B) private
+C) protected
+D) internal
+Correct Answer: D
+
+27. Which keyword disables copy constructor?
+A) delete
+B) default
+C) final
+D) override
+Correct Answer: A
+
+28. Which function releases file resources?
+A) fopen
+B) fread
+C) fclose
+D) fprintf
+Correct Answer: C
+
+29. Which keyword allows function overriding?
+A) virtual
+B) override
+C) inline
+D) final
+Correct Answer: B
+
+30. Which header is used for file handling?
+A) <iostream>
+B) <fstream>
+C) <file>
+D) <stream>
+Correct Answer: B
+
+31. What does std::endl do?
+A) New line
+B) Flush buffer
+C) Both
+D) None
+Correct Answer: C
+
+32. Which container uses key-value pairs?
+A) vector
+B) list
+C) map
+D) stack
+Correct Answer: C
+
+33. Which pointer prevents dangling references?
+A) raw pointer
+B) auto_ptr
+C) smart pointer
+D) void pointer
+Correct Answer: C
+
+34. What is function inlining?
+A) Macro expansion
+B) Replace call with code
+C) Dynamic binding
+D) Optimization error
+Correct Answer: B
+
+35. Which keyword stops exception propagation?
+A) throw
+B) catch
+C) try
+D) stop
+Correct Answer: B
+
+36. Which operator accesses class members via pointer?
+A) .
+B) ::
+C) ->
+D) *
+Correct Answer: C
+
+37. What does =default mean?
+A) Delete function
+B) Compiler-generated
+C) Virtual function
+D) Inline function
+Correct Answer: B
+
+38. Which container follows LIFO?
+A) queue
+B) priority_queue
+C) stack
+D) deque
+Correct Answer: C
+
+39. What is const_cast used for?
+A) Change data type
+B) Remove constness
+C) Runtime check
+D) Pointer conversion
+Correct Answer: B
+
+40. Which standard introduced lambda expressions?
+A) C++03
+B) C++11
+C) C++14
+D) C++17
+Correct Answer: B
+
+

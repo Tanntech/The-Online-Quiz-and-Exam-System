@@ -1,0 +1,494 @@
+1. What is the output of the following code?
+int x = 5;
+int &y = x;
+y++;
+cout << x;
+
+
+A) 4
+B) 5
+C) 6
+D) 0
+
+Correct Answer: C) 6
+Explanation: y is a reference to x. Incrementing y also increments x.
+
+2. What is the size of an empty class in C++?
+
+A) 0
+B) 1
+C) Depends on compiler
+D) Cannot be determined
+
+Correct Answer: B) 1
+Explanation: Empty classes have size 1 byte to ensure each object has a unique address.
+
+3. Which of the following is true about copy constructors?
+
+A) Automatically called during object assignment
+B) Cannot be overloaded
+C) Initializes object with another object
+D) Always private
+
+Correct Answer: C) Initializes object with another object
+Explanation: Copy constructor creates a new object as a copy of an existing object.
+
+4. What will the following code print?
+class A {
+public:
+    A() { cout << "A"; }
+    ~A() { cout << "~A"; }
+};
+int main() {
+    A a1, a2;
+}
+
+
+A) A~A
+B) AA~~
+C) AA~A~
+D) A
+
+Correct Answer: C) AA~A~
+Explanation: Two objects constructed (AA), destructors called in reverse order (~A~).
+
+5. Which of the following statements about virtual functions is true?
+
+A) Can be static
+B) Enables compile-time polymorphism
+C) Enables runtime polymorphism
+D) Cannot be inherited
+
+Correct Answer: C) Enables runtime polymorphism
+Explanation: Virtual functions allow derived class methods to be called through base class pointer at runtime.
+
+6. What is the output?
+int arr[3] = {1, 2, 3};
+int *p = arr;
+cout << *(p+2);
+
+
+A) 1
+B) 2
+C) 3
+D) garbage
+
+Correct Answer: C) 3
+Explanation: Pointer arithmetic moves to the 3rd element (arr[2] = 3).
+
+7. What does const_cast do?
+
+A) Removes constness of a variable
+B) Converts float to int
+C) Converts pointer to int
+D) Performs runtime type check
+
+Correct Answer: A) Removes constness of a variable
+Explanation: const_cast is used to remove const/volatile qualifier.
+
+8. Which of the following statements is true for nullptr in C++11?
+
+A) Can be assigned to int
+B) Represents null pointer
+C) Same as 0 in all cases
+D) Cannot be used in conditional
+
+Correct Answer: B) Represents null pointer
+Explanation: nullptr is a type-safe null pointer introduced in C++11.
+
+9. What is the output?
+int main() {
+    int x = 1;
+    cout << (++x) + (x++);
+}
+
+
+A) 3
+B) 4
+C) 2
+D) Undefined
+
+Correct Answer: D) Undefined
+Explanation: Modifying x multiple times without sequence points results in undefined behavior.
+
+10. Which casting operator checks type at runtime?
+
+A) static_cast
+B) dynamic_cast
+C) reinterpret_cast
+D) const_cast
+
+Correct Answer: B) dynamic_cast
+Explanation: dynamic_cast performs runtime type checking for polymorphic types.
+
+11. What is the output?
+int a = 5, b = 10;
+swap(a, b);
+cout << a << " " << b;
+
+
+A) 5 10
+B) 10 5
+C) 0 0
+D) Error
+
+Correct Answer: B) 10 5
+Explanation: swap exchanges values of two variables.
+
+12. Which of the following statements about pure virtual functions is correct?
+
+A) Must have a function body
+B) Declared using = 0
+C) Cannot be overridden
+D) Can only exist in main
+
+Correct Answer: B) Declared using = 0
+Explanation: Pure virtual functions make a class abstract and must be overridden in derived classes.
+
+13. What is the output?
+int x = 10;
+int y = 20;
+cout << (x & y);
+
+
+A) 0
+B) 10
+C) 20
+D) 30
+
+Correct Answer: B) 10
+Explanation: Bitwise AND of 10(1010) & 20(10100) = 0b1010 = 10.
+
+14. What is the output?
+int a = 5;
+int *p = &a;
+*p = *p + 5;
+cout << a;
+
+
+A) 5
+B) 10
+C) garbage
+D) Error
+
+Correct Answer: B) 10
+Explanation: Pointer dereference modifies original variable.
+
+15. Which STL container is best for LIFO operations?
+
+A) vector
+B) stack
+C) queue
+D) map
+
+Correct Answer: B) stack
+Explanation: Stack is designed for last-in-first-out operations.
+
+16. What is the output?
+vector<int> v = {1,2,3};
+cout << v[1];
+
+
+A) 1
+B) 2
+C) 3
+D) error
+
+Correct Answer: B) 2
+Explanation: Vector elements are zero-indexed; v[1] is 2.
+
+17. Which of the following cannot be used with templates?
+
+A) Class
+B) Function
+C) Object file
+D) None of these
+
+Correct Answer: C) Object file
+Explanation: Templates cannot directly generate object files; they must be instantiated in code.
+
+18. What is the output?
+class A {
+public:
+    virtual void f() { cout << "A"; }
+};
+class B : public A {
+public:
+    void f() { cout << "B"; }
+};
+int main() {
+    B b;
+    A *a = &b;
+    a->f();
+}
+
+
+A) A
+B) B
+C) AB
+D) Error
+
+Correct Answer: B) B
+Explanation: Virtual function ensures runtime polymorphism; derived class version is called.
+
+19. What is the output?
+int x = 10;
+cout << typeid(x).name();
+
+
+A) int
+B) integer
+C) i
+D) error
+
+Correct Answer: C) i
+Explanation: typeid returns a type info string, i represents int in GCC/Clang.
+
+20. Which operator cannot be overloaded?
+
+A) +
+B) ::
+C) []
+D) <<
+
+Correct Answer: B) ::
+Explanation: Scope resolution operator cannot be overloaded.
+
+21. Which of the following is correct to declare a reference to pointer?
+
+A) int* &ptr;
+B) int &ptr*;
+C) int &*ptr;
+D) int ptr&;
+
+Correct Answer: A) int* &ptr;
+Explanation: int* &ptr is reference to pointer to int.
+
+22. Which of the following is true about auto in C++11?
+
+A) Deduces variable type automatically
+B) Only for pointers
+C) Only for arrays
+D) Cannot be initialized
+
+Correct Answer: A) Deduces variable type automatically
+Explanation: auto automatically infers type from initializer.
+
+23. What is the output?
+int arr[3] = {1,2,3};
+cout << sizeof(arr)/sizeof(arr[0]);
+
+
+A) 0
+B) 3
+C) 1
+D) Error
+
+Correct Answer: B) 3
+Explanation: Number of elements = total size / size of one element.
+
+24. Which of the following can be used to implement RTTI?
+
+A) static_cast
+B) dynamic_cast
+C) const_cast
+D) reinterpret_cast
+
+Correct Answer: B) dynamic_cast
+Explanation: Run-Time Type Identification is implemented with dynamic_cast.
+
+25. Which is used to manage formatted I/O?
+
+A) setw
+B) endl
+C) ws
+D) all of the above
+
+Correct Answer: D) all of the above
+Explanation: setw sets width, endl newline, ws consumes whitespaces.
+
+26. Which of the following allows safe downcasting?
+
+A) static_cast
+B) dynamic_cast
+C) reinterpret_cast
+D) const_cast
+
+Correct Answer: B) dynamic_cast
+Explanation: Only dynamic_cast safely downcasts polymorphic objects.
+
+27. Which file mode opens file for both reading and writing?
+
+A) ios::in
+B) ios::out
+C) ios::in | ios::out
+D) ios::app
+
+Correct Answer: C) ios::in | ios::out
+Explanation: Combining flags allows read/write operations.
+
+28. What is the output?
+int a = 5;
+int b = a<<1;
+cout << b;
+
+
+A) 2
+B) 5
+C) 10
+D) 20
+
+Correct Answer: C) 10
+Explanation: Left shift by 1 multiplies by 2.
+
+29. Which of the following is true about friend function?
+
+A) Can access private members
+B) Is member of class
+C) Can be virtual
+D) Cannot be global
+
+Correct Answer: A) Can access private members
+Explanation: Friend function is not member but has access to private/protected members.
+
+30. What will the following code print?
+int x = 10;
+cout << ++x + ++x;
+
+
+A) 21
+B) 22
+C) Undefined
+D) 20
+
+Correct Answer: C) Undefined
+Explanation: Multiple increments in same expression cause undefined behavior.
+
+31. What is the output?
+class Base {
+public:
+    void f() { cout << "Base"; }
+};
+class Derived : public Base {
+public:
+    void f() { cout << "Derived"; }
+};
+int main() {
+    Derived d;
+    d.Base::f();
+}
+
+
+A) Base
+B) Derived
+C) error
+D) nothing
+
+Correct Answer: A) Base
+Explanation: Scope resolution allows calling base class function explicitly.
+
+32. Which operator is used to access member through pointer?
+
+A) .
+B) ->
+C) *
+D) &
+
+Correct Answer: B) ->
+Explanation: -> dereferences pointer and accesses member in one step.
+
+33. What is the output?
+int a = 10, b = 3;
+cout << a%b;
+
+
+A) 1
+B) 3
+C) 10
+D) 0
+
+Correct Answer: A) 1
+Explanation: % gives remainder of division 10/3 = 1.
+
+34. What is the output?
+vector<int> v = {1,2,3};
+v.push_back(4);
+cout << v.size();
+
+
+A) 3
+B) 4
+C) 5
+D) error
+
+Correct Answer: B) 4
+Explanation: push_back adds element; vector size increases.
+
+35. What is the output?
+int x = 5;
+cout << (x << 2);
+
+
+A) 5
+B) 10
+C) 20
+D) 0
+
+Correct Answer: C) 20
+Explanation: Left shift by 2 multiplies value by 4.
+
+36. Which of the following is used to define generic class?
+
+A) template<class T>
+B) typedef
+C) auto
+D) friend
+
+Correct Answer: A) template<class T>
+Explanation: Templates define classes/functions with generic types.
+
+37. What is the output?
+int arr[2][2] = {{1,2},{3,4}};
+cout << arr[1][0];
+
+
+A) 1
+B) 2
+C) 3
+D) 4
+
+Correct Answer: C) 3
+Explanation: 2D array row 1, column 0 = 3.
+
+38. Which of the following avoids memory leaks in C++?
+
+A) delete
+B) free
+C) both A and B
+D) malloc
+
+Correct Answer: A) delete
+Explanation: delete frees memory allocated by new and calls destructor.
+
+39. What is the output?
+int a = 10;
+cout << (~a);
+
+
+A) 10
+B) -11
+C) 11
+D) -10
+
+Correct Answer: B) -11
+Explanation: ~ is bitwise NOT; flips all bits.
+
+40. Which of the following is true about constexpr?
+
+A) Value computed at runtime
+B) Value computed at compile time
+C) Can only be used with class
+D) Deprecated
+
+Correct Answer: B) Value computed at compile time
+Explanation: constexpr ensures constant expression evaluated during compilation.

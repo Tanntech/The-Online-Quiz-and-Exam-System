@@ -1,0 +1,477 @@
+1. What will be the output?
+int x = 10;
+int *p = &x;
+int **q = &p;
+cout << **q;
+
+A) Address of x
+B) Address of p
+C) 10
+D) Garbage
+
+Correct Answer: C) 10
+Explanation: q points to p, *q gives p, and **q gives value of x.
+
+2. What is the output?
+static int count = 0;
+void fun() {
+    count++;
+}
+int main() {
+    fun(); fun();
+    cout << count;
+}
+
+
+A) 0
+B) 1
+C) 2
+D) Error
+
+Correct Answer: C) 2
+Explanation: Static variable retains its value between function calls.
+
+3. Which of the following is true about inline functions?
+
+A) Always replaced by macro
+B) Function call overhead is removed
+C) Cannot access static variables
+D) Cannot be recursive
+
+Correct Answer: B) Function call overhead is removed
+Explanation: Inline functions reduce function call overhead by replacing the call with function body (compiler decision).
+
+4. What will this code print?
+int a = 5;
+cout << sizeof(a++);
+
+
+A) 4
+B) 5
+C) 6
+D) Undefined
+
+Correct Answer: A) 4
+Explanation: sizeof does not evaluate the expression, only checks type.
+
+5. What is the output?
+class A {
+public:
+    A() { cout << "A"; }
+    ~A() { cout << "B"; }
+};
+int main() {
+    A obj;
+}
+
+
+A) AB
+B) BA
+C) A
+D) B
+
+Correct Answer: A) AB
+Explanation: Constructor executes first, destructor executes at end of scope.
+
+6. Which C++ feature supports run-time polymorphism?
+
+A) Templates
+B) Function overloading
+C) Virtual functions
+D) Inline functions
+
+Correct Answer: C) Virtual functions
+Explanation: Virtual functions resolve function calls at runtime using dynamic binding.
+
+7. What will be the output?
+int a = 5;
+int b = a++ + ++a;
+cout << b;
+
+
+A) 11
+B) 12
+C) 13
+D) Undefined
+
+Correct Answer: D) Undefined
+Explanation: Multiple modifications of a without sequence point → undefined behavior.
+
+8. Which cast is safest for downcasting in inheritance?
+
+A) static_cast
+B) reinterpret_cast
+C) dynamic_cast
+D) const_cast
+
+Correct Answer: C) dynamic_cast
+Explanation: dynamic_cast checks object type at runtime.
+
+9. What will the output be?
+int arr[] = {10, 20, 30};
+cout << *(arr + 1);
+
+
+A) 10
+B) 20
+C) 30
+D) Address
+
+Correct Answer: B) 20
+Explanation: Pointer arithmetic accesses second element.
+
+10. What is the output?
+bool x = false;
+cout << x + 1;
+
+
+A) 0
+B) 1
+C) 2
+D) Error
+
+Correct Answer: B) 1
+Explanation: false converts to 0 → 0 + 1 = 1.
+
+11. Which STL container does NOT allow duplicate keys?
+
+A) multimap
+B) map
+C) vector
+D) list
+
+Correct Answer: B) map
+Explanation: map stores unique keys.
+
+12. What is the output?
+int x = 5;
+cout << (x & 1);
+
+
+A) 0
+B) 1
+C) 5
+D) Error
+
+Correct Answer: B) 1
+Explanation: Bitwise AND checks LSB → odd number gives 1.
+
+13. Which of the following is true about const_cast?
+
+A) Changes data type
+B) Removes constness
+C) Converts base to derived
+D) Allocates memory
+
+Correct Answer: B) Removes constness
+Explanation: const_cast removes or adds const qualifier.
+
+14. What will be printed?
+int a = 10;
+int &r = a;
+r += 5;
+cout << a;
+
+
+A) 10
+B) 5
+C) 15
+D) Error
+
+Correct Answer: C) 15
+Explanation: Reference modifies original variable.
+
+15. What does this code output?
+cout << (10 > 5 ? 1 : 0);
+
+
+A) 0
+B) 1
+C) true
+D) false
+
+Correct Answer: B) 1
+Explanation: Condition is true, so first expression is selected.
+
+16. Which of the following operators cannot be overloaded?
+
+A) ++
+B) ?:
+C) []
+D) <<
+
+Correct Answer: B) ?:
+Explanation: Ternary operator cannot be overloaded.
+
+17. What is the output?
+int a = 5;
+cout << (a << 1);
+
+
+A) 5
+B) 10
+C) 2
+D) 1
+
+Correct Answer: B) 10
+Explanation: Left shift multiplies by 2.
+
+18. Which function is called automatically during exception handling?
+
+A) constructor
+B) destructor
+C) main
+D) operator new
+
+Correct Answer: B) destructor
+Explanation: Stack unwinding calls destructors of local objects.
+
+19. What is printed?
+int x = 3;
+cout << x * x++ ;
+
+
+A) 9
+B) 12
+C) 6
+D) Undefined
+
+Correct Answer: D) Undefined
+Explanation: Same variable modified and accessed without sequence point.
+
+20. Which keyword is used to prevent inheritance?
+
+A) static
+B) virtual
+C) final
+D) protected
+
+Correct Answer: C) final
+Explanation: final prevents further inheritance or overriding.
+
+21. What will this print?
+int a = 5;
+cout << (a >> 1);
+
+
+A) 5
+B) 4
+C) 2
+D) 1
+
+Correct Answer: C) 2
+Explanation: Right shift divides by 2.
+
+22. Which container provides LIFO behavior?
+
+A) queue
+B) vector
+C) stack
+D) deque
+
+Correct Answer: C) stack
+Explanation: Stack follows Last-In-First-Out principle.
+
+23. What is the output?
+int x = 0;
+cout << ++x << x++;
+
+
+A) 01
+B) 11
+C) 12
+D) Undefined
+
+Correct Answer: B) 11
+Explanation: ++x → 1, then x++ prints 1 and increments later.
+
+24. What is RTTI used for?
+
+A) Compile-time checking
+B) Runtime type identification
+C) Memory allocation
+D) Exception handling
+
+Correct Answer: B) Runtime type identification
+Explanation: RTTI provides information about object types at runtime.
+
+25. What will be printed?
+int arr[3] = {1,2,3};
+cout << sizeof(arr);
+
+
+A) 3
+B) 6
+C) 12
+D) Address
+
+Correct Answer: C) 12
+Explanation: Size of array = 3 × 4 bytes.
+
+26. Which of the following is NOT an STL container?
+
+A) vector
+B) map
+C) array
+D) string
+
+Correct Answer: D) string
+Explanation: string is a class, not a container adaptor.
+
+27. What is the output?
+int a = 5;
+int b = ++a;
+cout << a << b;
+
+
+A) 56
+B) 65
+C) 66
+D) 55
+
+Correct Answer: C) 66
+Explanation: Pre-increment updates before assignment.
+
+28. What does delete[] do?
+
+A) Deletes single object
+B) Deletes array allocated by new[]
+C) Clears vector
+D) Frees stack memory
+
+Correct Answer: B) Deletes array allocated by new[]
+Explanation: delete[] must match new[].
+
+29. Which keyword is used to define interface-like behavior in C++?
+
+A) abstract
+B) interface
+C) virtual
+D) pure virtual
+
+Correct Answer: D) pure virtual
+Explanation: Pure virtual functions create abstract classes similar to interfaces.
+
+30. What is the output?
+int a = 2;
+cout << a * 3 + a;
+
+
+A) 6
+B) 7
+C) 8
+D) 9
+
+Correct Answer: B) 8
+Explanation: Operator precedence → (2*3)+2.
+
+31. Which feature enables code reusability?
+
+A) Encapsulation
+B) Polymorphism
+C) Inheritance
+D) Abstraction
+
+Correct Answer: C) Inheritance
+Explanation: Derived classes reuse base class code.
+
+32. What will be printed?
+char ch = 'A';
+cout << int(ch);
+
+
+A) A
+B) 65
+C) Error
+D) 0
+
+Correct Answer: B) 65
+Explanation: ASCII value of 'A' is 65.
+
+33. Which container allows fast insertion at both ends?
+
+A) vector
+B) list
+C) deque
+D) map
+
+Correct Answer: C) deque
+Explanation: Deque supports efficient insertion/removal at both ends.
+
+34. What is the output?
+int a = 5;
+cout << (a == 5 && a < 10);
+
+
+A) 0
+B) 1
+C) 5
+D) Error
+
+Correct Answer: B) 1
+Explanation: Both conditions are true.
+
+35. Which of the following is true about destructors?
+
+A) Can take parameters
+B) Can be overloaded
+C) Called automatically
+D) Must be static
+
+Correct Answer: C) Called automatically
+Explanation: Destructor executes when object goes out of scope.
+
+36. What will be printed?
+int x = 1;
+cout << !x;
+
+
+A) 0
+B) 1
+C) true
+D) false
+
+Correct Answer: A) 0
+Explanation: Logical NOT of non-zero gives false → 0.
+
+37. Which container stores elements in sorted order?
+
+A) vector
+B) list
+C) set
+D) deque
+
+Correct Answer: C) set
+Explanation: set stores unique sorted elements.
+
+38. What is the output?
+int a = 10;
+cout << a-- << --a;
+
+A) 109
+B) 98
+C) Undefined
+D) 1010
+
+Correct Answer: C) Undefined
+Explanation: Multiple modifications without sequence point.
+
+39. What is the main purpose of namespaces?
+
+A) Faster execution
+B) Memory optimization
+C) Avoid naming conflicts
+D) File handling
+
+Correct Answer: C) Avoid naming conflicts
+Explanation: Namespaces group identifiers to prevent clashes.
+
+40. Which keyword forces compile-time evaluation?
+
+A) const
+B) static
+C) constexpr
+D) inline
+
+Correct Answer: C) constexpr
+Explanation: Ensures value is evaluated at compile time.

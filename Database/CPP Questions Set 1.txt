@@ -1,0 +1,468 @@
+1. What will happen if you try to use the this pointer in a static member
+function?
+A) It will compile successfully.
+B) It will result in a compilation error.
+C) The code will run with undefined behavior.
+D) The static member function will automatically receive the this pointer
+
+Correct Answer: B) It will result in a compilation error.
+Explanation:
+Static member functions do not belong to any specific object, so they do not receive the this pointer.
+
+
+
+2. Which of the following C++ features provides the ability to use the same
+function name with different arguments?
+A) Inheritance
+B) Encapsulation
+C) Polymorphism
+D) Abstraction
+
+Correct Answer: C) Polymorphism
+Explanation:
+Function overloading (compile-time polymorphism) allows the same function name with different parameters.
+
+
+3. What is the purpose of static variables in a function in C++?
+A) They retain their values across multiple calls to the function.
+B) They only exist during the execution of the function.
+C) They cannot be initialized within the function.
+D) They are used for memory allocation.
+
+Correct Answer: A) They retain their values across multiple calls to the function.
+Explanation:
+Static variables are initialized only once and preserve their value between function calls.
+
+4. If a class has no constructor, which of the following will happen?
+A) The class will throw an error during object creation.
+B) A default constructor will be automatically provided.
+C) A default constructor will not be created automatically, and the object cannot be
+created.
+D) The class will not be able to access member variables.
+
+Correct Answer: B) A default constructor will be automatically provided.
+Explanation:
+C++ provides an implicit default constructor if none is defined.
+
+
+5. Which of the following is not a valid declaration for a constant member
+function?
+A) int getData() const;
+B) void display() const { cout << "Display"; }
+C) void setData(int x) const { data = x; }
+D) void modify() const;
+
+Correct Answer: C)  void setData(int x) const { data = x; }
+Explanation:
+Const member functions cannot modify data members.
+
+
+6. Which of the following is incorrect regarding the this pointer?
+A) The this pointer can be used to differentiate between local variables and class
+members when they have the same name.
+B) The this pointer refers to the address of the current object.
+C) The this pointer is available only in non-static member functions.
+D) The this pointer is passed explicitly to each member function by the
+compiler
+
+Correct Answer: D) The this pointer is passed explicitly to each member function by the compiler
+Explanation:
+The this pointer is passed implicitly, not explicitly.
+
+
+7. In C++, which of the following statements about destructors is true?
+A) A destructor is automatically called when an object goes out of scope.
+B) A destructor cannot take arguments.
+C) A destructor can be overloaded.
+D) A destructor is used to initialize object properties
+
+Correct Answer: A) A destructor is automatically called when an object goes out of scope.
+Explanation:
+Destructors are invoked automatically when an object’s lifetime ends.
+
+
+8. Which of the following is not allowed in C++?
+A) Declaring multiple constructors in a class
+B) Declaring a function inside a class
+C) Declaring a function outside a class
+D) Declaring a variable of type function
+
+Correct Answer: D)Declaring a variable of type function
+Explanation:
+Functions cannot be variables (only pointers or references to functions).
+
+
+9. Which of the following is the correct declaration for a constant pointer to
+an integer in C++?
+A) int* const ptr;
+B) const int* ptr;
+C) int const* ptr;
+D) const ptr int*;
+
+Correct Answer:A) int* const ptr;
+Explanation:
+The pointer itself is constant, but the integer value can change.
+
+
+10. In C++, what is the correct way to declare a constant array of integers?
+A) const int arr[5] = {1, 2, 3, 4, 5};
+B) int const arr[5] = {1, 2, 3, 4, 5};
+C) Both a and b
+D) int arr[5] const = {1, 2, 3, 4, 5};
+
+Correct Answer: C) Both a and b
+Explanation:
+const int and int const are equivalent.
+
+
+
+11. What is the correct syntax to pass an array to a function in C++?
+A) func(arr[]);
+B) func(int arr[]);
+C) func(arr[5]);
+D) func(int* arr);
+
+Correct Answer: D) func(int* arr);
+Explanation:
+Arrays decay to pointers when passed to functions.
+
+
+12. Which of the following statements is correct about a friend function in
+C++?
+A) It can be a member of another class.
+B) It can access private and protected members of a class.
+C) It is a member of the class in which it is declared.
+D) It cannot be used to access private members of a class.
+
+Correct Answer:B) It can access private and protected members of a class.
+Explanation:
+Friend functions bypass access control.
+
+
+13. What does the following C++ code print?
+#include<iostream>
+using namespace std;
+int main() {
+    int a = 5;
+    int b = ++a;
+    cout << a << " " << b << endl;
+}
+A) 5 5
+B) 6 5
+C) 6 6
+D) 5 6
+
+Correct Answer: C) 6 6
+Explanation:
+Pre-increment increments first, then assigns.
+
+14. What is the output of the following C++ code snippet?
+int a[5] = {1, 2, 3, 4, 5};
+cout << a[2] << a[3] << a[4];
+
+A) 12345
+B) 2345
+C) 234
+D) 345
+
+Correct Answer: D) 345
+Explanation:
+a[2]=3, a[3]=4, a[4]=5.
+
+15. Which of the following is true about operator overloading in C++?
+A) Operator overloading allows the modification of the behavior of operators in
+C++.
+B) You cannot overload operators for primitive data types.
+C) Operator overloading can change the precedence of operators.
+D) Operators can only be overloaded for classes with one data type
+
+Correct Answer: A) Operator overloading allows the modification of the behavior of operators in C++.
+Explanation:
+Operators can be redefined for user-defined types.
+
+16.What is the primary difference between constant objects and constant
+member functions in C++?
+A) Constant objects can call both constant and non-constant member functions.
+B) Constant member functions cannot modify the object's data members, while
+constant objects cannot invoke non-constant functions.
+C) Constant objects can modify the data members but cannot call non-constant
+member functions.
+D) There is no difference between constant objects and constant member
+functions.
+
+Correct Answer: B)Constant member functions cannot modify the object's data members, while constant objects cannot invoke non-constant functions.
+
+Explanation:
+Const member functions cannot modify data; const objects cannot call non-const functions.
+ 
+17. What will be the output of the following code?
+#include<iostream>
+using namespace std;
+class MyClass {
+public:
+    MyClass() {
+        cout << "Constructor Called" << endl;
+    }
+    ~MyClass() {
+        cout << "Destructor Called" << endl;
+    }
+};
+int main() {
+    MyClass obj;
+}
+
+A) Constructor Called Destructor Called
+B) Destructor Called Constructor Called
+C) Error
+D) No output
+
+Correct Answer: A)Constructor Called Destructor Called
+Explanation:
+Constructor runs first, destructor runs when object goes out of scope.
+
+18. What will happen if you try to use the this pointer in a static member
+function?
+A) It will compile successfully.
+B) It will result in a compilation error.
+C) The code will run with undefined behavior.
+D) The static member function will automatically receive the this pointer
+
+Correct Answer: B) it will result in a compilation error
+explanation:
+Static member functions do not belong to any specific object, so they do not have access to the this pointer. Using this inside a static function causes a compile-time error.
+
+19. Who invented C++?
+A) Dennis Ritchie
+B) Ken Thompson
+C) Brian Kernighan
+D) Bjarne Stroustrup
+
+Correct Answer: D) Bjarne Stroustrup
+Explanation:
+C++ was developed by Bjarne Stroustrup at Bell Labs as an extension of the C programming language.
+
+20.  Which of the following type is provided by C++ but not C?
+A) double
+B) float
+C) int
+D) bool
+
+Correct Answer: D) bool
+Explanation:
+The bool data type was introduced in C++. C uses integers to represent true and false values.
+
+21. Which is more effective while calling the C++ functions?
+A) call by object
+B) call by pointer
+C) call by value
+D) call by reference
+
+Correct Answer: D) call by reference
+Explanation:
+Call by reference avoids copying data and allows functions to modify original variables, making it more efficient.
+
+22. Which keyword is used to define the macros in c++?
+A) #macro
+B) #define
+C) macro
+D) define
+
+Correct Answer: B) #define
+explanation:
+The #define directive is used by the preprocessor to define macros in C++.
+
+23. What is Inheritance in C++?
+A) Deriving new classes from existing classes
+B) Overloading of classes
+C) Classes with same names
+D) Wrapping of data into a single class
+
+Correct Answer: A) deriving new classes from existing classes
+Explanation:
+Inheritance allows a class to acquire properties and behavior of another class, enabling code reuse.
+
+24. Which of the following symbol is used to declare the preprocessor directives in C++?
+A) $
+B) ^
+C) #
+D) *
+
+Correct Answer: C) #
+Explanation:
+All preprocessor directives in C++ begin with the # symbol.
+
+25.What will be the output of the following C++ program?
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a = 5;
+	auto check = [=]() 
+        {
+		a = 10;
+	};
+	check();
+	cout<<"Value of a: "<<a<<endl;
+	return 0;
+}
+A) Segmentation fault
+B) Value of a: 5
+C) Value of a: 10
+D) Error
+
+Correct Answer: D) error
+Explanation:
+The variable a is captured by value in the lambda ([=]), so it is read-only inside the lambda. Attempting to modify it causes a compilation error.
+
+26.  What is abstract class in C++?
+A) Any Class in C++ is an abstract class
+B) Class from which any class is derived
+C) Class specifically used as a base class with atleast one virtual functions
+D) Class specifically used as a base class with atleast one pure virtual functions
+
+Correct Answer: D) class specifically used as a base class with at least one pure virtual function
+Explanation:
+An abstract class contains at least one pure virtual function and cannot be instantiated directly.
+
+27. What is the benefit of c++ input and output over c input and output?
+A) Both Type safety & Exception
+B) Sequence container
+C) Exception
+D) Type safety
+
+Correct Answer: D) type safety
+Explanation:
+C++ I/O streams provide type safety, unlike C functions such as printf and scanf.
+
+28. The constants are also called as _____________
+A) const
+B) preprocessor
+C) literals
+D) variables
+
+Correct Answer: C) literals
+Explanation:
+Constants with fixed values written directly in code are called literals.
+
+29. How many tests are available in read and write operations?
+A) 1
+B) 2
+C) 3
+D) 4
+
+Correct Answer: B) 2
+Explanation:
+Read and write operations mainly involve two tests: success and failure.
+
+30. What will be the output of the following C++ code?
+ #include <stdio.h>
+    int main ()
+    {
+        freopen ("myfile.txt", "w", stdout);
+        printf ("This sentence is redirected to a file");
+        fclose (stdout);
+        return 0;
+    }
+A) This sentence
+B) This sentence is redirected
+C) This sentence is redirected to a file
+D) This sentence to a file
+
+Correct Answer: C) this sentence is redirected to a file
+Explanation:
+The freopen function redirects standard output to a file, so the output is written into myfile.txt.
+
+
+31.By using which function does the buffer are automatically flushed?
+A) fopen
+B) copy
+C) compare
+D) fclose
+
+Correct Answer: D) fclose
+Explanation: fclose() is used to close the file and flush it out of memory for safe closing of files opened during the execution of program. In short to avoid memory faults during the execution of the program.
+
+32. Which objects information is loaded in locale object?
+A) facet object
+B) instead object
+C) Both facet & instead object
+D) secant object
+
+Correct Answer: A)facet object
+Explanation: A locale object contains information about which facet objects constitute a locale, and is each one of these facet objects that implements specific features as member functions.
+
+33.How many indicators are available in c++?
+A) 4
+B) 3
+C) 2
+D) 1
+
+Correct Answer: B) 3
+Explanation: There are three indicators are available in C++. They are Error indicator, End-Of-File indicator and Position indicator.
+
+34. Which of the following function / type of function cannot be overloaded?
+
+A) Member function
+B) Static function
+C) Virtual function
+D) Both B and C
+
+Correct Answer: D) both b and c
+Explanation:
+Static and virtual functions cannot be overloaded based only on return type.
+ 
+35. Which statement is true about C++ references?
+A) References cannot be null.
+B) References can be re-assigned to refer to different variables after initialization.
+C) References occupy additional memory space compared to pointers.
+D) References are used for dynamic memory allocation.
+
+Correct Answer: A) References cannot be null.
+Explanation: Unlike pointers, references cannot be null or uninitialized. They must be initialized when declared and cannot change the variable they refer to after initialization.
+
+36.Which statement regarding C++ namespaces is true?
+A) Namespaces provide a way to define global variables in C++.
+B) Namespaces prevent variable names from being used multiple times in a program.
+C) Namespaces avoid naming conflicts by encapsulating code into a named scope.
+D) Namespaces restrict access to functions within a program.
+
+Correct Answer: C) Namespaces avoid naming conflicts by encapsulating code into a named scope.
+Explanation: Namespaces in C++ encapsulate code into named scopes, preventing naming conflicts by providing a way to group related code elements.
+
+37. What is the purpose of the ‘new’ operator in C++?
+A) To deallocate memory dynamically.
+B) To allocate memory for an object or variable dynamically.
+C) To initialize a variable with a default value.
+D) To declare a constant variable.
+
+Correct Answer: B) To allocate memory for an object or variable dynamically.
+Explanation: The ‘new’ operator in C++ is used for dynamic memory allocation, allowing the allocation of memory for objects or variables during runtime.
+
+38. What does the ‘this’ pointer refer to in C++?
+A) It points to the previous object in a linked list.
+B) It points to the current object itself.
+C) It points to the base class object in an inheritance hierarchy.
+D) It points to a static member of a class.
+
+Correct Answer: B) It points to the current object itself.
+Explanation: The ‘this’ pointer in C++ is a pointer that holds the address of the current object when a member function is called.
+
+39.What is the purpose of the ‘delete’ operator in C++?
+A) To remove elements from a container.
+B) To deallocate memory for an object or array allocated with ‘new’.
+C) To remove a function from a class.
+D) To delete a file from the file system.
+
+Correct Answer: B) To deallocate memory for an object or array allocated with ‘new’.
+Explanation: In C++, the ‘delete’ operator is used to deallocate memory for an object or an array that was allocated using the ‘new’ operator.
+
+40. What is the purpose of the ‘std::vector’ container in C++?
+A) To store elements in a sorted manner.
+B) To store a fixed number of elements.
+C) To store elements in a resizable array-like structure.
+D) To store elements in a key-value pair.
+
+Correct Answer: C) To store elements in a resizable array-like structure.
+Explanation: std::vector in C++ is a container that stores elements in a dynamic array-like structure, allowing for easy resizing and manipulation of elements.
+
+

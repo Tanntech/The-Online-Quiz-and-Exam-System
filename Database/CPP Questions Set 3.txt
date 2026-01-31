@@ -1,0 +1,568 @@
+1. Which feature of C++ supports data hiding?
+
+A) inheritance
+B) polymorphism
+C) encapsulation
+D) abstraction
+
+Correct Answer: C
+
+Explanation:
+Encapsulation hides data using access specifiers.
+
+
+2. Which access specifier allows access only within class and derived class?
+
+A) public
+B) private
+C) protected
+D) friend
+
+Correct Answer: C
+
+Explanation:
+Protected members are accessible in derived classes.
+
+
+3. What is the output?
+#include<iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+}
+
+
+A) 9
+B) 10
+C) 11
+D) error
+
+Correct Answer: C
+
+Explanation:
+Pre-increment increases value before printing.
+
+
+4. Which constructor is used when object is copied?
+
+A) default constructor
+B) parameterized constructor
+C) copy constructor
+D) destructor
+
+Correct Answer: C
+
+Explanation:
+Copy constructor initializes object using another object.
+
+
+5. Which keyword is used to create object dynamically?
+
+A) malloc
+B) new
+C) alloc
+D) create
+
+Correct Answer: B
+
+Explanation:
+new allocates memory dynamically in C++.
+
+
+6. What is the output?
+int a = 5;
+int &r = a;
+r = 10;
+cout << a;
+
+
+A) 5
+B) 10
+C) garbage
+D) error
+
+Correct Answer: B
+
+Explanation:
+Reference variable modifies original variable.
+
+
+7. Which inheritance type causes diamond problem?
+
+A) single
+B) multilevel
+C) multiple
+D) hierarchical
+
+Correct Answer: C
+
+Explanation:
+Multiple inheritance causes diamond ambiguity.
+
+
+8. Which keyword resolves diamond problem?
+
+A) static
+B) virtual
+C) friend
+D) const
+
+Correct Answer: B
+
+Explanation:
+Virtual base class avoids duplicate base class copies.
+
+
+9. Which operator is used to access namespace members?
+
+A) .
+B) ->
+C) ::
+D) :
+
+Correct Answer: C
+
+Explanation:
+Scope resolution operator accesses namespace members.
+
+
+10. What is the output?
+void fun(int x = 5) {
+    cout << x;
+}
+int main() {
+    fun();
+}
+
+
+A) 0
+B) 5
+C) error
+D) garbage
+
+Correct Answer: B
+
+Explanation:
+Default argument value is used.
+
+
+11. Which function is called automatically when object goes out of scope?
+
+A) constructor
+B) destructor
+C) copy constructor
+D) operator=
+
+Correct Answer: B
+
+Explanation:
+Destructor is invoked at end of object life.
+
+
+12. Which keyword is used for runtime polymorphism?
+
+A) inline
+B) virtual
+C) static
+D) register
+
+Correct Answer: B
+
+Explanation:
+Virtual functions enable runtime binding.
+
+
+13. What is the output?
+int arr[] = {1,2,3};
+cout << sizeof(arr);
+(Assume int = 4 bytes)
+
+A) 3
+B) 4
+C) 12
+D) error
+
+Correct Answer: C
+
+Explanation:
+Array size = 3 × 4 bytes.
+
+14. Which STL container follows FIFO?
+
+A) stack
+B) vector
+C) queue
+D) set
+
+Correct Answer: C
+
+Explanation:
+Queue works on first-in-first-out principle.
+
+
+15. Which header file is required for exception handling?
+
+A) exception
+B) error
+C) try
+D) catch
+
+Correct Answer: A
+
+Explanation:
+<exception> provides exception handling support.
+
+
+16. What is the output?
+try {
+    throw 10;
+}
+catch(int x) {
+    cout << x;
+}
+
+
+A) nothing
+B) error
+C) 10
+D) garbage
+
+Correct Answer: C
+
+Explanation:
+Thrown integer is caught and printed.
+
+17. Which cast removes constness?
+
+A) static_cast
+B) dynamic_cast
+C) reinterpret_cast
+D) const_cast
+
+Correct Answer: D
+
+Explanation:
+const_cast removes const qualifier.
+
+18. Which operator cannot be overloaded?
+
+A) +
+B) =
+C) ?:
+D) <<
+
+Correct Answer: C
+
+Explanation:
+Conditional operator cannot be overloaded.
+
+19. Which template allows generic programming?
+
+A) macro
+B) inline
+C) template
+D) virtual
+
+Correct Answer: C
+
+Explanation:
+Templates allow writing type-independent code.
+
+20. What is RTTI used for?
+
+A) compile-time checking
+B) memory allocation
+C) runtime type identification
+D) file handling
+
+Correct Answer: C
+
+Explanation:
+RTTI identifies object type at runtime.
+
+21. What is the output?
+int x = 10;
+cout << (x > 5 ? x : 5);
+
+A) 5
+B) 10
+C) true
+D) error
+
+Correct Answer: B
+Explanation:
+Ternary operator checks condition x > 5. Since it is true, value of x (10) is printed.
+
+
+22. Which loop executes at least once even if condition is false?
+
+A) for
+B) while
+C) do while
+D) switch
+
+Correct Answer: C
+
+Explanation:
+do while checks condition after execution, so it runs at least once.
+
+23. What is the output?
+static int count = 0;
+count++;
+cout << count;
+
+A) 0
+B) 1
+C) garbage
+D) error
+
+Correct Answer: B
+
+Explanation:
+Static variable retains value and is initialized only once. After increment, value becomes 1.
+
+24. Which statement about inline functions is correct?
+
+A) always executed faster
+B) replace function call with function body
+C) cannot use loops
+D) cannot return value
+
+Correct Answer: B
+
+Explanation:
+Inline function expands function body at call site to reduce overhead.
+
+25. What is the output?
+int arr[3] = {10,20,30};
+cout << *(arr + 1);
+
+A) 10
+B) 20
+C) 30
+D) address
+
+Correct Answer: B
+
+Explanation:
+arr + 1 points to second element, dereferencing gives 20.
+
+26. Which pointer stores address of object?
+
+A) function pointer
+B) class pointer
+C) void pointer
+D) null pointer
+
+Correct Answer: B
+
+Explanation:
+Class pointer holds address of object and accesses members using ->.
+
+27. What is the output?
+int *p = new int(50);
+cout << *p;
+delete p;
+
+A) 0
+B) garbage
+C) 50
+D) error
+
+Correct Answer: C
+
+Explanation:
+Memory is allocated using new and initialized with 50.
+
+28. Which feature allows same function name with different parameters?
+
+A) overriding
+B) inheritance
+C) overloading
+D) abstraction
+
+Correct Answer: C
+
+Explanation:
+Function overloading allows multiple functions with same name but different arguments.
+
+29. What is the output?
+class test {
+public:
+    test() { cout << "c"; }
+    ~test() { cout << "d"; }
+};
+int main() {
+    test t;
+}
+
+A) cd
+B) dc
+C) c
+D) d
+
+Correct Answer: A
+
+Explanation:
+Constructor runs first, destructor runs when object goes out of scope.
+
+30. Which inheritance allows one base and multiple derived classes?
+
+A) multiple
+B) multilevel
+C) hierarchical
+D) hybrid
+
+Correct Answer: C
+
+Explanation:
+Hierarchical inheritance has one base class with multiple derived classes.
+
+31. What is the output?
+class base {
+public:
+    virtual void show() { cout << "base"; }
+};
+class derived : public base {
+public:
+    void show() { cout << "derived"; }
+};
+int main() {
+    base *b;
+    derived d;
+    b = &d;
+    b->show();
+}
+
+A) base
+B) derived
+C) error
+D) nothing
+
+Correct Answer: B
+
+Explanation:
+Virtual function enables runtime binding, derived version is called.
+
+32. Which function cannot be virtual?
+
+A) destructor
+B) constructor
+C) member function
+D) overridden function
+
+Correct Answer: B
+
+Explanation:
+Constructors cannot be virtual because object is not fully created.
+
+33. Which keyword is used to throw exception?
+
+A) try
+B) catch
+C) throw
+D) exception
+
+Correct Answer: C
+
+Explanation:
+throw sends exception to handler.
+
+34. What is the output?
+try {
+    int a = 10, b = 0;
+    if(b == 0) throw b;
+}
+catch(int x) {
+    cout << "error";
+}
+
+
+A) 0
+B) error
+C) runtime crash
+D) compile error
+
+Correct Answer: B
+
+Explanation:
+Exception is thrown and caught properly.
+
+35. Which manipulator is used to change line?
+
+A) endl
+B) setw
+C) setprecision
+D) ws
+
+Correct Answer: A
+
+Explanation:
+endl inserts newline and flushes output.
+
+36. Which class is used to write into file?
+
+A) ifstream
+B) ofstream
+C) fstream
+D) istream
+
+Correct Answer: B
+
+Explanation:
+ofstream is used for output file operations.
+
+37. What is the output?
+template<class T>
+T add(T a, T b) {
+    return a + b;
+}
+cout << add(2,3);
+
+
+A) 23
+B) 5
+C) error
+D) garbage
+
+Correct Answer: B
+
+Explanation:
+Template function adds integers normally.
+
+38. Which STL container stores key-value pairs?
+
+A) vector
+B) set
+C) map
+D) stack
+
+Correct Answer: C
+
+Explanation:
+Map stores elements as key-value pairs.
+
+39. Which operator is overloaded for output stream?
+
+A) >>
+B) <<
+C) =
+D) []
+
+Correct Answer: B
+
+Explanation:
+<< is overloaded to output data to stream.
+
+40. What is the purpose of dynamic_cast?
+
+A) remove const
+B) unsafe conversion
+C) runtime type checking
+D) compile-time binding
+
+Correct Answer: C
+
+Explanation:
+dynamic_cast checks object type safely at runtime.

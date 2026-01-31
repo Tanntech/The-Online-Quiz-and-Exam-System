@@ -1,0 +1,546 @@
+1. What will be the output of the following code?
+class Test {
+    static {
+        System.out.print("A ");
+    }
+    {
+        System.out.print("B ");
+    }
+    Test() {
+        System.out.print("C ");
+    }
+    public static void main(String[] args) {
+        new Test();
+    }
+}
+
+
+a) A B C
+b) B C
+c) A C
+d) Compilation error
+
+Correct Answer: a
+
+Explanation:
+Static block executes first, then instance block, then constructor.
+
+2. Which of the following is true about constructors?
+
+a) Constructors can be inherited
+b) Constructors can be overridden
+c) Constructors can be overloaded
+d) Constructors must return a value
+
+Correct Answer: c
+
+Explanation:
+Constructors can be overloaded but not inherited or overridden.
+
+3. What will be the output?
+class Parent {
+    void show() {
+        System.out.print("Parent ");
+    }
+}
+class Child extends Parent {
+    void show() {
+        System.out.print("Child ");
+    }
+}
+public class Demo {
+    public static void main(String[] args) {
+        Parent p = new Child();
+        p.show();
+    }
+}
+
+
+a) Parent
+b) Child
+c) Compilation error
+d) Runtime error
+
+Correct Answer: b
+
+Explanation:
+Runtime polymorphism: method call depends on object type, not reference.
+
+4. Which exception is thrown if a class is not found at runtime?
+
+a) ClassNotFoundException
+b) NoClassDefFoundError
+c) FileNotFoundException
+d) RuntimeException
+
+Correct Answer: b
+
+Explanation:
+NoClassDefFoundError occurs when class was present at compile time but missing at runtime.
+
+5. What is the output?
+Integer i1 = 100;
+Integer i2 = 100;
+System.out.println(i1 == i2);
+
+
+a) true
+b) false
+c) Compilation error
+d) Runtime error
+
+Correct Answer: a
+
+Explanation:
+Integer caching exists for values between -128 to 127.
+
+6. What will be the output?
+Integer i1 = 200;
+Integer i2 = 200;
+System.out.println(i1 == i2);
+
+
+a) true
+b) false
+c) Compilation error
+d) Runtime error
+
+Correct Answer: b
+
+Explanation:
+Values outside cache range create different objects.
+
+7. Which statement about finalize() is true?
+
+a) It is guaranteed to execute
+b) Called explicitly by JVM
+c) Executes before object destruction (not guaranteed)
+d) Replaces garbage collection
+
+Correct Answer: c
+
+Explanation:
+finalize() may run before GC but execution is not guaranteed.
+
+8. What will be the output?
+try {
+    return;
+} finally {
+    System.out.print("Finally ");
+}
+
+
+a) No output
+b) Compilation error
+c) Finally
+d) Runtime error
+
+Correct Answer: c
+
+Explanation:
+finally always executes even if return is present.
+
+9. Which collection allows one null key and multiple null values?
+
+a) Hashtable
+b) TreeMap
+c) HashMap
+d) ConcurrentHashMap
+
+Correct Answer: c
+
+Explanation:
+HashMap allows one null key and multiple null values.
+
+10. Which interface allows custom sorting?
+
+a) Serializable
+b) Comparator
+c) Cloneable
+d) Comparable
+
+Correct Answer: b
+
+Explanation:
+Comparator allows multiple custom sorting strategies.
+
+11. What will be the output?
+List list = new ArrayList();
+list.add("A");
+list.add(10);
+System.out.println(list.get(1));
+
+
+a) A
+b) 10
+c) Compilation error
+d) Runtime error
+
+Correct Answer: b
+
+Explanation:
+Raw types allow mixed data types.
+
+12. Which statement about generics is correct?
+
+a) Generics work at runtime
+b) Generics remove type casting
+c) Generics support primitives
+d) Generics increase runtime overhead
+
+Correct Answer: b
+
+Explanation:
+Generics provide compile-time type safety.
+
+13. What will be the output?
+System.out.println(10 + 20 + "" + 30 + 40);
+
+
+a) 10203040
+b) 30 3040
+c) 303040
+d) Compilation error
+
+Correct Answer: c
+
+Explanation:
+After string concatenation starts, all become strings.
+
+14. Which keyword prevents method overriding?
+
+a) static
+b) final
+c) private
+d) protected
+
+Correct Answer: b
+
+Explanation:
+Final methods cannot be overridden.
+
+15. Which statement is true about abstract classes?
+
+a) Can have constructors
+b) Cannot have variables
+c) Cannot have concrete methods
+d) Cannot be inherited
+
+Correct Answer: a
+
+Explanation:
+Abstract classes can have constructors and concrete methods.
+
+16. What will be the output?
+int x = 10;
+int y = x++ + ++x;
+System.out.println(y);
+
+
+a) 21
+b) 22
+c) 23
+d) 24
+
+Correct Answer: b
+
+Explanation:
+x++ → 10, ++x → 12 → total = 22
+
+17. Which is NOT a marker interface?
+
+a) Serializable
+b) Cloneable
+c) Runnable
+d) RandomAccess
+
+Correct Answer: c
+
+Explanation:
+Runnable has methods, marker interfaces do not.
+
+18. Which thread method causes thread to give up CPU temporarily?
+
+a) sleep()
+b) yield()
+c) join()
+d) wait()
+
+Correct Answer: b
+
+Explanation:
+yield() hints scheduler to pause execution.
+
+19. What will be the output?
+System.out.println(null == null);
+
+
+a) true
+b) false
+c) Compilation error
+d) Runtime error
+
+Correct Answer: a
+
+Explanation:
+Both references are null, so comparison is true.
+
+20. Which collection is best for fast search operations?
+
+a) ArrayList
+b) LinkedList
+c) HashSet
+d) Vector
+
+Correct Answer: c
+
+Explanation:
+HashSet provides O(1) average search time.
+
+21. What happens if main method is declared final?
+
+a) Compilation error
+b) Runtime error
+c) Program executes normally
+d) JVM ignores main
+
+Correct Answer: c
+
+Explanation:
+Final main method works normally.
+
+22. Which method is used to clone an object?
+
+a) copy()
+b) clone()
+c) duplicate()
+d) newObject()
+
+Correct Answer: b
+
+Explanation:
+clone() is defined in Object class.
+
+23. Which exception is thrown when accessing array beyond limit?
+
+a) ArrayStoreException
+b) IndexOutOfBoundsException
+c) ArrayIndexOutOfBoundsException
+d) IllegalAccessException
+
+Correct Answer: c
+
+Explanation:
+Specific exception for array index issues.
+
+24. What will be the output?
+String s = "Java";
+s.concat("8");
+System.out.println(s);
+
+
+a) Java8
+b) Java
+c) Compilation error
+d) Runtime error
+
+Correct Answer: b
+
+Explanation:
+Strings are immutable.
+
+25. Which block executes first?
+
+a) Constructor
+b) Instance block
+c) Static block
+d) main method
+
+Correct Answer: c
+
+Explanation:
+Static blocks execute when class is loaded.
+
+26. Which collection does not maintain order?
+
+a) LinkedHashMap
+b) TreeSet
+c) HashSet
+d) LinkedList
+
+Correct Answer: c
+
+Explanation:
+HashSet does not maintain insertion or sorted order.
+
+27. Which statement about wait() is true?
+
+a) It releases lock
+b) It does not release lock
+c) It stops thread permanently
+d) It belongs to Thread class
+
+Correct Answer: a
+
+Explanation:
+wait() releases monitor lock and pauses thread.
+
+28. What is deep copy?
+
+a) Copy reference
+b) Copy object and referenced objects
+c) Shallow memory copy
+d) Copy static data
+
+Correct Answer: b
+
+Explanation:
+Deep copy duplicates entire object graph.
+
+29. Which keyword is mandatory in lambda expression?
+
+a) new
+b) ->
+c) return
+d) this
+
+Correct Answer: b
+
+Explanation:
+Arrow operator is required in lambda.
+
+30. What will be the output?
+System.out.println(10/0.0);
+
+
+a) Exception
+b) Infinity
+c) NaN
+d) Compilation error
+
+Correct Answer: b
+
+Explanation:
+Division by 0.0 gives Infinity.
+
+31. Which class is thread-safe?
+
+a) StringBuilder
+b) StringBuffer
+c) String
+d) ArrayList
+
+Correct Answer: b
+
+Explanation:
+StringBuffer methods are synchronized.
+
+32. Which statement is true about interfaces?
+
+a) Can have instance variables
+b) Can have constructors
+c) Can have default methods
+d) Cannot be implemented
+
+Correct Answer: c
+
+Explanation:
+Java 8 introduced default methods.
+
+33. Which collection allows duplicate keys?
+
+a) HashMap
+b) TreeMap
+c) Hashtable
+d) None
+
+Correct Answer: d
+
+Explanation:
+Maps do not allow duplicate keys.
+
+34. What is association?
+
+a) Strong relationship
+b) Weak relationship
+c) IS-A relationship
+d) HAS-A relationship
+
+Correct Answer: b
+
+Explanation:
+Association represents weak relationship.
+
+35. Which operator is used for object type checking?
+
+a) instanceof
+b) typeof
+c) is
+d) check
+
+Correct Answer: a
+
+Explanation:
+instanceof checks runtime object type.
+
+36. What will be the output?
+System.out.println(Math.round(3.5));
+
+
+a) 3
+b) 4
+c) 3.5
+d) Compilation error
+
+Correct Answer: b
+
+Explanation:
+Math.round() rounds to nearest integer.
+
+37. Which memory stores method local variables?
+
+a) Heap
+b) Method area
+c) Stack
+d) Register
+
+Correct Answer: c
+
+Explanation:
+Local variables are stored in stack memory.
+
+38. What is reflection?
+
+a) Compile time inspection
+b) Runtime class inspection
+c) Object cloning
+d) Garbage collection
+
+Correct Answer: b
+
+Explanation:
+Reflection inspects classes at runtime.
+
+39. Which method is used to convert String to int?
+
+a) parseInt()
+b) valueOf()
+c) toInt()
+d) convert()
+
+Correct Answer: a
+
+Explanation:
+Integer.parseInt() converts string to int.
+
+40. Which concept hides implementation details?
+
+a) Polymorphism
+b) Inheritance
+c) Encapsulation
+d) Abstraction
+
+Correct Answer: d
+
+Explanation:
+Abstraction hides internal implementation.

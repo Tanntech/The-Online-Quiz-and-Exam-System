@@ -1,0 +1,538 @@
+1. What will be the output of the following code?
+class Test {
+    static int x;
+    public static void main(String[] args) {
+        System.out.println(x);
+    }
+}
+
+
+a) Garbage value
+b) Compilation error
+c) 0
+d) Runtime error
+
+Correct Answer: c
+
+Explanation:
+Static variables get default values. For int, the default value is 0.
+
+2. Which keyword is used to prevent inheritance?
+
+a) static
+b) private
+c) final
+d) protected
+
+Correct Answer: c
+
+Explanation:
+A class declared as final cannot be inherited.
+
+3. What is the output of the following program?
+class Demo {
+    Demo() {
+        System.out.print("A ");
+    }
+    Demo(int x) {
+        this();
+        System.out.print("B ");
+    }
+    public static void main(String[] args) {
+        new Demo(5);
+    }
+}
+
+
+a) A
+b) B
+c) A B
+d) Compilation error
+
+Correct Answer: c
+
+Explanation:
+this() calls the default constructor first, then prints B.
+
+4. Which of the following is NOT a feature of Java?
+
+a) Platform independent
+b) Object oriented
+c) Pointer arithmetic
+d) Secure
+
+Correct Answer: c
+
+Explanation:
+Java does not support pointer arithmetic for security reasons.
+
+5. What will be the output?
+int a = 10;
+Integer b = a;
+System.out.println(b);
+
+
+a) Compilation error
+b) Runtime error
+c) 10
+d) null
+
+Correct Answer: c
+
+Explanation:
+This is autoboxing, converting primitive int to Integer.
+
+6. Which exception is thrown when dividing by zero?
+
+a) NullPointerException
+b) ArithmeticException
+c) IOException
+d) NumberFormatException
+
+Correct Answer: b
+
+Explanation:
+Division by zero causes ArithmeticException.
+
+7. What is the output?
+String s1 = "Java";
+String s2 = new String("Java");
+System.out.println(s1 == s2);
+
+
+a) true
+b) false
+c) Compilation error
+d) Runtime error
+
+Correct Answer: b
+
+Explanation:
+== compares references, not content. One is in string pool, the other in heap.
+
+8. Which interface must be implemented to create a thread?
+
+a) Thread
+b) Runnable
+c) Callable
+d) Executor
+
+Correct Answer: b
+
+Explanation:
+Thread creation can be done by implementing Runnable.
+
+9. What will be the output?
+class Test {
+    public static void main(String[] args) {
+        System.out.println(10 + 20 + "Java");
+    }
+}
+
+
+a) Java30
+b) 1020Java
+c) 30Java
+d) Compilation error
+
+Correct Answer: c
+
+Explanation:
+Integer addition happens first → 30, then string concatenation.
+
+10. Which collection does NOT allow duplicates?
+
+a) ArrayList
+b) LinkedList
+c) HashSet
+d) Vector
+
+Correct Answer: c
+
+Explanation:
+HashSet does not allow duplicate elements.
+
+11. Which package contains Collection framework?
+
+a) java.io
+b) java.lang
+c) java.util
+d) java.net
+
+Correct Answer: c
+
+Explanation:
+Collections are defined in java.util.
+
+12. What will be the output?
+try {
+    System.out.print("A ");
+    int x = 10 / 0;
+} catch (Exception e) {
+    System.out.print("B ");
+} finally {
+    System.out.print("C ");
+}
+
+
+a) A B
+b) A C
+c) A B C
+d) Compilation error
+
+Correct Answer: c
+
+Explanation:
+Exception occurs → catch executes → finally always executes.
+
+13. Which keyword is used to call parent class constructor?
+
+a) super
+b) this
+c) parent
+d) base
+
+Correct Answer: a
+
+Explanation:
+super() calls the parent class constructor.
+
+14. What is the default value of boolean instance variable?
+
+a) true
+b) false
+c) 0
+d) null
+
+Correct Answer: b
+
+Explanation:
+Default value of boolean is false.
+
+15. Which method is used to start a thread?
+
+a) run()
+b) start()
+c) execute()
+d) begin()
+
+Correct Answer: b
+
+Explanation:
+start() creates a new thread and calls run() internally.
+
+16. What is the output?
+int[] arr = new int[3];
+System.out.println(arr[1]);
+
+
+a) Garbage value
+b) Compilation error
+c) 0
+d) Runtime error
+
+Correct Answer: c
+
+Explanation:
+Array elements are initialized with default values (0 for int).
+
+17. Which access modifier allows visibility only within the same class?
+
+a) public
+b) protected
+c) default
+d) private
+
+Correct Answer: d
+
+Explanation:
+private members are accessible only within the same class.
+
+18. Which interface is used for serialization?
+
+a) Serializable
+b) Cloneable
+c) Runnable
+d) Externalizable
+
+Correct Answer: a
+
+Explanation:
+Serializable is a marker interface for serialization.
+
+19. What will be the output?
+System.out.println(Math.max(10, 20));
+
+
+a) 10
+b) 20
+c) Compilation error
+d) Runtime error
+
+Correct Answer: b
+
+Explanation:
+Math.max() returns the maximum value.
+
+20. Which exception is checked?
+
+a) NullPointerException
+b) ArithmeticException
+c) IOException
+d) ArrayIndexOutOfBoundsException
+
+Correct Answer: c
+
+Explanation:
+IOException is a checked exception.
+
+21. What is polymorphism?
+
+a) Code reuse
+b) Multiple inheritance
+c) Many forms of a method
+d) Data hiding
+
+Correct Answer: c
+
+Explanation:
+Polymorphism allows one method to behave differently in different contexts.
+
+22. Which loop is guaranteed to execute at least once?
+
+a) for
+b) while
+c) do-while
+d) enhanced for
+
+Correct Answer: c
+
+Explanation:
+do-while executes once before condition check.
+
+23. What will be the output?
+StringBuffer sb = new StringBuffer("Java");
+sb.append("8");
+System.out.println(sb);
+
+
+a) Java
+b) Java8
+c) Compilation error
+d) Runtime error
+
+Correct Answer: b
+
+Explanation:
+StringBuffer is mutable.
+
+24. Which collection is synchronized by default?
+
+a) ArrayList
+b) LinkedList
+c) HashMap
+d) Vector
+
+Correct Answer: d
+
+Explanation:
+Vector is synchronized.
+
+25. Which keyword is used to create an object?
+
+a) create
+b) class
+c) new
+d) alloc
+
+Correct Answer: c
+
+Explanation:
+Objects are created using the new keyword.
+
+26. What is the output?
+System.out.println(10 < 20 ? "Yes" : "No");
+
+
+a) Yes
+b) No
+c) true
+d) false
+
+Correct Answer: a
+
+Explanation:
+Ternary operator returns "Yes" since condition is true.
+
+27. Which class is the root of Java class hierarchy?
+
+a) System
+b) Class
+c) Object
+d) Runtime
+
+Correct Answer: c
+
+Explanation:
+Object is the superclass of all classes.
+
+28. Which method is used to compare string content?
+
+a) ==
+b) equals()
+c) compare()
+d) match()
+
+Correct Answer: b
+
+Explanation:
+equals() compares content, not reference.
+
+29. What will be the output?
+int x = 5;
+System.out.println(x++);
+
+
+a) 5
+b) 6
+c) Compilation error
+d) Runtime error
+
+Correct Answer: a
+
+Explanation:
+Post-increment prints the value first, then increments.
+
+30. Which collection maintains insertion order?
+
+a) HashSet
+b) TreeSet
+c) LinkedHashSet
+d) Set
+
+Correct Answer: c
+
+Explanation:
+LinkedHashSet preserves insertion order.
+
+31. Which keyword is used to define a constant?
+
+a) static
+b) constant
+c) final
+d) immutable
+
+Correct Answer: c
+
+Explanation:
+final prevents modification of variable value.
+
+32. What is JVM?
+
+a) Java Virtual Machine
+b) Java Visual Model
+c) Java Verified Machine
+d) Java Variable Memory
+
+Correct Answer: a
+
+Explanation:
+JVM executes Java bytecode.
+
+33. What will be the output?
+System.out.println("Java".length());
+
+
+a) 3
+b) 4
+c) 5
+d) Compilation error
+
+Correct Answer: b
+
+Explanation:
+"Java" has 4 characters.
+
+34. Which method is used to stop thread execution temporarily?
+
+a) stop()
+b) wait()
+c) sleep()
+d) terminate()
+
+Correct Answer: c
+
+Explanation:
+sleep() pauses thread execution for specified time.
+
+35. Which operator is used for inheritance?
+
+a) inherits
+b) extends
+c) implements
+d) using
+
+Correct Answer: b
+
+Explanation:
+extends is used for class inheritance.
+
+36. What is the size of int in Java?
+
+a) 2 bytes
+b) 4 bytes
+c) 8 bytes
+d) Platform dependent
+
+Correct Answer: b
+
+Explanation:
+int is always 4 bytes in Java.
+
+37. Which feature allows multiple methods with same name?
+
+a) Inheritance
+b) Encapsulation
+c) Overloading
+d) Overriding
+
+Correct Answer: c
+
+Explanation:
+Method overloading allows same name with different parameters.
+
+38. What is garbage collection?
+
+a) Manual memory deletion
+b) Automatic memory management
+c) Object creation
+d) Exception handling
+
+Correct Answer: b
+
+Explanation:
+Garbage collector automatically frees unused memory.
+
+39. Which stream is used to read binary data?
+
+a) Reader
+b) Writer
+c) InputStream
+d) FileReader
+
+Correct Answer: c
+
+Explanation:
+InputStream is used for binary data.
+
+40. What does this keyword refer to?
+
+a) Parent object
+b) Current object
+c) Static object
+d) Class object
+
+Correct Answer: b
+
+Explanation:
+this refers to the current calling object.

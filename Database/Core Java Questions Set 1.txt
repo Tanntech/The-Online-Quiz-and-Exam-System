@@ -1,0 +1,396 @@
+1. Which of the following is the correct way to achieve composition in
+Java?
+A) A class has references to objects of other classes, but the lifetime of the
+referenced objects is independent of the owning class.
+B) A class has references to objects of other classes, and the lifetime of the
+referenced objects is controlled by the owning class.
+C) A class inherits from multiple classes.
+D) A class can have multiple objects of another class but with no strong
+relationship.
+Answer: B
+Explanation: Composition means a class has references to objects of other classes, and the owning class controls their lifetime.
+
+2.What happens if an object is serialized without implementing the
+Serializable interface?
+A) A CloneNotSupportedException is thrown.
+B) A NotSerializableException is thrown.
+C) The object is ignored during serialization.
+D) The object is serialized as a default object.
+Answer: B
+Explanation: Java throws NotSerializableException if an object doesn’t implement Serializable.
+
+
+3.What is the key difference between HashMap and TreeMap in Java? 
+a) HashMap maintains the order of keys, while TreeMap does not.
+b) HashMap uses a hash table for storage, while TreeMap uses a red-black tree
+to store keys in sorted order.
+c) HashMap allows null keys, while TreeMap does not allow null keys.
+d) HashMap can store only String keys, while TreeMap can store keys of any type.
+Answer: B
+Explanation: HashMap uses a hash table (unordered), TreeMap uses a red-black tree (keys sorted).
+ 
+4.Which of the following is the correct way to handle multi-catch in Java?
+A) Use multiple catch blocks for each exception type.
+B) Use a single catch block with multiple exceptions, separated by commas.
+C) Use catch (Exception | Throwable ex) to catch all types of exceptions.
+D) Use catch with | inside a try-catch block, and each exception should be an
+instance of Throwable
+Answer: B
+Explanation: Multiple exceptions can be caught in a single catch block using catch(Exception1 | Exception2 e)
+
+
+5.What is the purpose of static imports in Java?
+A) Static imports allow you to import static variables and methods from other
+classes, enabling you to access them without qualifying with the class name.
+B) Static imports allow you to import static classes only.
+C) Static imports enable access to constructors from other classes.
+D) Static imports are used for importing non-static members of a class.
+Answer: A
+Explanation: Static imports allow access to static methods/variables without qualifying them with the class name.
+
+6.Which of the following correctly describes the constructor behavior in
+the context of initializing reference variables in Java?
+A) Constructors are only used to initialize primitive data types.
+B) Constructors can be used to initialize reference variables, and you can use
+the new keyword to assign objects to them.
+C) Constructors cannot initialize reference variables, as they must always be
+initialized later in the program.
+D) Constructors automatically reassign all reference variables to their default
+values.
+Answer: B
+Explanation: Constructors can initialize reference variables using new.
+
+7.Which of the following statements is true regarding garbage collection in
+Java?
+A) Java automatically runs garbage collection at fixed intervals.
+B) The garbage collector runs only when the System.gc() method is explicitly
+called.
+C) Objects that are unreachable or no longer referenced are eligible for garbage
+collection.
+D) The garbage collector cannot reclaim memory from objects that were created
+using new keyword.
+Answer: C
+Explanation: Objects that are unreachable or no longer referenced are eligible for GC.
+
+8.Which of the following is the key difference between abstraction and
+encapsulation in Object-Oriented Programming (OOP)?
+A) Abstraction hides the internal workings of an object, while encapsulation
+hides the behavior.
+B) Abstraction is achieved through access modifiers, while encapsulation is
+achieved through methods and properties.
+C) Encapsulation hides the internal state of an object, while abstraction hides the
+complexity of the system.
+D) There is no difference; both terms are synonymous in OOP
+Answer: C
+Explanation: Encapsulation hides internal state; abstraction hides system complexity.
+
+9.What is the output of the following Java program?
+int[][] matrix = {{1, 2}, {3, 4}, {5, 6}};
+System.out.println(matrix[1][1]);
+A) 3
+B) 4
+C) 5
+D) 6
+Answer: B
+Explanation: matrix[1][1] is the second element of the second row → 4.
+
+10. Which of the following statements is true regarding garbage collection in
+Java?
+A) Java automatically runs garbage collection at fixed intervals.
+B) The garbage collector runs only when the System.gc() method is explicitly
+called.
+C) Objects that are unreachable or no longer referenced are eligible for garbage
+collection.
+D) The garbage collector cannot reclaim memory from objects that were
+created using new keyword.
+Answer: C
+Explanation: Unreachable objects are eligible for garbage collection.
+
+11. Which of the following methods can be used to convert a String to its
+corresponding primitive type using a wrapper class?
+A) parse()
+B) valueOf()
+C) toPrimitive()
+D) parseInt() for Integer, parseDouble() for Double, etc.
+Answer: D
+Explanation: Use parseInt(), parseDouble(), etc., to convert Strings to primitives.
+
+12. In Java, where are primitive types and objects stored in memory?
+A) Primitive types are stored in heap memory, while objects are stored in stack
+memory.
+B) Both primitive types and objects are stored in the stack memory.
+C) Primitive types are stored in stack memory, while objects are stored in heap
+memory.
+D) Both primitive types and objects are stored in the heap memory.
+Answer: C
+Explanation: Primitives → stack (local), Objects → heap.
+
+13.What happens when the finalize() method is called on an object in Java? 
+A) It is automatically called by the garbage collector before the object is reclaimed.
+B) It must be manually invoked by the developer to free up resources.
+C) It can only be called once, and it cannot be overridden in any subclass.
+D) It is called only when the object is explicitly dereferenced by the developer
+Answer: A
+Explanation: finalize() is called automatically by the garbage collector before reclaiming memory.
+
+14.which of the following code snippets correctly converts a Date object to a
+String and vice versa using SimpleDateFormat?
+A)Date date = new Date();SimpleDateFormat sdf = new SimpleDateFormat("yyyyMM-dd");String formattedDate = sdf.parse(date);Date parsedDate =
+sdf.format(formattedDate);
+B)Date date = new Date();SimpleDateFormat sdf = new
+SimpleDateFormat("yyyy-MM-dd");String formattedDate = sdf.format(date);Date
+parsedDate = sdf.parse(formattedDate);
+c)Date date = new Date();SimpleDateFormat sdf = new SimpleDateFormat("MM-ddyyyy");String formattedDate = sdf.parse(date);Date parsedDate =
+sdf.format(formattedDate);
+D)Date date = new Date();SimpleDateFormat sdf = new SimpleDateFormat("MM-ddyyyy");String formattedDate = sdf.parse(date);Date parsedDate =
+sdf.parse(formattedDate);
+Answer: B
+Explanation: Use format(date) to get String, parse(string) to get Date.
+
+15. What happens when Thread.yield() is called? 
+a) It terminates the current thread.
+b) It pauses the current thread and allows other threads of the same priority to
+run.
+c) It suspends the current thread indefinitely.
+d) It causes the thread to sleep for a specified time
+Answer: B
+Explanation: Current thread temporarily pauses, allowing other threads of the same priority to run.
+
+16. Which of the following is true about Java's primitive data types in terms
+of memory allocation?
+A) All primitive data types in Java are allocated memory on the heap.
+B) Memory allocation for primitive data types depends on the JVM’s
+implementation and may vary across platforms.
+C) Primitive data types are stored on the stack, while objects are stored in the heap.
+D) All primitive data types in Java are of fixed size, and the JVM does not allow
+changes to their memory layout.
+Answer: D
+Explanation: Primitives have fixed sizes (int = 4 bytes, double = 8 bytes).
+
+17.Which of the following operators has the highest precedence in Java?
+A) && (Logical AND)
+B) ++ (Increment)
+C) = (Assignment)
+D) == (Equality)
+Answer: B
+Explanation: Increment (++) has higher precedence than logical, equality, or assignment operators.
+
+18. Which of the following is NOT a valid Java token? 
+A) class
+B) @Override
+C) main
+D) ++
+Answer: C
+Explanation: main is not a keyword. class, @Override, and ++ are valid.
+
+19.What is the key difference between overloading and overriding in Java? 
+A) Overloading is determined at runtime, while overriding is determined at compile
+time.
+B) Overloading involves changing the method signature, while overriding involves
+changing the method body in the subclass.
+C) Overloading is not allowed in Java, whereas overriding is.
+D) Overloading occurs when the method signature is the same, and overriding
+happens when the return type is changed.
+Answer: B
+Explanation: Overloading changes method parameters; overriding changes method body in subclass.
+
+20. What is the purpose of wrapper classes in Java?
+A) To convert primitive data types to objects and vice versa.
+B) To perform arithmetic operations on primitive types.
+C) To improve memory efficiency for primitive types.
+D) To enable primitive types to be garbage collected
+Answer: A
+Explanation: Wrapper classes convert primitives to objects and vice versa.
+
+21.Which of the following methods is used to pause the execution of a
+thread for a specified time in milliseconds?
+a) join()
+b) sleep()
+c) yield()
+d) wait()
+Answer: B
+Explanation: Thread.sleep(milliseconds) pauses execution for a specific time.
+
+22.Which method is used to assign the priority of a thread in Java?
+a) setPriority()
+b) setThreadPriority()
+c) getPriority()
+d) assignPriority()
+Answer: A
+Explanation: thread.setPriority(int) sets the priority.
+
+23.What is the purpose of the Comparable interface in Java?
+a) It allows you to compare objects of different classes.
+b) It enables you to define a custom sorting order for objects of a class.
+c) It provides methods to perform basic operations on collections.
+d) It allows objects to be added to a Set collection.
+Answer: B
+Explanation: Comparable allows defining natural sorting order via compareTo().
+
+24.Which of the following statements about passing variables to methods is
+TRUE?
+A) In Java, all arguments are passed by reference, meaning any changes made to
+the parameter will reflect in the original variable.
+B) In Java, primitive data types are passed by reference, while objects are
+passed by value.
+C) In Java, primitive types are passed by value, while objects are passed by
+reference.
+D) In Java, objects and primitive types are both passed by reference.
+Answer: C
+Explanation: Primitives → pass by value; Objects → reference is passed by value.
+
+25.What will be the result of the following code
+int a = 5, b = 3;
+if (a > b)
+{
+if (b > 2)
+{
+ System.out.println("True");
+ }
+}
+A) True
+B) No output
+C) Compilation Error
+D) Runtime Exception
+Answer: A
+Explanation: Both conditions are true → prints "True".
+
+26.When compiling a Java program, which of the following best describes
+the relationship between the Java source code and the Java bytecode?
+A) Java source code is compiled into machine code by the Java compiler and
+executed directly by the OS.
+B) The Java compiler translates the Java source code into Java bytecode,
+which is then executed by the JVM.
+C) Java source code is compiled into an intermediate code that is executed directly
+by the CPU.
+D) Java source code is compiled into an executable, which does not require the
+JVM to run
+Answer: B
+Explanation: Java compiler converts source code → bytecode → executed by JVM.
+
+27.Which of the following is NOT allowed in Java interfaces?
+A) A class can implement multiple interfaces.
+B) An interface can extend another interface.
+C) An interface can contain concrete methods (methods with a body).
+D) An interface can contain default methods (methods with a body and a default
+implementation)
+Answer: C
+Explanation: Interfaces cannot have concrete methods (except default or static).
+
+28.Which of the following is a characteristic feature of Hashtable?
+a) Hashtable is synchronized and thread-safe, but does not allow null values.
+b) Hashtable is thread-unsafe and allows duplicate keys.
+c) Hashtable allows null keys and values.
+d) Hashtable does not allow duplicate values, but allows duplicate keys
+Answer: A
+Explanation: Hashtable is synchronized and thread-safe but does not allow null keys/values.
+
+30. What is the primary difference between StringBuilder and StringBuffer in
+Java?
+A) StringBuilder is synchronized, while StringBuffer is not.
+B) StringBuffer is synchronized, while StringBuilder is not.
+C) StringBuilder and StringBuffer are identical in functionality and performance.
+D) StringBuilder can only be used for string concatenation, while StringBuffer can
+be used for general-purpose string manipulation.
+Answer: B
+Explanation: StringBuffer is synchronized; StringBuilder is not.
+
+31. Which of the following is true about downcasting in Java?
+A) Downcasting is always safe and does not require an explicit check.
+B) Downcasting is the act of casting a superclass reference to a subclass
+reference.
+C) Downcasting is allowed without any restrictions.
+D) Downcasting cannot be performed in Java
+Answer: B
+Explanation: Downcasting converts a superclass reference to a subclass reference.
+
+32. What is the primary advantage of using Generics in Java?
+a) It allows dynamic binding of types at runtime.
+b) It enables the use of primitive types in collections.
+c) It helps ensure type safety by providing compile-time type checking.
+d) It eliminates the need for reflection in Java programs.
+Answer: C
+Explanation: Generics provide compile-time type safety.
+
+33.Which component is used to compile, debug and execute the java programs?
+a) JRE
+b) JIT
+c) JDK
+d) JVM
+Answer: c
+Explanation: JDK is a core component of Java Environment and provides all the tools, executables and binaries required to compile, debug and execute a Java Program.
+
+34.Which of the following statements about exceptions in Java is correct?
+A) All exceptions inherit directly from Throwable.
+B) Error and Exception are both subclasses of Throwable, but only Error can be
+caught using a try-catch block.
+C) Error is a subclass of Exception, and it should be caught in the try-catch block.
+D) Checked exceptions are those that are instances of Error, and unchecked
+exceptions are those that are instances of Exception
+Answer: B
+Explanation: Error and Exception extend Throwable; only Exception is meant to be caught.
+
+35. Which of the following methods is used to remove an element from a
+Queue in Java?
+a) remove()
+b) pop()
+c) delete()
+d) poll()
+Answer: A
+Explanation: remove() removes and returns the head; poll() also works but returns null if empty.
+
+36.Which of the following best describes the difference between shallow
+copy and deep copy in Java?
+A) A shallow copy creates a new object with the same reference as the original,
+while a deep copy creates a completely independent copy of the original object and
+its fields.
+B) A shallow copy copies only primitive data types, while a deep copy copies
+objects only.
+C) A shallow copy copies fields by reference, while a deep copy only copies
+immutable fields.
+D) A shallow copy is used for cloning objects, while a deep copy is used to serialize
+objects.
+Answer: A
+Explanation: Shallow copy copies references; deep copy copies object and all fields.
+
+
+37.What is the purpose of the throw keyword in Java? 
+A) It is used to propagate exceptions up the call stack.
+B) It is used to explicitly throw exceptions within a method.
+C) It is used to declare that a method may throw an exception.
+D) It is used to handle an exception after it has been caught
+Answer: B
+Explanation: throw explicitly throws an exception in a method.
+
+38.  Which of the following statements is incorrect about try-catch-finally
+blocks in Java?
+A) The finally block is executed even if an exception is not thrown.
+B) The finally block is executed only if the exception is caught.
+C) The finally block is executed whether or not an exception occurs, except in cases
+where the JVM crashes or the program exits.
+D) A finally block can be skipped if the JVM exits during the execution of the try or
+catch block (e.g., via System.exit()).
+Answer: B
+Explanation: finally executes whether or not an exception occurs, unless JVM exits.
+
+39.What will happen if we try to access a protected variable or method
+outside the package but within a subclass?
+A) It will result in a compilation error, even if the subclass is in a different package.
+B) It will result in a compilation error, unless the protected member is accessed
+within the same package.
+C) The protected variable or method can be accessed in the subclass, even if it is in
+a different package.
+D) The protected member will be inherited, but access will be denied in subclasses.
+Answer: C
+Explanation: Protected members are accessible in subclasses, even in different packages.
+
+40. In Java NIO, which of the following is the correct use of the Selector
+class?
+A) It is used for direct file manipulation.
+B) It allows non-blocking I/O operations on channels.
+C) It handles character encoding/decoding during input and output.
+D) It is used to map data from the disk into memory.
+Answer: B
+Explanation: Selector is used for non-blocking I/O operations on Channels.
+
+

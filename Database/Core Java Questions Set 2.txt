@@ -1,0 +1,399 @@
+1.Which one of the following is not a Java feature?
+a) Object-oriented
+b) Use of pointers
+c) Portable
+d) Dynamic and Extensible
+Answer: b
+Explanation: Pointers is not a Java feature. Java provides an efficient abstraction layer for developing without using a pointer in Java. Features of Java Programming are Portable, Architectural Neutral, Object-Oriented, Robust, Secure, Dynamic and Extensible, etc.
+
+2. Which of these cannot be used for a variable name in Java?
+a) identifier & keyword
+b) identifier
+c) keyword
+d) none of the mentioned
+Answer: c
+Explanation: Keywords are specially reserved words that can not be used for naming a user-defined variable, for example: class, int, for, etc.
+
+3.What will be the output of the following Java code?
+class increment {
+        public static void main(String args[]) 
+        {        
+             int g = 3;
+             System.out.print(++g * 8);
+        } 
+    }
+
+a) 32
+b) 33
+c) 24
+d) 25
+Answer: a
+Explanation: Operator ++ has more preference than *, thus g becomes 4 and when multiplied by 8 gives 32.
+
+4. Which of the following is not an OOPS concept in Java?
+a) Polymorphism
+b) Inheritance
+c) Compilation
+d) Encapsulation
+Answer: c
+Explanation: There are 4 OOPS concepts in Java. Inheritance, Encapsulation, Polymorphism and Abstraction.
+
+5.  What is not the use of “this” keyword in Java?
+a) Referring to the instance variable when a local variable has the same name
+b) Passing itself to the method of the same class
+c) Passing itself to another method
+d) Calling another constructor in constructor chaining
+Answer: b
+Explanation: “this” is an important keyword in java. It helps to distinguish between local variable and variables passed in the method as parameters.
+
+6.What will be the output of the following Java program?
+class variable_scope 
+    {
+        public static void main(String args[]) 
+        {
+            int x;
+            x = 5;
+            {
+	        int y = 6;
+	        System.out.print(x + " " + y);
+            }
+            System.out.println(x + " " + y);
+        } 
+    }
+a) Compilation error
+b) Runtime error
+c) 5 6 5 6
+d) 5 6 5
+Answer: a
+Explanation: Second print statement doesn’t have access to y , scope y was limited to the block defined after initialization of x.
+
+7.What will be the error in the following Java code?
+
+    byte b = 50;
+    b = b * 50;
+a) b cannot contain value 50
+b) b cannot contain value 100, limited by its range
+c) No error in this code
+d) * operator has converted b * 50 into int, which can not be converted to byte without casting
+Answer: d
+Explanation: While evaluating an expression containing int, bytes or shorts, the whole expression is converted to int then evaluated and the result is also of type int.
+
+8.Which of the following is a type of polymorphism in Java Programming?
+a) Multiple polymorphism
+b) Compile time polymorphism
+c) Multilevel polymorphism
+d) Execution time polymorphism
+Answer: b
+Explanation: There are two types of polymorphism in Java. Compile time polymorphism (overloading) and runtime polymorphism (overriding).
+
+9.Which of the following should be true of the object thrown by a thrown statement?
+a) Should be assignable to String type
+b) Should be assignable to Exception type
+c) Should be assignable to Throwable type
+d) Should be assignable to Error type
+Answer: c
+Explanation: The throw statement should be assignable to the throwable type. Throwable is the super class of all exceptions.
+
+10. Keyword for manually generating exception:
+a) try
+b) catch
+c) throw
+d) check
+
+Answer: C
+Explanation: throw explicitly generates an exception.
+
+11.Method to print stack trace:
+
+a) obtainStackTrace()
+b) printStackTrace()
+c) getStackTrace()
+d) displayStackTrace()
+
+Answer: B
+Explanation: printStackTrace() prints the exception call stack.
+
+12. Methods in Serializable interface:
+a) 1
+b) 2
+c) 3
+d) 0
+
+Answer: D
+Explanation: Serializable is a marker interface, contains no methods.
+
+13.Interface for controlling serialization:
+a) Serializable
+b) Externalizable
+c) FileFilter
+d) ObjectInput
+
+Answer: B
+Explanation: Externalizable allows custom control over serialization/deserialization.
+
+14.How to use environment properties in class:
+
+a) @Autowired
+b) @Variable
+c) @Property
+d) @Environment
+
+Answer: A
+Explanation: @Autowired injects environment/properties beans in Spring.
+
+15.Superclass of all classes:
+
+a) Math
+b) Process
+c) System
+d) Object
+
+Answer: D
+Explanation: Object is root superclass of all Java classes.
+
+16.What is the return type of Constructors?
+a) int
+b) float
+c) void
+d) none of the mentioned
+
+Answer: d
+Explanation: Constructors does not have any return type, not even void.
+ 
+17.Which keyword is used by the method to refer to the object that invoked it?
+a) import
+b) catch
+c) abstract
+d) this
+
+18.Which operator is used by Java run time implementations to free the memory of an object when it is no longer needed?
+a) delete
+b) free
+c) new
+d) none of the mentioned
+Answer: d
+Explanation: Java handles deallocation of memory automatically, we do not need to explicitly delete an element. Garbage collection only occurs during execution of the program. When no references to the object exist, that object is assumed to be no longer needed, and the memory occupied by the object can be reclaimed.
+
+19.What will be the output of the following Java code?
+
+    class array_output 
+    {
+        public static void main(String args[]) 
+        {
+            int array_variable[][] = {{ 1, 2, 3}, { 4 , 5, 6}, { 7, 8, 9}};
+            int sum = 0;
+            for (int i = 0; i < 3; ++i)
+                for (int j = 0; j <  3 ; ++j)
+                    sum = sum + array_variable[i][j];
+            System.out.print(sum / 5);
+        } 
+    }
+a) 8
+b) 9
+c) 10
+d) 11
+Answer: b
+Explanation: The program creates a 3×3 matrix and calculates the sum of all its elements, which is 45. It then divides the sum by 5 and prints the result. Since 45 / 5 = 9, the final output is 9.
+
+21.  Instance variables are declared
+A. Inside method
+B. Inside class
+C. Inside loop
+D. Inside constructor only
+Answer: B
+Explanation: Instance variables belong to class objects
+
+22.Which is correct method declaration?
+A. int add();
+B. add int();
+C. int add(int a, int b);
+D. add(int a);
+Answer: C
+Explanation: Return type must come before method name.
+
+23.Which conversion needs casting?
+A. int → long
+B. float → double
+C. double → int
+D. byte → short
+Answer: C
+Explanation: Narrowing requires explicit casting
+
+24.Which is invalid assignment?
+A. int x = 5;
+B. double d = 5;
+C. int y = 5.5;
+D. char c = 'A';
+Answer: C
+Explanation: Narrowing needs casting
+
+25.  Which inheritance is supported by Java classes?
+A. Multiple
+B. Hybrid
+C. Single
+D. Circular
+Answer: C
+Explanation: Java supports single inheritance using classes
+
+26.  Which method cannot be inherited?
+A. public
+B. protected
+C. private
+D. default
+Answer: C
+Explanation: Private members are not inherited
+
+27. super keyword is used to
+A. Create object
+B. Access child members
+C. Access parent members
+D. Destroy object
+Answer: C
+Explanation: super accesses superclass members
+
+28. What is the Output?
+class A {
+final void show() {}
+}
+class B extends A {
+void show() {}
+}
+A. Compiles
+B. Runtime error
+C. Compile-time error
+D. Warning only
+Answer: C
+Explanation: final methods cannot be overridden
+
+29. What is the Output?
+
+class A {
+protected int x = 10;
+}
+class B extends A {
+void show() {
+        System.out.println(x);
+    }
+}
+Output?
+A. Error
+B. 0
+C. 10
+D. Garbage
+Answer: C
+Explanation: Protected members are accessible in subclasses.
+
+30. What is the Output?
+class A {
+void show() {}
+}
+class B extends A {
+static void show() {}
+}
+A. Compiles
+B. Compile-time error
+C. Runtime error
+D. Warning
+Answer: B
+Explanation: Cannot override instance method with static.
+
+31.Overloading is also known as
+A. Dynamic binding
+B. Late binding
+C. Static binding
+D. Runtime binding
+Answer: C
+Explanation: Overloading resolved at compile time
+
+32.Which keyword prevents polymorphism?
+A. abstract
+B. static
+C. final
+D. super
+Answer: C
+Explanation: Final methods cannot be overridden
+
+33. What is the output of the following code?
+class A {
+int x = 10;
+}
+class B extends A {
+int x = 20;
+}
+public class Test {
+public static void main(String[] args) {
+A obj = new B();
+        System.out.println(obj.x);
+    }
+}
+Output?
+A. 10
+B. 20
+C. Error
+D. Garbage
+Answer: A
+Explanation: Variables are not polymorphic.
+
+34.Setter methods are used to
+A. Access data
+B. Modify data
+C. Delete data
+D. Hide data
+Answer: B 
+Explanation: Setters modify private variables
+
+35.Can constructors be part of encapsulation?
+A. Yes
+B. No
+C. Only default constructor
+D. Only private constructor
+Answer: A 
+Explanation: Constructor initializes hidden variables → part of encapsulation.
+
+36.. Which of the following violates encapsulation?
+A. private variables with getters/setters
+B. public variables directly accessible
+C. Protected variables
+D. Static variables
+Answer: B 
+Explanation: Public variables can be accessed/modified directly → violates encapsulation.
+
+37.Encapsulation is also known as
+A. Data hiding
+B. Data security
+C. Both A and B
+D. Abstraction
+Answer: C 
+Explanation: Hides data + protects it → encapsulation
+
+38.class Bank {
+private int balance;
+public void deposit(int amount) { if(amount>0) balance+=amount; }
+public int getBalance() { return balance; }
+}
+Bank b = new Bank();
+b.deposit(-1000);
+System.out.println(b.getBalance());
+A. -1000
+B. 0
+C. Compile-time error
+D. 1000
+Answer: B 
+Explanation: Negative deposit blocked by setter → balance remains 
+
+39.Abstract method must be overridden in
+A. Parent class
+B. Abstract class
+C. Child class
+D. Interface
+Answer: C
+Explanation: Concrete child class must implement abstract methods
+
+40.Can abstract class be final?
+A. Yes
+B. No
+C. Sometimes
+D. Only static
+Answer: B
+Explanation: Abstract needs inheritance; final prevents it
+

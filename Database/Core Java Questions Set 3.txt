@@ -1,0 +1,399 @@
+1. Which of the following is the correct way to achieve composition in Java?
+
+a) A class has references to objects of other classes, but lifetime is independent
+b) A class has references and lifetime is controlled by the owning class
+c) A class inherits from multiple classes
+d) A class has multiple objects with no strong relationship
+
+Answer: B
+Explanation: Composition occurs when an object owns another object and controls its lifecycle.
+
+2. What happens if an object is serialized without implementing Serializable?
+
+a) CloneNotSupportedException
+b) NotSerializableException
+c) Object ignored
+d) Serialized as default object
+
+Answer: B
+Explanation: Java throws NotSerializableException if object doesn’t implement Serializable.
+
+3. Difference between HashMap and TreeMap:
+
+a) HashMap maintains order, TreeMap does not
+b) HashMap uses hash table, TreeMap uses red-black tree for sorted keys
+c) HashMap allows null keys, TreeMap does not
+d) HashMap stores only String keys
+
+Answer: B
+Explanation: TreeMap keeps keys sorted; HashMap is unordered.
+
+4. Correct way for multi-catch in Java:
+
+a) Multiple catch blocks
+b) Single catch with multiple exceptions separated by |
+c) catch(Exception | Throwable)
+d) catch with | using Throwable
+
+Answer: B
+Explanation: catch(Exception1 | Exception2 e) handles multiple exceptions in a single block.
+
+5. Purpose of static imports:
+
+a) Import static variables/methods to access without class name
+b) Import static classes only
+c) Access constructors
+d) Import non-static members
+
+Answer: A
+Explanation: Static imports allow direct use of static members.
+
+6. Constructor behavior for reference variables:
+
+a) Only for primitive types
+b) Can initialize reference variables using new
+c) Cannot initialize reference variables
+d) Automatically assigns default values
+
+Answer: B
+Explanation: Constructors can assign objects to reference variables using new.
+
+7. Statement true regarding garbage collection:
+
+a) Runs at fixed intervals
+b) Runs only with System.gc()
+c) Objects unreachable are eligible for GC
+d) Cannot reclaim memory from new objects
+
+Answer: C
+Explanation: GC collects objects no longer referenced.
+
+8. Key difference: abstraction vs encapsulation:
+
+a) Abstraction hides internal workings; encapsulation hides behavior
+b) Abstraction via access modifiers; encapsulation via methods
+c) Encapsulation hides state; abstraction hides complexity
+d) Both are synonymous
+
+Answer: C
+Explanation: Encapsulation = hide state; Abstraction = hide complexity.
+
+9. Output of:
+int[][] matrix = {{1,2},{3,4},{5,6}};
+System.out.println(matrix[1][1]);
+
+
+a) 3
+b) 4
+c) 5
+d) 6
+
+Answer: B
+Explanation: matrix[1][1] = second row, second element = 4.
+
+10. Which method converts String to primitive using wrapper class?
+
+a) parse()
+b) valueOf()
+c) toPrimitive()
+d) parseInt(), parseDouble(), etc
+
+Answer: D
+Explanation: Wrapper classes provide parse methods to convert String → primitive.
+
+11. Primitive and objects memory storage:
+
+a) Primitives → heap; objects → stack
+b) Both in stack
+c) Primitives → stack; objects → heap
+d) Both in heap
+
+Answer: C
+Explanation: Stack holds primitives and references; heap stores objects.
+
+12. What happens when finalize() is called?
+
+a) Automatically by GC before reclaim
+b) Must be manually invoked
+c) Called once, cannot override
+d) Called only when dereferenced
+
+Answer: A
+Explanation: finalize() is invoked by GC before reclaiming memory.
+
+13. Correct code to convert Date ↔ String using SimpleDateFormat:
+
+a) parse(date) → format → wrong
+b) format(date) → parse(string) → correct
+c) parse(date) → format → wrong
+d) parse(date) → parse(string) → wrong
+
+Answer: B
+Explanation: format() converts Date → String, parse() converts String → Date.
+
+14. Output of Thread.yield():
+
+a) Terminates thread
+b) Pauses current thread and allows others of same priority to run
+c) Suspends indefinitely
+d) Sleeps for specific time
+
+Answer: B
+Explanation: Yield signals scheduler to allow other threads of same priority to execute.
+
+15. Memory allocation for primitives in Java:
+
+a) All on heap
+b) Depends on JVM
+c) Stack; objects on heap
+d) Fixed size, JVM cannot change
+
+Answer: D
+Explanation: Primitives have fixed sizes (int = 4 bytes, double = 8 bytes).
+
+16. Highest precedence operator:
+
+a) &&
+b) ++
+c) =
+d) ==
+
+Answer: B
+Explanation: Increment (++) has higher precedence than logical, equality, or assignment.
+
+17. Invalid Java token:
+
+a) class
+b) @Override
+c) main
+d) ++
+
+Answer: C
+Explanation: main is method name, not a keyword.
+
+18. Overloading vs overriding:
+
+a) Overloading → runtime; overriding → compile time
+b) Overloading → method signature; overriding → method body
+c) Overloading not allowed; overriding allowed
+d) Overloading → same signature; overriding → return type change
+
+Answer: B
+Explanation: Overloading = different params; Overriding = subclass changes method behavior.
+
+19. Purpose of wrapper classes:
+
+a) Convert primitive ↔ object
+b) Perform arithmetic
+c) Improve memory efficiency
+d) Enable garbage collection
+
+Answer: A
+Explanation: Wrapper classes wrap primitives into objects (Integer, Double).
+
+20. Pause execution of thread:
+
+a) join()
+b) sleep()
+c) yield()
+d) wait()
+
+Answer: B
+Explanation: Thread.sleep(ms) pauses thread for given milliseconds.
+
+21. Assign thread priority:
+
+a) setPriority()
+b) setThreadPriority()
+c) getPriority()
+d) assignPriority()
+
+Answer: A
+Explanation: Thread.setPriority(int) sets priority of thread.
+
+22. Purpose of Comparable interface:
+
+a) Compare objects of different classes
+b) Define custom sorting order
+c) Basic operations on collections
+d) Add objects to Set
+
+Answer: B
+Explanation: Comparable defines compareTo() to provide natural sorting.
+
+23. Passing variables to methods:
+
+a) All arguments passed by reference
+b) Primitives → reference, objects → value
+c) Primitives → value, objects → reference
+d) Both by reference
+
+Answer: C
+Explanation: Java passes primitives by value; object references are passed by value.
+
+24. Output of nested if:
+int a=5, b=3;
+if(a>b){ if(b>2){ System.out.println("True"); } }
+
+
+Answer: A – True
+Explanation: Both conditions are true → prints True.
+
+25. Relationship: source code → bytecode:
+
+a) Compiled to machine code
+b) Compiled to bytecode → JVM executes
+c) Compiled to intermediate → CPU executes
+d) Compiled to executable → no JVM
+
+Answer: B
+Explanation: Java compiler produces bytecode, executed by JVM.
+
+26. Not allowed in interface:
+
+a) Implement multiple interfaces
+b) Interface can extend another interface
+c) Contain concrete methods (without default/static)
+d) Default methods
+
+Answer: C
+Explanation: Only abstract/default/static methods allowed in interface.
+
+27. Hashtable characteristic:
+
+a) Synchronized, thread-safe, no nulls
+b) Thread-unsafe, allows duplicate keys
+c) Allows null keys/values
+d) Does not allow duplicate values
+
+Answer: A
+Explanation: Hashtable is synchronized, does not allow null keys/values.
+
+28. Difference between StringBuilder and StringBuffer:
+
+a) StringBuilder synchronized; StringBuffer not
+b) StringBuffer synchronized; StringBuilder not
+c) Identical functionality
+d) StringBuilder only for concatenation
+
+Answer: B
+Explanation: StringBuffer is thread-safe (synchronized); StringBuilder is faster but not synchronized.
+
+29. Downcasting:
+
+a) Always safe
+b) Superclass reference → subclass reference
+c) Allowed without restrictions
+d) Cannot perform
+
+Answer: B
+Explanation: Downcasting casts a superclass reference to a subclass reference.
+
+30. Advantage of Generics:
+
+a) Dynamic binding at runtime
+b) Use primitives in collections
+c) Compile-time type safety
+d) Eliminates reflection
+
+Answer: C
+Explanation: Generics allow compile-time type checking, avoiding runtime ClassCastException.
+
+31. Exceptions:
+
+a) All inherit directly from Throwable
+b) Error & Exception extend Throwable; only Exception is caught
+c) Error is subclass of Exception
+d) Checked = Error; Unchecked = Exception
+
+Answer: B
+Explanation: Error is serious; Exception is meant to be caught.
+
+32. Remove element from Queue:
+
+a) remove()
+b) pop()
+c) delete()
+d) poll()
+
+Answer: A
+Explanation: remove() removes head element; poll() is similar but returns null if empty.
+
+33. Shallow copy vs deep copy:
+
+a) Shallow = same reference; Deep = independent copy
+b) Shallow = primitive only; deep = object only
+c) Shallow = reference fields; Deep = immutable fields
+d) Shallow = cloning; deep = serialization
+
+Answer: A
+Explanation: Shallow copy copies references; Deep copy copies objects fully.
+
+34. Purpose of throw keyword:
+
+a) Propagate exception
+b) Explicitly throw exception
+c) Declare method may throw exception
+d) Handle caught exception
+
+Answer: B
+Explanation: throw is used to explicitly throw exceptions in code.
+
+35. Incorrect try-catch-finally statement:
+
+a) finally executed even if no exception
+b) finally executed only if exception caught
+c) finally executed whether exception occurs or not
+d) finally skipped if JVM exits
+
+Answer: B
+Explanation: finally executes always unless JVM exits/crashes.
+
+36. Access protected member outside package in subclass:
+
+a) Compilation error
+b) Error unless same package
+c) Accessible in subclass
+d) Inherited but access denied
+
+Answer: C
+Explanation: Protected members are accessible in subclasses outside package.
+
+37. Correct use of Selector class in NIO:
+
+a) Direct file manipulation
+b) Non-blocking I/O on channels
+c) Character encoding/decoding
+d) Map data from disk to memory
+
+Answer: B
+Explanation: Selector allows monitoring multiple channels for non-blocking I/O.
+
+38. Polymorphism in Java:
+
+a) Compile-time & runtime
+b) Only runtime
+c) Only compile-time
+d) Neither
+
+Answer: A
+Explanation: Compile-time = method overloading; Runtime = method overriding.
+
+39. Which of these operators is used to allocate memory to array variable in Java?
+a) malloc
+b) alloc
+c) new
+d) new malloc
+Answer: c
+Explanation: Operator new allocates a block of memory specified by the size of an array, and gives the reference of memory allocated to the array variable.
+
+
+40. Purpose of Reflection API:
+
+a) Access private methods/fields
+b) Dynamic class loading
+c) Metadata analysis
+d) All of the above
+
+Answer: D
+Explanation: Reflection API allows all above capabilities at runtime.

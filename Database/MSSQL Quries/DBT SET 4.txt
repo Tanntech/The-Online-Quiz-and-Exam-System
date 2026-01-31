@@ -1,0 +1,89 @@
+INSERT INTO Questions (ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption) VALUES
+
+-- EASY (1–15)
+
+(2,'DBMS stands for?','Data Base Management System','Database Machine System','Data Business System','Digital Base System','A'),
+
+(2,'Which command is used to create table?','INSERT','CREATE','UPDATE','SELECT','B'),
+
+(2,'Which SQL command retrieves data?','SELECT','DELETE','DROP','ALTER','A'),
+
+(2,'Which constraint ensures unique values?','NOT NULL','FOREIGN KEY','PRIMARY KEY','DEFAULT','C'),
+
+(2,'Which symbol is used for wildcard in LIKE?','%','#','*','@','A'),
+
+(2,'Which command deletes all rows but keeps structure?','DELETE','DROP','TRUNCATE','REMOVE','C'),
+
+(2,'Which data type stores text?','INT','FLOAT','VARCHAR','DATE','C'),
+
+(2,'Which clause sorts records?','GROUP BY','SORT','ORDER BY','HAVING','C'),
+
+(2,'Which command adds new record?','INSERT','UPDATE','ALTER','CREATE','A'),
+
+(2,'Which operator checks NULL values?','= NULL','IS NULL','== NULL','NULL','B'),
+
+(2,'Which function counts rows?','SUM()','AVG()','COUNT()','MAX()','C'),
+
+(2,'Which key uniquely identifies record?','Foreign Key','Candidate Key','Primary Key','Composite Key','C'),
+
+(2,'Which DB model uses tables?','Hierarchical','Relational','Network','Object','B'),
+
+(2,'Which command removes table structure?','DROP','DELETE','TRUNCATE','CLEAR','A'),
+
+(2,'Which SQL clause filters rows?','WHERE','FROM','GROUP','ORDER','A'),
+
+
+-- MEDIUM (16–30)
+
+(2,'Which normal form removes partial dependency?','1NF','2NF','3NF','BCNF','B'),
+
+(2,'Which join returns matching records only?','LEFT JOIN','RIGHT JOIN','INNER JOIN','FULL JOIN','C'),
+
+(2,'Which SQL command modifies data?','DDL','DML','DCL','TCL','B'),
+
+(2,'Which constraint enforces relationship?','PRIMARY KEY','UNIQUE','FOREIGN KEY','CHECK','C'),
+
+(2,'Which function returns maximum value?','TOP()','HIGH()','MAX()','GREATEST()','C'),
+
+(2,'Which clause groups rows?','ORDER BY','GROUP BY','HAVING','WHERE','B'),
+
+(2,'Which keyword removes duplicate records?','DISTINCT','UNIQUE','REMOVE','FILTER','A'),
+
+(2,'Which join returns all records from left table?','RIGHT JOIN','LEFT JOIN','INNER JOIN','CROSS JOIN','B'),
+
+(2,'Which command saves transaction permanently?','ROLLBACK','SAVEPOINT','COMMIT','END','C'),
+
+(2,'Which view is updatable?','Complex View','Simple View','Join View','Aggregate View','B'),
+
+(2,'Which index improves search speed?','Clustered','Primary','Secondary','All','A'),
+
+(2,'Which subquery depends on outer query?','Nested Query','Inline Query','Correlated Query','Derived Query','C'),
+
+(2,'Which keyword checks existence?','IN','ANY','EXISTS','ALL','C'),
+
+(2,'Which operator checks range?','LIKE','IN','BETWEEN','IS','C'),
+
+(2,'Which command grants permission?','ALLOW','PERMIT','GRANT','ACCESS','C'),
+
+
+-- HARD (31–40)
+
+(2,'Which property ensures transaction durability?','Atomicity','Consistency','Isolation','Durability','D'),
+
+(2,'Which normal form removes transitive dependency?','2NF','3NF','BCNF','4NF','B'),
+
+(2,'Which storage engine supports transactions?','MyISAM','CSV','InnoDB','MEMORY','C'),
+
+(2,'Which cursor type is read-only?','Dynamic','Scrollable','Read Only','Sensitive','C'),
+
+(2,'Which trigger runs before insert?','AFTER INSERT','BEFORE INSERT','ON INSERT','PRE INSERT','B'),
+
+(2,'Which handler handles SQL exception?','CONTINUE','EXIT','SQLEXCEPTION','ERROR','C'),
+
+(2,'Which MongoDB structure stores data?','Rows','Tables','Documents','Sheets','C'),
+
+(2,'Which NoSQL model stores key-value pairs?','Graph','Column','Document','Key-Value','D'),
+
+(2,'Which CAP property ensures availability?','Consistency','Availability','Partition','Durability','B'),
+
+(2,'Which MongoDB command inserts document?','add()','insertOne()','create()','push()','B');

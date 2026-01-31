@@ -1,0 +1,82 @@
+INSERT INTO Questions (ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption) VALUES
+(1,'Which HTML tag is used for largest heading?','<h6>','<heading>','<h1>','<head>','C'),
+
+(1,'Which attribute specifies image path?','href','src','link','path','B'),
+
+(1,'Which tag creates ordered list?','<ul>','<ol>','<li>','<list>','B'),
+
+(1,'Which CSS property changes background color?','color','bgcolor','background-color','fill','C'),
+
+(1,'Which keyword stops loop execution?','stop','exit','break','return','C'),
+
+(1,'Which JavaScript function shows alert box?','msg()','prompt()','alert()','confirm()','C'),
+
+(1,'Which HTML tag is used for input field?','<input>','<form>','<textbox>','<field>','A'),
+
+(1,'Which operator is used for addition in JS?','+','&','%','*','A'),
+
+(1,'Which Bootstrap class makes button blue?','btn-default','btn-primary','btn-info','btn-dark','B'),
+
+(1,'Which HTTP method deletes data?','GET','POST','DELETE','PUT','C'),
+
+(1,'Which file extension is used for JavaScript?','.js','.java','.jsx','.script','A'),
+
+(1,'Which symbol starts single-line comment in JS?','<!--','//','##','**','B'),
+
+(1,'Which HTML tag creates checkbox?','<check>','<input type="checkbox">','<box>','<tick>','B'),
+
+(1,'Which CSS unit is relative?','px','cm','%','mm','C'),
+
+(1,'Which React command creates new app?','react-new','create-react-app','npm-react','react-start','B');
+
+INSERT INTO Questions (ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption) VALUES
+(1,'Which tag is semantic in HTML5?','<div>','<span>','<section>','<font>','C'),
+
+(1,'Which CSS property controls element visibility?','display','opacity','visibility','all','C'),
+
+(1,'Which function converts string to integer?','parseInt()','parseFloat()','Number()','toInt()','A'),
+
+(1,'Which DOM method selects element by ID?','getElement()','getElementById()','query()','selectId()','B'),
+
+(1,'Which event triggers when page loads?','onopen','onload','onready','onstart','B'),
+
+(1,'Which array method removes last element?','shift()','pop()','splice()','slice()','B'),
+
+(1,'Which JSON data type is valid?','Function','Date','Object','Undefined','C'),
+
+(1,'Which jQuery symbol is used as shortcut?','@','$','#','%','B'),
+
+(1,'Which AJAX object is used in JS?','HttpRequest','XMLHttpRequest','AjaxRequest','HttpObject','B'),
+
+(1,'Which Node.js function imports module?','import()','include()','require()','load()','C'),
+
+(1,'Which Express method defines route?','set()','get()','route()','path()','B'),
+
+(1,'Which React hook handles lifecycle?','useEffect','useState','useReducer','useContext','A'),
+
+(1,'Redux follows which architecture?','MVC','MVVM','Flux','Layered','C'),
+
+(1,'Which HTTP status code means Not Found?','500','403','404','401','C'),
+
+(1,'Which npm file stores project metadata?','package.txt','package.json','project.json','node.json','B');
+
+INSERT INTO Questions (ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption) VALUES
+(1,'Which React method avoids unnecessary re-rendering?','componentDidMount','shouldComponentUpdate','render','componentWillUnmount','B'),
+
+(1,'Which JS feature allows function inside function?','Callback','Promise','Closure','Loop','C'),
+
+(1,'Which Node feature handles multiple requests efficiently?','Threading','Event Loop','Clustering','Forking','B'),
+
+(1,'Which Express object sends response?','req','res','next','send','B'),
+
+(1,'Which HTTP header specifies content type?','Accept','Content-Type','Authorization','Cache-Control','B'),
+
+(1,'Which CSS layout is one-dimensional?','Grid','Flexbox','Float','Position','B'),
+
+(1,'Which React tool manages global state?','Hooks','Redux','Axios','Router','B'),
+
+(1,'Which Promise method handles success?','catch()','then()','finally()','done()','B'),
+
+(1,'Which Node package manages environment variables?','dotenv','nodemon','express-env','envpack','A'),
+
+(1,'Which React feature handles routing?','Redux','React Router','Axios','Context','B');

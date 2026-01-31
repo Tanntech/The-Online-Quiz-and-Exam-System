@@ -1,0 +1,83 @@
+INSERT INTO Questions (ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption) VALUES
+(1,'HTML stands for?','Hyper Text Markup Language','High Text Mark Language','Hyperlinks Text Mark Language','Home Tool Markup Language','A'),
+
+(1,'Which tag is used for line break in HTML?','<lb>','<br>','<break>','<hr>','B'),
+
+(1,'Which CSS property is used to change text color?','text-color','font-color','color','background-color','C'),
+
+(1,'Which symbol is used for ID selector in CSS?','.', '#', '*', '&','B'),
+
+(1,'JavaScript is a _____ language.','Markup','Programming','Styling','Database','B'),
+
+(1,'Which method is used to print data in console?','print()','log()','console.log()','display()','C'),
+
+(1,'Which HTML tag is used to create a hyperlink?','<link>','<a>','<href>','<hyper>','B'),
+
+(1,'Bootstrap is mainly used for?','Database','Responsive Design','Server Side','Security','B'),
+
+(1,'Which protocol is used for secure communication?','HTTP','FTP','HTTPS','SMTP','C'),
+
+(1,'Which tag is used to display image?','<img>','<image>','<pic>','<src>','A'),
+
+(1,'Which function is used to parse JSON?','JSON.parse()','JSON.convert()','JSON.stringify()','JSON.read()','A'),
+
+(1,'Which keyword is used to declare variable in JS?','int','var','define','value','B'),
+
+(1,'Which HTTP method is used to retrieve data?','POST','PUT','GET','DELETE','C'),
+
+(1,'Node.js is based on which engine?','SpiderMonkey','V8','Chakra','Java Engine','B'),
+
+(1,'Which tag is used to create table row?','<td>','<tr>','<th>','<table>','B');
+
+INSERT INTO Questions (ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption) VALUES
+(1,'Which HTML5 element is used to draw graphics?','<svg>','<canvas>','<graphic>','<draw>','B'),
+
+(1,'Which CSS property controls element spacing inside border?','margin','padding','border','spacing','B'),
+
+(1,'Which event occurs when button is clicked?','onload','onchange','onclick','onhover','C'),
+
+(1,'DOM stands for?','Document Object Model','Data Object Model','Document Oriented Model','Display Object Model','A'),
+
+(1,'Which operator is used for strict comparison in JS?','==','===','!=','=','=','B'),
+
+(1,'Which array method adds element at end?','push()','pop()','shift()','unshift()','A'),
+
+(1,'AJAX stands for?','Asynchronous JavaScript and XML','Advanced JavaScript XML','Automatic JS XML','Active JS XML','A'),
+
+(1,'Axios returns data in form of?','Object','Callback','Promise','Array','C'),
+
+(1,'Which Node module is used to create server?','fs','url','http','path','C'),
+
+(1,'Which command initializes npm project?','npm start','npm install','npm init','npm create','C'),
+
+(1,'Which hook is used for state in React?','useEffect','useState','useRef','useMemo','B'),
+
+(1,'Redux store holds?','UI','Actions','State','Components','C'),
+
+(1,'Which HTTP status code means Success?','200','404','500','301','A'),
+
+(1,'Which keyword is used to export module in Node?','include','export','require','load','B'),
+
+(1,'Which React feature helps reuse components?','Inheritance','Composition','Loop','Condition','B');
+
+
+INSERT INTO Questions (ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption) VALUES
+(1,'Which lifecycle method runs after component render?','componentWillMount','componentDidMount','shouldComponentUpdate','render','B'),
+
+(1,'Event loop is used in Node.js for?','Security','Memory','Asynchronous execution','File handling','C'),
+
+(1,'Which HTTP method is idempotent?','POST','PUT','PATCH','CONNECT','B'),
+
+(1,'Which method converts object to JSON string?','JSON.parse()','JSON.stringify()','JSON.convert()','JSON.toString()','B'),
+
+(1,'Which middleware is used for parsing JSON in Express?','body-parser','cookie-parser','url-parser','json-parser','A'),
+
+(1,'Which React concept is used to pass data deeply?','Props','State','Context','Redux','C'),
+
+(1,'Promise has which states?','Start, Stop','Pending, Fulfilled, Rejected','True, False','Open, Close','B'),
+
+(1,'Which CSS property makes flexible layout?','display:flex','position:absolute','float:left','overflow:hidden','A'),
+
+(1,'Which command installs package globally?','npm add -g','npm install -g','npm global','npm get','B'),
+
+(1,'Which function is used to handle errors in Express?','tryCatch()','errorHandler()','Middleware with 4 params','catch()','C');

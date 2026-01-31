@@ -1,0 +1,89 @@
+INSERT INTO Questions (ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption) VALUES
+
+-- EASY (1–15)
+
+(2,'Which SQL command is used to modify existing record?','INSERT','UPDATE','ALTER','MODIFY','B'),
+
+(2,'Which constraint prevents NULL values?','PRIMARY KEY','UNIQUE','NOT NULL','CHECK','C'),
+
+(2,'Which SQL command removes specific rows?','DROP','DELETE','TRUNCATE','REMOVE','B'),
+
+(2,'Which function returns average value?','SUM()','AVG()','MEAN()','COUNT()','B'),
+
+(2,'Which clause is mandatory in SELECT statement?','FROM','WHERE','GROUP BY','HAVING','A'),
+
+(2,'Which data type stores decimal numbers?','INT','CHAR','FLOAT','DATE','C'),
+
+(2,'Which symbol represents single character wildcard?','%','_','*','#','B'),
+
+(2,'Which key can have duplicate values?','Primary Key','Foreign Key','Candidate Key','Super Key','B'),
+
+(2,'Which statement creates database?','NEW DATABASE','CREATE DATABASE','MAKE DATABASE','ADD DATABASE','B'),
+
+(2,'Which SQL clause limits output rows?','LIMIT','TOP','ROWNUM','FILTER','A'),
+
+(2,'Which keyword removes database?','DELETE','DROP','REMOVE','CLEAR','B'),
+
+(2,'Which function returns smallest value?','LOW()','MIN()','SMALL()','LEAST()','B'),
+
+(2,'Which SQL keyword is used to rename column?','MODIFY','CHANGE','ALTER','RENAME','C'),
+
+(2,'Which SQL command category is CREATE?','DDL','DML','DCL','TCL','A'),
+
+(2,'Which DB object stores virtual table?','Index','View','Trigger','Cursor','B'),
+
+
+-- MEDIUM (16–30)
+
+(2,'Which join returns unmatched right table records?','LEFT JOIN','INNER JOIN','RIGHT JOIN','NATURAL JOIN','C'),
+
+(2,'Which normal form eliminates repeating groups?','1NF','2NF','3NF','BCNF','A'),
+
+(2,'Which SQL clause filters grouped data?','WHERE','GROUP BY','HAVING','ORDER BY','C'),
+
+(2,'Which transaction command creates save point?','SAVE','SAVEPOINT','BACKUP','STORE','B'),
+
+(2,'Which function counts non-null values?','COUNT(*)','COUNT(col)','SUM()','TOTAL()','B'),
+
+(2,'Which operator compares list of values?','BETWEEN','LIKE','IN','ANY','C'),
+
+(2,'Which join combines all records from both tables?','FULL JOIN','LEFT JOIN','RIGHT JOIN','INNER JOIN','A'),
+
+(2,'Which key is combination of two columns?','Candidate Key','Foreign Key','Composite Key','Alternate Key','C'),
+
+(2,'Which SQL command revokes privilege?','DENY','REMOVE','REVOKE','CANCEL','C'),
+
+(2,'Which index improves join performance?','Secondary Index','Clustered Index','Bitmap Index','Unique Index','B'),
+
+(2,'Which query returns result inside another query?','Nested Query','Union Query','Inline Query','Outer Query','A'),
+
+(2,'Which SQL keyword copies table structure?','LIKE','AS','CLONE','DUPLICATE','B'),
+
+(2,'Which SQL operator checks pattern?','IN','BETWEEN','LIKE','MATCH','C'),
+
+(2,'Which storage engine supports foreign keys?','CSV','MyISAM','InnoDB','ARCHIVE','C'),
+
+(2,'Which command shows table structure?','DESCRIBE','SHOW','INFO','DETAIL','A'),
+
+
+-- HARD (31–40)
+
+(2,'Which ACID property ensures isolation?','Atomicity','Consistency','Isolation','Durability','C'),
+
+(2,'Which normal form is stricter than 3NF?','2NF','BCNF','4NF','5NF','B'),
+
+(2,'Which cursor moves row by row?','Static','Dynamic','Forward Only','Scrollable','C'),
+
+(2,'Which trigger variable stores old value?','NEW','OLD','PREVIOUS','VALUE','B'),
+
+(2,'Which SQL handler stops execution?','CONTINUE','IGNORE','EXIT','BREAK','C'),
+
+(2,'Which MongoDB function updates document?','modify()','updateOne()','change()','replace()','B'),
+
+(2,'Which MongoDB command deletes document?','removeOne()','deleteOne()','dropOne()','erase()','B'),
+
+(2,'Which NoSQL database uses columns?','MongoDB','Redis','Cassandra','Neo4j','C'),
+
+(2,'Which CAP theorem allows partition tolerance?','CA','CP','AP','CAP','C'),
+
+(2,'Which MongoDB method finds all documents?','search()','select()','find()','get()','C');

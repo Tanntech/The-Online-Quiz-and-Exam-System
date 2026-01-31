@@ -1,0 +1,408 @@
+1. Which of the following is true for a multidimensional array in Java?
+
+A. All rows must have equal length
+B. Rows can have different lengths
+C. Cannot store primitive types
+D. Cannot store objects
+
+Answer: B. Rows can have different lengths
+Explanation: Java supports jagged arrays, where each row can have a different number of columns.
+
+2. In a sparse matrix, which storage technique is memory efficient?
+
+A. Standard 2D array
+B. Linked list of non-zero elements
+C. String array
+D. Stack
+
+Answer: B. Linked list of non-zero elements
+Explanation: Storing only non-zero elements saves memory.
+
+3. Time complexity to find maximum in an unsorted array of size n
+
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n log n)
+
+Answer: B. O(n)
+Explanation: All elements must be scanned once.
+
+4. Which operation is costly in dynamic arrays when resizing?
+
+A. Reading elements
+B. Insertion when array is full
+C. Traversal
+D. Deletion
+
+Answer: B. Insertion when array is full
+Explanation: Resizing requires copying elements, which is O(n).
+
+Stacks
+5. Which of the following problems can be solved using stack?
+
+A. Balanced parentheses
+B. Function call management
+C. Expression evaluation
+D. All of the above
+
+Answer: D. All of the above
+Explanation: Stack follows LIFO, useful for all these cases.
+
+6. What is the auxiliary space for a stack implemented using an array?
+
+A. O(n)
+B. O(1)
+C. O(log n)
+D. O(n²)
+
+Answer: A. O(n)
+Explanation: Stack stores n elements in array.
+
+7. How can stack underflow occur?
+
+A. Pushing to a full stack
+B. Popping from an empty stack
+C. Accessing top element
+D. Traversing
+
+Answer: B. Popping from an empty stack
+Explanation: No element exists to pop.
+
+8. Which expression conversion requires a stack?
+
+A. Infix → Postfix
+B. Postfix → Prefix
+C. Prefix → Infix
+D. All of the above
+
+Answer: D. All of the above
+Explanation: Stack temporarily stores operands/operators.
+
+Queues
+9. Which queue allows insertion and deletion at both ends?
+
+A. Priority Queue
+B. Circular Queue
+C. Deque
+D. Simple Queue
+
+Answer: C. Deque
+Explanation: Deque supports operations at both ends.
+
+10. Time complexity to insert in a queue using linked list
+
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n²)
+
+Answer: A. O(1)
+Explanation: Rear insertion is constant time.
+
+11. Which is true about circular queue?
+
+A. No wrap around
+B. Can reuse empty slots
+C. Overflow not detected
+D. O(n) insertion
+
+Answer: B. Can reuse empty slots
+Explanation: Circular queues reuse freed positions.
+
+12. Real-world application of queue
+
+A. BFS
+B. Task scheduling
+C. Print spooling
+D. All of the above
+
+Answer: D. All of the above
+Explanation: Queue follows FIFO.
+
+Linked Lists
+13. Main advantage of linked list over array
+
+A. Random access
+B. Dynamic size
+C. Contiguous memory
+D. Less memory
+
+Answer: B. Dynamic size
+Explanation: Size can grow or shrink.
+
+14. Which linked list requires two pointers per node?
+
+A. Singly
+B. Doubly
+C. Circular singly
+D. Stack
+
+Answer: B. Doubly
+Explanation: It stores previous and next pointers.
+
+15. Time to delete last node in singly linked list (no tail)
+
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n²)
+
+Answer: B. O(n)
+Explanation: Traversal is required.
+
+16. Circular linked list property
+
+A. Last node points to null
+B. Last node points to head
+C. Cannot traverse
+D. Fixed size
+
+Answer: B. Last node points to head
+Explanation: Forms a loop.
+
+Trees
+17. Maximum nodes at level L of binary tree
+
+A. 2^L
+B. 2^(L+1)
+C. L²
+D. L+1
+
+Answer: A. 2^L
+Explanation: Each level doubles nodes.
+
+18. Traversal used in postorder expression evaluation
+
+A. Inorder
+B. Preorder
+C. Postorder
+D. Level order
+
+Answer: C. Postorder
+Explanation: Operands are evaluated before operator.
+
+19. Height of complete binary tree with n nodes
+
+A. log₂(n+1) − 1
+B. n
+C. 2n
+D. n−1
+
+Answer: A
+Explanation: Height grows logarithmically.
+
+20. Binary Search Tree property
+
+A. Left ≤ Root ≤ Right
+B. Left ≥ Root ≤ Right
+C. Left ≤ Root ≥ Right
+D. None
+
+Answer: A
+Explanation: Left subtree contains smaller values.
+
+Hashing
+21. Perfect hashing means
+
+A. No collisions
+B. Frequent collisions
+C. Linear probing only
+D. Integer keys only
+
+Answer: A
+Explanation: Each key maps uniquely.
+
+22. Load factor of hash table
+
+A. Empty slots / total
+B. Elements / total slots
+C. Total slots / elements
+D. None
+
+Answer: B
+Explanation: Measures table fullness.
+
+23. Double hashing uses
+
+A. One hash function
+B. Two hash functions
+C. Linked lists
+D. Arrays only
+
+Answer: B
+Explanation: Second hash resolves collision.
+
+24. Search time in well-implemented hash table
+
+A. O(n)
+B. O(log n)
+C. O(1)
+D. O(n log n)
+
+Answer: C
+Explanation: Constant average time.
+
+Graphs
+25. True for Directed Acyclic Graph
+
+A. Has cycles
+B. Topological sort possible
+C. Single node only
+D. Cannot traverse
+
+Answer: B
+Explanation: No cycles allow ordering.
+
+26. Space of adjacency matrix for n vertices
+
+A. O(n)
+B. O(n²)
+C. O(log n)
+D. O(n log n)
+
+Answer: B
+Explanation: Stores all possible edges.
+
+27. DFS uses
+
+A. Queue
+B. Stack
+C. Heap
+D. Array
+
+Answer: B
+Explanation: DFS goes deep first.
+
+28. Prim’s algorithm is used for
+
+A. Shortest path
+B. Minimum spanning tree
+C. Sorting
+D. Cycle detection
+
+Answer: B
+Explanation: Builds MST with minimum cost.
+
+Recursion
+29. Time complexity of recursive Fibonacci
+
+A. O(n)
+B. O(2^n)
+C. O(log n)
+D. O(n log n)
+
+Answer: B
+Explanation: Repeated subproblems.
+
+30. Technique to optimize Fibonacci
+
+A. Backtracking
+B. Dynamic programming
+C. Brute force
+D. Greedy
+
+Answer: B
+Explanation: Uses memoization.
+
+31. Indirect recursion occurs when
+
+A. Function calls itself
+B. Functions call each other
+C. No recursion
+D. Infinite loop
+
+Answer: B
+Explanation: Mutual recursion.
+
+32. Tail recursion preferred because
+
+A. Less code
+B. Optimized stack usage
+C. More memory
+D. Slower
+
+Answer: B
+Explanation: Allows compiler optimization.
+
+Sorting & Algorithms
+33. Stable sorting algorithm
+
+A. Quick
+B. Heap
+C. Merge
+D. Selection
+
+Answer: C
+Explanation: Maintains relative order.
+
+34. Worst-case of insertion sort
+
+A. O(n)
+B. O(n log n)
+C. O(n²)
+D. O(log n)
+
+Answer: C
+Explanation: Reverse order input.
+
+35. Best searching for sorted array
+
+A. Linear
+B. Binary
+C. Hashing
+D. Bubble
+
+Answer: B
+Explanation: Divides search space.
+
+36. Jump search works on
+
+A. Linked list
+B. Sorted array
+C. Unsorted array
+D. Trees
+
+Answer: B
+Explanation: Skips fixed blocks.
+
+Algorithm Design
+37. Greedy gives optimal solution when
+
+A. Optimal substructure
+B. Local = global optimum
+C. Both A and B
+D. Neither
+
+Answer: C
+Explanation: Both conditions required.
+
+38. Backtracking used for
+
+A. Optimization
+B. Constraint satisfaction
+C. Sorting
+D. Graph search only
+
+Answer: B
+Explanation: Explores and backtracks.
+
+39. Divide and Conquer involves
+
+A. Splitting problem
+B. Recursive solving
+C. Combining results
+D. All
+
+Answer: D
+Explanation: All steps are essential.
+
+40. Memoization is used in
+
+A. Greedy
+B. Dynamic programming
+C. Brute force
+D. Divide & Conquer
+
+Answer: B
+Explanation: Stores subproblem results.

@@ -1,0 +1,406 @@
+1. What is the time complexity to access the ith element in an array?
+
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n²)
+
+Answer: A. O(1)
+Explanation: Arrays support random access, so accessing any element by index takes constant time.
+
+2. In which situation is an array better than a linked list?
+
+A. Frequent insertions/deletions
+B. Random access to elements
+C. Unknown size
+D. Memory efficiency
+
+Answer: B. Random access to elements
+Explanation: Arrays allow direct indexing, making access faster than a linked list, which requires traversal.
+
+3. Which of the following is a disadvantage of arrays?
+
+A. Fixed size
+B. Sequential memory allocation
+C. Wasted memory if not fully used
+D. All of the above
+
+Answer: D. All of the above
+Explanation: Arrays have fixed size, contiguous allocation, and can lead to wasted memory.
+
+4. What is the result of arr.length in Java for an array?
+
+A. Maximum index
+B. Number of elements
+C. Size minus one
+D. None
+
+Answer: B. Number of elements
+Explanation: arr.length returns the total number of elements in the array.
+
+5. Which of the following operations is not supported by a stack?
+
+A. Push
+B. Pop
+C. Peek
+D. Enqueue
+
+Answer: D. Enqueue
+Explanation: Enqueue is a queue operation, not a stack operation.
+
+6. Worst-case space complexity of a recursive factorial function
+
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n²)
+
+Answer: B. O(n)
+Explanation: Recursive calls consume stack space equal to the depth of recursion.
+
+7. How can you implement two stacks in a single array efficiently?
+
+A. Divide array into two halves
+B. Start one stack from beginning and one from end
+C. Use extra memory
+D. Dynamic resize only
+
+Answer: B
+Explanation: Using opposite ends prevents space wastage.
+
+8. Which real-world scenario is best suited for a stack?
+
+A. Undo operation
+B. CPU scheduling
+C. BFS traversal
+D. Printer spooling
+
+Answer: A
+Explanation: Undo operations follow LIFO order.
+
+Queues
+9. Which operation removes an element from the front of a queue?
+
+A. Push
+B. Pop
+C. Dequeue
+D. Insert
+
+Answer: C
+Explanation: Dequeue removes the front element.
+
+10. Priority queue is usually implemented using
+
+A. Array
+B. Linked list
+C. Heap
+D. Stack
+
+Answer: C
+Explanation: Heap maintains priority efficiently.
+
+11. Circular queue is preferred because
+
+A. Uses less memory
+B. Easy to implement
+C. O(n²) operations
+D. Eliminates wasted space
+
+Answer: D
+Explanation: Circular queue reuses freed slots.
+
+12. Application of queue
+
+A. CPU scheduling
+B. Printer spooling
+C. BFS
+D. All of the above
+
+Answer: D
+Explanation: Queue is used wherever FIFO is required.
+
+Linked List
+13. Which linked list allows traversal in both directions?
+
+A. Singly
+B. Doubly
+C. Circular
+D. None
+
+Answer: B
+Explanation: Doubly linked list has next and previous pointers.
+
+14. Costly operation in singly linked list
+
+A. Traversal
+B. Insert at head
+C. Delete at head
+D. Add at tail
+
+Answer: A
+Explanation: Traversal takes linear time.
+
+15. Time complexity of insertion at beginning of linked list
+
+A. O(n)
+B. O(1)
+C. O(log n)
+D. O(n²)
+
+Answer: B
+Explanation: Only pointer update is required.
+
+16. Extra memory is required in linked list for
+
+A. Data
+B. Pointer
+C. Traversal
+D. Deletion
+
+Answer: B
+Explanation: Each node stores pointer(s).
+
+Trees
+17. Which tree is complete binary tree?
+
+A. All levels filled except possibly last
+B. All non-leaf nodes have two children
+C. One child only
+D. Unbalanced
+
+Answer: A
+Explanation: Last level is filled left to right.
+
+18. Height of full binary tree with n nodes
+
+A. log₂(n)
+B. n
+C. n−1
+D. 2n
+
+Answer: A
+Explanation: Height grows logarithmically.
+
+19. Traversal that visits root first
+
+A. Inorder
+B. Preorder
+C. Postorder
+D. Level order
+
+Answer: B
+Explanation: Root is visited before subtrees.
+
+20. BFS uses which traversal?
+
+A. Inorder
+B. Preorder
+C. Postorder
+D. Level order
+
+Answer: D
+Explanation: BFS visits nodes level-wise.
+
+Sorting & Searching
+21. Best sorting for nearly sorted array
+
+A. Bubble
+B. Selection
+C. Insertion
+D. Quick
+
+Answer: C
+Explanation: Insertion sort needs fewer shifts.
+
+22. Worst-case time of quick sort
+
+A. O(n)
+B. O(n log n)
+C. O(n²)
+D. O(log n)
+
+Answer: C
+Explanation: Poor pivot causes quadratic time.
+
+23. Divide and conquer sorting algorithm
+
+A. Bubble
+B. Selection
+C. Merge
+D. Insertion
+
+Answer: C
+Explanation: Merge sort splits and merges.
+
+24. Best-case time of binary search
+
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n log n)
+
+Answer: A
+Explanation: Target found at mid.
+
+25. Binary search requires array to be
+
+A. Sorted
+B. Unsorted
+C. Random
+D. Circular
+
+Answer: A
+Explanation: Binary search depends on ordering.
+
+Hashing
+26. Collision resolution techniques
+
+A. Linear probing
+B. Quadratic probing
+C. Double hashing
+D. All
+
+Answer: D
+Explanation: All are valid techniques.
+
+27. Hash function converts
+
+A. Data to index
+B. Index to data
+C. Node to pointer
+D. None
+
+Answer: A
+Explanation: Hash maps keys to indices.
+
+28. Average case search in hash table
+
+A. O(n)
+B. O(log n)
+C. O(1)
+D. O(n log n)
+
+Answer: C
+Explanation: Good hashing gives constant time.
+
+Graphs
+29. Traversal that uses queue
+
+A. DFS
+B. BFS
+C. Inorder
+D. Preorder
+
+Answer: B
+Explanation: BFS uses a queue.
+
+30. Single source shortest path algorithm
+
+A. Dijkstra
+B. Prim
+C. Kruskal
+D. Floyd
+
+Answer: A
+Explanation: Dijkstra handles weighted graphs.
+
+31. MST algorithms
+
+A. Prim
+B. Kruskal
+C. BFS
+D. Both A and B
+
+Answer: D
+Explanation: Both construct minimum spanning tree.
+
+32. Best graph representation for sparse graph
+
+A. Matrix
+B. List
+C. Incidence
+D. None
+
+Answer: B
+Explanation: Adjacency list saves space.
+
+Recursion & Algorithms
+33. Recursion where call is last statement
+
+A. Direct
+B. Tail
+C. Indirect
+D. Infinite
+
+Answer: B
+Explanation: Tail recursion allows optimization.
+
+34. Mandatory for recursion termination
+
+A. Loop
+B. Base condition
+C. Global variable
+D. Parameter
+
+Answer: B
+Explanation: Base case stops recursion.
+
+35. Stack overflow occurs due to
+
+A. Missing base case
+B. Small input
+C. Arrays
+D. Few calls
+
+Answer: A
+Explanation: Infinite recursion exhausts stack.
+
+36. Algorithm that tries all possibilities
+
+A. Greedy
+B. Divide & Conquer
+C. Brute Force
+D. Dynamic Programming
+
+Answer: C
+Explanation: Brute force checks every option.
+
+37. Uses overlapping subproblems
+
+A. Greedy
+B. Divide & Conquer
+C. Dynamic Programming
+D. Brute Force
+
+Answer: C
+Explanation: DP stores repeated results.
+
+38. Greedy works when
+
+A. Optimal substructure
+B. Local = global optimum
+C. Small problem
+D. Both A and B
+
+Answer: D
+Explanation: Both conditions are required.
+
+39. Divide & Conquer examples
+
+A. Merge sort
+B. Binary search
+C. Quick sort
+D. All
+
+Answer: D
+Explanation: All use divide-and-conquer.
+
+40. Backtracking is used in
+
+A. N-Queens
+B. Maze
+C. Sudoku
+D. All
+
+Answer: D
+Explanation: Backtracking explores and backtracks on wrong paths.

@@ -1,0 +1,445 @@
+1. What is the primary objective of problem solving in computer science?
+A. Writing code quickly
+B. Minimizing memory usage only
+C. Finding an optimal solution for a defined problem
+D. Using advanced data structures
+
+Correct Answer: C
+Explanation:
+Problem solving focuses on understanding the problem, designing an algorithm, and implementing an efficient solution, not just coding.
+
+2. Which of the following is the first step in computational thinking?
+A. Implementing the algorithm
+B. Testing
+C. Defining the problem
+D. Optimizing code
+
+Correct Answer: C
+Explanation:
+Before solving any problem, it must be clearly defined, including inputs, outputs, and constraints.
+
+3. Which notation is used to express algorithm complexity?
+A. UML
+B. Big-O
+C. Pseudocode
+D. Flowchart
+
+Correct Answer: B
+Explanation:
+Big-O notation describes the upper bound of time or space complexity.
+
+4. What is the time complexity of a single loop iterating n times?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n²)
+
+Correct Answer: C
+Explanation:
+A loop running n times has linear time complexity.
+
+for(int i = 0; i < n; i++) {
+    System.out.println(i);
+}
+
+5. Which data structure follows LIFO principle?
+A. Queue
+B. Stack
+C. Array
+D. Linked List
+
+Correct Answer: B
+Explanation:
+Stack uses Last In First Out order.
+
+6. Which real-world example best represents a stack?
+A. Ticket queue
+B. Browser history
+C. Railway reservation
+D. CPU scheduling
+
+Correct Answer: B
+Explanation:
+Browser navigation uses stack for Back/Forward operations.
+
+7. What happens when we pop from an empty stack?
+A. Overflow
+B. Segmentation fault
+C. Underflow
+D. Compilation error
+
+Correct Answer: C
+Explanation:
+Removing from an empty stack causes stack underflow.
+
+8. Which data structure follows FIFO principle?
+A. Stack
+B. Queue
+C. Tree
+D. Graph
+Correct Answer: B
+
+Explanation:
+Queue works on First In First Out.
+
+
+9. Which operation inserts an element at the rear of a queue?
+A. Pop
+B. Dequeue
+C. Enqueue
+D. Push
+
+Correct Answer: C. Enqueue
+Explanation:
+In a queue, insertion is always done at the rear (end) and deletion is done from the front.
+The operation that inserts an element into the queue is called enqueue.
+Enqueue → Insert at rear
+Dequeue → Remove from front
+
+10. Advantage of circular queue over linear queue?
+A. Faster operations
+B. Avoids memory wastage
+C. Easier implementation
+D. Uses recursion
+
+Correct Answer: B. Avoids memory wastage
+Explanation:
+In a linear queue, once the rear reaches the end of the array, no more elements can be inserted even if there are free spaces at the front (false overflow).
+A circular queue connects the last position back to the first, reusing freed spaces, thus avoiding memory wastage.
+
+11. Which linked list allows traversal in both directions?
+A. Singly
+B. Circular
+C. Doubly
+D. Linear
+
+Correct Answer: C. Doubly
+Explanation:
+A doubly linked list contains two pointers:
+prev → points to previous node
+next → points to next node
+This allows traversal forward and backward, unlike singly linked lists.
+
+12. Main disadvantage of arrays compared to linked lists?
+
+A. No random access
+B. Fixed size
+C. Complex syntax
+D. Slower access
+
+Correct Answer: B. Fixed size
+Explanation:
+Arrays have a fixed size, which must be defined at creation time.
+Linked lists are dynamic, meaning memory can be allocated or deallocated at runtime.
+
+13. Which node pointer is present in singly linked list?
+A. prev
+B. left
+C. next
+D. both prev and next
+
+Correct Answer: C. next
+Explanation:
+A singly linked list node contains:
+One pointer called next that points to the next node
+It does not store a reference to the previous node.
+
+14. Time complexity to insert at beginning of linked list?
+A. O(n)
+B. O(log n)
+C. O(1)
+D. O(n²)
+
+Correct Answer: C. O(1)
+Explanation:
+Insertion at the beginning of a linked list requires:
+Creating a new node
+Pointing it to the current head
+Updating head
+No traversal is needed → constant time.
+
+15. Which structure is best for implementing stack dynamically?
+A. Array
+B. Linked list
+C. Queue
+D. Tree
+
+Correct Answer: B. Linked list
+Explanation:
+A stack implemented using linked list can grow and shrink dynamically without overflow issues, unlike arrays which have fixed size.
+
+
+16. What is mandatory in a recursive function?
+A. Loop
+B. Base condition
+C. Global variable
+D. Class object
+
+Correct Answer: B. Base condition
+Explanation:
+A base condition stops the recursion.
+Without it, the function keeps calling itself infinitely.
+
+17. What happens if base condition is missing?
+A. Compilation error
+B. Stack overflow
+C. Runtime exception
+D. Infinite loop only
+
+Correct Answer: B. Stack overflow
+Explanation:
+Each recursive call consumes stack memory.
+Without a base condition, calls never stop, leading to stack overflow error.
+int fact(int n){
+    if(n == 0) return 1;
+    return n * fact(n-1);
+}
+
+18. Recursion uses which data structure internally?
+
+A. Queue
+B. Heap
+C. Stack
+D. Graph
+
+Correct Answer: C. Stack
+Explanation:
+Each recursive call is stored in the call stack with:
+Local variables, Return address
+
+19. Tail recursion means?
+A. Multiple recursive calls
+B. Recursive call at end
+C. No base case
+D. Loop-based recursion
+
+Correct Answer: B. Recursive call at end
+Explanation:
+In tail recursion, the recursive call is the last statement in the function.
+It can be optimized by the compiler.
+
+20. Advantage of recursion?
+
+A. Faster execution
+B. Reduced memory
+C. Code simplicity
+D. No stack usage
+
+Correct Answer: C. Code simplicity
+Explanation:
+Recursion simplifies complex problems like tree traversal, factorial, and divide-and-conquer algorithms, making code shorter and more readable.
+
+21. Maximum children in a binary tree node?
+A. 1
+B. 2
+C. 3
+D. Unlimited
+
+Correct Answer: B. 2
+Explanation:
+A binary tree allows at most two children: left and right.
+
+22. Inorder traversal sequence is?
+
+A. Root–Left–Right
+B. Left–Root–Right
+C. Left–Right–Root
+D. Root–Right–Left
+
+Correct Answer: B. Left–Root–Right
+
+Explanation:
+Inorder traversal visits:
+Left subtree
+Root
+Right subtree
+In a BST, inorder traversal gives sorted output.
+
+23. Time complexity of searching in balanced BST?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n log n)
+
+Correct Answer: C. O(log n)
+Explanation:
+In a balanced BST, height is log n, so search time is proportional to tree height.
+
+24. Which tree overcomes skewed BST problem?
+A. Binary Tree
+B. Heap
+C. AVL Tree
+D. Tree
+
+Correct Answer: C. AVL Tree
+Explanation:
+AVL tree is a self-balancing BST that maintains height balance using rotations.
+
+25. BFS traversal uses which structure?
+A. Stack
+B. Queue
+C. Tree
+D. Recursion
+
+Correct Answer: B. Queue
+Explanation:
+Breadth First Search (BFS) explores nodes level by level using a queue.
+
+
+26. Best case time complexity of binary search?
+
+A. O(n)
+B. O(log n)
+C. O(1)
+D. O(n log n)
+
+Correct Answer: C. O(1)
+Explanation:
+Best case occurs when the element is found at the middle position in the first comparison.
+
+27. Binary search requires data to be?
+A. Random
+B. Sorted
+C. Reversed
+D. Unsorted
+
+Correct Answer: B. Sorted
+Explanation:
+Binary search repeatedly divides the data into halves, which is possible only if data is sorted.
+
+28. Which sorting algorithm is stable?
+A. Quick sort
+B. Heap sort
+C. Insertion sort
+D. Selection sort
+
+Correct Answer: C. Insertion sort
+Explanation:
+A stable sort preserves the relative order of equal elements.
+Insertion sort maintains stability.
+
+29. Worst case complexity of quicksort?
+A. O(n)
+B. O(n log n)
+C. O(log n)
+D. O(n²)
+
+Correct Answer: D. O(n²)
+Explanation:
+Worst case occurs when pivot selection is poor (already sorted data).
+
+30. Which sorting algorithm uses divide and conquer?
+A. Bubble sort
+B. Selection sort
+C. Merge sort
+D. Insertion sort
+
+Correct Answer: C. Merge sort
+Explanation:
+Merge sort divides the array into halves, sorts them, and merges → divide & conquer.
+
+
+31. What is the purpose of hashing?
+A. Sorting
+B. Searching efficiently
+C. Traversal
+D. Encryption
+
+Correct Answer: B. Searching efficiently
+Explanation:
+Hashing allows constant time average search, faster than linear or binary search.
+
+32. Collision occurs when?
+A. Table is full
+B. Two keys map to same index
+C. Key not found
+D. Hash function fails
+
+Correct Answer: B. Two keys map to same index
+Explanation:
+When different keys generate the same hash value, collision occurs.
+
+33. Which collision resolution uses another hash function?
+A. Linear probing
+B. Quadratic probing
+C. Double hashing
+D. Chaining
+
+Correct Answer: C. Double hashing
+Explanation:
+Double hashing uses a second hash function to find new positions.
+
+34. Average search time in hash table?
+A. O(n)
+B. O(log n)
+C. O(1)
+D. O(n log n)
+
+Correct Answer: C. O(1)
+Explanation:
+With a good hash function and low load factor, hash table operations run in constant time.
+
+35. Hash table improves which recursive algorithm?
+A. Binary search
+B. Fibonacci
+C. Merge sort
+D. Quick sort
+
+Correct Answer: B. Fibonacci
+Explanation:
+Using hashing (memoization) avoids repeated calculations in recursive Fibonacci, reducing complexity from exponential to linear.
+
+Graphs
+36. Graph traversal algorithms are?
+
+A. Inorder & Preorder
+B. BFS & DFS
+C. Heap & Stack
+D. Linear & Binary
+
+Correct Answer: B. BFS & DFS
+Explanation:
+Graphs are traversed using:
+BFS, DFS 
+
+37. Which representation is space efficient for sparse graphs?
+A. Adjacency matrix
+B. Adjacency list
+C. Incidence matrix
+D. Tree
+
+Correct Answer: B. Adjacency list
+Explanation:
+Sparse graphs have fewer edges.
+Adjacency list stores only existing edges → less memory usage.
+
+38. Dijkstra’s algorithm is used for?
+A. MST
+B. Sorting
+C. Shortest path
+D. Traversal
+
+Correct Answer: C. Shortest path
+Explanation:
+Dijkstra’s algorithm finds the shortest path from a single source to all other vertices.
+
+39. Which algorithm finds Minimum Spanning Tree?
+A. Floyd
+B. Dijkstra
+C. Prim
+D. DFS
+
+Correct Answer: C. Prim
+Explanation:
+Prim’s algorithm constructs a minimum spanning tree by growing it one vertex at a time.
+
+40. Which algorithm design technique tries all possibilities?
+A. Greedy
+B. Dynamic Programming
+C. Divide & Conquer
+D. Brute Force
+
+Correct Answer: D. Brute Force
+Explanation:
+Brute force algorithms check all possible solutions to find the correct one.
+They are simple but inefficient.

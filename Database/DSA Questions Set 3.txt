@@ -1,0 +1,446 @@
+1. Linear search is used
+A. When the list has only a few elements
+B. When performing a single search in an unordered list
+C. None of above
+D. Both A and B
+
+Correct Answer: D. Both A and B
+Explanation:
+Linear search checks elements one by one from start to end.
+It is suitable when the list size is small, because overhead is minimal.
+It is also useful when the list is unordered, since binary search requires sorted data.
+Therefore, both conditions A and B are correct, making option D the right answer.
+
+2. The best case complexity of linear search algorithm is
+A. O(1)
+B. O(log 1)
+C. O(n²)
+D. O(n log 1)
+
+Correct Answer: A. O(1)
+Explanation:
+The best case occurs when the search element is found at the first position.
+Only one comparison is needed.Time taken does not depend on input size. Hence, best-case time complexity is O(1).
+
+3. The worst case occurs in linear search algorithm when
+A. Item is somewhere in the middle of the array
+B. Item is the last element in the array or is not there at all
+C. Item is the last element in the array
+D. Item is the first element in the array
+
+Correct Answer: B. Item is the last element in the array or is not there at all
+Explanation:
+The worst case in linear search occurs when:
+The element is at the last position, or
+The element is not present in the array.
+In both cases, the algorithm must compare all n elements, leading to O(n) time complexity.
+
+4. Binary search algorithm uses
+A. Linear way to search values
+B. Divide and conquer method
+C. Bubble sorting technique
+D. None of them
+
+Correct Answer: B. Divide and conquer method
+Explanation:
+Binary search works by:
+Comparing the middle element
+Dividing the array into two halves
+Repeating the process on the relevant half
+This approach is known as Divide and Conquer, making option B correct.
+
+5. Given an array arr = {5, 6, 77, 88, 99} and key = 88
+How many iterations are done until the element is found using Binary Search?
+A. 1
+B. 3
+C. 4
+D. 2
+
+Correct Answer: D. 2
+Explanation:
+Array (sorted):
+{5, 6, 77, 88, 99}
+
+Iteration 1
+Middle index = (0 + 4) / 2 = 2
+Middle element = 77
+88 > 77 → search right half
+
+Iteration 2
+New range = {88, 99}
+Middle element = 88
+
+Key found
+Total iterations = 2
+
+6. The data structure required for Breadth First Traversal on a graph is?
+a) Array
+b) Stack
+c) Tree
+d) Queue
+
+Answer: d
+Explanation: Queue uses FIFO principle.
+
+7. Which of the following tree data structures is not a balanced binary tree?
+a) Splay tree
+b) B-tree
+c) AVL tree
+d) Red-black tree
+Answer: b
+Explanation: All the tree data structures given in options are balanced, but B-tree can have more than two children.
+
+8.Which of the following is also known as Rope data structure?
+a) Linked List
+b) Array
+c) String
+d) Cord
+Answer: d
+Explanation: Array is a linear data structure. Strings are a collection and sequence of codes, alphabets or characters. Linked List is a linear data structure having a node containing data input and the address of the next node. The cord is also known as the rope data structure.
+
+
+9. Maximum comparisons in bubble sort with n elements
+A. (1/2)(n-1)
+B. (1/2)n(n-1)
+C. (1/4)n(n-1)
+D. none of above
+
+Answer: B
+Explanation:
+In bubble sort, each element is compared with the next one repeatedly.
+When the array is in reverse order, the algorithm makes the maximum number of comparisons.As the number of elements increases, the comparisons grow very fast, so the time complexity is O(n²)
+
+10. Which design algorithm is used for quick sort?
+A. Divide and conquer
+B. Greedy
+C. Backtracking
+D. None of above
+
+Answer: A
+Explanation:
+Quick sort divides the array into smaller sub-arrays using a pivot and sorts them separately.
+This approach is called divide and conquer.
+
+11. Consider array {5, 4, 3, 2, 1}.
+What are the steps of insertion sort?
+A. 4 5 3 2 1, 3 4 5 2 1, 2 3 4 5 1, 1 2 3 4 5
+B. 5 4 3 1 2, 5 4 1 2 3, 5 1 2 3 4, 1 2 3 4 5
+C. 4 3 2 1 5, 3 2 1 5 4, 2 1 5 4 3, 1 5 4 3 2
+D. 4 5 3 2 1, 2 3 4 5 1, 3 4 5 2 1, 1 2 3 4 5
+
+Answer: A
+Explanation:
+Insertion sort:
+Starting from {5,4,3,2,1}:
+Insert 4 before 5 → 4 5 3 2 1
+Insert 3 → 3 4 5 2 1
+Insert 2 → 2 3 4 5 1
+Insert 1 → 1 2 3 4 5
+
+
+12. Which of the following statements explains insertion sort?
+A. Break list into smaller lists and merge
+B. Iterate multiple times to find first number
+C. Remove one element, find its position, insert it
+D. Divide numbers by average
+
+Answer: C
+Explanation:
+Insertion sort takes one element at a time and inserts it into its correct position in the sorted part of the list.
+
+13. Which of the following is true about merge sort?
+A. Works better than quick sort on slow memory
+B. Stable by nature
+C. Outperforms heap sort practically
+D. All of the above
+
+Answer: D
+Explanation:
+Merge sort:
+Works well with sequential access memory
+Is stable Often faster than heap sort in practice
+
+14. After 3 recursive calls to merge sort on [21,1,26,45,...], which is correct?
+A. [16,49,...]
+B. [21,1]
+C. [21,1,26,45]
+D. [21]
+
+Answer: B
+Explanation:
+Merge sort recursively splits the array into halves.
+1st call → full array → split into 2 halves
+2nd call → first half → split again
+3rd call → [21,1] is the leftmost subarray after 3 splits
+
+15. In quick sort, which is true about pivot?
+A. Must choose first element
+B. Must choose last element
+C. Must choose random element
+D. None of the above
+
+Answer: D
+Explanation:
+Quick sort can choose any pivot: first, last, middle, or random.
+There is no compulsory choice.
+
+16. The postfix expression 8 2 3 ^ / 2 3 * + 5 1 * -Top two elements of the stack after the first * is evaluated
+A. 6, 1
+B. 5, 7
+C. 3, 2
+D. 1, 5
+
+Answer: A
+Explanation:
+Step-by-step evaluation of postfix using stack:
+Push 8,2,3 → Stack top = 3
+Evaluate 2 3 ^ → 2^3 = 8 → Stack = [8,8]
+Evaluate / → 8 / 8 = 1 → Stack = [1]
+Push 2,3 → Stack = [1,2,3]
+Evaluate * → 2*3 = 6 → Stack = [1,6]
+
+
+17. The data structure required to check balanced parenthesis
+A. Stack
+B. Queue
+C. Tree
+D. Array
+
+Answer: A
+Explanation:
+Use a stack to push opening brackets (, {, [
+Pop stack when a closing bracket ), }, ] is encountered
+If stack is empty at the end → balanced
+
+18. Which is the most appropriate data structure for reversing a word?
+a) stack
+b) queue
+c) graph
+d) tree
+Answer: a
+Explanation: Stack is the most appropriate data structure for reversing a word because stack follows LIFO principle.
+
+
+19. A linear list in which deletion is at front and insertion is at rear is?
+A. Queue
+B. Stack
+C. Tree
+D. Linked list
+
+Answer: A
+Explanation: Queue = FIFO 
+
+20. In the array implementation of circular queue, which operation takes worst-case linear time?
+
+A. Insertion
+B. Deletion
+C. To empty a queue
+D. None
+
+Answer: D
+Explanation:
+Circular queue operations (insert, delete, check empty) are done using front and rear indices. Each operation is constant time (O(1)), never linear.
+
+21. Circular queue array insertion index
+Array size = 10, index 0–9
+Front = 6, Rear = 9
+Next insertion index?
+A. 0
+B. 7
+C. 9
+D. 10
+
+Answer: A
+Explanation:
+Circular queue wraps around when rear reaches the end of array.
+Current rear = 9 → next insertion = (rear + 1) % size = (9 + 1) % 10 = 0
+
+22. Consider a situation where swap operation is very costly. Which sorting algorithm should be preferred to minimize swaps?
+A. Heap Sort
+B. Selection Sort
+C. Insertion Sort
+D. Merge Sort
+
+Answer: B. Selection Sort
+Explanation:
+Selection sort performs only one swap per pass, reducing costly swap operations. Other algorithms like heap sort or insertion sort may swap multiple times per element.
+
+23. In the worst case, the number of comparisons needed to search a singly linked list of length n for a given element is:
+A. log(n)
+B. n
+C. n/2
+D. None of the above
+
+Answer: B. n
+Explanation:
+A singly linked list must be traversed node by node to find an element. In the worst case, all n nodes are checked.
+
+24. In a binary tree, if a non-leaf node has non-empty left and right subtrees, the tree is called:
+A. Strictly binary tree
+B. Complete binary tree
+C. Full binary tree
+D. Skewed binary tree
+
+Answer: C. Full binary tree
+Explanation:
+A full binary tree is one where every non-leaf node has exactly two children. Nodes cannot have only one child in a full binary tree.
+
+25. ............... is an abstract data type that generalizes a queue, for which elements can be added to or removed from either end.
+A. Double ended queue
+B. Deck
+C. Deque
+D. Both A and C are correct
+
+Answer: D. Both A and C are correct
+Explanation:
+A deque allows insertion and deletion at both front and rear ends. “Double-ended queue” is another name for deque, so both terms are correct.
+
+26. Which statement is correct about flowchart and pseudocode?
+A. A flowchart is a diagram while pseudocode is written in any programming language
+B. A flowchart is textual but pseudocode is a diagram
+C. A flowchart is a schematic description of an algorithm, while pseudocode is a textual description of an algorithm
+D. Flowchart and pseudocode are the same
+
+Answer: C
+Explanation:
+A flowchart is a diagrammatic representation of an algorithm. Pseudocode is a textual description written in structured English or programming-like statements.
+
+27. Which one is an application of Queue Data Structure?
+A. Spooling in printers
+B. Queues in routers/switches
+C. Evaluation of arithmetic expressions
+D. Both A and B
+
+Answer: D. Both A and B
+Explanation:
+Queues are used in printer spooling and network routers to handle tasks in FIFO order. Arithmetic expression evaluation generally uses stacks, not queues.
+
+
+28. Which of the following is an advantage of linked list over array?
+A. Inserting a new element in a linked-list is easy compared to an array
+B. The size of linked-list is fixed
+C. Extra memory space for a pointer is required
+D. Random access is not allowed
+
+Answer: A
+Explanation:
+In a linked list, inserting a new element does not require shifting other elements, unlike arrays. This makes insertion faster and easier.
+
+29. Which asymptotic notation is used to represent the lower bound?
+A. Big-Oh (O) Notation
+B. Big-Omega (Ω) Notation
+C. Big-Theta (Θ) Notation
+D. None of the above
+
+Answer: B. Big-Omega (Ω) Notation
+Explanation:
+Big-Omega notation (Ω) represents the minimum number of steps an algorithm will take. It describes the lower bound of the algorithm’s complexity.
+
+30. In-order traversal sequence of a BST for numbers 80,110,120,60,40,70,90,100,85
+
+A. 80 60 40 70 110 90 85 100 120
+B. 40 60 70 80 85 90 100 110 120
+C. 40 70 60 85 100 90 120 110 80
+D. 40 60 70 85 90 100 110 120 80
+
+Answer: B
+Explanation:
+In-order traversal of a BST always gives sorted order of elements. So the sequence is 40 60 70 80 85 90 100 110 120.
+
+Which one is an application of Graph Data Structure?
+A. Electronic circuit simulation
+B. Path Optimization Algorithms
+C. Scientific Computations
+D. All of the above
+
+Answer: D. All of the above
+Explanation:
+Graphs are used in circuit simulation, shortest path/path optimization, and scientific modeling.
+Thus, all the listed options are valid applications.
+
+32. Time complexity of push and pop if stack is implemented using linked list
+A. O(1) for insertion, O(n) for deletion
+B. O(1) for insertion, O(1) for deletion
+C. O(n) for insertion, O(1) for deletion
+D. O(n) for insertion, O(n) for deletion
+
+Answer: B. O(1) for insertion, O(1) for deletion
+Explanation:
+In a linked-list-based stack, push and pop happen at the head. Both operations require constant time.
+
+33. Given an undirected graph G with 5 vertices and 7 edges, sum of degrees of all vertices is:
+A. 7
+B. 5
+C. 10
+D. 14
+
+Answer: D. 14
+Explanation:
+Sum of degrees in an undirected graph = 2 × number of edges. Here, 2 × 7 = 14.
+
+34. Selection sort algorithm design technique is an example of:
+A. Greedy Method
+B. Divide and Conquer
+C. Dynamic Programming
+D. Backtracking
+
+Answer: A. Greedy Method
+Explanation:
+Selection sort selects the minimum element in each pass, making a local optimum choice. This is characteristic of the greedy approach.
+
+35. Suitable data structure to implement priority queue
+A. Graph
+B. Heap data structure
+C. Linked List
+D. Both B and C
+
+Answer: D. Both B and C
+Explanation:
+Priority queues can be implemented using a heap for efficient insert/delete or using a linked list (sorted or unsorted). Both are valid choices.
+
+36. The result of evaluating postfix expression 539*74-/+62*- is:
+A. 16
+B. 2
+C. -7
+D. 3
+
+Answer: C. -7
+Explanation: Using a stack to evaluate postfix, the expression simplifies step by step to -7.
+
+37. Merge Sort works on two principles:
+A. To sort smaller size array and to merge two already sorted array operations are not efficient
+B. To sort smaller size array and to merge two already sorted array operations are efficient
+C. To sort smaller size array is efficient and to merge two already sorted array is not efficient
+D. To sort smaller size array is not efficient and to merge two already sorted array is efficient
+
+Answer: B
+Explanation: Merge sort efficiently sorts smaller subarrays and merges them, giving O(n log n) performance.
+
+38. Which operation inserts an element at the rear of a queue?
+A. Pop
+B. Dequeue
+C. Enqueue
+D. Push
+
+Answer: C. Enqueue
+Explanation: Enqueue is the operation that adds an element at the rear of the queue.
+
+39. What is the advantage of circular queue over linear queue?
+A. Faster operations
+B. Avoids memory wastage
+C. Easier implementation
+D. Uses recursion
+
+Answer: B. Avoids memory wastage
+Explanation: Circular queues reuse freed spaces, preventing false overflow and memory wastage.
+
+40. Which algorithm design technique tries all possibilities?
+A. Greedy
+B. Dynamic Programming
+C. Divide & Conquer
+D. Brute Force
+
+Answer: D. Brute Force
+Explanation: Brute force algorithms explore all possible solutions to find the correct one, without shortcuts
+
+

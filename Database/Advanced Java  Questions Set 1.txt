@@ -1,0 +1,399 @@
+1. What is the main advantage of JSP over Servlets?
+
+A. JSP runs faster than Servlets
+B. JSP separates presentation from business logic
+C. JSP replaces the need for Java
+D. JSP cannot use Java code
+
+Correct Answer: B
+Explanation: JSP focuses on presentation, while Servlets handle business logic, improving maintainability.
+
+2. Which method handles POST requests in HttpServlet?
+
+A. doGet()
+B. service()
+C. doPost()
+D. init()
+
+Correct Answer: C
+Explanation: doPost() processes HTTP POST requests.
+
+3. What does @Autowired do in Spring?
+
+A. Creates a bean
+B. Injects dependencies automatically
+C. Configures database
+D. Enables security
+
+Correct Answer: B
+Explanation: @Autowired performs dependency injection.
+
+4. Which annotation defines a REST controller?
+
+A. @Controller
+B. @Service
+C. @RestController
+D. @Component
+
+Correct Answer: C
+Explanation: @RestController combines @Controller and @ResponseBody.
+
+5. Which HTTP status code means “Resource Not Found”?
+
+A. 200
+B. 201
+C. 404
+D. 500
+
+Correct Answer: C
+Explanation: 404 indicates the requested resource does not exist.
+
+6. What is the purpose of @Query in Spring Data JPA?
+
+A. Create tables
+B. Define custom queries
+C. Map entities
+D. Enable caching
+
+Correct Answer: B
+Explanation: @Query allows writing custom JPQL/SQL queries.
+
+7. What does SessionFactory do in Hibernate?
+
+A. Manages transactions
+B. Creates Session objects
+C. Maps entities
+D. Executes queries
+
+Correct Answer: B
+Explanation: SessionFactory is used to create Session instances.
+
+8. Which annotation marks a Hibernate entity?
+
+A. @Table
+B. @Entity
+C. @Column
+D. @Id
+
+Correct Answer: B
+Explanation: @Entity marks a class for persistence.
+
+9. Which scope is NOT valid in JSP?
+
+A. page
+B. request
+C. application
+D. global
+
+Correct Answer: D
+Explanation: JSP does not support a global scope.
+
+10. Which design pattern does Spring MVC follow?
+
+A. Singleton
+B. Factory
+C. MVC
+D. Proxy
+
+Correct Answer: C
+Explanation: Spring MVC follows the Model-View-Controller pattern.
+
+11. What does HttpSession store?
+
+A. Client-side data
+B. Server-side session data
+C. Cookies only
+D. Headers
+
+Correct Answer: B
+Explanation: HttpSession stores data on the server.
+
+12. Which method commits a JDBC transaction?
+
+A. execute()
+B. commit()
+C. close()
+D. rollback()
+
+Correct Answer: B
+Explanation: commit() saves all changes permanently.
+
+13. Which annotation enables Spring Security?
+
+A. @EnableSecurity
+B. @EnableWebSecurity
+C. @Secure
+D. @SpringSecurity
+
+Correct Answer: B
+Explanation: @EnableWebSecurity enables security configuration.
+
+14. Which HTTP method is used to create a resource?
+
+A. GET
+B. POST
+C. PUT
+D. DELETE
+
+Correct Answer: B
+Explanation: POST is used to create new resources.
+
+15. What does @SpringBootApplication include?
+
+A. @Configuration only
+B. @ComponentScan only
+C. @Configuration, @EnableAutoConfiguration, @ComponentScan
+D. @EnableSecurity
+
+Correct Answer: C
+Explanation: It is a combination of three annotations.
+
+16. What is JSTL used for?
+
+A. Database access
+B. Business logic
+C. Common JSP tasks like loops and conditions
+D. Servlet configuration
+
+Correct Answer: C
+Explanation: JSTL simplifies JSP development.
+
+17. Which JDBC object prevents SQL injection?
+
+A. Statement
+B. Connection
+C. PreparedStatement
+D. ResultSet
+
+Correct Answer: C
+Explanation: PreparedStatement uses parameterized queries.
+
+18. What does @OneToMany represent?
+
+A. One-to-one
+B. One-to-many relationship
+C. Many-to-many
+D. Inheritance
+
+Correct Answer: B
+Explanation: One entity is linked to multiple entities.
+
+19. Which file stores Spring Boot configuration?
+
+A. pom.xml
+B. web.xml
+C. application.properties
+D. context.xml
+
+Correct Answer: C
+Explanation: application.properties holds app configurations.
+
+20. What is the role of API Gateway?
+
+A. Store data
+B. Route requests to services
+C. Execute business logic
+D. Manage databases
+
+Correct Answer: B
+Explanation: API Gateway routes and manages client requests.
+
+21. What is Service Discovery?
+
+A. Load balancing
+B. Dynamic service lookup
+C. Security mechanism
+D. Data storage
+
+Correct Answer: B
+Explanation: It enables services to find each other dynamically.
+
+22. Which annotation is used for dependency injection?
+
+A. @Service
+B. @Autowired
+C. @Entity
+D. @RequestMapping
+
+Correct Answer: B
+Explanation: @Autowired injects required dependencies.
+
+23. Which Spring AOP term represents execution point?
+
+A. Aspect
+B. Advice
+C. Join Point
+D. Pointcut
+
+Correct Answer: C
+Explanation: Join Point is where advice is applied.
+
+24. Which advice runs before method execution?
+
+A. @After
+B. @Around
+C. @Before
+D. @AfterReturning
+
+Correct Answer: C
+Explanation: @Before executes before method call.
+
+25. Which repository supports pagination?
+
+A. CrudRepository
+B. Repository
+C. JpaRepository
+D. EntityRepository
+
+Correct Answer: C
+Explanation: JpaRepository supports pagination and sorting.
+
+26. What does CQRS stand for?
+
+A. Central Query Resource System
+B. Command Query Responsibility Segregation
+C. Command Queue Request System
+D. Core Query Routing Service
+
+Correct Answer: B
+Explanation: CQRS separates read and write operations.
+
+27. Which microservice pattern handles transactions?
+
+A. API Gateway
+B. Saga Pattern
+C. Circuit Breaker
+D. Load Balancer
+
+Correct Answer: B
+Explanation: Saga manages distributed transactions.
+
+28. Which annotation maps HTTP requests?
+
+A. @Service
+B. @RequestMapping
+C. @Component
+D. @Autowired
+
+Correct Answer: B
+Explanation: @RequestMapping maps URLs to methods.
+
+29. What does ModelAndView contain?
+
+A. Only data
+B. Only view
+C. Model data and view name
+D. Request object
+
+Correct Answer: C
+Explanation: It holds both model and view.
+
+30. Which tool manages containers in microservices?
+
+A. Jenkins
+B. Docker
+C. Kubernetes
+D. Git
+
+Correct Answer: C
+Explanation: Kubernetes orchestrates container deployment.
+
+31. Which annotation defines an Aspect?
+
+A. @Aspect
+B. @Pointcut
+C. @Advice
+D. @JoinPoint
+
+Correct Answer: A
+Explanation: @Aspect defines cross-cutting logic.
+
+32. Which JDBC method executes SELECT queries?
+
+A. executeUpdate()
+B. execute()
+C. executeQuery()
+D. commit()
+
+Correct Answer: C
+Explanation: executeQuery() returns ResultSet.
+
+33. Which session tracking method works without cookies?
+
+A. HttpSession
+B. URL Rewriting
+C. Cookies
+D. Headers
+
+Correct Answer: B
+Explanation: URL rewriting embeds session ID in URL.
+
+34. Which lifecycle method destroys servlet?
+
+A. init()
+B. service()
+C. destroy()
+D. doGet()
+
+Correct Answer: C
+Explanation: destroy() cleans up servlet resources.
+
+35. What does @EnableAutoConfiguration do?
+
+A. Disables configuration
+B. Loads XML config
+C. Automatically configures beans
+D. Enables security
+
+Correct Answer: C
+Explanation: It auto-configures based on classpath.
+
+36. Which annotation tests controllers only?
+
+A. @SpringBootTest
+B. @WebMvcTest
+C. @MockBean
+D. @RunWith
+
+Correct Answer: B
+Explanation: @WebMvcTest loads controller layer only.
+
+37. Which object reads request parameters?
+
+A. HttpServletResponse
+B. HttpSession
+C. HttpServletRequest
+D. ServletConfig
+
+Correct Answer: C
+Explanation: HttpServletRequest retrieves client data.
+
+38. Which JWT feature suits microservices?
+
+A. Stateful
+B. Stateless authentication
+C. Cookie-based
+D. Server storage
+
+Correct Answer: B
+Explanation: JWT is stateless and scalable.
+
+39. Which Hibernate API builds queries programmatically?
+
+A. HQL
+B. SQL
+C. Criteria API
+D. JDBC
+
+Correct Answer: C
+Explanation: Criteria API allows dynamic queries.
+
+40. Which HTTP method updates a resource?
+
+A. GET
+B. POST
+C. PUT
+D. DELETE
+
+Correct Answer: C
+Explanation: PUT updates existing resources.

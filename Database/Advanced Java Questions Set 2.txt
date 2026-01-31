@@ -1,0 +1,403 @@
+1. Which of the following is not true for servlet?
+
+A. It is persistent
+B. Platform independent
+C. It is multi threaded
+D. It is single threaded
+
+Correct Answer: D
+Explanation: Servlets are multi-threaded by default, not single-threaded.
+
+2. Which method of the servlet is called several times in its life?
+
+A. init()
+B. doPost()
+C. destroy()
+D. None of above
+
+Correct Answer: B
+Explanation: doPost() is invoked every time a POST request is received.
+
+3. Which object is used to forward request processing from one servlet to another?
+
+A. ServletContext
+B. ServletConfig
+C. RequestDispatcher
+D. ResponseDispatcher
+
+Correct Answer: C
+Explanation: RequestDispatcher forwards or includes requests.
+
+4. Which class defines the getWriter() method?
+
+A. HttpServletRequest
+B. HttpServletResponse
+C. ServletConfig
+D. ServletContext
+
+Correct Answer: B
+Explanation: getWriter() is used to write response data.
+
+5. In which file is database table configuration stored?
+
+A. .dbm
+B. .hbm
+C. .ora
+D. .sql
+
+Correct Answer: B
+Explanation: Hibernate mapping files (.hbm.xml) store table configuration.
+
+6. How can we get context init parameters and run code before application serves clients?
+
+A. ServletContextAttributeListener
+B. ServletContextListener
+C. HttpSessionListener
+D. All of these
+
+Correct Answer: B
+Explanation: ServletContextListener executes code at application startup.
+
+7. Suppose you want to log each time request comes in. Which listener is appropriate?
+
+A. ServletContextAttributeListener
+B. ServletContextListener
+C. HttpSessionListener
+D. All of these
+
+Correct Answer: D
+Explanation: All listeners can observe lifecycle-related events.
+
+8. Suppose you want to know each time request comes in. Which listener is appropriate?
+
+A. ServletRequestListener
+B. ServletRequestAttributeListener
+C. ServletContextListener
+D. HttpRequestListener
+
+Correct Answer: A
+Explanation: ServletRequestListener tracks request creation and destruction.
+
+9. In which of these getAttribute() and setAttribute() methods are defined?
+
+A. HttpSession
+B. ServletRequest
+C. ServletContext
+D. All of these
+
+Correct Answer: D
+Explanation: All support attribute storage.
+
+10. Which of the following are valid scopes in JSP?
+
+A. request, page, context, application
+B. response, page, session, application
+C. request, page, session, global
+D. request, page, session, application
+
+Correct Answer: D
+Explanation: JSP supports page, request, session, and application scopes.
+
+11. Which method can be used to instantiate a bean?
+
+A. Static factory method
+B. default-init method
+C. destroy method
+D. lazy-init method
+
+Correct Answer: A
+Explanation: Static factory methods create bean instances.
+
+12. What is the default scope of Spring beans?
+
+A. Prototype
+B. Session
+C. Request
+D. Singleton
+
+Correct Answer: D
+Explanation: Singleton is the default bean scope.
+
+13. Which standard tag is used to store data in JavaBeans?
+
+A. jsp:useBean
+
+B. jsp:setBean
+
+C. jsp:set
+
+D. jsp:setProperty
+
+Correct Answer: D
+Explanation: jsp:setProperty assigns values to bean properties.
+
+14. Which driver converts JDBC calls directly into vendor-specific protocol?
+
+A. Native-API driver
+B. Network Protocol driver
+C. Thin driver
+D. None of the above
+
+Correct Answer: C
+Explanation: Thin driver communicates directly with the database.
+
+15. Which interface provides methods to execute queries with the database?
+
+A. Connection
+B. Statement
+C. ResultSet
+D. None of the above
+
+Correct Answer: B
+Explanation: Statement executes SQL commands.
+
+16. Which are methods of PreparedStatement interface?
+
+A. setInt()
+B. setDouble()
+C. executeQuery()
+D. setFloat()
+
+Correct Answer: A, B, C, D
+Explanation: PreparedStatement supports all listed methods.
+
+17. Which of the following are tags of hibernate.cfg.xml?
+
+A. SQL variant to generate
+B. DTD
+C. JDBC connection
+D. All of the options
+
+Correct Answer: D
+Explanation: All listed are part of Hibernate configuration.
+
+18. Which is a factory of Session and holds second-level cache?
+
+A. Session
+B. ConnectionProvider
+C. Transaction
+D. SessionFactory
+
+Correct Answer: D
+Explanation: SessionFactory creates sessions and manages cache.
+
+19. What is dirty checking in Hibernate?
+
+A. Tracking object changes and synchronizing with database
+B. Removing dirty data
+C. Checking data during insert
+D. None
+
+Correct Answer: A
+Explanation: Hibernate automatically detects object changes.
+
+20. Which element represents one-to-one relationship in Hibernate?
+
+A. many-to-one
+B. many-one
+C. ManyToOne
+D. None of the above
+
+Correct Answer: D
+Explanation: One-to-one is represented using one-to-one mapping.
+
+21. Which ways are used by Log4j and Logback for logging in Hibernate?
+
+A. log4j.xml
+B. log4j.properties
+C. Both of above
+D. None of the above
+
+Correct Answer: C
+Explanation: Logging can be configured using XML or properties file.
+
+22. Which of these simplifies Object Relational Mapping?
+
+A. Data creation
+B. Data manipulation
+C. Data access
+D. All mentioned
+
+Correct Answer: D
+Explanation: ORM simplifies all database operations.
+
+23. org.hibernate.SessionFactory allows retrieving contextual sessions using:
+
+A. getSession()
+B. getCurrent()
+C. getCurrentSession()
+D. None of the above
+
+Correct Answer: C
+Explanation: getCurrentSession() retrieves contextual sessions.
+
+24. What is NOT a mode of autowiring?
+
+A. By property name
+B. Constructor
+C. No autowiring
+D. Autowire by constructor then byType
+
+Correct Answer: D
+Explanation: This is not a valid Spring autowiring mode.
+
+25. Which is NOT Dependency Injection?
+
+A. Setter based DI
+B. Auto-wiring DI
+C. Both of the above
+D. None of the above
+
+Correct Answer: D
+Explanation: Both setter and autowiring are valid DI types.
+
+26. Which of the following is used for session migration?
+
+A. Persisting the session in database
+B. URL rewriting
+C. Creating new database connection
+D. Kill session from multiple sessions
+
+Correct Answer: A
+Explanation: Session migration is achieved by persisting session data in a database so it can be accessed across servers.
+
+27. Which of the below is NOT a session tracking method?
+
+A. URL rewriting
+B. History
+C. Cookies
+D. SSL sessions
+
+Correct Answer: B
+Explanation: Browser history is not a session tracking technique.
+
+28. Which of the following is stored at the client side?
+
+A. URL rewriting
+B. Hidden form fields
+C. SSL sessions
+D. Cookies
+
+Correct Answer: D
+Explanation: Cookies are stored on the client’s browser.
+
+29. Which of the following leads to high network traffic?
+
+A. URL rewriting
+B. Hidden form fields
+C. SSL sessions
+D. Cookies
+
+Correct Answer: A
+Explanation: URL rewriting appends session ID to every request, increasing network traffic.
+
+30. Which of the following is NOT true about session?
+
+A. All users connect to the same session
+B. All users have the same session variable
+C. Default timeout value for session variable is 20 minutes
+D. New session cannot be created for a new user
+
+Correct Answer: C
+Explanation: Session timeout is configurable and not fixed at 20 minutes.
+
+31. What is the maximum size of a cookie?
+
+A. 4 KB
+B. 4 MB
+C. 4 bytes
+D. 40 KB
+
+Correct Answer: A
+Explanation: Maximum cookie size is approximately 4 KB.
+
+32. How can we invalidate a session?
+
+A. session.discontinue()
+B. session.invalidate()
+C. session.disconnect()
+D. session.falsify()
+
+Correct Answer: B
+Explanation: session.invalidate() destroys the session and releases resources.
+
+33. Which is NOT a directive in JSP?
+
+A. include
+B. page
+C. export
+D. useBean
+
+Correct Answer: C
+Explanation: JSP directives are page, include, and taglib. export is not a directive.
+
+34. Which is mandatory in <jsp:useBean /> tag?
+
+A. id, class
+B. id, type
+C. type, property
+D. type, id
+
+Correct Answer: A
+Explanation: The id and class attributes are mandatory to create a bean.
+
+35. Which one of the following is correct syntax for directive in JSP?
+
+A. <%@ directive %>
+B. <%! directive %>
+C. <% directive %>
+D. <%= directive %>
+
+Correct Answer: A
+Explanation: JSP directives use <%@ %> syntax.
+
+36. Which of the following action tags is used to include a file in JSP?
+
+A. jsp:setProperty
+B. jsp:getProperty
+C. jsp:include
+D. jsp:plugin
+
+Correct Answer: C
+Explanation: <jsp:include> includes another resource during request processing.
+
+37. Which attribute uniquely identifies an element?
+
+A. ID
+B. CLASS
+C. NAME
+D. SCOPE
+
+Correct Answer: A
+Explanation: ID uniquely identifies an element within a document.
+
+38. Which annotation is used to create a RESTful web service in Spring Boot?
+
+A. @Controller
+B. @Service
+C. @RestController
+D. @Component
+
+Correct Answer: C
+Explanation: @RestController is used to create RESTful APIs and automatically converts responses to JSON.
+
+39. Which Spring Cloud component is used for service discovery?
+
+A. Spring Gateway
+B. Eureka Server
+C. Ribbon
+D. Feign Client
+
+Correct Answer: B
+Explanation: Eureka Server allows microservices to register and discover each other.
+
+40. Which pattern is used in microservices to prevent cascading failures?
+
+A. Saga
+B. Circuit Breaker
+C. CQRS
+D. API Gateway
+
+Correct Answer: B
+Explanation: Circuit Breaker stops failures from spreading across services.
+

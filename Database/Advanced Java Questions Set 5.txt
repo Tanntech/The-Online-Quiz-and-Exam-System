@@ -1,0 +1,445 @@
+1. Which JDBC interface is used to execute SQL queries that return multiple results?
+
+A. Connection
+B. Statement
+C. PreparedStatement
+D. ResultSet
+
+Correct Answer: B
+Explanation: Statement executes SQL queries; ResultSet holds the results.
+
+2. What is the default method in a servlet to handle HTTP POST requests?
+
+A. service()
+B. doPost()
+C. doGet()
+D. init()
+
+Correct Answer: B
+Explanation: doPost() is called for HTTP POST requests.
+
+3. Which JSP implicit object is used to get initialization parameters?
+
+A. application
+B. config
+C. session
+D. request
+
+Correct Answer: B
+Explanation: config represents ServletConfig and allows access to init parameters.
+
+4. Identify the Hibernate annotation for mapping a class to a database table:
+@Entity
+@Table(name="EMPLOYEE")
+public class Employee { }
+
+
+A. @Entity
+B. @Table
+C. @Id
+D. @Column
+
+Correct Answer: B
+Explanation: @Table maps the class to a specific database table.
+
+5. Which annotation marks a method as transactional in Spring?
+@Transactional
+public void saveEmployee(Employee emp) { ... }
+
+
+A. @Service
+B. @Transactional
+C. @Component
+D. @Repository
+
+Correct Answer: B
+Explanation: @Transactional ensures that the method runs within a transaction.
+
+6. Which Spring annotation automatically wires a dependency by type?
+@Autowired
+private EmployeeService empService;
+
+
+A. @Autowired
+B. @Resource
+C. @Inject
+D. @Qualifier
+
+Correct Answer: A
+Explanation: @Autowired injects the bean by type.
+
+7. Which annotation in Spring Boot enables component scanning and auto-configuration?
+@SpringBootApplication
+public class MyApp { ... }
+
+
+A. @ComponentScan
+B. @EnableAutoConfiguration
+C. @SpringBootApplication
+D. @Configuration
+
+Correct Answer: C
+Explanation: @SpringBootApplication combines @Configuration, @EnableAutoConfiguration, and @ComponentScan.
+
+8. Which Spring Data JPA method retrieves all entities sorted by a field?
+List<Employee> findAllByOrderBySalaryDesc();
+
+
+A. findAll()
+B. findByOrderBySalary()
+C. findAllByOrderBySalaryDesc()
+D. findSorted()
+
+Correct Answer: C
+Explanation: Spring Data JPA supports derived query methods for sorting.
+
+9. In Spring AOP, which advice type runs after a method returns successfully?
+
+A. @After
+B. @AfterReturning
+C. @AfterThrowing
+D. @Before
+
+Correct Answer: B
+Explanation: @AfterReturning executes only if the method completes without exceptions.
+
+10. Which REST annotation maps a method to HTTP PUT requests?
+@PutMapping("/employee/{id}")
+public Employee update(@PathVariable int id, @RequestBody Employee emp) { ... }
+
+
+A. @PostMapping
+B. @PutMapping
+C. @GetMapping
+D. @DeleteMapping
+
+Correct Answer: B
+Explanation: @PutMapping maps the method to PUT requests.
+
+11. Which annotation is used to secure REST endpoints with roles in Spring Security?
+@PreAuthorize("hasRole('ADMIN')")
+public void deleteEmployee(int id) { ... }
+
+
+A. @RolesAllowed
+B. @PreAuthorize
+C. @Secured
+D. @Authority
+
+Correct Answer: B
+Explanation: @PreAuthorize allows method-level security using SpEL expressions.
+
+12. Which Spring Cloud annotation registers a service with Eureka?
+@EnableEurekaClient
+@SpringBootApplication
+public class ServiceApp { ... }
+
+
+A. @EnableEurekaServer
+B. @EnableDiscoveryClient
+C. @EnableEurekaClient
+D. @Service
+
+Correct Answer: C
+Explanation: @EnableEurekaClient registers the service with Eureka for discovery.
+
+13. How do you map a servlet to a URL using annotation?
+@WebServlet("/login")
+public class LoginServlet extends HttpServlet { ... }
+
+
+A. @ServletConfig
+B. @WebServlet
+C. @Controller
+D. @RequestMapping
+
+Correct Answer: B
+Explanation: @WebServlet specifies the URL pattern for a servlet.
+
+14. Which annotation in Spring MVC binds form data to a Java object?
+@PostMapping("/add")
+public String addEmployee(@ModelAttribute Employee emp) { ... }
+
+
+A. @RequestParam
+B. @RequestBody
+C. @ModelAttribute
+D. @PathVariable
+
+Correct Answer: C
+Explanation: @ModelAttribute binds form fields to an object.
+
+15. Which HTTP status code indicates that a request was successful but no content is returned?
+
+A. 200
+B. 201
+C. 204
+D. 404
+
+Correct Answer: C
+Explanation: 204 No Content indicates success without returning a response body.
+
+16. Which Spring Boot annotation is used to create a REST client interface?
+@FeignClient(name="employee-service")
+public interface EmployeeClient { ... }
+
+
+A. @RestController
+B. @FeignClient
+C. @Service
+D. @Component
+
+Correct Answer: B
+Explanation: @FeignClient creates declarative REST clients for microservices.
+
+17. Which annotation in Hibernate marks a column as non-nullable?
+@Column(nullable=false)
+private String name;
+
+
+A. @Id
+B. @Column
+C. @NotNull
+D. @Entity
+
+Correct Answer: B
+Explanation: The nullable attribute in @Column specifies if the column allows null values.
+
+18. Which annotation in Spring Boot marks a configuration class?
+@Configuration
+public class AppConfig { ... }
+
+
+A. @SpringBootApplication
+B. @Configuration
+C. @Component
+D. @Service
+
+Correct Answer: B
+Explanation: @Configuration indicates that the class contains bean definitions.
+
+19. How do you forward a request in Servlets?
+RequestDispatcher rd = request.getRequestDispatcher("home.jsp");
+rd.forward(request, response);
+
+
+A. sendRedirect()
+B. forward()
+C. include()
+D. dispatch()
+
+Correct Answer: B
+Explanation: forward() sends the request to another resource on the server.
+
+20. Which annotation is used to inject a specific implementation when multiple beans exist?
+@Autowired
+@Qualifier("employeeServiceImpl")
+private EmployeeService empService;
+
+A. @Autowired
+B. @Qualifier
+C. @Resource
+D. @Inject
+
+Correct Answer: B
+Explanation: @Qualifier specifies which bean to inject when multiple candidates exist.
+
+21. What is the main purpose of JDBC Driver?
+
+A. To store data in the database
+B. To establish a connection between Java application and database
+C. To execute SQL queries only
+D. To handle transactions
+
+Correct Answer: B
+Explanation: JDBC Driver enables a Java application to connect and interact with a database.
+
+22. Which scope in JSP lasts only for a single request?
+
+A. page
+B. session
+C. request
+D. application
+
+Correct Answer: C
+Explanation: Request scope exists only for the duration of a single request.
+
+23. Which Hibernate annotation is mandatory for entity identification?
+
+A. @Column
+B. @Table
+C. @Id
+D. @Entity
+
+Correct Answer: C
+Explanation: @Id marks the primary key field of the entity.
+
+24. What does Spring’s @Component annotation signify?
+
+A. It marks a class as a repository
+B. It marks a class as a generic Spring-managed bean
+C. It marks a class as a controller
+D. It marks a class for transaction management
+
+Correct Answer: B
+Explanation: @Component tells Spring to treat the class as a bean and manage its lifecycle.
+
+25. Which servlet object is used to get initialization parameters?
+
+A. ServletConfig
+B. ServletContext
+C. HttpSession
+D. RequestDispatcher
+
+Correct Answer: A
+Explanation: ServletConfig provides servlet-specific initialization parameters.
+
+26. Which pattern separates database access from business logic?
+
+A. Singleton
+B. Factory
+C. DAO
+D. MVC
+
+Correct Answer: C
+Explanation: DAO (Data Access Object) encapsulates database operations separately from business logic.
+
+27. Which Spring annotation is used for automatic dependency injection by type?
+
+A. @Autowired
+B. @Inject
+C. @Resource
+D. @Qualifier
+
+Correct Answer: A
+Explanation: @Autowired injects a bean automatically by its type.
+
+28. Which Spring bean scope creates a new instance for each HTTP request?
+
+A. Singleton
+B. Prototype
+C. Request
+D. Session
+
+Correct Answer: C
+Explanation: Request scope creates a new bean instance for every HTTP request.
+
+29. Which method of HttpSession is used to remove an attribute?
+
+A. invalidate()
+B. removeAttribute()
+C. clear()
+D. delete()
+
+Correct Answer: B
+Explanation: removeAttribute() deletes a specific attribute from the session.
+
+30. Which Spring annotation is used to define a controller for REST APIs?
+
+A. @Service
+B. @Controller
+C. @RestController
+D. @Repository
+
+Correct Answer: C
+Explanation: @RestController combines @Controller and @ResponseBody to handle RESTful requests.
+
+31. What is the main feature of HQL in Hibernate?
+
+A. Works only with SQL tables
+B. Object-oriented query language that works with entity objects
+C. Only allows native SQL queries
+D. Cannot use joins
+
+Correct Answer: B
+Explanation: HQL queries entities rather than database tables directly.
+
+32. Which Spring Boot annotation enables external configuration binding?
+
+A. @Component
+B. @ConfigurationProperties
+C. @Value
+D. @EnableAutoConfiguration
+
+Correct Answer: B
+Explanation: @ConfigurationProperties binds properties from application.properties or YAML to a class.
+
+33. Which HTTP status code represents a bad request?
+
+A. 200
+B. 400
+C. 401
+D. 404
+
+Correct Answer: B
+Explanation: 400 Bad Request indicates that the server could not understand the request due to invalid syntax.
+
+34. Which Spring MVC component resolves view names to actual view templates?
+
+A. Controller
+B. DispatcherServlet
+C. ViewResolver
+D. Model
+
+Correct Answer: C
+Explanation: ViewResolver maps logical view names to actual views, such as JSP or Thymeleaf templates.
+
+35. Which Spring Data JPA repository interface provides paging and sorting capabilities?
+
+A. Repository
+B. CrudRepository
+C. JpaRepository
+D. EntityRepository
+
+Correct Answer: C
+Explanation: JpaRepository extends PagingAndSortingRepository and supports pagination and sorting.
+
+36. What is the main purpose of Spring AOP?
+
+A. Handle database connections
+B. Implement cross-cutting concerns such as logging or security
+C. Manage REST endpoints
+D. Configure application properties
+
+Correct Answer: B
+Explanation: AOP allows separation of cross-cutting concerns like logging, transactions, and security.
+
+37. Which annotation in Spring Boot is used to enable scheduled tasks?
+
+A. @EnableAsync
+B. @EnableScheduling
+C. @Scheduled
+D. @Task
+
+Correct Answer: B
+Explanation: @EnableScheduling enables Spring’s scheduled task support.
+
+38. Which microservices principle advocates that each service should manage its own database?
+
+A. Shared Database
+B. One DB per service
+C. Centralized DB
+D. File-based storage
+
+Correct Answer: B
+Explanation: Each microservice should own its database to maintain loose coupling and autonomy.
+
+39. Which pattern in microservices helps discover available services dynamically?
+
+A. Circuit Breaker
+B. Service Registry
+C. API Gateway
+D. Saga
+
+Correct Answer: B
+Explanation: Service Registry allows services to register themselves and discover other services.
+
+40. Which Spring Security annotation allows specifying role-based access on methods?
+
+A. @RolesAllowed
+B. @PreAuthorize
+C. @Secured
+D. All of the above
+
+Correct Answer: D
+Explanation: @RolesAllowed, @Secured, and @PreAuthorize can all control method-level security based on roles.

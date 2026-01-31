@@ -1,0 +1,399 @@
+1. Which annotation is used to define a Spring service layer component?
+
+A. @Component
+B. @Repository
+C. @Service
+D. @Controller
+
+Correct Answer: C
+Explanation: @Service is used to define business logic components.
+
+2. What does @Repository provide in Spring?
+
+A. Security handling
+B. Transaction management and exception translation
+C. UI rendering
+D. REST mapping
+
+Correct Answer: B
+Explanation: @Repository translates persistence exceptions into Spring exceptions.
+
+3. Which annotation maps HTTP GET requests?
+
+A. @PostMapping
+B. @RequestMapping
+C. @GetMapping
+D. @FetchMapping
+
+Correct Answer: C
+Explanation: @GetMapping is a shortcut for GET requests.
+
+4. What is the default port of a Spring Boot application?
+
+A. 8081
+B. 3306
+C. 9090
+D. 8080
+
+Correct Answer: D
+Explanation: Spring Boot runs on port 8080 by default.
+
+5. Which interface is the parent of JpaRepository?
+
+A. Repository
+B. PagingAndSortingRepository
+C. CrudRepository
+D. EntityManager
+
+Correct Answer: C
+Explanation: JpaRepository extends CrudRepository.
+
+6. What does the findById() method return?
+
+A. Entity
+B. null
+C. Optional<Entity>
+D. List<Entity>
+
+Correct Answer: C
+Explanation: It returns an Optional to avoid NullPointerException.
+
+7. Which annotation enables method-level security?
+
+A. @EnableSecurity
+B. @EnableWebSecurity
+C. @EnableGlobalMethodSecurity
+D. @SecureMethod
+
+Correct Answer: C
+Explanation: It enables annotations like @PreAuthorize.
+
+8. Which Hibernate state represents an object not associated with session?
+
+A. Persistent
+B. Detached
+C. Managed
+D. Cached
+
+Correct Answer: B
+Explanation: Detached objects were once persistent but no longer associated.
+
+9. What does @Transactional do?
+
+A. Enables logging
+B. Manages transactions
+C. Injects dependencies
+D. Enables caching
+
+Correct Answer: B
+Explanation: It manages commit and rollback automatically.
+
+10. Which HTTP status code indicates successful deletion?
+
+A. 200
+B. 201
+C. 204
+D. 404
+
+Correct Answer: C
+Explanation: 204 means No Content after deletion.
+
+11. Which tool is used for service-to-service communication?
+
+A. JDBC
+B. REST
+C. JSP
+D. Servlet
+
+Correct Answer: B
+Explanation: REST APIs are commonly used between microservices.
+
+12. Which annotation injects values from properties file?
+
+A. @Property
+B. @Value
+C. @Inject
+D. @Autowired
+
+Correct Answer: B
+Explanation: @Value injects values from configuration files.
+
+13. Which Spring Boot starter is used for JPA?
+
+A. spring-boot-starter-web
+B. spring-boot-starter-jdbc
+C. spring-boot-starter-data-jpa
+D. spring-boot-starter-security
+
+Correct Answer: C
+Explanation: It provides JPA and Hibernate support.
+
+14. What is the main advantage of microservices?
+
+A. Shared database
+B. Independent deployment
+C. Tightly coupled services
+D. Single codebase
+
+Correct Answer: B
+Explanation: Each service can be deployed independently.
+
+15. Which annotation defines a filter in Spring Boot?
+
+A. @WebFilter
+B. @Component
+C. @ServletFilter
+D. @EnableFilter
+
+Correct Answer: A
+Explanation: @WebFilter defines servlet filters.
+
+16. Which annotation marks a primary key?
+
+A. @Column
+B. @Entity
+C. @Id
+D. @Generated
+
+Correct Answer: C
+Explanation: @Id identifies the primary key.
+
+17. What does executeUpdate() return?
+
+A. ResultSet
+B. Boolean
+C. Number of rows affected
+D. SQL object
+
+Correct Answer: C
+Explanation: It returns affected row count.
+
+18. Which dependency enables Spring Security?
+
+A. spring-security-core
+B. spring-boot-starter-security
+C. spring-boot-security
+D. spring-security-web
+
+Correct Answer: B
+Explanation: Starter provides full security setup.
+
+19. Which annotation disables CSRF?
+
+A. csrf(false)
+B. disableCSRF
+C. http.csrf().disable()
+D. csrfDisable()
+
+Correct Answer: C
+Explanation: Used in HttpSecurity configuration.
+
+20. Which pattern prevents cascading failures?
+
+A. Saga
+B. Circuit Breaker
+C. CQRS
+D. API Gateway
+
+Correct Answer: B
+Explanation: Circuit Breaker stops failure propagation.
+
+21. Which annotation handles JSON request body?
+
+A. @RequestParam
+B. @PathVariable
+C. @RequestBody
+D. @ResponseBody
+
+Correct Answer: C
+Explanation: @RequestBody binds JSON to Java object.
+
+22. Which annotation sends JSON response?
+
+A. @Response
+B. @ResponseBody
+C. @JsonResponse
+D. @ReturnBody
+
+Correct Answer: B
+Explanation: It converts return value to JSON.
+
+23. Which servlet method handles all HTTP requests?
+
+A. doGet()
+B. doPost()
+C. service()
+D. init()
+
+Correct Answer: C
+Explanation: service() delegates to doGet/doPost.
+
+24. Which annotation defines a path variable?
+
+A. @RequestParam
+B. @PathVariable
+C. @UrlParam
+D. @Variable
+
+Correct Answer: B
+Explanation: It extracts values from URL path.
+
+25. Which Hibernate mapping supports inheritance?
+
+A. @ManyToOne
+B. @Inheritance
+C. @Embedded
+D. @MappedColumn
+
+Correct Answer: B
+Explanation: @Inheritance defines inheritance strategy.
+
+26. Which Spring component handles HTTP requests?
+
+A. Service
+B. Repository
+C. Controller
+D. Entity
+
+Correct Answer: C
+Explanation: Controllers handle client requests.
+
+27. Which annotation marks a configuration class?
+
+A. @Config
+B. @Configuration
+C. @Bean
+D. @EnableConfig
+
+Correct Answer: B
+Explanation: @Configuration defines Spring config class.
+
+28. Which annotation creates a bean explicitly?
+
+A. @Component
+B. @Bean
+C. @Service
+D. @Autowired
+
+Correct Answer: B
+Explanation: @Bean defines a bean manually.
+
+29. Which JDBC interface represents query result?
+
+A. Statement
+B. Connection
+C. ResultSet
+D. Driver
+
+Correct Answer: C
+Explanation: ResultSet holds returned data.
+
+30. Which file replaces web.xml in Spring Boot?
+
+A. context.xml
+B. application.properties
+C. Java configuration
+D. servlet.xml
+
+Correct Answer: C
+Explanation: Java-based configuration replaces XML.
+
+31. Which annotation enables scheduling?
+
+A. @EnableAsync
+B. @EnableTask
+C. @EnableScheduling
+D. @ScheduledTask
+
+Correct Answer: C
+Explanation: Enables scheduled tasks.
+
+32. Which annotation schedules a method?
+
+A. @Cron
+B. @Task
+C. @Scheduled
+D. @Timer
+
+Correct Answer: C
+Explanation: @Scheduled defines cron jobs.
+
+33. Which object manages Hibernate transactions?
+
+A. SessionFactory
+B. Session
+C. Transaction
+D. EntityManager
+
+Correct Answer: C
+Explanation: Transaction handles commit and rollback.
+
+34. Which Spring Boot feature reduces configuration?
+
+A. XML mapping
+B. Auto-configuration
+C. Manual beans
+D. WAR deployment
+
+Correct Answer: B
+Explanation: Auto-configuration uses conventions.
+
+35. Which annotation handles exception globally?
+
+A. @ExceptionHandler
+B. @ControllerAdvice
+C. @HandleError
+D. @GlobalException
+
+Correct Answer: B
+Explanation: @ControllerAdvice handles global exceptions.
+
+36. Which HTTP method is idempotent?
+
+A. POST
+B. PUT
+C. PATCH
+D. CONNECT
+
+Correct Answer: B
+Explanation: PUT gives same result if repeated.
+
+37. Which microservice pattern handles authentication?
+
+A. API Gateway
+B. Saga
+C. CQRS
+D. Circuit Breaker
+
+Correct Answer: A
+Explanation: API Gateway handles security centrally.
+
+38. Which annotation enables caching?
+
+A. @EnableCache
+B. @EnableCaching
+C. @CacheEnable
+D. @CachingOn
+
+Correct Answer: B
+Explanation: Enables Spring cache abstraction.
+
+39. Which annotation caches method result?
+
+A. @Cacheable
+B. @CachePut
+C. @CacheClear
+D. @CacheResult
+
+Correct Answer: A
+Explanation: @Cacheable stores method results.
+
+40. Which statement about REST is true?
+
+A. REST is stateful
+B. REST uses only XML
+C. REST uses standard HTTP methods
+D. REST requires SOAP
+
+Correct Answer: C
+Explanation: REST relies on HTTP methods like GET, POST, PUT.

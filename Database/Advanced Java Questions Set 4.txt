@@ -1,0 +1,359 @@
+1. Which object returns both model and view?
+A. Model
+B. ViewResolver
+C. ModelAndView
+D. HandlerMapping
+
+Correct Answer: C
+Explanation: ModelAndView holds data and view name.
+
+2. Which interface is used for request forwarding?
+A. ServletConfig
+B. ServletContext
+C. RequestDispatcher
+D. HttpSession
+
+Correct Answer: C
+Explanation: RequestDispatcher forwards or includes requests.
+
+3. Which annotation marks Spring controller?
+A. @Service
+B. @Component
+C. @Controller
+D. @Repository
+
+Correct Answer: C
+Explanation: @Controller handles web requests.
+
+4. Which query language is object-oriented in Hibernate?
+A. SQL
+B. HQL
+C. JDBC
+D. JPQL
+
+Correct Answer: B
+Explanation: HQL works on objects, not tables.
+
+5. Which annotation is used for custom query?
+A. @SQL
+B. @Query
+C. @Named
+D. @Select
+
+Correct Answer: B
+Explanation: @Query defines custom JPQL/SQL.
+
+6. Which HTTP method is used to create resource?
+A. GET
+B. POST
+C. PUT
+D. DELETE
+
+Correct Answer: B
+Explanation: POST creates new resource.
+
+7. Which tag is used to include another JSP at runtime?
+A. <%@ include %>
+B. jsp:include
+C. jsp:forward
+D. jsp:setProperty
+
+Correct Answer: B
+Explanation: jsp:include includes resource at request time.
+
+8. Which JDBC interface represents a connection with the database?
+A. Driver
+B. Statement
+C. Connection
+D. ResultSet
+
+Correct Answer: C
+Explanation: Connection represents an active database connection.
+
+9. Which build tool is used with Spring Boot?
+A. ANT
+B. Gradle
+C. Maven
+D. All of these
+
+Correct Answer: D
+Explanation: Spring Boot supports all build tools.
+
+10. Which annotation defines primary key?
+A. @Column
+B. @Entity
+C. @Id
+D. @Table
+
+Correct Answer: C
+Explanation: @Id marks primary key field.
+
+11.Which advice runs before method execution?
+A. @After
+B. @Around
+C. @Before
+D. @AfterReturning
+
+Correct Answer: C
+Explanation: @Before executes before method call.
+
+12. Which file stores Spring Boot configuration?
+A. web.xml
+B. pom.xml
+C. application.properties
+D. context.xml
+
+Correct Answer: C
+Explanation: application.properties holds configuration.
+
+13.Which pattern is commonly used in JDBC-based applications?
+A. Singleton
+B. DAO
+C. MVC
+D. Factory
+
+Correct Answer: B
+Explanation: DAO separates data access logic from business logic.
+
+14. Which Spring module supports microservices?
+A. Spring Core
+B. Spring MVC
+C. Spring Cloud
+D. Spring Security
+
+Correct Answer: C
+Explanation: Spring Cloud provides microservice support.
+
+15.Which session tracking technique stores data on client?
+A. HttpSession
+B. Cookies
+C. ServletContext
+D. RequestDispatcher
+
+Correct Answer: B
+Explanation: Cookies are stored on client browser.
+
+16.Which interface helps prevent SQL Injection?
+A. Statement
+B. Connection
+C. PreparedStatement
+D. ResultSet
+
+Correct Answer: C
+Explanation: PreparedStatement uses parameterized queries.
+
+17.Which object creates Session objects in Hibernate?
+A. Session
+B. Transaction
+C. SessionFactory
+D. Configuration
+
+Correct Answer: C
+Explanation: SessionFactory is a factory of Session.
+
+18.Which file configures Hibernate settings?
+A. web.xml
+B. hibernate.cfg.xml
+C. persistence.xml
+D. application.properties
+
+Correct Answer: B
+Explanation: hibernate.cfg.xml stores DB and ORM configuration.
+
+19.Which session tracking object stores user-specific data?
+A. ServletContext
+B. HttpSession
+C. RequestDispatcher
+D. Cookie
+
+Correct Answer: B
+Explanation: HttpSession stores user-specific data.
+
+20.Which pattern is used by Spring MVC?
+A. DAO
+B. Singleton
+C. Front Controller
+D. Factory
+
+Correct Answer: C
+Explanation: DispatcherServlet acts as Front Controller.
+
+21.Which AOP term defines where advice is applied?
+A. Aspect
+B. Advice
+C. Join Point
+D. Bean
+
+Correct Answer: C
+Explanation: Join point is execution point.
+
+22.What is Hibernate dirty checking?
+A. Checking null values
+B. Checking DB constraints
+C. Automatic detection of object changes
+D. Removing invalid data
+
+Correct Answer: C
+Explanation: Hibernate tracks object changes automatically.
+
+23.Which JSP scope has the smallest lifetime?
+A. application
+B. session
+C. request
+D. page
+
+Correct Answer: D
+Explanation: Page scope exists only during JSP execution.
+
+24.Which HTTP status means resource not found?
+A. 200
+B. 201
+C. 404
+D. 500
+
+Correct Answer: C
+Explanation: 404 indicates resource not found.
+
+25.Which repository supports pagination?
+A. CrudRepository
+B. Repository
+C. JpaRepository
+D. EntityRepository
+
+Correct Answer: C
+Explanation: JpaRepository supports pagination and sorting.
+
+26.Which annotation starts Spring Boot application?
+A. @EnableBoot
+B. @SpringBoot
+C. @SpringBootApplication
+D. @BootApplication
+
+Correct Answer: C
+Explanation: It enables auto-configuration and component scan.
+
+27.What is the default port of Spring Boot?
+A. 8081
+B. 9090
+C. 8080
+D. 80
+
+Correct Answer: C
+Explanation: Spring Boot runs on port 8080.
+
+28.Which object is used to share data between requests of same user?
+A. ServletContext
+B. HttpSession
+C. RequestDispatcher
+D. Cookie
+
+Correct Answer: B
+Explanation: HttpSession stores user-specific data.
+
+29.Which annotation creates REST controller?
+A. @Controller
+B. @Service
+C. @RestController
+D. @Component
+
+Correct Answer: C
+Explanation: @RestController returns JSON response.
+
+30.Which security mechanism uses token-based authentication?
+A. Session
+B. Cookie
+C. JWT
+D. OAuth1
+
+Correct Answer: C
+Explanation: JWT is stateless token-based auth.
+
+31.How should databases be managed in microservices?
+A. Single shared DB
+B. One DB per service
+C. Central DB
+D. File system
+
+Correct Answer: B
+Explanation: Each microservice owns its database.
+
+32.Which component routes requests in microservices?
+A. Service Registry
+B. API Gateway
+C. Load Balancer
+D. Circuit Breaker
+
+Correct Answer: B
+Explanation: API Gateway routes client requests.
+
+33.Which feature is core to microservices?
+A. Monolithic DB
+B. Independent deployment
+C. Tight coupling
+D. Shared session
+
+Correct Answer: B
+Explanation: Each service is independently deployable.
+
+34.Which pattern prevents cascading failures?
+A. Saga
+B. CQRS
+C. Circuit Breaker
+D. API Gateway
+
+Correct Answer: C
+Explanation: Circuit Breaker stops failure propagation.
+
+35.Which tool provides service discovery?
+A. Ribbon
+B. Feign
+C. Eureka
+D. Hystrix
+
+Correct Answer: C
+Explanation: Eureka registers and discovers services.
+
+36.Which annotation is used to test controllers only?
+A. @SpringBootTest
+B. @WebMvcTest
+C. @Test
+D. @RunWith
+
+Correct Answer: B
+Explanation: @WebMvcTest loads controller layer only.
+
+37/Which method is called only once in servlet life cycle?
+A. service()
+B. doGet()
+C. init()
+D. destroy()
+
+Correct Answer: C
+Explanation: init() is executed once when servlet is loaded.
+
+38.Which object helps prevent SQL injection?
+A. Statement
+B. Connection
+C. PreparedStatement
+D. ResultSet
+
+Correct Answer: C
+Explanation: PreparedStatement uses parameterized queries.
+
+39.Which JSTL tag is used for looping?
+A. <c:if>
+B. <c:choose>
+C. <c:forEach>
+D. <c:set>
+
+Correct Answer: C
+Explanation: c:forEach is used for iteration.
+
+40.What does IoC stand for?
+A. Inversion of Class
+B. Integration of Code
+C. Inversion of Control
+D. Instance of Container
+
+Correct Answer: C
+Explanation: IoC means framework controls object creation.

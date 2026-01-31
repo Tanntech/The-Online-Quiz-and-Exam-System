@@ -1,0 +1,204 @@
+INSERT INTO mcq_questions 
+(module_id, question, option_a, option_b, option_c, option_d, correct_option, explanation)
+VALUES
+(8,'Which part of an assembly uniquely identifies its version and culture?',
+'IL code','Metadata tables','Assembly manifest','Resources','C',
+'The assembly manifest stores version, culture, and strong name information.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which tool is used to inspect IL code of a .NET assembly?',
+'CLR Profiler','ILDASM','NuGet','MSBuild','B',
+'ILDASM displays Intermediate Language (IL) and metadata.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which type of code runs under CLR control?',
+'Native code','Unmanaged code','Managed code','Unsafe code','C',
+'Managed code executes under CLR with services like GC and security.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which constructor is executed first in an inheritance chain?',
+'Derived class constructor','Base class constructor','Static constructor','Object initializer','B',
+'Base class constructors execute before derived class constructors.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What is the purpose of a static constructor?',
+'Initialize instance members','Release resources','Initialize static members','Overload methods','C',
+'Static constructors initialize static data and run once per type.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which access modifier allows access only within the same assembly?',
+'public','private','protected','internal','D',
+'internal limits access to the same assembly.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which interface enables sorting of objects?',
+'ICloneable','IEnumerable','IComparable','IDisposable','C',
+'IComparable defines a comparison method for sorting.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which keyword ensures a struct cannot be inherited?',
+'sealed','readonly','static','abstract','A',
+'Structs are implicitly sealed and cannot be inherited.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which parameter modifier allows a method to return multiple values?',
+'in','ref','out','params','C',
+'out parameters allow returning multiple values from a method.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What happens if nullable reference types are enabled?',
+'Null values are prohibited','Compiler warns about null usage',
+'Runtime exception occurs','GC disables null checks','B',
+'Nullable reference types provide compile-time null safety warnings.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which array type supports rows of different lengths?',
+'Single-dimensional','Multi-dimensional','Rectangular','Jagged','D',
+'Jagged arrays contain arrays of varying lengths.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which feature allows accessing array elements from the end?',
+'Ranges','Indexers','Tuples','Delegates','A',
+'Ranges and indices (^) allow backward indexing.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which collection enforces FIFO order?',
+'Stack','List','Queue','Dictionary','C',
+'Queue follows First-In-First-Out order.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which generic collection prevents duplicate elements?',
+'List','HashSet','Queue','LinkedList','B',
+'HashSet stores only unique elements.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What is the primary use of Tuples?',
+'Performance optimization','Exception handling',
+'Returning multiple values','Data persistence','C',
+'Tuples allow grouping multiple return values.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which delegate type returns a boolean value?',
+'Action','Func','Predicate','EventHandler','C',
+'Predicate delegates always return a boolean value.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What is a multicast delegate?',
+'Delegate with return type','Delegate calling multiple methods',
+'Generic delegate','Anonymous delegate','B',
+'Multicast delegates invoke multiple methods sequentially.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which block always executes regardless of exception?',
+'try','catch','throw','finally','D',
+'finally executes whether an exception occurs or not.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Why should exceptions not be used for flow control?',
+'Compilation error','Security issues','Performance overhead','Memory leaks','C',
+'Exceptions are expensive and should not control logic flow.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What is an anonymous type mainly used for?',
+'Serialization','LINQ projections','Thread safety','Reflection','B',
+'Anonymous types are commonly used in LINQ projections.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which feature allows adding methods without modifying the class?',
+'Partial classes','Extension methods','Interfaces','Abstract classes','B',
+'Extension methods add functionality externally.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What happens if a LINQ query is modified after declaration but before execution?',
+'Compilation error','Runtime exception','Query reflects changes','Query is frozen','C',
+'Due to deferred execution, changes are reflected.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which class loads assemblies dynamically?',
+'Type','Assembly','Activator','AppDomain','B',
+'Assembly.Load() loads assemblies at runtime.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which class writes text data to files?',
+'FileStream','BinaryWriter','StreamWriter','MemoryStream','C',
+'StreamWriter writes text data to streams.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which threading mechanism reuses threads?',
+'Thread','Task','ThreadPool','Monitor','C',
+'ThreadPool manages reusable threads efficiently.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which class provides atomic operations?',
+'Thread','Monitor','Interlocked','Mutex','C',
+'Interlocked ensures atomic read/write operations.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which task method waits for completion?',
+'Run()','Start()','Wait()','Delay()','C',
+'Wait() blocks until the task completes.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What does HttpPost attribute indicate?',
+'Read-only request','Resource deletion','Data submission','Authorization','C',
+'HttpPost handles form submissions and data posts.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which ADO.NET object executes SQL commands?',
+'DataSet','DataAdapter','DataReader','Command','D',
+'Command object executes SQL queries or procedures.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which object provides forward-only data reading?',
+'DataTable','DataSet','DataReader','Adapter','C',
+'DataReader reads data efficiently in forward-only mode.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which validation attribute enforces required input?',
+'Range','StringLength','Required','Compare','C',
+'Required attribute ensures mandatory input.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which MVC feature reuses UI fragments?',
+'Layout','Partial View','ViewModel','TempData','B',
+'Partial Views allow reusable UI components.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which state mechanism survives redirects?',
+'ViewBag','ViewData','TempData','Model','C',
+'TempData survives redirects using session.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What does a 404 error indicate?',
+'Server error','Unauthorized access','Resource not found','Bad request','C',
+'404 indicates the requested resource was not found.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which filter executes before an action method?',
+'Result filter','Exception filter','Authorization filter','Output filter','C',
+'Authorization filters execute before action methods.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which EF class represents database context?',
+'DbSet','DbContext','Migration','Entity','B',
+'DbContext manages database connections and entities.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which annotation defines primary key?',
+'[Key]','[Index]','[Column]','[Required]','A',
+'[Key] marks a property as a primary key.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which HTTP verb retrieves data only?',
+'POST','PUT','GET','PATCH','C',
+'GET retrieves data without modifying server state.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which React feature passes data to components?',
+'State','Props','Hooks','Context','B',
+'Props pass data from parent to child components.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which architecture separates UI, logic, and data?',
+'Monolithic','Layered','MVC','SOA','C',
+'MVC separates Model, View, and Controller responsibilities.');

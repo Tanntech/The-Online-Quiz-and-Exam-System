@@ -1,0 +1,52 @@
+INSERT INTO mcq_questions 
+(module_id, question, option_a, option_b, option_c, option_d, correct_option, explanation)
+VALUES
+(8,'Which component of .NET converts IL code into native machine code at runtime?',
+'CLR','JIT Compiler','CTS','CLS','B',
+'The JIT compiler converts Intermediate Language (IL) into native machine code during execution.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What is the main purpose of the Common Type System (CTS)?',
+'Language interoperability','Memory allocation','Type safety across .NET languages','Garbage collection','C',
+'CTS defines how data types are declared, used, and managed to ensure type safety across .NET languages.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which file contains metadata about assemblies?',
+'appsettings.json','web.config','Manifest','IL code','C',
+'The manifest stores assembly metadata such as version, culture, and referenced assemblies.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which keyword is used to prevent method overriding in derived classes?',
+'static','sealed','abstract','private','B',
+'The sealed keyword prevents further overriding of a method.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What happens if a derived class hides a base class method using new?',
+'Runtime error','Compile-time error','Base method is overridden','Base method is hidden','D',
+'Using new hides the base class method instead of overriding it.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which interface ensures deterministic resource cleanup?',
+'IComparable','IDisposable','IEnumerable','ICloneable','B',
+'IDisposable provides the Dispose() method for releasing unmanaged resources.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which value type can store named constants?',
+'struct','class','enum','record','C',
+'enum represents a set of named integral constants.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What is the default value of a nullable value type?',
+'0','Empty','null','undefined','C',
+'Nullable value types can hold null in addition to their value.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'What does the ??= operator do?',
+'Assigns if value is not null','Throws exception if null',
+'Assigns only if value is null','Compares two values','C',
+'??= assigns a value only if the left-hand operand is null.');
+
+INSERT INTO mcq_questions VALUES
+(NULL,8,'Which collection guarantees key-value pairing?',
+'List','Stack','Queue','Dictionary','D',
+'Dictionary<TKey, TValue> stores data as key-value pairs.');

@@ -1,0 +1,82 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(4,'Linear search is used','When the list has only a few elements','When performing a single search in an unordered list','None of above','Both A and B','D'),
+
+(4,'The best case complexity of linear search algorithm is','O(1)','O(log 1)','O(n²)','O(n log 1)','A'),
+
+(4,'The worst case occurs in linear search algorithm when','Item is somewhere in the middle of the array','Item is the last element in the array or is not there at all','Item is the last element in the array','Item is the first element in the array','B'),
+
+(4,'Binary search algorithm uses','Linear way to search values','Divide and conquer method','Bubble sorting technique','None of them','B'),
+
+(4,'Given an array arr = {5, 6, 77, 88, 99} and key = 88, how many iterations are done until the element is found using Binary Search?','1','3','4','2','D'),
+
+(4,'The data structure required for Breadth First Traversal on a graph is?','Array','Stack','Tree','Queue','D'),
+
+(4,'Which of the following tree data structures is not a balanced binary tree?','Splay tree','B-tree','AVL tree','Red-black tree','B'),
+
+(4,'Which of the following is also known as Rope data structure?','Linked List','Array','String','Cord','D'),
+
+(4,'Maximum comparisons in bubble sort with n elements','(1/2)(n-1)','(1/2)n(n-1)','(1/4)n(n-1)','none of above','B'),
+
+(4,'Which design algorithm is used for quick sort?','Divide and conquer','Greedy','Backtracking','None of above','A'),
+
+(4,'Consider array {5, 4, 3, 2, 1}. What are the steps of insertion sort?','4 5 3 2 1, 3 4 5 2 1, 2 3 4 5 1, 1 2 3 4 5','5 4 3 1 2, 5 4 1 2 3, 5 1 2 3 4, 1 2 3 4 5','4 3 2 1 5, 3 2 1 5 4, 2 1 5 4 3, 1 5 4 3 2','4 5 3 2 1, 2 3 4 5 1, 3 4 5 2 1, 1 2 3 4 5','A'),
+
+(4,'Which of the following statements explains insertion sort?','Break list into smaller lists and merge','Iterate multiple times to find first number','Remove one element, find its position, insert it','Divide numbers by average','C'),
+
+(4,'Which of the following is true about merge sort?','Works better than quick sort on slow memory','Stable by nature','Outperforms heap sort practically','All of the above','D'),
+
+(4,'After 3 recursive calls to merge sort on [21,1,26,45,...], which is correct?','[16,49,...]','[21,1]','[21,1,26,45]','[21]','B'),
+
+(4,'In quick sort, which is true about pivot?','Must choose first element','Must choose last element','Must choose random element','None of the above','D'),
+
+(4,'The postfix expression 8 2 3 ^ / 2 3 * + 5 1 * - Top two elements of the stack after the first * is evaluated','6, 1','5, 7','3, 2','1, 5','A'),
+
+(4,'The data structure required to check balanced parenthesis','Stack','Queue','Tree','Array','A'),
+
+(4,'Which is the most appropriate data structure for reversing a word?','stack','queue','graph','tree','A'),
+
+(4,'A linear list in which deletion is at front and insertion is at rear is?','Queue','Stack','Tree','Linked list','A'),
+
+(4,'In the array implementation of circular queue, which operation takes worst-case linear time?','Insertion','Deletion','To empty a queue','None','D'),
+
+(4,'Circular queue array insertion index Array size = 10, index 0–9, Front = 6, Rear = 9. Next insertion index?','0','7','9','10','A'),
+
+(4,'Consider a situation where swap operation is very costly. Which sorting algorithm should be preferred to minimize swaps?','Heap Sort','Selection Sort','Insertion Sort','Merge Sort','B'),
+
+(4,'In the worst case, the number of comparisons needed to search a singly linked list of length n for a given element is:','log(n)','n','n/2','None of the above','B'),
+
+(4,'In a binary tree, if a non-leaf node has non-empty left and right subtrees, the tree is called:','Strictly binary tree','Complete binary tree','Full binary tree','Skewed binary tree','C'),
+
+(4,'............... is an abstract data type that generalizes a queue, for which elements can be added to or removed from either end.','Double ended queue','Deck','Deque','Both A and C are correct','D'),
+
+(4,'Which statement is correct about flowchart and pseudocode?','A. A flowchart is a diagram while pseudocode is written in any programming language','A flowchart is textual but pseudocode is a diagram','A flowchart is a schematic description of an algorithm, while pseudocode is a textual description of an algorithm','Flowchart and pseudocode are the same','C'),
+
+(4,'Which one is an application of Queue Data Structure?','Spooling in printers','Queues in routers/switches','Evaluation of arithmetic expressions','Both A and B','D'),
+
+(4,'Which of the following is an advantage of linked list over array?','Inserting a new element in a linked-list is easy compared to an array','The size of linked-list is fixed','Extra memory space for a pointer is required','Random access is not allowed','A'),
+
+(4,'Which asymptotic notation is used to represent the lower bound?','Big-Oh (O) Notation','Big-Omega (Ω) Notation','Big-Theta (Θ) Notation','None of the above','B'),
+
+(4,'In-order traversal sequence of a BST for numbers 80,110,120,60,40,70,90,100,85','80 60 40 70 110 90 85 100 120','40 60 70 80 85 90 100 110 120','40 70 60 85 100 90 120 110 80','40 60 70 85 90 100 110 120 80','B'),
+
+(4,'Which one is an application of Graph Data Structure?','Electronic circuit simulation','Path Optimization Algorithms','Scientific Computations','All of the above','D'),
+
+(4,'Time complexity of push and pop if stack is implemented using linked list','O(1) for insertion, O(n) for deletion','O(1) for insertion, O(1) for deletion','O(n) for insertion, O(1) for deletion','O(n) for insertion, O(n) for deletion','B'),
+
+(4,'Given an undirected graph G with 5 vertices and 7 edges, sum of degrees of all vertices is:','7','5','10','14','D'),
+
+(4,'Selection sort algorithm design technique is an example of:','Greedy Method','Divide and Conquer','Dynamic Programming','Backtracking','A'),
+
+(4,'Suitable data structure to implement priority queue','Graph','Heap data structure','Linked List','Both B and C','D'),
+
+(4,'The result of evaluating postfix expression 539*74-/+62*- is:','16','2','-7','3','C'),
+
+(4,'Merge Sort works on two principles:','To sort smaller size array and to merge two already sorted array operations are not efficient','To sort smaller size array and to merge two already sorted array operations are efficient','To sort smaller size array is efficient and to merge two already sorted array is not efficient','To sort smaller size array is not efficient and to merge two already sorted array is efficient','B'),
+
+(4,'Which operation inserts an element at the rear of a queue?','Pop','Dequeue','Enqueue','Push','C'),
+
+(4,'What is the advantage of circular queue over linear queue?','Faster operations','Avoids memory wastage','Easier implementation','Uses recursion','B'),
+
+(4,'Which algorithm design technique tries all possibilities?','Greedy','Dynamic Programming','Divide & Conquer','Brute Force','D');

@@ -1,0 +1,149 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(1,'Which keyword prevents a class from being inherited?',
+'final','static','const','sealed','A'),
+
+(1,'What is the size of an empty class in C++?',
+'0','1','Depends on compiler','4','B'),
+
+(1,'Which cast is safest in C++?',
+'C-style cast','reinterpret_cast','static_cast','dynamic_cast','D'),
+
+(1,'What does mutable allow?',
+'Modify const object',
+'Modify static data',
+'Modify constant variable',
+'Modify enum','A'),
+
+(1,'Which container does NOT allow duplicate values?',
+'vector','list','set','deque','C'),
+
+(1,'Which operator cannot be overloaded?',
+'+','::','[]','<<','B'),
+
+(1,'What happens if delete is used instead of delete[]?',
+'No effect',
+'Runtime error',
+'Memory leak',
+'Undefined behavior','D'),
+
+(1,'Which keyword is used to handle exceptions?',
+'throw','catch','try','All of the above','D'),
+
+(1,'Which STL container provides fastest search?',
+'vector','map','unordered_map','list','C'),
+
+(1,'Which header is required for std::sort()?',
+'<vector>','<algorithm>','<array>','<iterator>','B'),
+
+(1,'What does RAII stand for?',
+'Resource Allocation Is Initialization',
+'Random Access In Instruction',
+'Runtime Allocation Inheritance',
+'Resource Access In Interface','A'),
+
+(1,'Which function is called when an exception is not caught?',
+'exit()','abort()','terminate()','stop()','C'),
+
+(1,'Which C++ feature supports generic programming?',
+'Inheritance','Templates','Polymorphism','Namespaces','B'),
+
+(1,'What is the default access specifier in a class?',
+'public','private','protected','static','B'),
+
+(1,'Which smart pointer allows shared ownership?',
+'unique_ptr','weak_ptr','shared_ptr','auto_ptr','C'),
+
+(1,'What does explicit keyword prevent?',
+'Inheritance',
+'Implicit conversion',
+'Object creation',
+'Copy constructor','B'),
+
+(1,'Which STL container uses contiguous memory?',
+'list','deque','vector','map','C'),
+
+(1,'Which loop is guaranteed to run at least once?',
+'for','while','do-while','range-for','C'),
+
+(1,'Which feature enables runtime polymorphism?',
+'Templates',
+'Function overloading',
+'Virtual functions',
+'Inline functions','C'),
+
+(1,'What is nullptr?',
+'Macro','Integer','Keyword','Pointer constant','C'),
+
+(1,'Which operator is used for memory allocation?',
+'malloc','calloc','new','alloc','C'),
+
+(1,'Which function copies objects?',
+'Destructor',
+'Move constructor',
+'Copy constructor',
+'Assignment operator','C'),
+
+(1,'Which keyword avoids name conflicts?',
+'class','using','namespace','typedef','C'),
+
+(1,'What is the output of sizeof(char)?',
+'0','1','2','Compiler dependent','B'),
+
+(1,'Which container supports bidirectional iterators?',
+'vector','list','forward_list','array','B'),
+
+(1,'Which is NOT a C++ access specifier?',
+'public','private','protected','internal','D'),
+
+(1,'Which keyword disables copy constructor?',
+'delete','default','final','override','A'),
+
+(1,'Which function releases file resources?',
+'fopen','fread','fclose','fprintf','C'),
+
+(1,'Which keyword allows function overriding?',
+'virtual','override','inline','final','B'),
+
+(1,'Which header is used for file handling?',
+'<iostream>','<fstream>','<file>','<stream>','B'),
+
+(1,'What does std::endl do?',
+'New line','Flush buffer','Both','None','C'),
+
+(1,'Which container uses key-value pairs?',
+'vector','list','map','stack','C'),
+
+(1,'Which pointer prevents dangling references?',
+'raw pointer','auto_ptr','smart pointer','void pointer','C'),
+
+(1,'What is function inlining?',
+'Macro expansion',
+'Replace call with code',
+'Dynamic binding',
+'Optimization error','B'),
+
+(1,'Which keyword stops exception propagation?',
+'throw','catch','try','stop','B'),
+
+(1,'Which operator accesses class members via pointer?',
+'.','::','->','*','C'),
+
+(1,'What does =default mean?',
+'Delete function',
+'Compiler-generated',
+'Virtual function',
+'Inline function','B'),
+
+(1,'Which container follows LIFO?',
+'queue','priority_queue','stack','deque','C'),
+
+(1,'What is const_cast used for?',
+'Change data type',
+'Remove constness',
+'Runtime check',
+'Pointer conversion','B'),
+
+(1,'Which standard introduced lambda expressions?',
+'C++03','C++11','C++14','C++17','B');

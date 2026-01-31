@@ -1,0 +1,82 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(5,'Which of the following is true for a multidimensional array in Java?','All rows must have equal length','Rows can have different lengths','Cannot store primitive types','Cannot store objects','B'),
+
+(5,'In a sparse matrix, which storage technique is memory efficient?','Standard 2D array','Linked list of non-zero elements','String array','Stack','B'),
+
+(5,'Time complexity to find maximum in an unsorted array of size n','O(1)','O(n)','O(log n)','O(n log n)','B'),
+
+(5,'Which operation is costly in dynamic arrays when resizing?','Reading elements','Insertion when array is full','Traversal','Deletion','B'),
+
+(5,'Which of the following problems can be solved using stack?','Balanced parentheses','Function call management','Expression evaluation','All of the above','D'),
+
+(5,'What is the auxiliary space for a stack implemented using an array?','O(n)','O(1)','O(log n)','O(n²)','A'),
+
+(5,'How can stack underflow occur?','Pushing to a full stack','Popping from an empty stack','Accessing top element','Traversing','B'),
+
+(5,'Which expression conversion requires a stack?','Infix → Postfix','Postfix → Prefix','Prefix → Infix','All of the above','D'),
+
+(5,'Which queue allows insertion and deletion at both ends?','Priority Queue','Circular Queue','Deque','Simple Queue','C'),
+
+(5,'Time complexity to insert in a queue using linked list','O(1)','O(n)','O(log n)','O(n²)','A'),
+
+(5,'Which is true about circular queue?','No wrap around','Can reuse empty slots','Overflow not detected','O(n) insertion','B'),
+
+(5,'Real-world application of queue','BFS','Task scheduling','Print spooling','All of the above','D'),
+
+(5,'Main advantage of linked list over array','Random access','Dynamic size','Contiguous memory','Less memory','B'),
+
+(5,'Which linked list requires two pointers per node?','Singly','Doubly','Circular singly','Stack','B'),
+
+(5,'Time to delete last node in singly linked list (no tail)','O(1)','O(n)','O(log n)','O(n²)','B'),
+
+(5,'Circular linked list property','Last node points to null','Last node points to head','Cannot traverse','Fixed size','B'),
+
+(5,'Maximum nodes at level L of binary tree','2^L','2^(L+1)','L²','L+1','A'),
+
+(5,'Traversal used in postorder expression evaluation','Inorder','Preorder','Postorder','Level order','C'),
+
+(5,'Height of complete binary tree with n nodes','log₂(n+1) − 1','n','2n','n−1','A'),
+
+(5,'Binary Search Tree property','Left ≤ Root ≤ Right','Left ≥ Root ≤ Right','Left ≤ Root ≥ Right','None','A'),
+
+(5,'Perfect hashing means','No collisions','Frequent collisions','Linear probing only','Integer keys only','A'),
+
+(5,'Load factor of hash table','Empty slots / total','Elements / total slots','Total slots / elements','None','B'),
+
+(5,'Double hashing uses','One hash function','Two hash functions','Linked lists','Arrays only','B'),
+
+(5,'Search time in well-implemented hash table','O(n)','O(log n)','O(1)','O(n log n)','C'),
+
+(5,'True for Directed Acyclic Graph','Has cycles','Topological sort possible','Single node only','Cannot traverse','B'),
+
+(5,'Space of adjacency matrix for n vertices','O(n)','O(n²)','O(log n)','O(n log n)','B'),
+
+(5,'DFS uses','Queue','Stack','Heap','Array','B'),
+
+(5,'Prim’s algorithm is used for','Shortest path','Minimum spanning tree','Sorting','Cycle detection','B'),
+
+(5,'Time complexity of recursive Fibonacci','O(n)','O(2^n)','O(log n)','O(n log n)','B'),
+
+(5,'Technique to optimize Fibonacci','Backtracking','Dynamic programming','Brute force','Greedy','B'),
+
+(5,'Indirect recursion occurs when','Function calls itself','Functions call each other','No recursion','Infinite loop','B'),
+
+(5,'Tail recursion preferred because','Less code','Optimized stack usage','More memory','Slower','B'),
+
+(5,'Stable sorting algorithm','Quick','Heap','Merge','Selection','C'),
+
+(5,'Worst-case of insertion sort','O(n)','O(n log n)','O(n²)','O(log n)','C'),
+
+(5,'Best searching for sorted array','Linear','Binary','Hashing','Bubble','B'),
+
+(5,'Jump search works on','Linked list','Sorted array','Unsorted array','Trees','B'),
+
+(5,'Greedy gives optimal solution when','Optimal substructure','Local = global optimum','Both A and B','Neither','C'),
+
+(5,'Backtracking used for','Optimization','Constraint satisfaction','Sorting','Graph search only','B'),
+
+(5,'Divide and Conquer involves','Splitting problem','Recursive solving','Combining results','All','D'),
+
+(5,'Memoization is used in','Greedy','Dynamic programming','Brute force','Divide & Conquer','B');

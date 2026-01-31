@@ -1,0 +1,86 @@
+-- Delete existing records (optional)
+DELETE FROM Questions WHERE ModuleId = 30;
+
+-- Insert 40 questions
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(30,'Why is it essential to develop an application in a team?','To reduce the workload on individual developers.','To ensure that the application is developed faster.','To leverage the diverse skills and expertise of team members.','To avoid using version control systems.','C'),
+
+(30,'What is the benefit of developing an application in a team?','It allows developers to work independently without any coordination.','It fosters collaboration and knowledge sharing among team members.','It reduces the need for communication and meetings.','It enables developers to take full credit for their work.','B'),
+
+(30,'Which of the following is NOT a challenge faced when developing an application in a team?','Differences in coding standards and practices.','Difficulty in merging code changes.','Communication and coordination issues.','Lack of version control system.','D'),
+
+(30,'In a team development environment, why is it crucial to have proper communication?','To avoid sharing knowledge and best practices among team members.','To increase competition and rivalry among team members.','To ensure that everyone is aware of their responsibilities and tasks.','To discourage collaboration and teamwork.','C'),
+
+(30,'How does team development contribute to the quality of the application?','It results in more bugs and issues in the application.','It allows developers to work on their preferred tasks only.','It promotes code reviews and ensures higher code quality.','It decreases the need for testing and validation.','C'),
+
+(30,'What is a common issue faced by developers in a team regarding coding standards?','Following the same coding standards can lead to conflicts.','Each developer adheres to their own coding style, making the code inconsistent.','Developers do not pay attention to coding standards.','Coding standards are unnecessary in a team environment.','B'),
+
+(30,'Why is it important to address communication issues in a team?','Communication issues can lead to a better understanding of the project requirements.','Effective communication is not essential for team collaboration.','Communication issues can hinder progress and lead to misunderstandings.','Addressing communication issues can slow down the development process.','C'),
+
+(30,'In a team, what is a common challenge related to merging code changes?','Merging code changes is a straightforward process.','Merging code changes can lead to conflicts and errors.','Team members avoid making code changes altogether.','Merging code changes is not necessary in team development.','B'),
+
+(30,'What is the impact of not addressing issues promptly in a team environment?','Issues have no impact on the project''s progress.','It can lead to increased collaboration among team members.','Issues can escalate and disrupt the development process.','Ignoring issues leads to better teamwork and cohesion.','C'),
+
+(30,'How can team members overcome challenges and issues when working together?','By working in isolation and not seeking help from others.','By blaming others for any issues that arise.','By fostering a culture of collaboration, open communication, and problem-solving.','By ignoring the issues and hoping they will resolve on their own.','C'),
+
+(30,'What is a code versioning system used for?','To track and manage changes to the codebase over time.','To automatically generate code for the application.','To replace the need for code reviews.','To speed up the development process.','A'),
+
+(30,'Why is a code versioning system essential for team development?','It allows team members to work independently without coordination.','It ensures that all team members use the same coding standards.','It facilitates collaboration and enables developers to work on the same codebase simultaneously.','It eliminates the need for bug tracking and issue management.','C'),
+
+(30,'Which of the following is NOT a type of code versioning system?','Git','Subversion (SVN)','Mercurial','Python','D'),
+
+(30,'How does a code versioning system help in managing code changes?','It automatically resolves conflicts in the code.','It keeps track of every change made to the codebase and who made it.','It prevents developers from making any changes to the code.','It reduces the need for communication among team members.','B'),
+
+(30,'What is the purpose of using branches in a code versioning system?','To create isolated environments for individual developers to work on.','To make the codebase larger and more complex.','To prevent collaboration among team members.','To store backup copies of the code.','A'),
+
+(30,'What is the primary purpose of version control systems in software development?','To store code backups on a local machine.','To keep track of code changes and facilitate collaboration among developers.','To automate the coding process.','To replace the need for code reviews.','B'),
+
+(30,'When did the concept of version control systems first emerge?','In the 1990s','In the 1960s','In the 1980s','In the 2000s','C'),
+
+(30,'Which of the following is considered the first version control system?','Git','Subversion (SVN)','Concurrent Versions System (CVS)','Mercurial','C'),
+
+(30,'What was the main limitation of early version control systems like CVS?','They were slow and inefficient in handling large codebases.','They did not support branching and merging effectively.','They lacked user-friendly interfaces.','They were not compatible with Windows operating systems.','B'),
+
+(30,'Which version control system was created by Linus Torvalds?','Git','Subversion (SVN)','Concurrent Versions System (CVS)','Mercurial','A'),
+
+(30,'Which version control system is a distributed version control system?','Git','Subversion (SVN)','Concurrent Versions System (CVS)','Mercurial','A'),
+
+(30,'What is the primary difference between centralized and distributed version control systems?','Centralized systems require a central server, while distributed systems do not.','Distributed systems require a central server, while centralized systems do not.','Centralized systems are faster than distributed systems.','Distributed systems are slower than centralized systems.','A'),
+
+(30,'Which version control system is known for ease of use on Windows?','Git','Subversion (SVN)','Concurrent Versions System (CVS)','Mercurial','B'),
+
+(30,'Which version control system uses a client-server architecture?','Git','Subversion (SVN)','Concurrent Versions System (CVS)','Mercurial','B'),
+
+(30,'Which version control system is written in Python?','Git','Subversion (SVN)','Concurrent Versions System (CVS)','Mercurial','D'),
+
+(30,'What is a software development workflow?','The process of releasing software to production.','The process of writing code without collaboration.','The sequence of steps followed in the software development process.','The process of managing code backups.','C'),
+
+(30,'Which of the following is a common software development workflow?','Agile','Scrum','Kanban','All of the above','D'),
+
+(30,'In the Agile workflow, what is emphasized?','Detailed planning and documentation','Continuous feedback and adaptation','Individual tasks and deadlines','Strict adherence to schedule','B'),
+
+(30,'Which workflow emphasizes incremental development and frequent releases?','Waterfall','Agile','Scrum','Kanban','C'),
+
+(30,'What is the primary advantage of a structured workflow?','Eliminates version control','No coordination needed','Clear roadmap and guidelines','Skips steps','C'),
+
+(30,'What is Git?','A programming language','A version control system','An operating system','A web browser','B'),
+
+(30,'Who created Git?','Linus Torvalds','Bill Gates','Steve Jobs','Mark Zuckerberg','A'),
+
+(30,'What is the main purpose of Git?','Manage workflows','Track changes in code files','Replace code reviews','Automate testing','B'),
+
+(30,'What is the benefit of Git in team development?','Independent work','Facilitates collaboration','Reduces meetings','Prevents conflicts','B'),
+
+(30,'Which command initializes a Git repository?','git commit','git init','git push','git clone','B'),
+
+(30,'What is a Git repository?','Backup location','Collection of files with full history','Hosting server','Configuration tool','B'),
+
+(30,'Which is true about a Git repository?','Only latest version','No change tracking','Not essential','Stores complete history','D'),
+
+(30,'Purpose of .git folder?','Backups','Metadata and config','Latest code only','Binary files','B'),
+
+(30,'How does Git handle changes?','Overwrites code','Creates new file','Creates commit object','Discards changes','C'),
+
+(30,'Purpose of staging area?','Backup','Track team changes','Review before commit','Replace VCS','C');

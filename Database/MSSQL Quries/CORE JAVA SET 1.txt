@@ -1,0 +1,80 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(7,'Which of the following is the correct way to achieve composition in Java?','A class has references to objects of other classes, but the lifetime of the referenced objects is independent of the owning class.','A class has references to objects of other classes, and the lifetime of the referenced objects is controlled by the owning class.','A class inherits from multiple classes.','A class can have multiple objects of another class but with no strong relationship.','B'),
+
+(7,'What happens if an object is serialized without implementing the Serializable interface?','A CloneNotSupportedException is thrown.','A NotSerializableException is thrown.','The object is ignored during serialization.','The object is serialized as a default object.','B'),
+
+(7,'What is the key difference between HashMap and TreeMap in Java?','HashMap maintains the order of keys, while TreeMap does not.','HashMap uses a hash table for storage, while TreeMap uses a red-black tree to store keys in sorted order.','HashMap allows null keys, while TreeMap does not allow null keys.','HashMap can store only String keys, while TreeMap can store keys of any type.','B'),
+
+(7,'Which of the following is the correct way to handle multi-catch in Java?','Use multiple catch blocks for each exception type.','Use a single catch block with multiple exceptions, separated by commas.','Use catch (Exception | Throwable ex) to catch all types of exceptions.','Use catch with | inside a try-catch block, and each exception should be an instance of Throwable','B'),
+
+(7,'What is the purpose of static imports in Java?','Static imports allow you to import static variables and methods from other classes, enabling you to access them without qualifying with the class name.','Static imports allow you to import static classes only.','Static imports enable access to constructors from other classes.','Static imports are used for importing non-static members of a class.','A'),
+
+(7,'Which of the following correctly describes the constructor behavior in the context of initializing reference variables in Java?','Constructors are only used to initialize primitive data types.','Constructors can be used to initialize reference variables, and you can use the new keyword to assign objects to them.','Constructors cannot initialize reference variables, as they must always be initialized later in the program.','Constructors automatically reassign all reference variables to their default values.','B'),
+
+(7,'Which of the following statements is true regarding garbage collection in Java?','Java automatically runs garbage collection at fixed intervals.','The garbage collector runs only when the System.gc() method is explicitly called.','Objects that are unreachable or no longer referenced are eligible for garbage collection.','The garbage collector cannot reclaim memory from objects that were created using new keyword.','C'),
+
+(7,'Which of the following is the key difference between abstraction and encapsulation in OOP?','Abstraction hides the internal workings of an object, while encapsulation hides the behavior.','Abstraction is achieved through access modifiers, while encapsulation is achieved through methods and properties.','Encapsulation hides the internal state of an object, while abstraction hides the complexity of the system.','There is no difference; both terms are synonymous in OOP','C'),
+
+(7,'What is the output of the following Java program? int[][] matrix = {{1, 2}, {3, 4}, {5, 6}}; System.out.println(matrix[1][1]);','3','4','5','6','B'),
+
+(7,'Which of the following statements is true regarding garbage collection in Java?','Java automatically runs garbage collection at fixed intervals.','The garbage collector runs only when the System.gc() method is explicitly called.','Objects that are unreachable or no longer referenced are eligible for garbage collection.','The garbage collector cannot reclaim memory from objects that were created using new keyword.','C'),
+
+(7,'Which of the following methods can be used to convert a String to its corresponding primitive type using a wrapper class?','parse()','valueOf()','toPrimitive()','parseInt() for Integer, parseDouble() for Double, etc.','D'),
+
+(7,'In Java, where are primitive types and objects stored in memory?','Primitive types are stored in heap memory, while objects are stored in stack memory.','Both primitive types and objects are stored in the stack memory.','Primitive types are stored in stack memory, while objects are stored in heap memory.','Both primitive types and objects are stored in the heap memory.','C'),
+
+(7,'What happens when the finalize() method is called on an object in Java?','It is automatically called by the garbage collector before the object is reclaimed.','It must be manually invoked by the developer to free up resources.','It can only be called once, and it cannot be overridden in any subclass.','It is called only when the object is explicitly dereferenced by the developer','A'),
+
+(7,'Which code snippet correctly converts a Date object to a String and vice versa using SimpleDateFormat?','Date date = new Date(); SimpleDateFormat sdf = new SimpleDateFormat("yyyyMM-dd"); String formattedDate = sdf.parse(date); Date parsedDate = sdf.format(formattedDate);','Date date = new Date(); SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd"); String formattedDate = sdf.format(date); Date parsedDate = sdf.parse(formattedDate);','Date date = new Date(); SimpleDateFormat sdf = new SimpleDateFormat("MM-ddyyyy"); String formattedDate = sdf.parse(date); Date parsedDate = sdf.format(formattedDate);','Date date = new Date(); SimpleDateFormat sdf = new SimpleDateFormat("MM-ddyyyy"); String formattedDate = sdf.parse(date); Date parsedDate = sdf.parse(formattedDate);','B'),
+
+(7,'What happens when Thread.yield() is called?','It terminates the current thread.','It pauses the current thread and allows other threads of the same priority to run.','It suspends the current thread indefinitely.','It causes the thread to sleep for a specified time','B'),
+
+(7,'Which of the following is true about Java''s primitive data types in terms of memory allocation?','All primitive data types in Java are allocated memory on the heap.','Memory allocation for primitive data types depends on the JVM’s implementation and may vary across platforms.','Primitive data types are stored on the stack, while objects are stored in the heap.','All primitive data types in Java are of fixed size, and the JVM does not allow changes to their memory layout.','D'),
+
+(7,'Which of the following operators has the highest precedence in Java?','&& (Logical AND)','++ (Increment)','= (Assignment)','== (Equality)','B'),
+
+(7,'Which of the following is NOT a valid Java token?','class','@Override','main','++','C'),
+
+(7,'What is the key difference between overloading and overriding in Java?','Overloading is determined at runtime, while overriding is determined at compile time.','Overloading involves changing the method signature, while overriding involves changing the method body in the subclass.','Overloading is not allowed in Java, whereas overriding is.','Overloading occurs when the method signature is the same, and overriding happens when the return type is changed.','B'),
+
+(7,'What is the purpose of wrapper classes in Java?','To convert primitive data types to objects and vice versa.','To perform arithmetic operations on primitive types.','To improve memory efficiency for primitive types.','To enable primitive types to be garbage collected','A'),
+
+(7,'Which of the following methods is used to pause the execution of a thread for a specified time in milliseconds?','join()','sleep()','yield()','wait()','B'),
+
+(7,'Which method is used to assign the priority of a thread in Java?','setPriority()','setThreadPriority()','getPriority()','assignPriority()','A'),
+
+(7,'What is the purpose of the Comparable interface in Java?','It allows you to compare objects of different classes.','It enables you to define a custom sorting order for objects of a class.','It provides methods to perform basic operations on collections.','It allows objects to be added to a Set collection.','B'),
+
+(7,'Which of the following statements about passing variables to methods is TRUE?','In Java, all arguments are passed by reference, meaning any changes made to the parameter will reflect in the original variable.','In Java, primitive data types are passed by reference, while objects are passed by value.','In Java, primitive types are passed by value, while objects are passed by reference.','In Java, objects and primitive types are both passed by reference.','C'),
+
+(7,'What will be the result of the following code int a = 5, b = 3; if (a > b) { if (b > 2) { System.out.println("True"); } }','True','No output','Compilation Error','Runtime Exception','A'),
+
+(7,'When compiling a Java program, which of the following best describes the relationship between the Java source code and the Java bytecode?','Java source code is compiled into machine code by the Java compiler and executed directly by the OS.','The Java compiler translates the Java source code into Java bytecode, which is then executed by the JVM.','Java source code is compiled into an intermediate code that is executed directly by the CPU.','Java source code is compiled into an executable, which does not require the JVM to run','B'),
+
+(7,'Which of the following is NOT allowed in Java interfaces?','A class can implement multiple interfaces.','An interface can extend another interface.','An interface can contain concrete methods (methods with a body).','An interface can contain default methods (methods with a body and a default implementation)','C'),
+
+(7,'Which of the following is a characteristic feature of Hashtable?','Hashtable is synchronized and thread-safe, but does not allow null values.','Hashtable is thread-unsafe and allows duplicate keys.','Hashtable allows null keys and values.','Hashtable does not allow duplicate values, but allows duplicate keys','A'),
+
+(7,'What is the primary difference between StringBuilder and StringBuffer in Java?','StringBuilder is synchronized, while StringBuffer is not.','StringBuffer is synchronized, while StringBuilder is not.','StringBuilder and StringBuffer are identical in functionality and performance.','StringBuilder can only be used for string concatenation, while StringBuffer can be used for general-purpose string manipulation.','B'),
+
+(7,'Which of the following is true about downcasting in Java?','Downcasting is always safe and does not require an explicit check.','Downcasting is the act of casting a superclass reference to a subclass reference.','Downcasting is allowed without any restrictions.','Downcasting cannot be performed in Java','B'),
+
+(7,'What is the primary advantage of using Generics in Java?','It allows dynamic binding of types at runtime.','It enables the use of primitive types in collections.','It helps ensure type safety by providing compile-time type checking.','It eliminates the need for reflection in Java programs.','C'),
+
+(7,'Which component is used to compile, debug and execute the java programs?','JRE','JIT','JDK','JVM','C'),
+
+(7,'Which of the following statements about exceptions in Java is correct?','All exceptions inherit directly from Throwable.','Error and Exception are both subclasses of Throwable, but only Error can be caught using a try-catch block.','Error is a subclass of Exception, and it should be caught in the try-catch block.','Checked exceptions are those that are instances of Error, and unchecked exceptions are those that are instances of Exception','B'),
+
+(7,'Which of the following methods is used to remove an element from a Queue in Java?','remove()','pop()','delete()','poll()','A'),
+
+(7,'Which of the following best describes the difference between shallow copy and deep copy in Java?','A shallow copy creates a new object with the same reference as the original, while a deep copy creates a completely independent copy of the original object and its fields.','A shallow copy copies only primitive data types, while a deep copy copies objects only.','A shallow copy copies fields by reference, while a deep copy only copies immutable fields.','A shallow copy is used for cloning objects, while a deep copy is used to serialize objects.','A'),
+
+(7,'What is the purpose of the throw keyword in Java?','It is used to propagate exceptions up the call stack.','It is used to explicitly throw exceptions within a method.','It is used to declare that a method may throw an exception.','It is used to handle an exception after it has been caught','B'),
+
+(7,'Which of the following statements is incorrect about try-catch-finally blocks in Java?','The finally block is executed even if an exception is not thrown.','The finally block is executed only if the exception is caught.','The finally block is executed whether or not an exception occurs, except in cases where the JVM crashes or the program exits.','A finally block can be skipped if the JVM exits during the execution of the try or catch block (e.g., via System.exit()).','B'),
+
+(7,'What will happen if we try to access a protected variable or method outside the package but within a subclass?','It will result in a compilation error, even if the subclass is in a different package.','It will result in a compilation error, unless the protected member is accessed within the same package.','The protected variable or method can be accessed in the subclass, even if it is in a different package.','The protected member will be inherited, but access will be denied in subclasses.','C'),
+
+(7,'In Java NIO, which of the following is the correct use of the Selector class?','It is used for direct file manipulation.','It allows non-blocking I/O operations on channels.','It handles character encoding/decoding during input and output.','It is used to map data from the disk into memory.','B');

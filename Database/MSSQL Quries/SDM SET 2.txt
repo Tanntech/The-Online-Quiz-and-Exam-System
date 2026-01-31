@@ -1,0 +1,85 @@
+-- Optional: clear existing data
+DELETE FROM Questions WHERE ModuleId = 31;
+
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(31,'How do you add code changes to the staging area in Git?','By using the git stage command','By using the git commit command','By using the git add command','By using the git push command','C'),
+
+(31,'What happens when you add code changes to the staging area in Git?','The changes are permanently saved in the repository.','The changes are only saved locally and not shared with others.','The changes are organized and ready for review before committing.','The changes are automatically pushed to the remote repository.','C'),
+
+(31,'What is the purpose of reviewing code changes in the staging area before committing?','To share the changes with other team members.','To ensure that the changes do not conflict with other code.','To discard any changes that are not needed.','To speed up the development process.','B'),
+
+(31,'After adding code changes to the staging area, what is the next step in the Git workflow?','Pushing the changes to the remote repository','Committing the changes to the local repository','Discarding the changes','Reviewing the changes with team members','B'),
+
+(31,'What is the purpose of committing code changes in Git?','To share the changes with other team members.','To permanently save the changes in the repository''s history.','To push the changes to the remote repository.','To review the changes with team members.','B'),
+
+(31,'What is a Git branch?','A separate copy of the entire repository.','A directory where code backups are stored.','A parallel version of the code that diverges from the main development line.','A folder used for staging code changes.','C'),
+
+(31,'Why would you create a new branch in Git?','To permanently save the changes in the repository''s history.','To share the changes with other team members.','To experiment with new features or bug fixes without affecting the main development line.','To replace the need for version control systems.','C'),
+
+(31,'What is the purpose of merging branches in Git?','To permanently save the changes in the repository''s history.','To discard any changes made in the branches.','To combine the changes from one branch into another.','To push the changes to the remote repository.','C'),
+
+(31,'How does Git handle conflicts during branch merging?','Git automatically resolves conflicts without any manual intervention.','Git discards all conflicting changes.','Git prompts the developer to resolve conflicts manually.','Git creates a new branch for each conflict.','C'),
+
+(31,'When is it appropriate to merge a branch into the main development line?','After experimenting with new features or bug fixes in the branch.','After adding code changes to the staging area.','After committing code changes to the local repository.','After creating a new branch.','A'),
+
+(31,'What is Software Engineering?','The process of developing computer hardware','The application of engineering principles to build software products','The process of marketing software products','The process of manufacturing software products','B'),
+
+(31,'What is the primary focus of Software Engineering?','Building software products with visually appealing user interfaces','Creating user manuals and documentation for software products','Applying engineering principles to produce high-quality software','Conducting market research for software products','C'),
+
+(31,'What does the term "Software Process" refer to in Software Engineering?','The physical design of software products','The step-by-step plan for building software products','The testing phase of software development','The marketing and distribution of software products','B'),
+
+(31,'What is a "Software Product" in Software Engineering?','The hardware components used to build software','The documentation and manuals associated with software','The end result of the software development process that satisfies user needs','The marketing strategy used to promote software products','C'),
+
+(31,'What is the primary goal of a software process?','To develop hardware components for computers','To apply engineering principles to software development','To conduct market research for software products','To create user manuals and documentation','B'),
+
+(31,'What are the different phases involved in a software process?','Planning, Execution, and Maintenance','Design, Coding, and Testing','Identification, Analysis, and Validation','Requirement Gathering, Implementation, and Deployment','A'),
+
+(31,'Why is planning an essential part of the software process?','It determines the cost of the software product.','It helps in selecting the hardware components for the software.','It defines the overall approach and resources required for the project.','It provides a detailed user interface design for the software.','C'),
+
+(31,'What does the Maintenance phase involve?','Developing new features','Testing the software','Writing documentation','Fixing issues and updating the software based on feedback','D'),
+
+(31,'What is a Software Process Model?','Representation of hardware components','Market research plan','Visual representation of development steps','Testing technique','C'),
+
+(31,'Which is an example of a Software Process Model?','Waterfall Model','Marketing Model','Hardware Model','Testing Model','A'),
+
+(31,'In the Waterfall Model, when is testing performed?','After the coding phase','Before the design phase','After deployment','Throughout development','A'),
+
+(31,'What is the main advantage of the Waterfall Model?','Allows frequent changes','Clear and structured approach','Minimal documentation','No testing needed','B'),
+
+(31,'What is a Software Product?','Hardware components','Documentation','Final result satisfying user needs','Marketing strategy','C'),
+
+(31,'Which of the following is a software product?','Computer monitor','Online shopping web application','Printer','Keyboard','B'),
+
+(31,'What is the primary goal of a software product?','Generate profit','Solve user needs','Use latest hardware','Attractive UI','B'),
+
+(31,'How is software success measured?','Hardware used','Code complexity','Documentation amount','User satisfaction','D'),
+
+(31,'Why is Software Engineering important?','Better UI','No bugs','High-quality maintainable software','Lower cost','C'),
+
+(31,'What are benefits of Software Engineering?','Bug-free software','Effective project management','No testing needed','Skip design phase','B'),
+
+(31,'Key aspect of Software Engineering?','Marketing','Hardware design','Engineering principles in software','Documentation','C'),
+
+(31,'How does Software Engineering contribute to success?','Hardware focus','High pricing','Systematic reliable development','Manual creation','C'),
+
+(31,'What is SDLC?','Testing process','Framework for managing development','Set of tools','UI design technique','B'),
+
+(31,'How does SDLC help?','No defects','Step-by-step guidance','Auto code generation','No testing','B'),
+
+(31,'Common SDLC phases?','Design, coding, testing, deployment','Planning and control','Specification and validation','Reporting','A'),
+
+(31,'Which SDLC phase involves writing code?','Design','Testing','Coding','Planning','C'),
+
+(31,'Purpose of Planning phase?','UI design','Identify requirements and scope','Write code','Test software','B'),
+
+(31,'Activities during Planning phase?','Coding and testing','Hardware selection','Documentation','Market research and objectives','D'),
+
+(31,'Main output of Planning phase?','UI design','Source code','Requirements and project plan','Hardware','C'),
+
+(31,'Why create a project plan?','Determine cost','Define approach and resources','Market research','UI design','B'),
+
+(31,'Purpose of Design phase?','Write code','Identify hardware','Create UI and layout','Plan development','C'),
+
+(31,'Activities during Design phase?','Coding and testing','Documentation','Define UI and layout','Market research','C');

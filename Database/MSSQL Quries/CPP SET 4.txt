@@ -1,0 +1,146 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(1,'What is the output of the following code? int x=5; int &y=x; y++; cout<<x;',
+'4','5','6','0','C'),
+
+(1,'What is the size of an empty class in C++?',
+'0','1','Depends on compiler','Cannot be determined','B'),
+
+(1,'Which of the following is true about copy constructors?',
+'Automatically called during object assignment',
+'Cannot be overloaded',
+'Initializes object with another object',
+'Always private','C'),
+
+(1,'What will the following code print? Two objects of class A with constructor printing A and destructor printing ~A',
+'A~A','AA~~','AA~A~','A','C'),
+
+(1,'Which of the following statements about virtual functions is true?',
+'Can be static',
+'Enables compile-time polymorphism',
+'Enables runtime polymorphism',
+'Cannot be inherited','C'),
+
+(1,'What is the output? int arr[3]={1,2,3}; int *p=arr; cout<<*(p+2);',
+'1','2','3','garbage','C'),
+
+(1,'What does const_cast do?',
+'Removes constness of a variable',
+'Converts float to int',
+'Converts pointer to int',
+'Performs runtime type check','A'),
+
+(1,'Which of the following statements is true for nullptr in C++11?',
+'Can be assigned to int',
+'Represents null pointer',
+'Same as 0 in all cases',
+'Cannot be used in conditional','B'),
+
+(1,'What is the output? cout<<(++x)+(x++);',
+'3','4','2','Undefined','D'),
+
+(1,'Which casting operator checks type at runtime?',
+'static_cast','dynamic_cast','reinterpret_cast','const_cast','B'),
+
+(1,'What is the output? swap(a,b); cout<<a<<\" \"<<b;',
+'5 10','10 5','0 0','Error','B'),
+
+(1,'Which of the following statements about pure virtual functions is correct?',
+'Must have a function body',
+'Declared using = 0',
+'Cannot be overridden',
+'Can only exist in main','B'),
+
+(1,'What is the output? cout<<(10 & 20);',
+'0','10','20','30','B'),
+
+(1,'What is the output? int a=5; int *p=&a; *p=*p+5; cout<<a;',
+'5','10','garbage','Error','B'),
+
+(1,'Which STL container is best for LIFO operations?',
+'vector','stack','queue','map','B'),
+
+(1,'What is the output? vector<int> v={1,2,3}; cout<<v[1];',
+'1','2','3','error','B'),
+
+(1,'Which of the following cannot be used with templates?',
+'Class','Function','Object file','None of these','C'),
+
+(1,'What is the output? Virtual function call through base pointer',
+'A','B','AB','Error','B'),
+
+(1,'What is the output of typeid(x).name() for int (GCC)?',
+'int','integer','i','error','C'),
+
+(1,'Which operator cannot be overloaded?',
+'+','::','[]','<<','B'),
+
+(1,'Which is correct to declare a reference to pointer?',
+'int* &ptr','int &ptr*','int &*ptr','int ptr&','A'),
+
+(1,'Which of the following is true about auto in C++11?',
+'Deduces variable type automatically',
+'Only for pointers',
+'Only for arrays',
+'Cannot be initialized','A'),
+
+(1,'What is the output? sizeof(arr)/sizeof(arr[0]);',
+'0','3','1','Error','B'),
+
+(1,'Which of the following can be used to implement RTTI?',
+'static_cast','dynamic_cast','const_cast','reinterpret_cast','B'),
+
+(1,'Which is used to manage formatted I/O?',
+'setw','endl','ws','All of the above','D'),
+
+(1,'Which of the following allows safe downcasting?',
+'static_cast','dynamic_cast','reinterpret_cast','const_cast','B'),
+
+(1,'Which file mode opens file for both reading and writing?',
+'ios::in','ios::out','ios::in | ios::out','ios::app','C'),
+
+(1,'What is the output? int b=a<<1; cout<<b;',
+'2','5','10','20','C'),
+
+(1,'Which of the following is true about friend function?',
+'Can access private members',
+'Is member of class',
+'Can be virtual',
+'Cannot be global','A'),
+
+(1,'What is the output? cout<<++x + ++x;',
+'21','22','Undefined','20','C'),
+
+(1,'What is the output using Base::f() explicitly?',
+'Base','Derived','error','nothing','A'),
+
+(1,'Which operator is used to access member through pointer?',
+'.','->','*','&','B'),
+
+(1,'What is the output? cout<<10%3;',
+'1','3','10','0','A'),
+
+(1,'What is the output? vector push_back then size?',
+'3','4','5','error','B'),
+
+(1,'What is the output? cout<<(5<<2);',
+'5','10','20','0','C'),
+
+(1,'Which of the following is used to define generic class?',
+'template<class T>','typedef','auto','friend','A'),
+
+(1,'What is the output? arr[1][0] from {{1,2},{3,4}};',
+'1','2','3','4','C'),
+
+(1,'Which of the following avoids memory leaks in C++?',
+'delete','free','Both A and B','malloc','A'),
+
+(1,'What is the output? cout<<(~10);',
+'10','-11','11','-10','B'),
+
+(1,'Which of the following is true about constexpr?',
+'Value computed at runtime',
+'Value computed at compile time',
+'Can only be used with class',
+'Deprecated','B');

@@ -1,0 +1,122 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(3,'What does Big-O notation represent?',
+'Best case complexity','Average case complexity','Upper bound of algorithm complexity','Exact execution time','C'),
+
+(3,'Time complexity of nested loops each running n times is:',
+'O(n)','O(log n)','O(n²)','O(2n)','C'),
+
+(3,'Which complexity is considered most efficient for searching?',
+'O(n)','O(n log n)','O(log n)','O(1)','D'),
+
+(3,'What is the space complexity of recursion mainly due to?',
+'Heap memory','Global variables','Stack frames','CPU registers','C'),
+
+(3,'Which algorithm has exponential time complexity?',
+'Binary Search','Merge Sort','Recursive Fibonacci','Heap Sort','C'),
+
+(3,'What is the best case time complexity of linear search?',
+'O(n)','O(log n)','O(1)','O(n²)','C'),
+
+(3,'Worst case time complexity of linear search?',
+'O(1)','O(log n)','O(n)','O(n²)','C'),
+
+(3,'Time complexity of accessing an element in an array using index?',
+'O(n)','O(log n)','O(1)','O(n log n)','C'),
+
+(3,'Time complexity of insertion at end of ArrayList (average case)?',
+'O(1)','O(log n)','O(n)','O(n²)','A'),
+
+(3,'Time complexity of inserting at beginning of ArrayList?',
+'O(1)','O(log n)','O(n)','O(n log n)','C'),
+
+(3,'Which interface is the root of Java Collection hierarchy?',
+'List','Set','Collection','Iterable','C'),
+
+(3,'Which collection allows duplicate elements?',
+'Set','HashSet','TreeSet','List','D'),
+
+(3,'Which collection does NOT allow duplicates?',
+'ArrayList','LinkedList','HashSet','Vector','C'),
+
+(3,'Average time complexity of search in HashMap?',
+'O(n)','O(log n)','O(1)','O(n log n)','C'),
+
+(3,'Worst case time complexity of HashMap operations?',
+'O(1)','O(log n)','O(n)','O(n²)','C'),
+
+(3,'Which collection maintains elements in sorted order?',
+'HashSet','LinkedHashSet','TreeSet','ArrayList','C'),
+
+(3,'Time complexity of TreeSet insertion?',
+'O(1)','O(log n)','O(n)','O(n²)','B'),
+
+(3,'Which Map implementation maintains insertion order?',
+'HashMap','TreeMap','LinkedHashMap','Hashtable','C'),
+
+(3,'Which Map maintains keys in sorted order?',
+'HashMap','TreeMap','LinkedHashMap','ConcurrentHashMap','B'),
+
+(3,'Time complexity of TreeMap get() operation?',
+'O(1)','O(log n)','O(n)','O(n log n)','B'),
+
+(3,'Which collection is thread-safe?',
+'ArrayList','HashMap','Vector','HashSet','C'),
+
+(3,'Which collection is best for frequent insertions & deletions?',
+'ArrayList','LinkedList','Vector','TreeSet','B'),
+
+(3,'Time complexity of remove() in LinkedList (at known position)?',
+'O(1)','O(log n)','O(n)','O(n²)','A'),
+
+(3,'Which interface allows only one end insertion & deletion?',
+'List','Set','Queue','Map','C'),
+
+(3,'Time complexity of push and pop in Stack?',
+'O(n)','O(log n)','O(1)','O(n log n)','C'),
+
+(3,'Which collection uses hashing internally?',
+'TreeSet','HashSet','LinkedList','Vector','B'),
+
+(3,'Which collection allows null keys?',
+'TreeMap','Hashtable','HashMap','ConcurrentHashMap','C'),
+
+(3,'Time complexity of Collections.sort() internally uses?',
+'Bubble Sort','Selection Sort','Tim Sort','Heap Sort','C'),
+
+(3,'Which collection is best for fast lookup operations?',
+'ArrayList','LinkedList','HashMap','TreeMap','C'),
+
+(3,'Which complexity grows slowest as input increases?',
+'O(n)','O(n log n)','O(log n)','O(n²)','C'),
+
+(3,'Time complexity of contains() method in HashSet (average case)?',
+'O(n)','O(log n)','O(1)','O(n log n)','C'),
+
+(3,'What is the worst-case time complexity of contains() in HashSet?',
+'O(1)','O(log n)','O(n)','O(n²)','C'),
+
+(3,'What is the time complexity of add() operation in LinkedList?',
+'O(1)','O(log n)','O(n)','O(n²)','A'),
+
+(3,'Which collection provides O(log n) time complexity for insertion, deletion, and search?',
+'HashSet','ArrayList','TreeSet','LinkedList','C'),
+
+(3,'Time complexity of remove(Object o) in ArrayList (worst case)?',
+'O(1)','O(log n)','O(n)','O(n log n)','C'),
+
+(3,'What is the space complexity of an algorithm using recursion depth n?',
+'O(1)','O(log n)','O(n)','O(n²)','C'),
+
+(3,'Which Java collection gives the fastest iteration performance?',
+'LinkedList','Vector','ArrayList','TreeSet','C'),
+
+(3,'What is the time complexity of get(index) in LinkedList?',
+'O(1)','O(log n)','O(n)','O(n log n)','C'),
+
+(3,'Which collection is best when both fast search and insertion order are required?',
+'HashSet','TreeSet','LinkedHashSet','ArrayList','C'),
+
+(3,'Which complexity represents an algorithm whose performance doubles when input doubles?',
+'O(log n)','O(n)','O(n log n)','O(n²)','B');

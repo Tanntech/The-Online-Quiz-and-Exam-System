@@ -1,0 +1,138 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(1,'What will be the output? int x=10; int *p=&x; int **q=&p; cout<<**q;',
+'Address of x','Address of p','10','Garbage','C'),
+
+(1,'What is the output? static int count=0; fun() called twice;',
+'0','1','2','Error','C'),
+
+(1,'Which of the following is true about inline functions?',
+'Always replaced by macro',
+'Function call overhead is removed',
+'Cannot access static variables',
+'Cannot be recursive','B'),
+
+(1,'What will this code print? int a=5; cout<<sizeof(a++);',
+'4','5','6','Undefined','A'),
+
+(1,'What is the output of constructor/destructor execution?',
+'AB','BA','A','B','A'),
+
+(1,'Which C++ feature supports run-time polymorphism?',
+'Templates','Function overloading','Virtual functions','Inline functions','C'),
+
+(1,'What will be the output? int b=a++ + ++a;',
+'11','12','13','Undefined','D'),
+
+(1,'Which cast is safest for downcasting in inheritance?',
+'static_cast','reinterpret_cast','dynamic_cast','const_cast','C'),
+
+(1,'What will the output be? cout<<*(arr+1);',
+'10','20','30','Address','B'),
+
+(1,'What is the output? bool x=false; cout<<x+1;',
+'0','1','2','Error','B'),
+
+(1,'Which STL container does NOT allow duplicate keys?',
+'multimap','map','vector','list','B'),
+
+(1,'What is the output? cout<<(x & 1);',
+'0','1','5','Error','B'),
+
+(1,'Which of the following is true about const_cast?',
+'Changes data type','Removes constness',
+'Converts base to derived','Allocates memory','B'),
+
+(1,'What will be printed? reference modification',
+'10','5','15','Error','C'),
+
+(1,'What does this code output? cout<<(10>5?1:0);',
+'0','1','true','false','B'),
+
+(1,'Which operator cannot be overloaded?',
+'++','?:','[]','<<','B'),
+
+(1,'What is the output? cout<<(a<<1);',
+'5','10','2','1','B'),
+
+(1,'Which function is called automatically during exception handling?',
+'constructor','destructor','main','operator new','B'),
+
+(1,'What is printed? cout<<x * x++;',
+'9','12','6','Undefined','D'),
+
+(1,'Which keyword is used to prevent inheritance?',
+'static','virtual','final','protected','C'),
+
+(1,'What will this print? cout<<(a>>1);',
+'5','4','2','1','C'),
+
+(1,'Which container provides LIFO behavior?',
+'queue','vector','stack','deque','C'),
+
+(1,'What is the output? cout<<++x<<x++;',
+'01','11','12','Undefined','B'),
+
+(1,'What is RTTI used for?',
+'Compile-time checking',
+'Runtime type identification',
+'Memory allocation',
+'Exception handling','B'),
+
+(1,'What will be printed? cout<<sizeof(arr);',
+'3','6','12','Address','C'),
+
+(1,'Which of the following is NOT an STL container?',
+'vector','map','array','string','D'),
+
+(1,'What is the output? int b=++a; cout<<a<<b;',
+'56','65','66','55','C'),
+
+(1,'What does delete[] do?',
+'Deletes single object',
+'Deletes array allocated by new[]',
+'Clears vector',
+'Frees stack memory','B'),
+
+(1,'Which keyword is used to define interface-like behavior?',
+'abstract','interface','virtual','pure virtual','D'),
+
+(1,'What is the output? cout<<a*3+a;',
+'6','7','8','9','B'),
+
+(1,'Which feature enables code reusability?',
+'Encapsulation','Polymorphism','Inheritance','Abstraction','C'),
+
+(1,'What will be printed? cout<<int(ch);',
+'A','65','Error','0','B'),
+
+(1,'Which container allows fast insertion at both ends?',
+'vector','list','deque','map','C'),
+
+(1,'What is the output? cout<<(a==5 && a<10);',
+'0','1','5','Error','B'),
+
+(1,'Which of the following is true about destructors?',
+'Can take parameters',
+'Can be overloaded',
+'Called automatically',
+'Must be static','C'),
+
+(1,'What will be printed? cout<<!x;',
+'0','1','true','false','A'),
+
+(1,'Which container stores elements in sorted order?',
+'vector','list','set','deque','C'),
+
+(1,'What is the output? cout<<a--<<--a;',
+'109','98','Undefined','1010','C'),
+
+(1,'What is the main purpose of namespaces?',
+'Faster execution',
+'Memory optimization',
+'Avoid naming conflicts',
+'File handling','C'),
+
+(1,'Which keyword forces compile-time evaluation?',
+'const','static','constexpr','inline','C');

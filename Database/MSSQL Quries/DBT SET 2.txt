@@ -1,0 +1,17 @@
+-- Optional: clear existing data for this module
+DELETE FROM Questions WHERE ModuleId = 35;
+
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption, Explanation)
+VALUES
+(35, 'If every non-key attribute is functionally dependent on the primary key, the relation will be in', 'Fourth Normal Form', 'Third Normal Form', 'First Normal Form', 'Second Normal Form', 'B', 'In 3NF, every non-key attribute must be functionally dependent only on the primary key and not on another non-key attribute (no transitive dependency).'),
+(35, 'Database locking concept is used to solve the problem of', 'Inconsistent Data', 'All of the options', 'Lost Update', 'Uncommitted Dependency', 'B', 'Locking prevents lost updates, dirty reads (uncommitted dependency), and inconsistent data. Hence, all problems are handled.'),
+(35, 'UML stands for', 'Universal Modeling Language', 'United Modeling Language', 'Uni Modeling Language', 'Unified Modeling Language', 'D', 'UML is a standard language used to visualize, design, and document software systems.'),
+(35, 'Data Manipulation Language (DML) is NOT used to', 'Insertion of new information into the Database', 'Modification of information in the Database', 'Create information table in the Database', 'Deletion of information in the Database', 'C', 'DML → INSERT, UPDATE, DELETE, SELECT. Table creation belongs to DDL, not DML.'),
+(35, 'Which of the following is true regarding Referential Integrity?', 'Every primary-key value must match a primary-key value in an associated table', 'Every primary-key value must match a foreign-key value in an associated table', 'Every foreign-key value must match a foreign-key value in an associated table', 'Every foreign-key value must match a primary-key value in an associated table', 'D', 'Referential Integrity ensures that foreign keys reference valid primary keys to maintain consistency.'),
+(35, 'Which option is used for retrieval of data?', 'Stack', 'Data Structure', 'Linked list', 'Query', 'D', 'Data is retrieved from a database using queries (e.g., SELECT statement).'),
+(35, 'ODBC stands for', 'None of above', 'Open Database Connection', 'Offline Database Connection', 'Oriented Database Connection', 'B', 'ODBC is a standard API used to connect applications with different database systems.'),
+(35, 'Which of the following is a unary operation?', 'Selection operation', 'Primitive operation', 'Projection operation', 'Generalized selection', 'D', 'Unary operations work on a single relation. Generalized selection applies conditions on one relation, hence unary.'),
+(35, 'Which SQL query is used to remove a table and all its data from the database?', 'None of these', 'Drop Table', 'Create Table', 'Alter Table', 'B', 'DROP TABLE permanently deletes the table structure and its data.'),
+(35, 'In precedence of set operators, the expression is evaluated from', 'Left to Right', 'Right to Left', 'Left to Left', 'Right to Right', 'A', 'Set operations follow left-to-right associativity unless parentheses change order.');
+-- Continue the same pattern for questions 11-40

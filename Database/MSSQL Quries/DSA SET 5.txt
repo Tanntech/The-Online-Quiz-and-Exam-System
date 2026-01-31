@@ -1,0 +1,82 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(6,'What is the time complexity to access the ith element in an array?','O(1)','O(n)','O(log n)','O(n²)','A'),
+
+(6,'In which situation is an array better than a linked list?','Frequent insertions/deletions','Random access to elements','Unknown size','Memory efficiency','B'),
+
+(6,'Which of the following is a disadvantage of arrays?','Fixed size','Sequential memory allocation','Wasted memory if not fully used','All of the above','D'),
+
+(6,'What is the result of arr.length in Java for an array?','Maximum index','Number of elements','Size minus one','None','B'),
+
+(6,'Which of the following operations is not supported by a stack?','Push','Pop','Peek','Enqueue','D'),
+
+(6,'Worst-case space complexity of a recursive factorial function','O(1)','O(n)','O(log n)','O(n²)','B'),
+
+(6,'How can you implement two stacks in a single array efficiently?','Divide array into two halves','Start one stack from beginning and one from end','Use extra memory','Dynamic resize only','B'),
+
+(6,'Which real-world scenario is best suited for a stack?','Undo operation','CPU scheduling','BFS traversal','Printer spooling','A'),
+
+(6,'Which operation removes an element from the front of a queue?','Push','Pop','Dequeue','Insert','C'),
+
+(6,'Priority queue is usually implemented using','Array','Linked list','Heap','Stack','C'),
+
+(6,'Circular queue is preferred because','Uses less memory','Easy to implement','O(n²) operations','Eliminates wasted space','D'),
+
+(6,'Application of queue','CPU scheduling','Printer spooling','BFS','All of the above','D'),
+
+(6,'Which linked list allows traversal in both directions?','Singly','Doubly','Circular','None','B'),
+
+(6,'Costly operation in singly linked list','Traversal','Insert at head','Delete at head','Add at tail','A'),
+
+(6,'Time complexity of insertion at beginning of linked list','O(n)','O(1)','O(log n)','O(n²)','B'),
+
+(6,'Extra memory is required in linked list for','Data','Pointer','Traversal','Deletion','B'),
+
+(6,'Which tree is complete binary tree?','All levels filled except possibly last','All non-leaf nodes have two children','One child only','Unbalanced','A'),
+
+(6,'Height of full binary tree with n nodes','log₂(n)','n','n−1','2n','A'),
+
+(6,'Traversal that visits root first','Inorder','Preorder','Postorder','Level order','B'),
+
+(6,'BFS uses which traversal?','Inorder','Preorder','Postorder','Level order','D'),
+
+(6,'Best sorting for nearly sorted array','Bubble','Selection','Insertion','Quick','C'),
+
+(6,'Worst-case time of quick sort','O(n)','O(n log n)','O(n²)','O(log n)','C'),
+
+(6,'Divide and conquer sorting algorithm','Bubble','Selection','Merge','Insertion','C'),
+
+(6,'Best-case time of binary search','O(1)','O(log n)','O(n)','O(n log n)','A'),
+
+(6,'Binary search requires array to be','Sorted','Unsorted','Random','Circular','A'),
+
+(6,'Collision resolution techniques','Linear probing','Quadratic probing','Double hashing','All','D'),
+
+(6,'Hash function converts','Data to index','Index to data','Node to pointer','None','A'),
+
+(6,'Average case search in hash table','O(n)','O(log n)','O(1)','O(n log n)','C'),
+
+(6,'Traversal that uses queue','DFS','BFS','Inorder','Preorder','B'),
+
+(6,'Single source shortest path algorithm','Dijkstra','Prim','Kruskal','Floyd','A'),
+
+(6,'MST algorithms','Prim','Kruskal','BFS','Both A and B','D'),
+
+(6,'Best graph representation for sparse graph','Matrix','List','Incidence','None','B'),
+
+(6,'Recursion where call is last statement','Direct','Tail','Indirect','Infinite','B'),
+
+(6,'Mandatory for recursion termination','Loop','Base condition','Global variable','Parameter','B'),
+
+(6,'Stack overflow occurs due to','Missing base case','Small input','Arrays','Few calls','A'),
+
+(6,'Algorithm that tries all possibilities','Greedy','Divide & Conquer','Brute Force','Dynamic Programming','C'),
+
+(6,'Uses overlapping subproblems','Greedy','Divide & Conquer','Dynamic Programming','Brute Force','C'),
+
+(6,'Greedy works when','Optimal substructure','Local = global optimum','Small problem','Both A and B','D'),
+
+(6,'Divide & Conquer examples','Merge sort','Binary search','Quick sort','All','D'),
+
+(6,'Backtracking is used in','N-Queens','Maze','Sudoku','All','D');

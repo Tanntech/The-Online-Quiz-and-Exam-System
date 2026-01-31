@@ -1,0 +1,46 @@
+-- Delete existing questions for module
+DELETE FROM Questions WHERE ModuleId = 25;
+
+-- Insert EXACT 40 questions
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(25,'How do you declare a nullable int?','Nullable int a;','int a = null;','int? a;','int?? a;','C'),
+(25,'Which statement is false for out parameters?','Need not initialize','Lose initial value','Must initialize before exit','Cannot use before init','E'),
+(25,'Which statement is true for ref parameters?','No init required','Lose initial value','Must initialize before exit','Cannot use before init','C'),
+(25,'Values of arr.Rank, GetLength(1), GetUpperBound(0)','2,3,3','2,4,3','2,3,4','1,3,3','A'),
+(25,'Array.IndexOf return if not found','null','error','last index + 1','-1','D'),
+(25,'Iterator for SortedList<TKey,TValue>','DictionaryEntry','DictionaryEntry<TKey,TValue>','KeyValuePair','KeyValuePair<TKey,TValue>','D'),
+(25,'ICollection<T> inherits from','IEnumerable','IEnumerable<T>','IList<T>','IDictionary<T>','B'),
+(25,'Generic constraint for value type','where T:value','where T:valueType','where T:struct','where T:class','C'),
+(25,'Default base class','Nothing','ToString','base','Object','D'),
+(25,'False statement about struct','No inheritance','No param ctor','Value type','Stored on stack','E'),
+(25,'Give thread higher time slice','Priority','ThreadPriority','TimeSlice','Cannot be done','A'),
+(25,'Wait until thread finishes','Join','WaitOne','Wait','Sleep','A'),
+(25,'Object initializer syntax','new C{a=10}','new C(){a=10}','new C(20){a=10}','All','D'),
+(25,'ThreadPool execution','Start','Begin','Invoke','QueueUserWorkItem','D'),
+(25,'Lambda no params multiline','()=>{ }','=>','delegate(){}','Not possible','A'),
+(25,'False about GC','Uses generations','Gen0 first','Promoted','Max 3 gens','E'),
+(25,'Why IDisposable','Better finalization','using calls Dispose','Free resources','All','D'),
+(25,'False about Assembly','Has metadata','MSIL format','Multiple modules','Has entry point','D'),
+(25,'Automatic property syntax','property{}','int prop{}','prop{get;set;}','int prop{get;set;}','D'),
+(25,'False about ref/out','Ref not allowed','Value ref','Both modify','Value out','A'),
+(25,'Extension method rule','Any class','No params','Overridable','Must be static','D'),
+(25,'Catch block error','No finally','No error','Redeclared ex','Base exception first','D'),
+(25,'WCF exception config','allowExceptions','includeExceptionDetailInFaults','customDetails','metadataDetails','B'),
+(25,'Raise event syntax','RaiseEvent','RaiseEvent()','EventName()','Delegate()','C'),
+(25,'Invalid ThreadState','Aborted','Running','Stopped','Sleep','D'),
+(25,'Background thread true','Cannot call','Lower priority','Unmanaged','Idle only','F'),
+(25,'Difference out vs ref','Out cannot change','Ref cannot change','Out init inside','Ref only ref types','C'),
+(25,'False static ctor','Parameterless','Overloaded','Private','Called once','F'),
+(25,'Invalid accessor combo','public/private','protected internal/private','protected/internal','internal/private','C'),
+(25,'Can be base class','Abstract','Sealed','Static','Internal other asm','A'),
+(25,'False abstract class','Has abstract method','Pure virtual','Only abstract','Must implement','A'),
+(25,'False for int? a=100','Nullable','Converted','Error','Null allowed','C'),
+(25,'False about arrays','Inherit Array','foreach','Reference type','2D sortable','D'),
+(25,'Invalid LINQ','Only i','Only ii','Only iii','ii & iii','B'),
+(25,'Forms auth delete cookie','Cookie.Delete','Logout','SignOut','Cookie.Remove','C'),
+(25,'Redirect-only data','ViewBag','ViewData','TempData','Session','C'),
+(25,'Override bundling','BundleTable.EnableOptimizations','BundleConfig.config','BundleCollection','BundleCollection.config','A'),
+(25,'Enable minification','min=true','min=false','debug=true','debug=false','D'),
+(25,'Partial view returns string','Html.Partial','RenderPartial','RenderAction','RenderView','A');

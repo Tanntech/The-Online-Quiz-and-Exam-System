@@ -1,0 +1,128 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(1,'Which feature of C++ supports data hiding?',
+'inheritance','polymorphism','encapsulation','abstraction','C'),
+
+(1,'Which access specifier allows access only within class and derived class?',
+'public','private','protected','friend','C'),
+
+(1,'What is the output of pre-increment example?',
+'9','10','11','error','C'),
+
+(1,'Which constructor is used when object is copied?',
+'default constructor','parameterized constructor','copy constructor','destructor','C'),
+
+(1,'Which keyword is used to create object dynamically?',
+'malloc','new','alloc','create','B'),
+
+(1,'What is the output when reference modifies variable?',
+'5','10','garbage','error','B'),
+
+(1,'Which inheritance type causes diamond problem?',
+'single','multilevel','multiple','hierarchical','C'),
+
+(1,'Which keyword resolves diamond problem?',
+'static','virtual','friend','const','B'),
+
+(1,'Which operator is used to access namespace members?',
+'.','->','::',':','C'),
+
+(1,'What is the output when default argument is used?',
+'0','5','error','garbage','B'),
+
+(1,'Which function is called automatically when object goes out of scope?',
+'constructor','destructor','copy constructor','operator=','B'),
+
+(1,'Which keyword is used for runtime polymorphism?',
+'inline','virtual','static','register','B'),
+
+(1,'What is the output of sizeof array?',
+'3','4','12','error','C'),
+
+(1,'Which STL container follows FIFO?',
+'stack','vector','queue','set','C'),
+
+(1,'Which header file is required for exception handling?',
+'exception','error','try','catch','A'),
+
+(1,'What is the output of throwing integer exception?',
+'nothing','error','10','garbage','C'),
+
+(1,'Which cast removes constness?',
+'static_cast','dynamic_cast','reinterpret_cast','const_cast','D'),
+
+(1,'Which operator cannot be overloaded?',
+'+','=','?:','<<','C'),
+
+(1,'Which feature allows generic programming?',
+'macro','inline','template','virtual','C'),
+
+(1,'What is RTTI used for?',
+'compile-time checking','memory allocation','runtime type identification','file handling','C'),
+
+(1,'What is the output of ternary operator?',
+'5','10','true','error','B'),
+
+(1,'Which loop executes at least once?',
+'for','while','do while','switch','C'),
+
+(1,'What is the output of static variable increment?',
+'0','1','garbage','error','B'),
+
+(1,'Which statement about inline functions is correct?',
+'always faster',
+'replace function call with body',
+'cannot use loops',
+'cannot return value','B'),
+
+(1,'What is the output of pointer arithmetic?',
+'10','20','30','address','B'),
+
+(1,'Which pointer stores address of object?',
+'function pointer','class pointer','void pointer','null pointer','B'),
+
+(1,'What is the output of dynamic memory allocation?',
+'0','garbage','50','error','C'),
+
+(1,'Which feature allows same function name with different parameters?',
+'overriding','inheritance','overloading','abstraction','C'),
+
+(1,'Constructor and destructor output?',
+'cd','dc','c','d','A'),
+
+(1,'Which inheritance allows one base and multiple derived classes?',
+'multiple','multilevel','hierarchical','hybrid','C'),
+
+(1,'What is the output of virtual function call?',
+'base','derived','error','nothing','B'),
+
+(1,'Which function cannot be virtual?',
+'destructor','constructor','member function','overridden function','B'),
+
+(1,'Which keyword is used to throw exception?',
+'try','catch','throw','exception','C'),
+
+(1,'What is the output of exception handling code?',
+'0','error','runtime crash','compile error','B'),
+
+(1,'Which manipulator changes line?',
+'endl','setw','setprecision','ws','A'),
+
+(1,'Which class is used to write into file?',
+'ifstream','ofstream','fstream','istream','B'),
+
+(1,'What is the output of template add function?',
+'23','5','error','garbage','B'),
+
+(1,'Which STL container stores key-value pairs?',
+'vector','set','map','stack','C'),
+
+(1,'Which operator is overloaded for output stream?',
+'>>','<<','=','[]','B'),
+
+(1,'What is the purpose of dynamic_cast?',
+'remove const',
+'unsafe conversion',
+'runtime type checking',
+'compile-time binding','C');

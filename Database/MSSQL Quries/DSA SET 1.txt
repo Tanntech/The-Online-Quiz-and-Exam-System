@@ -1,0 +1,122 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(2,'What is the primary objective of problem solving in computer science?',
+'Writing code quickly','Minimizing memory usage only','Finding an optimal solution for a defined problem','Using advanced data structures','C'),
+
+(2,'Which of the following is the first step in computational thinking?',
+'Implementing the algorithm','Testing','Defining the problem','Optimizing code','C'),
+
+(2,'Which notation is used to express algorithm complexity?',
+'UML','Big-O','Pseudocode','Flowchart','B'),
+
+(2,'What is the time complexity of a single loop iterating n times?',
+'O(1)','O(log n)','O(n)','O(n²)','C'),
+
+(2,'Which data structure follows LIFO principle?',
+'Queue','Stack','Array','Linked List','B'),
+
+(2,'Which real-world example best represents a stack?',
+'Ticket queue','Browser history','Railway reservation','CPU scheduling','B'),
+
+(2,'What happens when we pop from an empty stack?',
+'Overflow','Segmentation fault','Underflow','Compilation error','C'),
+
+(2,'Which data structure follows FIFO principle?',
+'Stack','Queue','Tree','Graph','B'),
+
+(2,'Which operation inserts an element at the rear of a queue?',
+'Pop','Dequeue','Enqueue','Push','C'),
+
+(2,'Advantage of circular queue over linear queue?',
+'Faster operations','Avoids memory wastage','Easier implementation','Uses recursion','B'),
+
+(2,'Which linked list allows traversal in both directions?',
+'Singly','Circular','Doubly','Linear','C'),
+
+(2,'Main disadvantage of arrays compared to linked lists?',
+'No random access','Fixed size','Complex syntax','Slower access','B'),
+
+(2,'Which node pointer is present in singly linked list?',
+'prev','left','next','both prev and next','C'),
+
+(2,'Time complexity to insert at beginning of linked list?',
+'O(n)','O(log n)','O(1)','O(n²)','C'),
+
+(2,'Which structure is best for implementing stack dynamically?',
+'Array','Linked list','Queue','Tree','B'),
+
+(2,'What is mandatory in a recursive function?',
+'Loop','Base condition','Global variable','Class object','B'),
+
+(2,'What happens if base condition is missing?',
+'Compilation error','Stack overflow','Runtime exception','Infinite loop only','B'),
+
+(2,'Recursion uses which data structure internally?',
+'Queue','Heap','Stack','Graph','C'),
+
+(2,'Tail recursion means?',
+'Multiple recursive calls','Recursive call at end','No base case','Loop-based recursion','B'),
+
+(2,'Advantage of recursion?',
+'Faster execution','Reduced memory','Code simplicity','No stack usage','C'),
+
+(2,'Maximum children in a binary tree node?',
+'1','2','3','Unlimited','B'),
+
+(2,'Inorder traversal sequence is?',
+'Root–Left–Right','Left–Root–Right','Left–Right–Root','Root–Right–Left','B'),
+
+(2,'Time complexity of searching in balanced BST?',
+'O(1)','O(n)','O(log n)','O(n log n)','C'),
+
+(2,'Which tree overcomes skewed BST problem?',
+'Binary Tree','Heap','AVL Tree','Tree','C'),
+
+(2,'BFS traversal uses which structure?',
+'Stack','Queue','Tree','Recursion','B'),
+
+(2,'Best case time complexity of binary search?',
+'O(n)','O(log n)','O(1)','O(n log n)','C'),
+
+(2,'Binary search requires data to be?',
+'Random','Sorted','Reversed','Unsorted','B'),
+
+(2,'Which sorting algorithm is stable?',
+'Quick sort','Heap sort','Insertion sort','Selection sort','C'),
+
+(2,'Worst case complexity of quicksort?',
+'O(n)','O(n log n)','O(log n)','O(n²)','D'),
+
+(2,'Which sorting algorithm uses divide and conquer?',
+'Bubble sort','Selection sort','Merge sort','Insertion sort','C'),
+
+(2,'What is the purpose of hashing?',
+'Sorting','Searching efficiently','Traversal','Encryption','B'),
+
+(2,'Collision occurs when?',
+'Table is full','Two keys map to same index','Key not found','Hash function fails','B'),
+
+(2,'Which collision resolution uses another hash function?',
+'Linear probing','Quadratic probing','Double hashing','Chaining','C'),
+
+(2,'Average search time in hash table?',
+'O(n)','O(log n)','O(1)','O(n log n)','C'),
+
+(2,'Hash table improves which recursive algorithm?',
+'Binary search','Fibonacci','Merge sort','Quick sort','B'),
+
+(2,'Graph traversal algorithms are?',
+'Inorder & Preorder','BFS & DFS','Heap & Stack','Linear & Binary','B'),
+
+(2,'Which representation is space efficient for sparse graphs?',
+'Adjacency matrix','Adjacency list','Incidence matrix','Tree','B'),
+
+(2,'Dijkstra’s algorithm is used for?',
+'MST','Sorting','Shortest path','Traversal','C'),
+
+(2,'Which algorithm finds Minimum Spanning Tree?',
+'Floyd','Dijkstra','Prim','DFS','C'),
+
+(2,'Which algorithm design technique tries all possibilities?',
+'Greedy','Dynamic Programming','Divide & Conquer','Brute Force','D');

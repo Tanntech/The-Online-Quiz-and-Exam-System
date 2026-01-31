@@ -1,0 +1,215 @@
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption)
+VALUES
+(1,'What happens if this pointer is used in static member function?',
+'It compiles successfully',
+'Compilation error',
+'Undefined behavior',
+'this pointer is passed automatically','B'),
+
+(1,'Which feature allows same function name with different arguments?',
+'Inheritance','Encapsulation','Polymorphism','Abstraction','C'),
+
+(1,'Purpose of static variables inside a function?',
+'Retain value across calls',
+'Exist only during execution',
+'Cannot be initialized',
+'Used for memory allocation','A'),
+
+(1,'If a class has no constructor, what happens?',
+'Error during object creation',
+'Default constructor is provided',
+'Object cannot be created',
+'Members are inaccessible','B'),
+
+(1,'Which is NOT valid const member function?',
+'int getData() const',
+'void display() const',
+'void setData(int x) const',
+'void modify() const','C'),
+
+(1,'Which statement about this pointer is incorrect?',
+'Used to differentiate members',
+'Refers to current object',
+'Available only in non-static functions',
+'Passed explicitly by compiler','D'),
+
+(1,'Which is true about destructors?',
+'Called automatically',
+'Can take arguments',
+'Can be overloaded',
+'Used to initialize data','A'),
+
+(1,'Which is not allowed in C++?',
+'Multiple constructors',
+'Function inside class',
+'Function outside class',
+'Variable of type function','D'),
+
+(1,'Correct declaration of constant pointer to int?',
+'int* const ptr',
+'const int* ptr',
+'int const* ptr',
+'const ptr int*','A'),
+
+(1,'Correct way to declare constant integer array?',
+'const int arr[5]',
+'int const arr[5]',
+'Both A and B',
+'int arr[5] const','C'),
+
+(1,'Correct syntax to pass array to function?',
+'func(arr[])',
+'func(int arr[])',
+'func(arr[5])',
+'func(int* arr)','D'),
+
+(1,'Which statement about friend function is correct?',
+'Member of another class',
+'Access private members',
+'Member of same class',
+'Cannot access private data','B'),
+
+(1,'What is output of pre-increment?',
+'5 5','6 5','6 6','5 6','C'),
+
+(1,'Output of array element printing?',
+'12345','2345','234','345','D'),
+
+(1,'Which is true about operator overloading?',
+'Modifies operator behavior',
+'Works on primitives only',
+'Changes precedence',
+'Single datatype only','A'),
+
+(1,'Difference between const objects and const functions?',
+'Const objects call all functions',
+'Const functions cannot modify data',
+'Const objects modify data',
+'No difference','B'),
+
+(1,'Constructor–Destructor output?',
+'Constructor Destructor',
+'Destructor Constructor',
+'Error',
+'No output','A'),
+
+(1,'Using this in static function results in?',
+'Compiles',
+'Compilation error',
+'Runtime error',
+'Automatic this pointer','B'),
+
+(1,'Who invented C++?',
+'Dennis Ritchie',
+'Ken Thompson',
+'Brian Kernighan',
+'Bjarne Stroustrup','D'),
+
+(1,'Which type is in C++ but not in C?',
+'double','float','int','bool','D'),
+
+(1,'Most efficient function call method?',
+'Call by object',
+'Call by pointer',
+'Call by value',
+'Call by reference','D'),
+
+(1,'Which keyword defines macros?',
+'#macro','#define','macro','define','B'),
+
+(1,'What is inheritance?',
+'Deriving classes',
+'Overloading classes',
+'Same class names',
+'Wrapping data','A'),
+
+(1,'Which symbol is used for preprocessor?',
+'$','^','#','*','C'),
+
+(1,'Lambda capture by value modifying variable causes?',
+'Segmentation fault',
+'Value unchanged',
+'Value changed',
+'Compilation error','D'),
+
+(1,'What is abstract class?',
+'Any class',
+'Base class',
+'Virtual function class',
+'Pure virtual function class','D'),
+
+(1,'Benefit of C++ I/O over C?',
+'Type safety & exception',
+'Sequence container',
+'Exception',
+'Type safety','D'),
+
+(1,'Constants are also called?',
+'const',
+'preprocessor',
+'literals',
+'variables','C'),
+
+(1,'How many tests in read/write operations?',
+'1','2','3','4','B'),
+
+(1,'Output of freopen program?',
+'This sentence',
+'This sentence is redirected',
+'This sentence is redirected to a file',
+'This sentence to a file','C'),
+
+(1,'Which function flushes buffer automatically?',
+'fopen','copy','compare','fclose','D'),
+
+(1,'Which objects are loaded in locale?',
+'facet object',
+'instead object',
+'both',
+'secant object','A'),
+
+(1,'How many indicators in C++?',
+'4','3','2','1','B'),
+
+(1,'Which functions cannot be overloaded?',
+'Member',
+'Static',
+'Virtual',
+'Static and Virtual','D'),
+
+(1,'Which is true about references?',
+'Cannot be null',
+'Can be reassigned',
+'Occupy extra memory',
+'Used for allocation','A'),
+
+(1,'Purpose of namespaces?',
+'Global variables',
+'Prevent reuse',
+'Avoid name conflicts',
+'Restrict access','C'),
+
+(1,'Purpose of new operator?',
+'Deallocate memory',
+'Allocate memory',
+'Initialize variable',
+'Declare constant','B'),
+
+(1,'What does this pointer refer to?',
+'Previous object',
+'Current object',
+'Base object',
+'Static member','B'),
+
+(1,'Purpose of delete operator?',
+'Remove container element',
+'Deallocate new memory',
+'Remove function',
+'Delete file','B'),
+
+(1,'Purpose of std::vector?',
+'Sorted storage',
+'Fixed size',
+'Resizable array',
+'Key-value storage','C');

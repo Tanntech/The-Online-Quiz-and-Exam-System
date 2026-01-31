@@ -1,0 +1,17 @@
+-- Optional: clear existing data for this module
+DELETE FROM Questions WHERE ModuleId = 36;
+
+INSERT INTO Questions
+(ModuleId, QuestionText, OptionA, OptionB, OptionC, OptionD, CorrectOption, Explanation)
+VALUES
+(36, 'A Database Management System (DBMS) is:', 'Collection of interrelated data', 'Collection of programs to access data', 'Collection of data describing one particular enterprise', 'All of the above', 'D', 'A DBMS is a collection of interrelated data and programs designed to access and manage data, often describing an enterprise.'),
+(36, 'Which of the following is not a level of data abstraction?', 'Physical Level', 'Critical Level', 'Logical Level', 'View Level', 'B', 'Physical, logical, and view levels are valid abstractions. "Critical Level" is not a recognized level of data abstraction.'),
+(36, 'Disadvantages of File systems to store data is:', 'Data redundancy and inconsistency', 'Difficulty in accessing data', 'Data isolation', 'All of the above', 'D', 'File systems suffer from data redundancy, inconsistency, difficulty in accessing data, and data isolation problems.'),
+(36, 'In an Entity-Relationship Diagram Rectangles represent:', 'Entity sets', 'Attributes', 'Database', 'Tables', 'A', 'Rectangles represent entity sets in ER diagrams, showing real-world objects or things.'),
+(36, 'Which of the following is not a Storage Manager Component?', 'Transaction Manager', 'Logical Manager', 'Buffer Manager', 'File Manager', 'B', 'Logical Manager is not a recognized storage manager component; others manage data transactions, buffering, and files.'),
+(36, 'Data Manipulation Language enables users to:', 'Retrieval of information stored in database', 'Insertion of new information into the database', 'Deletion of information from the database', 'All of the above', 'D', 'DML provides commands to retrieve, insert, and delete data in a database.'),
+(36, 'Which of the following is not a Schema?', 'Database Schema', 'Physical Schema', 'Critical Schema', 'Logical Schema', 'C', 'Critical Schema is not a valid schema type; the others define database structure at different levels.'),
+(36, 'Which of the following is Database Language?', 'Data Definition Language', 'Data Manipulation Language', 'Query Language', 'All of the above', 'D', 'All listed languages are part of DBMS language sets used to define, manipulate, and query data.'),
+(36, 'Which of the following is not a function of DBA?', 'Network Maintenance', 'Routine Maintenance', 'Schema Definition', 'Authorization for data access', 'A', 'Network maintenance is generally handled by network administrators, not DBAs.'),
+(36, 'Which of the following is a Data Model?', 'Entity-Relationship model', 'Relational data model', 'Object-Based data model', 'All of the above', 'D', 'All listed models are types of data models used to organize and structure data.');
+-- Continue same pattern for questions 11-40

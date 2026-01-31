@@ -1,4 +1,8 @@
-const BASE_URL = "http://localhost:52705/api";
+const API_BASE_URL ="https://online-quiz-api-fmgyb6d5cchmbqea.eastasia-01.azurewebsites.net";
+
+  //const API_BASE_URL = "/api";
+
+
 
 /* ================= TOKEN HELPER ================= */
 const getToken = () => {
@@ -14,7 +18,7 @@ const authHeader = () => {
 
 // -------- AUTH --------
 export const loginUser = async (data) => {
-  const res = await fetch(`${BASE_URL}/auth/login`, {
+  const res = await fetch(`${API_BASE_URL}/auth/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
@@ -33,7 +37,7 @@ export const loginUser = async (data) => {
 
 
 export const googleLogin = async (user) => {
-  const res = await fetch(`${BASE_URL}/auth/google`, {
+  const res = await fetch(`${API_BASE_URL}/auth/google`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
@@ -55,7 +59,7 @@ export const googleLogin = async (user) => {
 
 // -------- MODULES --------
 export const getModules = async () => {
-  const res = await fetch(`${BASE_URL}/modules`, {
+  const res = await fetch(`${API_BASE_URL}/modules`, {
     headers: {
       ...authHeader()
     }
@@ -65,7 +69,7 @@ export const getModules = async () => {
 
 // -------- QUIZ --------
 export const getQuestions = async (moduleId) => {
-  const res = await fetch(`${BASE_URL}/quiz/${moduleId}`, {
+  const res = await fetch(`${API_BASE_URL}/quiz/${moduleId}`, {
     headers: {
       ...authHeader()
     }
@@ -75,12 +79,13 @@ export const getQuestions = async (moduleId) => {
 
 // -------- RESULT --------
 export async function saveResult(result) {
-  const res = await fetch(`${BASE_URL}/result`, {
+  const res = await fetch(`${API_BASE_URL}/result`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       ...authHeader()
     },
+    //sends data to the backend
     body: JSON.stringify({
       userId: result.userId,
       moduleId: result.moduleId,
@@ -89,7 +94,7 @@ export async function saveResult(result) {
       unattempted: result.unattempted,
       testType: result.testType,
 
-      // ✅ ALWAYS SEND mockNo
+      //  ALWAYS SEND mockNo
       mockNo: result.testType === "Mock"
         ? result.mockNo
         : null
@@ -105,7 +110,7 @@ export async function saveResult(result) {
 // -------- RESULT STATS --------
 export const getAttemptSummary = async (userId) => {
   const res = await fetch(
-    `${BASE_URL}/result/attempts/${userId}`,
+    `${API_BASE_URL}/result/attempts/${userId}`,
     {
       headers: {
         ...authHeader()
@@ -117,7 +122,7 @@ export const getAttemptSummary = async (userId) => {
 
 export async function getLatestResultStats(userId) {
   const res = await fetch(
-    `${BASE_URL}/result/latest/${userId}`,
+    `${API_BASE_URL}/result/latest/${userId}`,
     {
       headers: {
         ...authHeader()
@@ -159,7 +164,7 @@ export async function getLatestResultStats(userId) {
 // -------- MOCK --------
 export const getMockQuestions = async (moduleId, mockNumber) => {
   const res = await fetch(
-    `${BASE_URL}/mock/${moduleId}/${mockNumber}`,
+    `${API_BASE_URL}/mock/${moduleId}/${mockNumber}`,
     {
       headers: {
         ...authHeader()
@@ -173,7 +178,7 @@ export const getMockQuestions = async (moduleId, mockNumber) => {
 
 export const checkMockAttempt = (userId, moduleId, mockNo) => {
   return fetch(
-    `${BASE_URL}/result/check-mock?userId=${userId}&moduleId=${moduleId}&mockNo=${mockNo}`,
+    `${API_BASE_URL}/result/check-mock?userId=${userId}&moduleId=${moduleId}&mockNo=${mockNo}`,
     {
       headers: {
         ...authHeader()

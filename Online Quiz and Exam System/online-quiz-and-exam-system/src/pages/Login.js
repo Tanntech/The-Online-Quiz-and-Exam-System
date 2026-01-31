@@ -26,7 +26,7 @@ function Login() {
     try {
       const res = await loginUser({ email, password });
 
-      // 🔐 loginUser already stores token + user
+      //  loginUser already stores token + user
       if (!res || !res.token) {
         alert("Invalid email or password");
         return;

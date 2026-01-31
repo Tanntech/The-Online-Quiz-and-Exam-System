@@ -15,8 +15,8 @@ namespace Online_Quiz_API.DAL
         public SqlConnection GetConnection()
         {
             return new SqlConnection(
-                _configuration.GetConnectionString("QuizDB"));
+                _configuration.GetConnectionString("QuizDB")
+            );
         }
     }
-
 }

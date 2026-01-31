@@ -26,7 +26,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/mock/:moduleId/:mockNumber" element={<MockQuiz />} />
           <Route path="/demo/:moduleId" element={<DemoQuiz />} />
-
+          
         </Routes>
       </div>
     </BrowserRouter>

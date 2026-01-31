@@ -73,7 +73,7 @@
       // See https://github.com/twbs/bootstrap/issues/32273
 
       if (!hrefAttr || !hrefAttr.includes('#') && !hrefAttr.startsWith('.')) {
-        return null;
+        return null!;
       } // Just in case some CMS puts out a full URL with the anchor appended
 
 
@@ -94,7 +94,7 @@
       return document.querySelector(selector) ? selector : null;
     }
 
-    return null;
+    return null!;
   };
 
   const getElementFromSelector = element => {
@@ -151,7 +151,7 @@
       return document.querySelector(obj);
     }
 
-    return null;
+    return null!;
   };
 
   const typeCheckConfig = (componentName, config, configTypes) => {
@@ -192,7 +192,7 @@
 
   const findShadowRoot = element => {
     if (!document.documentElement.attachShadow) {
-      return null;
+      return null!;
     } // Can find the shadow root otherwise it'll return the document
 
 
@@ -207,7 +207,7 @@
 
 
     if (!element.parentNode) {
-      return null;
+      return null!;
     }
 
     return findShadowRoot(element.parentNode);
@@ -238,7 +238,7 @@
       return jQuery;
     }
 
-    return null;
+    return null!;
   };
 
   const DOMContentLoadedCallbacks = [];
@@ -417,7 +417,7 @@
       } // To please ESLint
 
 
-      return null;
+      return null!;
     };
   }
 
@@ -432,7 +432,7 @@
       }
     }
 
-    return null;
+    return null!;
   }
 
   function normalizeParams(originalTypeEvent, handler, delegationFn) {
@@ -571,7 +571,7 @@
 
     trigger(element, event, args) {
       if (typeof event !== 'string' || !element) {
-        return null;
+        return null!;
       }
 
       const $ = getjQuery();
@@ -667,7 +667,7 @@
         return elementMap.get(element).get(key) || null;
       }
 
-      return null;
+      return null!;
     },
 
     remove(element, key) {
@@ -957,7 +957,7 @@
     }
 
     if (val === '' || val === 'null') {
-      return null;
+      return null!;
     }
 
     return val;
@@ -4428,7 +4428,7 @@
           }
         }
 
-        return null;
+        return null!;
       }).filter(item => item).sort((a, b) => a[0] - b[0]).forEach(item => {
         this._offsets.push(item[0]);
 

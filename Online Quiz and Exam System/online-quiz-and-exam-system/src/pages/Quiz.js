@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { getQuestions, saveResult } from "../services/api";
 import { useParams, useNavigate } from "react-router-dom";
+import Question from "../components/Question";
 
 function Quiz() {
   const { moduleId } = useParams();
@@ -105,7 +106,7 @@ function Quiz() {
 
             <p className="mt-3">{q.questionText}</p>
 
-            {["A", "B", "C", "D"].map(opt => (
+            {/* {["A", "B", "C", "D"].map(opt => (
               <div className="form-check" key={opt}>
                 <input
                   className="form-check-input"
@@ -120,7 +121,16 @@ function Quiz() {
                   {q["option" + opt]}
                 </label>
               </div>
-            ))}
+            ))} */}
+
+            <Question
+                q={q}
+                index={current}
+                answers={answers}
+                setAnswers={setAnswers}
+                attemptType="practice"
+              />
+
           </div>
 
           {/* ================= NAV BUTTONS ================= */}

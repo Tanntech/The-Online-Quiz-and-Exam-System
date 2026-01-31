@@ -47,7 +47,7 @@ const getSelector = element => {
     // See https://github.com/twbs/bootstrap/issues/32273
 
     if (!hrefAttr || !hrefAttr.includes('#') && !hrefAttr.startsWith('.')) {
-      return null;
+      return null!;
     } // Just in case some CMS puts out a full URL with the anchor appended
 
 
@@ -68,7 +68,7 @@ const getSelectorFromElement = element => {
     return document.querySelector(selector) ? selector : null;
   }
 
-  return null;
+  return null!;
 };
 
 const getElementFromSelector = element => {
@@ -125,7 +125,7 @@ const getElement = obj => {
     return document.querySelector(obj);
   }
 
-  return null;
+  return null!;
 };
 
 const typeCheckConfig = (componentName, config, configTypes) => {
@@ -166,7 +166,7 @@ const isDisabled = element => {
 
 const findShadowRoot = element => {
   if (!document.documentElement.attachShadow) {
-    return null;
+    return null!;
   } // Can find the shadow root otherwise it'll return the document
 
 
@@ -181,7 +181,7 @@ const findShadowRoot = element => {
 
 
   if (!element.parentNode) {
-    return null;
+    return null!;
   }
 
   return findShadowRoot(element.parentNode);
@@ -212,7 +212,7 @@ const getjQuery = () => {
     return jQuery;
   }
 
-  return null;
+  return null!;
 };
 
 const DOMContentLoadedCallbacks = [];
@@ -391,7 +391,7 @@ function bootstrapDelegationHandler(element, selector, fn) {
     } // To please ESLint
 
 
-    return null;
+    return null!;
   };
 }
 
@@ -406,7 +406,7 @@ function findHandler(events, handler, delegationSelector = null) {
     }
   }
 
-  return null;
+  return null!;
 }
 
 function normalizeParams(originalTypeEvent, handler, delegationFn) {
@@ -545,7 +545,7 @@ const EventHandler = {
 
   trigger(element, event, args) {
     if (typeof event !== 'string' || !element) {
-      return null;
+      return null!;
     }
 
     const $ = getjQuery();
@@ -641,7 +641,7 @@ var Data = {
       return elementMap.get(element).get(key) || null;
     }
 
-    return null;
+    return null!S;
   },
 
   remove(element, key) {
@@ -931,7 +931,7 @@ function normalizeData(val) {
   }
 
   if (val === '' || val === 'null') {
-    return null;
+    return null!;
   }
 
   return val;
@@ -4402,7 +4402,7 @@ class ScrollSpy extends BaseComponent {
         }
       }
 
-      return null;
+      return null!;
     }).filter(item => item).sort((a, b) => a[0] - b[0]).forEach(item => {
       this._offsets.push(item[0]);
 

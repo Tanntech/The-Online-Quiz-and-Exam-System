@@ -90,12 +90,22 @@ function DemoQuiz() {
           <div className="card p-4 shadow">
             <h5>Question {current + 1} of {questions.length}</h5>
 
+            {/* <Question
+              q={questions[current]}
+              index={current}
+              answers={answers}
+              setAnswers={setAnswers}
+            /> */}
+
+
             <Question
               q={questions[current]}
               index={current}
               answers={answers}
               setAnswers={setAnswers}
+              attemptType="free"
             />
+
 
             <div className="d-flex justify-content-between mt-4">
               <button

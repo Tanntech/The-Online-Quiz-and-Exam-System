@@ -107,7 +107,7 @@ namespace Online_Quiz_API.DAL
             using var dr = cmd.ExecuteReader();
 
             if (!dr.Read())
-                return null;   // 🔑 new user case
+                return null!;   // 🔑 new user case
 
             return new
             {

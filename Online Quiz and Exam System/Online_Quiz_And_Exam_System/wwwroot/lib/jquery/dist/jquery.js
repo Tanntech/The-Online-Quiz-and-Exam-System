@@ -1830,7 +1830,7 @@ Expr = Sizzle.selectors = {
 				unquoted = !match[ 6 ] && match[ 2 ];
 
 			if ( matchExpr[ "CHILD" ].test( match[ 0 ] ) ) {
-				return null;
+				return null!;
 			}
 
 			// Accept quoted arguments as-is
@@ -4412,7 +4412,7 @@ function getData( data ) {
 	}
 
 	if ( data === "null" ) {
-		return null;
+		return null!;
 	}
 
 	// Only convert to a number if it doesn't change the string
@@ -8213,7 +8213,7 @@ if ( !support.optSelected ) {
 			if ( parent && parent.parentNode ) {
 				parent.parentNode.selectedIndex;
 			}
-			return null;
+			return null!;
 		},
 		set: function( elem ) {
 
@@ -8862,7 +8862,7 @@ var rquery = ( /\?/ );
 jQuery.parseXML = function( data ) {
 	var xml, parserErrorElem;
 	if ( !data || typeof data !== "string" ) {
-		return null;
+		return null!;
 	}
 
 	// Support: IE 9 - 11 only
@@ -8991,7 +8991,7 @@ jQuery.fn.extend( {
 			var val = jQuery( this ).val();
 
 			if ( val == null ) {
-				return null;
+				return null!;
 			}
 
 			if ( Array.isArray( val ) ) {

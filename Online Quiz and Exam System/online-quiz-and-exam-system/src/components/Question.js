@@ -1,4 +1,5 @@
-function Question({ q, index, answers, setAnswers }) {
+function Question({ q, index, answers, setAnswers, attemptType }) {
+
   const handleChange = (option) => {
     setAnswers({
       ...answers,
@@ -6,71 +7,53 @@ function Question({ q, index, answers, setAnswers }) {
     });
   };
 
+  // user has clicked something
+  const hasClicked = answers[index] !== undefined;
+
+  // show correct answer ONLY for practice & free
+  const showCorrectAnswer =
+    (attemptType === "practice" || attemptType === "free") &&
+    hasClicked &&
+    q.correctOption;
+
+  const correctAnswerText =
+    q.correctOption === "A" ? q.optionA :
+    q.correctOption === "B" ? q.optionB :
+    q.correctOption === "C" ? q.optionC :
+    q.correctOption === "D" ? q.optionD :
+    "";
+
   return (
     <div className="mt-3">
-      {/* QUESTION TEXT */}
+
       <p className="fw-semibold">
         {index + 1}. {q.questionText}
       </p>
 
-      {/* OPTIONS */}
-      <div className="form-check mt-2">
-        <input
-          className="form-check-input"
-          type="radio"
-          name={`q${index}`}
-          id={`q${index}A`}
-          checked={answers[index] === "A"}
-          onChange={() => handleChange("A")}
-        />
-        <label className="form-check-label" htmlFor={`q${index}A`}>
-          {q.optionA}
-        </label>
-      </div>
+      {["A", "B", "C", "D"].map(opt => (
+        <div className="form-check mt-2" key={opt}>
+          <input
+            className="form-check-input"
+            type="radio"
+            name={`q${index}`}
+            checked={answers[index] === opt}
+            onChange={() => handleChange(opt)}
+          />
+          <label className="form-check-label">
+            {q["option" + opt]}
+          </label>
+        </div>
+      ))}
 
-      <div className="form-check mt-2">
-        <input
-          className="form-check-input"
-          type="radio"
-          name={`q${index}`}
-          id={`q${index}B`}
-          checked={answers[index] === "B"}
-          onChange={() => handleChange("B")}
-        />
-        <label className="form-check-label" htmlFor={`q${index}B`}>
-          {q.optionB}
-        </label>
-      </div>
-
-      <div className="form-check mt-2">
-        <input
-          className="form-check-input"
-          type="radio"
-          name={`q${index}`}
-          id={`q${index}C`}
-          checked={answers[index] === "C"}
-          onChange={() => handleChange("C")}
-        />
-        <label className="form-check-label" htmlFor={`q${index}C`}>
-          {q.optionC}
-        </label>
-      </div>
-
-      <div className="form-check mt-2">
-        <input
-          className="form-check-input"
-          type="radio"
-          name={`q${index}`}
-          id={`q${index}D`}
-          checked={answers[index] === "D"}
-          onChange={() => handleChange("D")}
-        />
-        <label className="form-check-label" htmlFor={`q${index}D`}>
-          {q.optionD}
-        </label>
-      </div>
+      {/* ✅ THIS IS YOUR REQUIREMENT */}
+      {showCorrectAnswer && (
+        <div className="mt-2 fw-semibold">
+          Correct Answer: {correctAnswerText}
+        </div>
+      )}
     </div>
   );
 }
 
 export default Question;
+

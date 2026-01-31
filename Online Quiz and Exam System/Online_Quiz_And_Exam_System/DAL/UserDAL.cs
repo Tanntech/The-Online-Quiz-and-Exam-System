@@ -38,7 +38,7 @@ namespace Online_Quiz_API.DAL
                     MobileNumber = dr["MobileNumber"].ToString()
                 };
             }
-            return null;
+            return null!;
         }
 
         // =========================
@@ -95,5 +95,16 @@ namespace Online_Quiz_API.DAL
             con.Open();
             cmd.ExecuteNonQuery();
         }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

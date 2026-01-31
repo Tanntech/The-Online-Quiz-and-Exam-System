@@ -49,8 +49,12 @@ namespace Online_Quiz_And_Exam_System
                 };
             });
 
+            // ================= DATABASE CONFIGURATION 🔹 =================
+            // This makes ConnectionStrings available everywhere
+            builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+
             // ================= DEPENDENCY INJECTION =================
-            builder.Services.AddSingleton<DbConnection>();
+            builder.Services.AddSingleton<DbConnection>();   // uses DefaultConnection
             builder.Services.AddScoped<UserDAL>();
             builder.Services.AddScoped<ModuleDAL>();
             builder.Services.AddScoped<QuestionDAL>();
@@ -67,6 +71,10 @@ namespace Online_Quiz_And_Exam_System
             // 🔑 JWT MIDDLEWARE (ORDER MATTERS)
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
 
             app.MapControllers();
 
